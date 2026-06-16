@@ -1,0 +1,5754 @@
+[
+  {
+    "id": 12,
+    "team_a_id": 1,
+    "team_b_id": 2,
+    "rivalry_name": "Dar es Salaam Derby",
+    "intensity": 0.89,
+    "last_results": "[]"
+  },
+  {
+    "id": 13,
+    "team_a_id": 2,
+    "team_b_id": 3,
+    "rivalry_name": "Kariakoo Derby",
+    "intensity": 0.95,
+    "last_results": "[]"
+  },
+  {
+    "id": 14,
+    "team_a_id": 3,
+    "team_b_id": 2,
+    "rivalry_name": "Kariakoo Derby",
+    "intensity": 0.95,
+    "last_results": "[]"
+  },
+  {
+    "id": 15,
+    "team_a_id": 4,
+    "team_b_id": 14,
+    "rivalry_name": "Coastal Union vs Pamba Jiji",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 16,
+    "team_a_id": 5,
+    "team_b_id": 3,
+    "rivalry_name": "JKT Tanzania vs Simba SC",
+    "intensity": 0.82,
+    "last_results": "[]"
+  },
+  {
+    "id": 17,
+    "team_a_id": 6,
+    "team_b_id": 33,
+    "rivalry_name": "Singida Black Stars vs Kagera Sugar",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 18,
+    "team_a_id": 7,
+    "team_b_id": 13,
+    "rivalry_name": "Fountain Gate vs Tanzania Prisons",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 19,
+    "team_a_id": 8,
+    "team_b_id": 3,
+    "rivalry_name": "KMC vs Simba SC",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 20,
+    "team_a_id": 10,
+    "team_b_id": 12,
+    "rivalry_name": "TRA United vs Dodoma Jiji FC",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 21,
+    "team_a_id": 11,
+    "team_b_id": 9,
+    "rivalry_name": "Mashujaa FC vs Namungo FC",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 22,
+    "team_a_id": 12,
+    "team_b_id": 6,
+    "rivalry_name": "Dodoma Jiji FC vs Singida Black Stars",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 23,
+    "team_a_id": 15,
+    "team_b_id": 4,
+    "rivalry_name": "Mtibwa Sugar vs Coastal Union",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 24,
+    "team_a_id": 16,
+    "team_b_id": 37,
+    "rivalry_name": "Mbeya City vs Mbeya Kwanza",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 25,
+    "team_a_id": 17,
+    "team_b_id": 24,
+    "rivalry_name": "Mlandege FC vs KMKM",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 26,
+    "team_a_id": 18,
+    "team_b_id": 21,
+    "rivalry_name": "Mafunzo FC vs Zimamoto",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 27,
+    "team_a_id": 19,
+    "team_b_id": 50,
+    "rivalry_name": "Muembe Makumbi City FC vs Kundemba FC",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 28,
+    "team_a_id": 20,
+    "team_b_id": 29,
+    "rivalry_name": "KVZ FC vs Chipukizi FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 29,
+    "team_a_id": 22,
+    "team_b_id": 17,
+    "rivalry_name": "Malindi SC vs Mlandege FC",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 30,
+    "team_a_id": 23,
+    "team_b_id": 24,
+    "rivalry_name": "JKU vs KMKM",
+    "intensity": 0.8,
+    "last_results": "[]"
+  },
+  {
+    "id": 31,
+    "team_a_id": 24,
+    "team_b_id": 23,
+    "rivalry_name": "KMKM vs JKU",
+    "intensity": 0.8,
+    "last_results": "[]"
+  },
+  {
+    "id": 32,
+    "team_a_id": 25,
+    "team_b_id": 58,
+    "rivalry_name": "Uhamiaji FC vs Polisi",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 33,
+    "team_a_id": 26,
+    "team_b_id": 28,
+    "rivalry_name": "Junguni United FC vs Kipanga",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 34,
+    "team_a_id": 27,
+    "team_b_id": 28,
+    "rivalry_name": "Mwenge vs Kipanga",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 35,
+    "team_a_id": 28,
+    "team_b_id": 31,
+    "rivalry_name": "Kipanga vs Inter Zanzibar FC",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 36,
+    "team_a_id": 29,
+    "team_b_id": 20,
+    "rivalry_name": "Chipukizi FC vs KVZ FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 37,
+    "team_a_id": 30,
+    "team_b_id": 32,
+    "rivalry_name": "New City vs Tekeleza FC",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 38,
+    "team_a_id": 31,
+    "team_b_id": 59,
+    "rivalry_name": "Inter Zanzibar FC vs Taifa Jangombe",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 39,
+    "team_a_id": 32,
+    "team_b_id": 30,
+    "rivalry_name": "Tekeleza FC vs New City",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 40,
+    "team_a_id": 33,
+    "team_b_id": 6,
+    "rivalry_name": "Kagera Sugar vs Singida Black Stars",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 41,
+    "team_a_id": 34,
+    "team_b_id": 11,
+    "rivalry_name": "Geita Gold vs Mashujaa FC",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 42,
+    "team_a_id": 35,
+    "team_b_id": 94,
+    "rivalry_name": "Stand United vs Rhino Rangers",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 43,
+    "team_a_id": 37,
+    "team_b_id": 16,
+    "rivalry_name": "Mbeya Kwanza vs Mbeya City",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 44,
+    "team_a_id": 38,
+    "team_b_id": 5,
+    "rivalry_name": "KenGold FC vs JKT Tanzania",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 45,
+    "team_a_id": 39,
+    "team_b_id": 40,
+    "rivalry_name": "Songea United vs Bigman",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 46,
+    "team_a_id": 40,
+    "team_b_id": 39,
+    "rivalry_name": "Bigman vs Songea United",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 47,
+    "team_a_id": 41,
+    "team_b_id": 81,
+    "rivalry_name": "Mbuni vs Arusha FC",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 48,
+    "team_a_id": 42,
+    "team_b_id": 72,
+    "rivalry_name": "Polisi Tanzania vs African Lyon",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 49,
+    "team_a_id": 43,
+    "team_b_id": 47,
+    "rivalry_name": "Biashara United vs Transit Camp",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 50,
+    "team_a_id": 44,
+    "team_b_id": 70,
+    "rivalry_name": "Green Warriors vs Pan African",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 51,
+    "team_a_id": 45,
+    "team_b_id": 46,
+    "rivalry_name": "Cosmopolitan vs African Sports",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 52,
+    "team_a_id": 46,
+    "team_b_id": 45,
+    "rivalry_name": "African Sports vs Cosmopolitan",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 53,
+    "team_a_id": 47,
+    "team_b_id": 94,
+    "rivalry_name": "Transit Camp vs Rhino Rangers",
+    "intensity": 0.55,
+    "last_results": "[]"
+  },
+  {
+    "id": 54,
+    "team_a_id": 48,
+    "team_b_id": 45,
+    "rivalry_name": "B19 vs Cosmopolitan",
+    "intensity": 0.57,
+    "last_results": "[]"
+  },
+  {
+    "id": 55,
+    "team_a_id": 49,
+    "team_b_id": 55,
+    "rivalry_name": "New Stone Town vs Kizimbani United",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 56,
+    "team_a_id": 50,
+    "team_b_id": 48,
+    "rivalry_name": "Kundemba FC vs B19",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 57,
+    "team_a_id": 51,
+    "team_b_id": 49,
+    "rivalry_name": "Black Sailors vs New Stone Town",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 58,
+    "team_a_id": 52,
+    "team_b_id": 56,
+    "rivalry_name": "Azimio SC vs Ujamaa FC",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 59,
+    "team_a_id": 53,
+    "team_b_id": 54,
+    "rivalry_name": "Pangani FC vs FSC",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 60,
+    "team_a_id": 54,
+    "team_b_id": 53,
+    "rivalry_name": "FSC vs Pangani FC",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 61,
+    "team_a_id": 55,
+    "team_b_id": 59,
+    "rivalry_name": "Kizimbani United vs Taifa Jangombe",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 62,
+    "team_a_id": 56,
+    "team_b_id": 52,
+    "rivalry_name": "Ujamaa FC vs Azimio SC",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 63,
+    "team_a_id": 57,
+    "team_b_id": 56,
+    "rivalry_name": "Muungano Rangers vs Ujamaa FC",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 64,
+    "team_a_id": 59,
+    "team_b_id": 55,
+    "rivalry_name": "Taifa Jangombe vs Kizimbani United",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 65,
+    "team_a_id": 60,
+    "team_b_id": 63,
+    "rivalry_name": "Raskazone FC vs Wembe",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 66,
+    "team_a_id": 61,
+    "team_b_id": 62,
+    "rivalry_name": "Urafiki SC vs New King",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 67,
+    "team_a_id": 62,
+    "team_b_id": 60,
+    "rivalry_name": "New King vs Raskazone FC",
+    "intensity": 0.57,
+    "last_results": "[]"
+  },
+  {
+    "id": 68,
+    "team_a_id": 63,
+    "team_b_id": 62,
+    "rivalry_name": "Wembe vs New King",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 69,
+    "team_a_id": 64,
+    "team_b_id": 63,
+    "rivalry_name": "Amani Fresh vs Wembe",
+    "intensity": 0.55,
+    "last_results": "[]"
+  },
+  {
+    "id": 70,
+    "team_a_id": 65,
+    "team_b_id": 613,
+    "rivalry_name": "Chake Chake FC vs Jamuhuri",
+    "intensity": 0.57,
+    "last_results": "[]"
+  },
+  {
+    "id": 71,
+    "team_a_id": 66,
+    "team_b_id": 68,
+    "rivalry_name": "Tunduru Korosho vs Magnet",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 72,
+    "team_a_id": 67,
+    "team_b_id": 66,
+    "rivalry_name": "Nyumbu vs Tunduru Korosho",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 73,
+    "team_a_id": 68,
+    "team_b_id": 78,
+    "rivalry_name": "Magnet vs Dar City",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 74,
+    "team_a_id": 69,
+    "team_b_id": 73,
+    "rivalry_name": "Moro Kids vs Bandari Tanzania",
+    "intensity": 0.57,
+    "last_results": "[]"
+  },
+  {
+    "id": 75,
+    "team_a_id": 70,
+    "team_b_id": 45,
+    "rivalry_name": "Pan African vs Cosmopolitan",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 76,
+    "team_a_id": 71,
+    "team_b_id": 53,
+    "rivalry_name": "Hausang vs Pangani FC",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 77,
+    "team_a_id": 72,
+    "team_b_id": 70,
+    "rivalry_name": "African Lyon vs Pan African",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 78,
+    "team_a_id": 73,
+    "team_b_id": 25,
+    "rivalry_name": "Bandari Tanzania vs Uhamiaji FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 79,
+    "team_a_id": 74,
+    "team_b_id": 73,
+    "rivalry_name": "Tanesco vs Bandari Tanzania",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 80,
+    "team_a_id": 75,
+    "team_b_id": 94,
+    "rivalry_name": "IAA SC vs Rhino Rangers",
+    "intensity": 0.52,
+    "last_results": "[]"
+  },
+  {
+    "id": 81,
+    "team_a_id": 76,
+    "team_b_id": 74,
+    "rivalry_name": "Copco vs Tanesco",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 82,
+    "team_a_id": 77,
+    "team_b_id": 42,
+    "rivalry_name": "Ruvu Shooting vs Polisi Tanzania",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 83,
+    "team_a_id": 78,
+    "team_b_id": 68,
+    "rivalry_name": "Dar City vs Magnet",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 84,
+    "team_a_id": 80,
+    "team_b_id": 34,
+    "rivalry_name": "Alliance vs Geita Gold",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 85,
+    "team_a_id": 81,
+    "team_b_id": 90,
+    "rivalry_name": "Arusha FC vs Kilimanjaro Wonders",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 86,
+    "team_a_id": 83,
+    "team_b_id": 84,
+    "rivalry_name": "Leo Tena vs Foysa Academy",
+    "intensity": 0.52,
+    "last_results": "[]"
+  },
+  {
+    "id": 87,
+    "team_a_id": 84,
+    "team_b_id": 85,
+    "rivalry_name": "Foysa Academy vs Giraffe FC",
+    "intensity": 0.51,
+    "last_results": "[]"
+  },
+  {
+    "id": 88,
+    "team_a_id": 85,
+    "team_b_id": 84,
+    "rivalry_name": "Giraffe FC vs Foysa Academy",
+    "intensity": 0.51,
+    "last_results": "[]"
+  },
+  {
+    "id": 89,
+    "team_a_id": 86,
+    "team_b_id": 88,
+    "rivalry_name": "Greenland FC vs Iringa SC",
+    "intensity": 0.53,
+    "last_results": "[]"
+  },
+  {
+    "id": 90,
+    "team_a_id": 87,
+    "team_b_id": 85,
+    "rivalry_name": "Igunga United vs Giraffe FC",
+    "intensity": 0.51,
+    "last_results": "[]"
+  },
+  {
+    "id": 91,
+    "team_a_id": 89,
+    "team_b_id": 88,
+    "rivalry_name": "Kiduli FC vs Iringa SC",
+    "intensity": 0.52,
+    "last_results": "[]"
+  },
+  {
+    "id": 92,
+    "team_a_id": 90,
+    "team_b_id": 81,
+    "rivalry_name": "Kilimanjaro Wonders vs Arusha FC",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 93,
+    "team_a_id": 91,
+    "team_b_id": 90,
+    "rivalry_name": "Endument FC vs Kilimanjaro Wonders",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 94,
+    "team_a_id": 92,
+    "team_b_id": 94,
+    "rivalry_name": "Mweta Sports vs Rhino Rangers",
+    "intensity": 0.51,
+    "last_results": "[]"
+  },
+  {
+    "id": 95,
+    "team_a_id": 94,
+    "team_b_id": 82,
+    "rivalry_name": "Rhino Rangers vs Bukombe Combine SC",
+    "intensity": 0.53,
+    "last_results": "[]"
+  },
+  {
+    "id": 96,
+    "team_a_id": 95,
+    "team_b_id": 97,
+    "rivalry_name": "Nyakagwe FC vs Toto Africans",
+    "intensity": 0.5,
+    "last_results": "[]"
+  },
+  {
+    "id": 97,
+    "team_a_id": 96,
+    "team_b_id": 44,
+    "rivalry_name": "Tandika United vs Green Warriors",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 98,
+    "team_a_id": 97,
+    "team_b_id": 14,
+    "rivalry_name": "Toto Africans vs Pamba Jiji",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 99,
+    "team_a_id": 98,
+    "team_b_id": 9,
+    "rivalry_name": "Ndanda FC vs Namungo FC",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 100,
+    "team_a_id": 99,
+    "team_b_id": 9,
+    "rivalry_name": "Nkim FC vs Namungo FC",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 101,
+    "team_a_id": 102,
+    "team_b_id": 81,
+    "rivalry_name": "Kajuna FC vs Arusha FC",
+    "intensity": 0.53,
+    "last_results": "[]"
+  },
+  {
+    "id": 102,
+    "team_a_id": 103,
+    "team_b_id": 105,
+    "rivalry_name": "ACA Eagle vs Mlimani FC",
+    "intensity": 0.48,
+    "last_results": "[]"
+  },
+  {
+    "id": 103,
+    "team_a_id": 105,
+    "team_b_id": 103,
+    "rivalry_name": "Mlimani FC vs ACA Eagle",
+    "intensity": 0.48,
+    "last_results": "[]"
+  },
+  {
+    "id": 104,
+    "team_a_id": 106,
+    "team_b_id": 101,
+    "rivalry_name": "Baraa FC vs Senior Hope FC",
+    "intensity": 0.49,
+    "last_results": "[]"
+  },
+  {
+    "id": 105,
+    "team_a_id": 107,
+    "team_b_id": 108,
+    "rivalry_name": "Tanga United vs Handeni FC",
+    "intensity": 0.49,
+    "last_results": "[]"
+  },
+  {
+    "id": 106,
+    "team_a_id": 108,
+    "team_b_id": 107,
+    "rivalry_name": "Handeni FC vs Tanga United",
+    "intensity": 0.49,
+    "last_results": "[]"
+  },
+  {
+    "id": 107,
+    "team_a_id": 109,
+    "team_b_id": 110,
+    "rivalry_name": "Simiyu Veterans vs Nyamagana FC",
+    "intensity": 0.51,
+    "last_results": "[]"
+  },
+  {
+    "id": 108,
+    "team_a_id": 110,
+    "team_b_id": 109,
+    "rivalry_name": "Nyamagana FC vs Simiyu Veterans",
+    "intensity": 0.51,
+    "last_results": "[]"
+  },
+  {
+    "id": 109,
+    "team_a_id": 111,
+    "team_b_id": 112,
+    "rivalry_name": "Cairo Derby",
+    "intensity": 0.96,
+    "last_results": "[]"
+  },
+  {
+    "id": 110,
+    "team_a_id": 112,
+    "team_b_id": 111,
+    "rivalry_name": "Cairo Derby",
+    "intensity": 0.96,
+    "last_results": "[]"
+  },
+  {
+    "id": 111,
+    "team_a_id": 113,
+    "team_b_id": 114,
+    "rivalry_name": "Pyramids FC vs Modern Sport FC",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 112,
+    "team_a_id": 114,
+    "team_b_id": 113,
+    "rivalry_name": "Modern Sport FC vs Pyramids FC",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 113,
+    "team_a_id": 115,
+    "team_b_id": 122,
+    "rivalry_name": "Al Masry SC vs Ismaily SC",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 114,
+    "team_a_id": 116,
+    "team_b_id": 119,
+    "rivalry_name": "Ceramica Cleopatra vs Ghazl El Mahalla",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 115,
+    "team_a_id": 117,
+    "team_b_id": 118,
+    "rivalry_name": "Smouha SC vs ENPPI SC",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 116,
+    "team_a_id": 118,
+    "team_b_id": 117,
+    "rivalry_name": "ENPPI SC vs Smouha SC",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 117,
+    "team_a_id": 119,
+    "team_b_id": 116,
+    "rivalry_name": "Ghazl El Mahalla vs Ceramica Cleopatra",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 118,
+    "team_a_id": 121,
+    "team_b_id": 120,
+    "rivalry_name": "Zed FC vs Talaea El Gaish",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 119,
+    "team_a_id": 122,
+    "team_b_id": 115,
+    "rivalry_name": "Ismaily SC vs Al Masry SC",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 120,
+    "team_a_id": 124,
+    "team_b_id": 125,
+    "rivalry_name": "El Gouna FC vs Pharco FC",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 121,
+    "team_a_id": 125,
+    "team_b_id": 124,
+    "rivalry_name": "Pharco FC vs El Gouna FC",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 122,
+    "team_a_id": 126,
+    "team_b_id": 127,
+    "rivalry_name": "Al Ittihad Alexandria vs Haras El Hodoud",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 123,
+    "team_a_id": 127,
+    "team_b_id": 126,
+    "rivalry_name": "Haras El Hodoud vs Al Ittihad Alexandria",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 124,
+    "team_a_id": 128,
+    "team_b_id": 123,
+    "rivalry_name": "Al Mokawloon vs National Bank of Egypt",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 125,
+    "team_a_id": 129,
+    "team_b_id": 130,
+    "rivalry_name": "Casablanca Derby",
+    "intensity": 0.93,
+    "last_results": "[]"
+  },
+  {
+    "id": 126,
+    "team_a_id": 130,
+    "team_b_id": 129,
+    "rivalry_name": "Casablanca Derby",
+    "intensity": 0.93,
+    "last_results": "[]"
+  },
+  {
+    "id": 127,
+    "team_a_id": 131,
+    "team_b_id": 132,
+    "rivalry_name": "Rabat Derby",
+    "intensity": 0.84,
+    "last_results": "[]"
+  },
+  {
+    "id": 128,
+    "team_a_id": 132,
+    "team_b_id": 134,
+    "rivalry_name": "FUS Rabat vs RSB Berkane",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 129,
+    "team_a_id": 133,
+    "team_b_id": 139,
+    "rivalry_name": "Moghreb T\u00e9touan vs Ittihad Tanger",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 130,
+    "team_a_id": 134,
+    "team_b_id": 132,
+    "rivalry_name": "RSB Berkane vs FUS Rabat",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 131,
+    "team_a_id": 135,
+    "team_b_id": 136,
+    "rivalry_name": "Hassania Agadir vs Olympique Club de Safi",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 132,
+    "team_a_id": 136,
+    "team_b_id": 135,
+    "rivalry_name": "Olympique Club de Safi vs Hassania Agadir",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 133,
+    "team_a_id": 137,
+    "team_b_id": 134,
+    "rivalry_name": "Maghreb de F\u00e8s vs RSB Berkane",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 134,
+    "team_a_id": 139,
+    "team_b_id": 133,
+    "rivalry_name": "Ittihad Tanger vs Moghreb T\u00e9touan",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 135,
+    "team_a_id": 140,
+    "team_b_id": 142,
+    "rivalry_name": "KACM Marrakech vs Difa\u00e2 El Jadida",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 136,
+    "team_a_id": 143,
+    "team_b_id": 144,
+    "rivalry_name": "Union Touarga Sportif vs CR Khemis Zemamra",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 137,
+    "team_a_id": 145,
+    "team_b_id": 146,
+    "rivalry_name": "CR Belouizdad vs JS Kabylie",
+    "intensity": 0.8,
+    "last_results": "[]"
+  },
+  {
+    "id": 138,
+    "team_a_id": 146,
+    "team_b_id": 145,
+    "rivalry_name": "JS Kabylie vs CR Belouizdad",
+    "intensity": 0.8,
+    "last_results": "[]"
+  },
+  {
+    "id": 139,
+    "team_a_id": 147,
+    "team_b_id": 148,
+    "rivalry_name": "Algiers Derby",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 140,
+    "team_a_id": 148,
+    "team_b_id": 147,
+    "rivalry_name": "Algiers Derby",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 141,
+    "team_a_id": 149,
+    "team_b_id": 150,
+    "rivalry_name": "CS Constantine vs ES S\u00e9tif",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 142,
+    "team_a_id": 150,
+    "team_b_id": 149,
+    "rivalry_name": "ES S\u00e9tif vs CS Constantine",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 143,
+    "team_a_id": 151,
+    "team_b_id": 152,
+    "rivalry_name": "Paradou AC vs MC El Bayadh",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 144,
+    "team_a_id": 152,
+    "team_b_id": 151,
+    "rivalry_name": "MC El Bayadh vs Paradou AC",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 145,
+    "team_a_id": 153,
+    "team_b_id": 154,
+    "rivalry_name": "ASO Chlef vs MC Oran",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 146,
+    "team_a_id": 154,
+    "team_b_id": 153,
+    "rivalry_name": "MC Oran vs ASO Chlef",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 147,
+    "team_a_id": 156,
+    "team_b_id": 155,
+    "rivalry_name": "ES Ben Aknoun vs JS Saoura",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 148,
+    "team_a_id": 157,
+    "team_b_id": 160,
+    "rivalry_name": "MB Rouissat vs USM Khenchela",
+    "intensity": 0.46,
+    "last_results": "[]"
+  },
+  {
+    "id": 149,
+    "team_a_id": 158,
+    "team_b_id": 159,
+    "rivalry_name": "Olympique Akbou vs ES Mostaganem",
+    "intensity": 0.43,
+    "last_results": "[]"
+  },
+  {
+    "id": 150,
+    "team_a_id": 159,
+    "team_b_id": 158,
+    "rivalry_name": "ES Mostaganem vs Olympique Akbou",
+    "intensity": 0.43,
+    "last_results": "[]"
+  },
+  {
+    "id": 151,
+    "team_a_id": 160,
+    "team_b_id": 156,
+    "rivalry_name": "USM Khenchela vs ES Ben Aknoun",
+    "intensity": 0.45,
+    "last_results": "[]"
+  },
+  {
+    "id": 152,
+    "team_a_id": 161,
+    "team_b_id": 162,
+    "rivalry_name": "Mamelodi Sundowns vs Orlando Pirates",
+    "intensity": 0.85,
+    "last_results": "[]"
+  },
+  {
+    "id": 153,
+    "team_a_id": 162,
+    "team_b_id": 163,
+    "rivalry_name": "Soweto Derby",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 154,
+    "team_a_id": 163,
+    "team_b_id": 162,
+    "rivalry_name": "Soweto Derby",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 155,
+    "team_a_id": 164,
+    "team_b_id": 161,
+    "rivalry_name": "Siwelele FC vs Mamelodi Sundowns",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 156,
+    "team_a_id": 165,
+    "team_b_id": 166,
+    "rivalry_name": "Durban City vs Stellenbosch FC",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 157,
+    "team_a_id": 167,
+    "team_b_id": 172,
+    "rivalry_name": "Golden Arrows vs Richards Bay FC",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 158,
+    "team_a_id": 168,
+    "team_b_id": 164,
+    "rivalry_name": "Sekhukhune United vs Siwelele FC",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 159,
+    "team_a_id": 171,
+    "team_b_id": 169,
+    "rivalry_name": "Marumo Gallants vs AmaZulu FC",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 160,
+    "team_a_id": 172,
+    "team_b_id": 167,
+    "rivalry_name": "Richards Bay FC vs Golden Arrows",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 161,
+    "team_a_id": 174,
+    "team_b_id": 173,
+    "rivalry_name": "Orbit College vs Chippa United",
+    "intensity": 0.46,
+    "last_results": "[]"
+  },
+  {
+    "id": 162,
+    "team_a_id": 175,
+    "team_b_id": 170,
+    "rivalry_name": "Magesi vs TS Galaxy",
+    "intensity": 0.49,
+    "last_results": "[]"
+  },
+  {
+    "id": 163,
+    "team_a_id": 176,
+    "team_b_id": 170,
+    "rivalry_name": "Polokwane City vs TS Galaxy",
+    "intensity": 0.47,
+    "last_results": "[]"
+  },
+  {
+    "id": 164,
+    "team_a_id": 177,
+    "team_b_id": 178,
+    "rivalry_name": "Tunis Derby",
+    "intensity": 0.85,
+    "last_results": "[]"
+  },
+  {
+    "id": 165,
+    "team_a_id": 178,
+    "team_b_id": 177,
+    "rivalry_name": "Tunis Derby",
+    "intensity": 0.85,
+    "last_results": "[]"
+  },
+  {
+    "id": 166,
+    "team_a_id": 179,
+    "team_b_id": 180,
+    "rivalry_name": "\u00c9toile Sportive du Sahel vs CS Sfaxien",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 167,
+    "team_a_id": 180,
+    "team_b_id": 179,
+    "rivalry_name": "CS Sfaxien vs \u00c9toile Sportive du Sahel",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 168,
+    "team_a_id": 182,
+    "team_b_id": 180,
+    "rivalry_name": "CA Bizertin vs CS Sfaxien",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 169,
+    "team_a_id": 184,
+    "team_b_id": 182,
+    "rivalry_name": "EGS Gafsa vs CA Bizertin",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 170,
+    "team_a_id": 185,
+    "team_b_id": 178,
+    "rivalry_name": "Stade Tunisien vs Club Africain",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 171,
+    "team_a_id": 186,
+    "team_b_id": 181,
+    "rivalry_name": "Union de Ben Guerdane vs US Monastir",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 172,
+    "team_a_id": 187,
+    "team_b_id": 184,
+    "rivalry_name": "AS Gab\u00e8s vs EGS Gafsa",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 173,
+    "team_a_id": 188,
+    "team_b_id": 186,
+    "rivalry_name": "US Tataouine vs Union de Ben Guerdane",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 174,
+    "team_a_id": 189,
+    "team_b_id": 190,
+    "rivalry_name": "Olympique B\u00e9ja vs ES Zarzis",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 175,
+    "team_a_id": 191,
+    "team_b_id": 187,
+    "rivalry_name": "JS Omrane vs AS Gab\u00e8s",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 176,
+    "team_a_id": 193,
+    "team_b_id": 194,
+    "rivalry_name": "Lubumbashi Derby",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 177,
+    "team_a_id": 194,
+    "team_b_id": 193,
+    "rivalry_name": "Lubumbashi Derby",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 178,
+    "team_a_id": 195,
+    "team_b_id": 196,
+    "rivalry_name": "Sanga Balende vs FC Tanganyika",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 179,
+    "team_a_id": 196,
+    "team_b_id": 195,
+    "rivalry_name": "FC Tanganyika vs Sanga Balende",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 180,
+    "team_a_id": 197,
+    "team_b_id": 198,
+    "rivalry_name": "FC Simba vs Don Bosco",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 181,
+    "team_a_id": 198,
+    "team_b_id": 197,
+    "rivalry_name": "Don Bosco vs FC Simba",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 182,
+    "team_a_id": 199,
+    "team_b_id": 200,
+    "rivalry_name": "Blessing vs Groupe Bazano",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 183,
+    "team_a_id": 200,
+    "team_b_id": 199,
+    "rivalry_name": "Groupe Bazano vs Blessing",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 184,
+    "team_a_id": 201,
+    "team_b_id": 202,
+    "rivalry_name": "AS Malole vs US Tshinkunku",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 185,
+    "team_a_id": 202,
+    "team_b_id": 201,
+    "rivalry_name": "US Tshinkunku vs AS Malole",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 186,
+    "team_a_id": 205,
+    "team_b_id": 217,
+    "rivalry_name": "AS Maniema Union vs Etoile de Kivu FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 187,
+    "team_a_id": 207,
+    "team_b_id": 208,
+    "rivalry_name": "AC Rangers vs AS Vita Club",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 188,
+    "team_a_id": 208,
+    "team_b_id": 207,
+    "rivalry_name": "AS Vita Club vs AC Rangers",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 189,
+    "team_a_id": 209,
+    "team_b_id": 210,
+    "rivalry_name": "AF Anges Verts vs Daring Club Motema Pembe",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 190,
+    "team_a_id": 210,
+    "team_b_id": 209,
+    "rivalry_name": "Daring Club Motema Pembe vs AF Anges Verts",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 191,
+    "team_a_id": 211,
+    "team_b_id": 212,
+    "rivalry_name": "Celeste FC vs Renaissance FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 192,
+    "team_a_id": 212,
+    "team_b_id": 211,
+    "rivalry_name": "Renaissance FC vs Celeste FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 193,
+    "team_a_id": 213,
+    "team_b_id": 214,
+    "rivalry_name": "AS Dauphin Noirs de Goma vs AS Kuya Sport",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 194,
+    "team_a_id": 214,
+    "team_b_id": 213,
+    "rivalry_name": "AS Kuya Sport vs AS Dauphin Noirs de Goma",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 195,
+    "team_a_id": 215,
+    "team_b_id": 216,
+    "rivalry_name": "FC New Jack vs OC Bukavu Dawa",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 196,
+    "team_a_id": 216,
+    "team_b_id": 215,
+    "rivalry_name": "OC Bukavu Dawa vs FC New Jack",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 197,
+    "team_a_id": 217,
+    "team_b_id": 205,
+    "rivalry_name": "Etoile de Kivu FC vs AS Maniema Union",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 198,
+    "team_a_id": 218,
+    "team_b_id": 220,
+    "rivalry_name": "Mashemeji Derby",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 199,
+    "team_a_id": 220,
+    "team_b_id": 218,
+    "rivalry_name": "Mashemeji Derby",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 200,
+    "team_a_id": 221,
+    "team_b_id": 219,
+    "rivalry_name": "Nairobi United vs Tusker FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 201,
+    "team_a_id": 222,
+    "team_b_id": 223,
+    "rivalry_name": "Bandari FC vs KCB",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 202,
+    "team_a_id": 223,
+    "team_b_id": 222,
+    "rivalry_name": "KCB vs Bandari FC",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 203,
+    "team_a_id": 224,
+    "team_b_id": 225,
+    "rivalry_name": "Kariobangi Sharks vs Sofapaka",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 204,
+    "team_a_id": 225,
+    "team_b_id": 224,
+    "rivalry_name": "Sofapaka vs Kariobangi Sharks",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 205,
+    "team_a_id": 226,
+    "team_b_id": 227,
+    "rivalry_name": "Ulinzi Stars vs Kenya Police",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 206,
+    "team_a_id": 227,
+    "team_b_id": 226,
+    "rivalry_name": "Kenya Police vs Ulinzi Stars",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 207,
+    "team_a_id": 230,
+    "team_b_id": 234,
+    "rivalry_name": "Kakamega Homeboyz vs Shabana FC",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 208,
+    "team_a_id": 232,
+    "team_b_id": 228,
+    "rivalry_name": "Mathare United vs Mara Sugar",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 209,
+    "team_a_id": 233,
+    "team_b_id": 229,
+    "rivalry_name": "Murang'a Seal FC vs Posta Rangers",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 210,
+    "team_a_id": 234,
+    "team_b_id": 230,
+    "rivalry_name": "Shabana FC vs Kakamega Homeboyz",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 211,
+    "team_a_id": 235,
+    "team_b_id": 231,
+    "rivalry_name": "APS Bomet vs Bidco United",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 212,
+    "team_a_id": 236,
+    "team_b_id": 237,
+    "rivalry_name": "Kampala Derby",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 213,
+    "team_a_id": 237,
+    "team_b_id": 236,
+    "rivalry_name": "Kampala Derby",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 214,
+    "team_a_id": 238,
+    "team_b_id": 240,
+    "rivalry_name": "Vipers SC vs URA FC",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 215,
+    "team_a_id": 239,
+    "team_b_id": 236,
+    "rivalry_name": "Kampala Derby",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 216,
+    "team_a_id": 240,
+    "team_b_id": 251,
+    "rivalry_name": "URA FC vs Police FC",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 217,
+    "team_a_id": 241,
+    "team_b_id": 242,
+    "rivalry_name": "BUL FC vs Wakiso Giants",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 218,
+    "team_a_id": 242,
+    "team_b_id": 241,
+    "rivalry_name": "Wakiso Giants vs BUL FC",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 219,
+    "team_a_id": 243,
+    "team_b_id": 244,
+    "rivalry_name": "Busoga United vs Mbarara City",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 220,
+    "team_a_id": 244,
+    "team_b_id": 243,
+    "rivalry_name": "Mbarara City vs Busoga United",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 221,
+    "team_a_id": 245,
+    "team_b_id": 246,
+    "rivalry_name": "Bright Stars vs UPDF FC",
+    "intensity": 0.49,
+    "last_results": "[]"
+  },
+  {
+    "id": 222,
+    "team_a_id": 246,
+    "team_b_id": 245,
+    "rivalry_name": "UPDF FC vs Bright Stars",
+    "intensity": 0.49,
+    "last_results": "[]"
+  },
+  {
+    "id": 223,
+    "team_a_id": 247,
+    "team_b_id": 248,
+    "rivalry_name": "Gaddafi FC vs Onduparaka FC",
+    "intensity": 0.47,
+    "last_results": "[]"
+  },
+  {
+    "id": 224,
+    "team_a_id": 248,
+    "team_b_id": 247,
+    "rivalry_name": "Onduparaka FC vs Gaddafi FC",
+    "intensity": 0.47,
+    "last_results": "[]"
+  },
+  {
+    "id": 225,
+    "team_a_id": 249,
+    "team_b_id": 250,
+    "rivalry_name": "Maroons FC vs NEC FC",
+    "intensity": 0.45,
+    "last_results": "[]"
+  },
+  {
+    "id": 226,
+    "team_a_id": 250,
+    "team_b_id": 249,
+    "rivalry_name": "NEC FC vs Maroons FC",
+    "intensity": 0.45,
+    "last_results": "[]"
+  },
+  {
+    "id": 227,
+    "team_a_id": 251,
+    "team_b_id": 240,
+    "rivalry_name": "Police FC vs URA FC",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 228,
+    "team_a_id": 252,
+    "team_b_id": 253,
+    "rivalry_name": "Omdurman Derby",
+    "intensity": 0.88,
+    "last_results": "[]"
+  },
+  {
+    "id": 229,
+    "team_a_id": 253,
+    "team_b_id": 252,
+    "rivalry_name": "Omdurman Derby",
+    "intensity": 0.88,
+    "last_results": "[]"
+  },
+  {
+    "id": 230,
+    "team_a_id": 255,
+    "team_b_id": 256,
+    "rivalry_name": "Al Hilal El Fasher vs Al Merreikh El Fasher",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 231,
+    "team_a_id": 256,
+    "team_b_id": 255,
+    "rivalry_name": "Al Merreikh El Fasher vs Al Hilal El Fasher",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 232,
+    "team_a_id": 257,
+    "team_b_id": 254,
+    "rivalry_name": "Hilal Al-Obeid vs Hay Al Wadi",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 233,
+    "team_a_id": 258,
+    "team_b_id": 259,
+    "rivalry_name": "Kober SC vs Tuti SC",
+    "intensity": 0.57,
+    "last_results": "[]"
+  },
+  {
+    "id": 234,
+    "team_a_id": 259,
+    "team_b_id": 258,
+    "rivalry_name": "Tuti SC vs Kober SC",
+    "intensity": 0.57,
+    "last_results": "[]"
+  },
+  {
+    "id": 235,
+    "team_a_id": 260,
+    "team_b_id": 261,
+    "rivalry_name": "Alamal Atbara vs Al Nile",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 236,
+    "team_a_id": 261,
+    "team_b_id": 260,
+    "rivalry_name": "Al Nile vs Alamal Atbara",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 237,
+    "team_a_id": 262,
+    "team_b_id": 260,
+    "rivalry_name": "Al Tahrir vs Alamal Atbara",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 238,
+    "team_a_id": 263,
+    "team_b_id": 254,
+    "rivalry_name": "Jazeerat Alfeel vs Hay Al Wadi",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 239,
+    "team_a_id": 264,
+    "team_b_id": 258,
+    "rivalry_name": "Al Shurta vs Kober SC",
+    "intensity": 0.55,
+    "last_results": "[]"
+  },
+  {
+    "id": 240,
+    "team_a_id": 265,
+    "team_b_id": 261,
+    "rivalry_name": "Al Rabita Kosti vs Al Nile",
+    "intensity": 0.51,
+    "last_results": "[]"
+  },
+  {
+    "id": 241,
+    "team_a_id": 266,
+    "team_b_id": 257,
+    "rivalry_name": "Al Merghani Kassala vs Hilal Al-Obeid",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 242,
+    "team_a_id": 267,
+    "team_b_id": 256,
+    "rivalry_name": "Al Hilal Kadougli vs Al Merreikh El Fasher",
+    "intensity": 0.53,
+    "last_results": "[]"
+  },
+  {
+    "id": 243,
+    "team_a_id": 268,
+    "team_b_id": 263,
+    "rivalry_name": "Al Ittihad Madani vs Jazeerat Alfeel",
+    "intensity": 0.48,
+    "last_results": "[]"
+  },
+  {
+    "id": 244,
+    "team_a_id": 269,
+    "team_b_id": 252,
+    "rivalry_name": "Al Khartoum SC vs Al Hilal Omdurman",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 245,
+    "team_a_id": 270,
+    "team_b_id": 264,
+    "rivalry_name": "Al Ahli Merowe vs Al Shurta",
+    "intensity": 0.47,
+    "last_results": "[]"
+  },
+  {
+    "id": 246,
+    "team_a_id": 271,
+    "team_b_id": 258,
+    "rivalry_name": "Al Ahli Khartoum vs Kober SC",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 247,
+    "team_a_id": 272,
+    "team_b_id": 257,
+    "rivalry_name": "Al Shorta Al-Qadarif vs Hilal Al-Obeid",
+    "intensity": 0.55,
+    "last_results": "[]"
+  },
+  {
+    "id": 248,
+    "team_a_id": 273,
+    "team_b_id": 260,
+    "rivalry_name": "Al Ahli Atbara vs Alamal Atbara",
+    "intensity": 0.5,
+    "last_results": "[]"
+  },
+  {
+    "id": 249,
+    "team_a_id": 274,
+    "team_b_id": 266,
+    "rivalry_name": "Tayba SC vs Al Merghani Kassala",
+    "intensity": 0.42,
+    "last_results": "[]"
+  },
+  {
+    "id": 250,
+    "team_a_id": 275,
+    "team_b_id": 271,
+    "rivalry_name": "Al Zoma Khartoum vs Al Ahli Khartoum",
+    "intensity": 0.46,
+    "last_results": "[]"
+  },
+  {
+    "id": 251,
+    "team_a_id": 276,
+    "team_b_id": 268,
+    "rivalry_name": "Jazira SC vs Al Ittihad Madani",
+    "intensity": 0.42,
+    "last_results": "[]"
+  },
+  {
+    "id": 252,
+    "team_a_id": 277,
+    "team_b_id": 278,
+    "rivalry_name": "Petro de Luanda vs Wiliete SC",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 253,
+    "team_a_id": 278,
+    "team_b_id": 277,
+    "rivalry_name": "Wiliete SC vs Petro de Luanda",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 254,
+    "team_a_id": 279,
+    "team_b_id": 277,
+    "rivalry_name": "Primeiro de Agosto vs Petro de Luanda",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 255,
+    "team_a_id": 280,
+    "team_b_id": 283,
+    "rivalry_name": "Onze Bravos vs Desportivo Hu\u00edla",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 256,
+    "team_a_id": 281,
+    "team_b_id": 278,
+    "rivalry_name": "S\u00e3o Salvador do Kongo vs Wiliete SC",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 257,
+    "team_a_id": 282,
+    "team_b_id": 279,
+    "rivalry_name": "Sagrada Esperan\u00e7a vs Primeiro de Agosto",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 258,
+    "team_a_id": 283,
+    "team_b_id": 280,
+    "rivalry_name": "Desportivo Hu\u00edla vs Onze Bravos",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 259,
+    "team_a_id": 284,
+    "team_b_id": 277,
+    "rivalry_name": "Interclube vs Petro de Luanda",
+    "intensity": 0.82,
+    "last_results": "[]"
+  },
+  {
+    "id": 260,
+    "team_a_id": 285,
+    "team_b_id": 283,
+    "rivalry_name": "Kabuscorp vs Desportivo Hu\u00edla",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 261,
+    "team_a_id": 286,
+    "team_b_id": 284,
+    "rivalry_name": "Acad\u00e9mica do Lobito vs Interclube",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 262,
+    "team_a_id": 287,
+    "team_b_id": 279,
+    "rivalry_name": "Recreativo do Libolo vs Primeiro de Agosto",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 263,
+    "team_a_id": 288,
+    "team_b_id": 290,
+    "rivalry_name": "CD Lunda\u2011Sul vs Santa Rita de C\u00e1ssia FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 264,
+    "team_a_id": 289,
+    "team_b_id": 277,
+    "rivalry_name": "Luanda City vs Petro de Luanda",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 265,
+    "team_a_id": 291,
+    "team_b_id": 284,
+    "rivalry_name": "Isaac de Benguela vs Interclube",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 266,
+    "team_a_id": 292,
+    "team_b_id": 291,
+    "rivalry_name": "Carmona vs Isaac de Benguela",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 267,
+    "team_a_id": 293,
+    "team_b_id": 297,
+    "rivalry_name": "Enyimba FC vs Enugu Rangers",
+    "intensity": 0.84,
+    "last_results": "[]"
+  },
+  {
+    "id": 268,
+    "team_a_id": 294,
+    "team_b_id": 299,
+    "rivalry_name": "Rivers United vs Kano Pillars",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 269,
+    "team_a_id": 295,
+    "team_b_id": 301,
+    "rivalry_name": "Remo Stars vs Sunshine Stars",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 270,
+    "team_a_id": 296,
+    "team_b_id": 298,
+    "rivalry_name": "Lobi Stars vs Plateau United",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 271,
+    "team_a_id": 297,
+    "team_b_id": 293,
+    "rivalry_name": "Enugu Rangers vs Enyimba FC",
+    "intensity": 0.84,
+    "last_results": "[]"
+  },
+  {
+    "id": 272,
+    "team_a_id": 298,
+    "team_b_id": 296,
+    "rivalry_name": "Plateau United vs Lobi Stars",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 273,
+    "team_a_id": 299,
+    "team_b_id": 294,
+    "rivalry_name": "Kano Pillars vs Rivers United",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 274,
+    "team_a_id": 300,
+    "team_b_id": 301,
+    "rivalry_name": "Shooting Stars SC vs Sunshine Stars",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 275,
+    "team_a_id": 301,
+    "team_b_id": 300,
+    "rivalry_name": "Sunshine Stars vs Shooting Stars SC",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 276,
+    "team_a_id": 302,
+    "team_b_id": 308,
+    "rivalry_name": "Bayelsa United vs Heartland FC",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 277,
+    "team_a_id": 303,
+    "team_b_id": 293,
+    "rivalry_name": "Abia Warriors vs Enyimba FC",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 278,
+    "team_a_id": 304,
+    "team_b_id": 295,
+    "rivalry_name": "Sporting Lagos vs Remo Stars",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 279,
+    "team_a_id": 305,
+    "team_b_id": 306,
+    "rivalry_name": "Niger Tornadoes vs Kwara United",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 280,
+    "team_a_id": 306,
+    "team_b_id": 305,
+    "rivalry_name": "Kwara United vs Niger Tornadoes",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 281,
+    "team_a_id": 307,
+    "team_b_id": 297,
+    "rivalry_name": "Akwa United vs Enugu Rangers",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 282,
+    "team_a_id": 308,
+    "team_b_id": 302,
+    "rivalry_name": "Heartland FC vs Bayelsa United",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 283,
+    "team_a_id": 309,
+    "team_b_id": 299,
+    "rivalry_name": "Katsina United vs Kano Pillars",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 284,
+    "team_a_id": 310,
+    "team_b_id": 311,
+    "rivalry_name": "Doma United vs Gombe United",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 285,
+    "team_a_id": 311,
+    "team_b_id": 310,
+    "rivalry_name": "Gombe United vs Doma United",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 286,
+    "team_a_id": 312,
+    "team_b_id": 295,
+    "rivalry_name": "Bendel Insurance vs Remo Stars",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 287,
+    "team_a_id": 313,
+    "team_b_id": 314,
+    "rivalry_name": "Stade d'Abidjan vs ASEC Mimosas",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 288,
+    "team_a_id": 315,
+    "team_b_id": 314,
+    "rivalry_name": "Abidjan Derby",
+    "intensity": 0.88,
+    "last_results": "[]"
+  },
+  {
+    "id": 289,
+    "team_a_id": 318,
+    "team_b_id": 319,
+    "rivalry_name": "AFAD Djekanou vs SOA FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 290,
+    "team_a_id": 320,
+    "team_b_id": 321,
+    "rivalry_name": "Bouak\u00e9 FC vs CO Korhogo",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 291,
+    "team_a_id": 321,
+    "team_b_id": 320,
+    "rivalry_name": "CO Korhogo vs Bouak\u00e9 FC",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 292,
+    "team_a_id": 322,
+    "team_b_id": 323,
+    "rivalry_name": "LYS Sassandra vs Mouna FC",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 293,
+    "team_a_id": 323,
+    "team_b_id": 324,
+    "rivalry_name": "Mouna FC vs RC Abidjan",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 294,
+    "team_a_id": 324,
+    "team_b_id": 325,
+    "rivalry_name": "RC Abidjan vs SOL FC",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 295,
+    "team_a_id": 325,
+    "team_b_id": 324,
+    "rivalry_name": "SOL FC vs RC Abidjan",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 296,
+    "team_a_id": 326,
+    "team_b_id": 327,
+    "rivalry_name": "Olympique Sport d'Abobo vs Zoman FC",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 297,
+    "team_a_id": 327,
+    "team_b_id": 326,
+    "rivalry_name": "Zoman FC vs Olympique Sport d'Abobo",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 298,
+    "team_a_id": 328,
+    "team_b_id": 330,
+    "rivalry_name": "Africa Sports National vs ISCA",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 299,
+    "team_a_id": 329,
+    "team_b_id": 321,
+    "rivalry_name": "AS Dengu\u00e9l\u00e9 vs CO Korhogo",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 300,
+    "team_a_id": 330,
+    "team_b_id": 320,
+    "rivalry_name": "ISCA vs Bouak\u00e9 FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 301,
+    "team_a_id": 331,
+    "team_b_id": 332,
+    "rivalry_name": "El Merriekh FC vs Jamus SSC",
+    "intensity": 0.82,
+    "last_results": "[]"
+  },
+  {
+    "id": 302,
+    "team_a_id": 332,
+    "team_b_id": 331,
+    "rivalry_name": "Jamus SSC vs El Merriekh FC",
+    "intensity": 0.82,
+    "last_results": "[]"
+  },
+  {
+    "id": 303,
+    "team_a_id": 336,
+    "team_b_id": 343,
+    "rivalry_name": "Al Ghazala Wau vs Al Hilal Wau",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 304,
+    "team_a_id": 343,
+    "team_b_id": 336,
+    "rivalry_name": "Al Hilal Wau vs Al Ghazala Wau",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 305,
+    "team_a_id": 345,
+    "team_b_id": 346,
+    "rivalry_name": "Teungueth FC vs ASC Jaraaf de Dakar",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 306,
+    "team_a_id": 346,
+    "team_b_id": 345,
+    "rivalry_name": "ASC Jaraaf de Dakar vs Teungueth FC",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 307,
+    "team_a_id": 347,
+    "team_b_id": 348,
+    "rivalry_name": "G\u00e9n\u00e9ration Foot vs Casa Sports",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 308,
+    "team_a_id": 348,
+    "team_b_id": 347,
+    "rivalry_name": "Casa Sports vs G\u00e9n\u00e9ration Foot",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 309,
+    "team_a_id": 349,
+    "team_b_id": 350,
+    "rivalry_name": "ASC Lingu\u00e8re vs Diambars",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 310,
+    "team_a_id": 351,
+    "team_b_id": 346,
+    "rivalry_name": "AS Pikine vs ASC Jaraaf de Dakar",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 311,
+    "team_a_id": 352,
+    "team_b_id": 354,
+    "rivalry_name": "CNEPS Excellence vs US Gor\u00e9e",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 312,
+    "team_a_id": 354,
+    "team_b_id": 352,
+    "rivalry_name": "US Gor\u00e9e vs CNEPS Excellence",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 313,
+    "team_a_id": 355,
+    "team_b_id": 356,
+    "rivalry_name": "ASC HLM vs Gu\u00e9diawaye FC",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 314,
+    "team_a_id": 356,
+    "team_b_id": 355,
+    "rivalry_name": "Gu\u00e9diawaye FC vs ASC HLM",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 315,
+    "team_a_id": 357,
+    "team_b_id": 353,
+    "rivalry_name": "Port FC vs AS Douanes",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 316,
+    "team_a_id": 358,
+    "team_b_id": 347,
+    "rivalry_name": "Dakar Sacr\u00e9-C\u0153ur vs G\u00e9n\u00e9ration Foot",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 317,
+    "team_a_id": 359,
+    "team_b_id": 360,
+    "rivalry_name": "Sonacos vs Stade de Mbour",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 318,
+    "team_a_id": 360,
+    "team_b_id": 359,
+    "rivalry_name": "Stade de Mbour vs Sonacos",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 319,
+    "team_a_id": 361,
+    "team_b_id": 362,
+    "rivalry_name": "Gaborone United vs Township Rollers",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 320,
+    "team_a_id": 362,
+    "team_b_id": 361,
+    "rivalry_name": "Township Rollers vs Gaborone United",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 321,
+    "team_a_id": 363,
+    "team_b_id": 374,
+    "rivalry_name": "Extension Gunners vs Gilport Lions",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 322,
+    "team_a_id": 365,
+    "team_b_id": 370,
+    "rivalry_name": "Mogoditshane Fighters vs Notwane",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 323,
+    "team_a_id": 366,
+    "team_b_id": 367,
+    "rivalry_name": "Orapa United vs Jwaneng Galaxy",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 324,
+    "team_a_id": 367,
+    "team_b_id": 366,
+    "rivalry_name": "Jwaneng Galaxy vs Orapa United",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 325,
+    "team_a_id": 368,
+    "team_b_id": 371,
+    "rivalry_name": "Morupule Wanderers vs Nico United",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 326,
+    "team_a_id": 369,
+    "team_b_id": 372,
+    "rivalry_name": "Police XI vs Miscellaneous",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 327,
+    "team_a_id": 371,
+    "team_b_id": 368,
+    "rivalry_name": "Nico United vs Morupule Wanderers",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 328,
+    "team_a_id": 372,
+    "team_b_id": 369,
+    "rivalry_name": "Miscellaneous vs Police XI",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 329,
+    "team_a_id": 373,
+    "team_b_id": 374,
+    "rivalry_name": "Holy Ghost vs Gilport Lions",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 330,
+    "team_a_id": 374,
+    "team_b_id": 363,
+    "rivalry_name": "Gilport Lions vs Extension Gunners",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 331,
+    "team_a_id": 375,
+    "team_b_id": 371,
+    "rivalry_name": "Sua Flamingoes vs Nico United",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 332,
+    "team_a_id": 376,
+    "team_b_id": 369,
+    "rivalry_name": "Eleven Angels vs Police XI",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 333,
+    "team_a_id": 377,
+    "team_b_id": 378,
+    "rivalry_name": "Kigali Derby",
+    "intensity": 0.82,
+    "last_results": "[]"
+  },
+  {
+    "id": 334,
+    "team_a_id": 378,
+    "team_b_id": 377,
+    "rivalry_name": "Kigali Derby",
+    "intensity": 0.82,
+    "last_results": "[]"
+  },
+  {
+    "id": 335,
+    "team_a_id": 379,
+    "team_b_id": 380,
+    "rivalry_name": "Police FC Rwanda vs AS Kigali",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 336,
+    "team_a_id": 380,
+    "team_b_id": 379,
+    "rivalry_name": "AS Kigali vs Police FC Rwanda",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 337,
+    "team_a_id": 381,
+    "team_b_id": 382,
+    "rivalry_name": "Mukura Victory Sports vs Etincelles FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 338,
+    "team_a_id": 382,
+    "team_b_id": 381,
+    "rivalry_name": "Etincelles FC vs Mukura Victory Sports",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 339,
+    "team_a_id": 383,
+    "team_b_id": 384,
+    "rivalry_name": "Gasogi United vs Sunrise FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 340,
+    "team_a_id": 384,
+    "team_b_id": 383,
+    "rivalry_name": "Sunrise FC vs Gasogi United",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 341,
+    "team_a_id": 385,
+    "team_b_id": 386,
+    "rivalry_name": "Bugesera FC vs Espoir FC",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 342,
+    "team_a_id": 386,
+    "team_b_id": 385,
+    "rivalry_name": "Espoir FC vs Bugesera FC",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 343,
+    "team_a_id": 387,
+    "team_b_id": 388,
+    "rivalry_name": "Marines FC vs Musanze FC",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 344,
+    "team_a_id": 388,
+    "team_b_id": 387,
+    "rivalry_name": "Musanze FC vs Marines FC",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 345,
+    "team_a_id": 389,
+    "team_b_id": 390,
+    "rivalry_name": "Gorilla FC vs Rutsiro FC",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 346,
+    "team_a_id": 390,
+    "team_b_id": 389,
+    "rivalry_name": "Rutsiro FC vs Gorilla FC",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 347,
+    "team_a_id": 391,
+    "team_b_id": 392,
+    "rivalry_name": "Amagaju FC vs Interforce FC",
+    "intensity": 0.54,
+    "last_results": "[]"
+  },
+  {
+    "id": 348,
+    "team_a_id": 392,
+    "team_b_id": 391,
+    "rivalry_name": "Interforce FC vs Amagaju FC",
+    "intensity": 0.54,
+    "last_results": "[]"
+  },
+  {
+    "id": 349,
+    "team_a_id": 393,
+    "team_b_id": 395,
+    "rivalry_name": "Coton Sport FC vs Union Douala",
+    "intensity": 0.85,
+    "last_results": "[]"
+  },
+  {
+    "id": 350,
+    "team_a_id": 394,
+    "team_b_id": 403,
+    "rivalry_name": "Yaound\u00e9 Derby",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 351,
+    "team_a_id": 395,
+    "team_b_id": 393,
+    "rivalry_name": "Union Douala vs Coton Sport FC",
+    "intensity": 0.85,
+    "last_results": "[]"
+  },
+  {
+    "id": 352,
+    "team_a_id": 396,
+    "team_b_id": 397,
+    "rivalry_name": "PWD Bamenda vs Bamboutos FC",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 353,
+    "team_a_id": 397,
+    "team_b_id": 396,
+    "rivalry_name": "Bamboutos FC vs PWD Bamenda",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 354,
+    "team_a_id": 398,
+    "team_b_id": 399,
+    "rivalry_name": "Colombe Sportive vs Panth\u00e8re Sportive",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 355,
+    "team_a_id": 399,
+    "team_b_id": 398,
+    "rivalry_name": "Panth\u00e8re Sportive vs Colombe Sportive",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 356,
+    "team_a_id": 400,
+    "team_b_id": 393,
+    "rivalry_name": "Garoua Derby",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 357,
+    "team_a_id": 401,
+    "team_b_id": 402,
+    "rivalry_name": "Young Sports Academy YOSA vs Victoria United FC",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 358,
+    "team_a_id": 402,
+    "team_b_id": 401,
+    "rivalry_name": "Victoria United FC vs Young Sports Academy YOSA",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 359,
+    "team_a_id": 403,
+    "team_b_id": 394,
+    "rivalry_name": "Yaound\u00e9 Derby",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 360,
+    "team_a_id": 404,
+    "team_b_id": 397,
+    "rivalry_name": "Stade Renard de Melong vs Bamboutos FC",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 361,
+    "team_a_id": 405,
+    "team_b_id": 406,
+    "rivalry_name": "AS Fortuna Mfou vs Fauve Azur Elite",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 362,
+    "team_a_id": 406,
+    "team_b_id": 405,
+    "rivalry_name": "Fauve Azur Elite vs AS Fortuna Mfou",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 363,
+    "team_a_id": 407,
+    "team_b_id": 395,
+    "rivalry_name": "Dynamo de Douala vs Union Douala",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 364,
+    "team_a_id": 408,
+    "team_b_id": 398,
+    "rivalry_name": "Aigle Royal de Moungo vs Colombe Sportive",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 365,
+    "team_a_id": 409,
+    "team_b_id": 417,
+    "rivalry_name": "Associa\u00e7\u00e3o Black Bulls vs Costa do Sol",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 366,
+    "team_a_id": 410,
+    "team_b_id": 412,
+    "rivalry_name": "Uni\u00e3o Desportiva do Songo vs Ferrovi\u00e1rio da Beira",
+    "intensity": 0.8,
+    "last_results": "[]"
+  },
+  {
+    "id": 367,
+    "team_a_id": 411,
+    "team_b_id": 418,
+    "rivalry_name": "Ferrovi\u00e1rio de Maputo vs Desportivo de Maputo",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 368,
+    "team_a_id": 412,
+    "team_b_id": 410,
+    "rivalry_name": "Ferrovi\u00e1rio da Beira vs Uni\u00e3o Desportiva do Songo",
+    "intensity": 0.8,
+    "last_results": "[]"
+  },
+  {
+    "id": 369,
+    "team_a_id": 413,
+    "team_b_id": 414,
+    "rivalry_name": "Ferrovi\u00e1rio de Nampula vs Ferrovi\u00e1rio de Lichinga",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 370,
+    "team_a_id": 414,
+    "team_b_id": 413,
+    "rivalry_name": "Ferrovi\u00e1rio de Lichinga vs Ferrovi\u00e1rio de Nampula",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 371,
+    "team_a_id": 415,
+    "team_b_id": 416,
+    "rivalry_name": "Ferrovi\u00e1rio de Nacala vs Desportivo de Nacala",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 372,
+    "team_a_id": 416,
+    "team_b_id": 415,
+    "rivalry_name": "Desportivo de Nacala vs Ferrovi\u00e1rio de Nacala",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 373,
+    "team_a_id": 417,
+    "team_b_id": 409,
+    "rivalry_name": "Costa do Sol vs Associa\u00e7\u00e3o Black Bulls",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 374,
+    "team_a_id": 418,
+    "team_b_id": 411,
+    "rivalry_name": "Desportivo de Maputo vs Ferrovi\u00e1rio de Maputo",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 375,
+    "team_a_id": 419,
+    "team_b_id": 420,
+    "rivalry_name": "Ba\u00eda de Pemba FC vs Text\u00e1frica do Chimoio",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 376,
+    "team_a_id": 420,
+    "team_b_id": 419,
+    "rivalry_name": "Text\u00e1frica do Chimoio vs Ba\u00eda de Pemba FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 377,
+    "team_a_id": 421,
+    "team_b_id": 416,
+    "rivalry_name": "ENH Vilankulo vs Desportivo de Nacala",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 378,
+    "team_a_id": 422,
+    "team_b_id": 409,
+    "rivalry_name": "Chingale de Tete vs Associa\u00e7\u00e3o Black Bulls",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 379,
+    "team_a_id": 423,
+    "team_b_id": 424,
+    "rivalry_name": "Flambeau du Centre FC vs Vital O FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 380,
+    "team_a_id": 424,
+    "team_b_id": 423,
+    "rivalry_name": "Vital O FC vs Flambeau du Centre FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 381,
+    "team_a_id": 425,
+    "team_b_id": 435,
+    "rivalry_name": "Aigle Noir Makamba vs Musongati FC",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 382,
+    "team_a_id": 426,
+    "team_b_id": 427,
+    "rivalry_name": "Inter Star vs Le Messager Ngozi",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 383,
+    "team_a_id": 427,
+    "team_b_id": 426,
+    "rivalry_name": "Le Messager Ngozi vs Inter Star",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 384,
+    "team_a_id": 428,
+    "team_b_id": 431,
+    "rivalry_name": "Ngozi City FC vs Top Junior FC",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 385,
+    "team_a_id": 429,
+    "team_b_id": 426,
+    "rivalry_name": "Lydia Ludic Burundi Acad\u00e9mic FC vs Inter Star",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 386,
+    "team_a_id": 430,
+    "team_b_id": 436,
+    "rivalry_name": "Bumamuru FC vs Rukinzo FC",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 387,
+    "team_a_id": 431,
+    "team_b_id": 428,
+    "rivalry_name": "Top Junior FC vs Ngozi City FC",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 388,
+    "team_a_id": 432,
+    "team_b_id": 436,
+    "rivalry_name": "Olympic Star FC vs Rukinzo FC",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 389,
+    "team_a_id": 433,
+    "team_b_id": 431,
+    "rivalry_name": "Kayanza United FC vs Top Junior FC",
+    "intensity": 0.58,
+    "last_results": "[]"
+  },
+  {
+    "id": 390,
+    "team_a_id": 434,
+    "team_b_id": 438,
+    "rivalry_name": "Royal Vision 2026 vs Acad\u00e9mie Deira FC",
+    "intensity": 0.55,
+    "last_results": "[]"
+  },
+  {
+    "id": 391,
+    "team_a_id": 435,
+    "team_b_id": 425,
+    "rivalry_name": "Musongati FC vs Aigle Noir Makamba",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 392,
+    "team_a_id": 436,
+    "team_b_id": 430,
+    "rivalry_name": "Rukinzo FC vs Bumamuru FC",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 393,
+    "team_a_id": 437,
+    "team_b_id": 428,
+    "rivalry_name": "BS Dynamik vs Ngozi City FC",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 394,
+    "team_a_id": 438,
+    "team_b_id": 434,
+    "rivalry_name": "Acad\u00e9mie Deira FC vs Royal Vision 2026",
+    "intensity": 0.55,
+    "last_results": "[]"
+  },
+  {
+    "id": 395,
+    "team_a_id": 439,
+    "team_b_id": 440,
+    "rivalry_name": "Big Bullets FC vs Mighty Wanderers Be Forward FC",
+    "intensity": 0.85,
+    "last_results": "[]"
+  },
+  {
+    "id": 396,
+    "team_a_id": 440,
+    "team_b_id": 439,
+    "rivalry_name": "Mighty Wanderers Be Forward FC vs Big Bullets FC",
+    "intensity": 0.85,
+    "last_results": "[]"
+  },
+  {
+    "id": 397,
+    "team_a_id": 441,
+    "team_b_id": 443,
+    "rivalry_name": "Silver Strikers FC vs Blue Eagles FC",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 398,
+    "team_a_id": 443,
+    "team_b_id": 441,
+    "rivalry_name": "Blue Eagles FC vs Silver Strikers FC",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 399,
+    "team_a_id": 445,
+    "team_b_id": 446,
+    "rivalry_name": "Moyale Barracks FC vs Kamuzu Barracks FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 400,
+    "team_a_id": 446,
+    "team_b_id": 445,
+    "rivalry_name": "Kamuzu Barracks FC vs Moyale Barracks FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 401,
+    "team_a_id": 455,
+    "team_b_id": 456,
+    "rivalry_name": "Power Dynamos FC vs ZESCO United FC",
+    "intensity": 0.89,
+    "last_results": "[]"
+  },
+  {
+    "id": 402,
+    "team_a_id": 456,
+    "team_b_id": 455,
+    "rivalry_name": "ZESCO United FC vs Power Dynamos FC",
+    "intensity": 0.89,
+    "last_results": "[]"
+  },
+  {
+    "id": 403,
+    "team_a_id": 457,
+    "team_b_id": 455,
+    "rivalry_name": "Kitwe Derby",
+    "intensity": 0.91,
+    "last_results": "[]"
+  },
+  {
+    "id": 404,
+    "team_a_id": 458,
+    "team_b_id": 462,
+    "rivalry_name": "Red Arrows FC vs Green Buffaloes FC",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 405,
+    "team_a_id": 460,
+    "team_b_id": 462,
+    "rivalry_name": "Nkwazi FC vs Green Buffaloes FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 406,
+    "team_a_id": 461,
+    "team_b_id": 457,
+    "rivalry_name": "Mufulira Wanderers FC vs Nkana FC",
+    "intensity": 0.85,
+    "last_results": "[]"
+  },
+  {
+    "id": 407,
+    "team_a_id": 462,
+    "team_b_id": 458,
+    "rivalry_name": "Green Buffaloes FC vs Red Arrows FC",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 408,
+    "team_a_id": 473,
+    "team_b_id": 474,
+    "rivalry_name": "Conakry Derby",
+    "intensity": 0.89,
+    "last_results": "[]"
+  },
+  {
+    "id": 409,
+    "team_a_id": 474,
+    "team_b_id": 473,
+    "rivalry_name": "Conakry Derby",
+    "intensity": 0.89,
+    "last_results": "[]"
+  },
+  {
+    "id": 410,
+    "team_a_id": 475,
+    "team_b_id": 474,
+    "rivalry_name": "Hafia vs AS du Kaloum Star",
+    "intensity": 0.88,
+    "last_results": "[]"
+  },
+  {
+    "id": 411,
+    "team_a_id": 477,
+    "team_b_id": 481,
+    "rivalry_name": "Club Industriel de Kamsar vs Renaissance Ca\u00efman Club de Kamsar",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 412,
+    "team_a_id": 481,
+    "team_b_id": 477,
+    "rivalry_name": "Renaissance Ca\u00efman Club de Kamsar vs Club Industriel de Kamsar",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 413,
+    "team_a_id": 487,
+    "team_b_id": 488,
+    "rivalry_name": "Tripoli Derby",
+    "intensity": 0.93,
+    "last_results": "[]"
+  },
+  {
+    "id": 414,
+    "team_a_id": 488,
+    "team_b_id": 487,
+    "rivalry_name": "Tripoli Derby",
+    "intensity": 0.93,
+    "last_results": "[]"
+  },
+  {
+    "id": 415,
+    "team_a_id": 489,
+    "team_b_id": 493,
+    "rivalry_name": "Al Ahli Benghazi vs Al-Nasr Club of Benghazi",
+    "intensity": 0.88,
+    "last_results": "[]"
+  },
+  {
+    "id": 416,
+    "team_a_id": 491,
+    "team_b_id": 489,
+    "rivalry_name": "Al Hilal vs Al Ahli Benghazi",
+    "intensity": 0.87,
+    "last_results": "[]"
+  },
+  {
+    "id": 417,
+    "team_a_id": 493,
+    "team_b_id": 489,
+    "rivalry_name": "Al-Nasr Club of Benghazi vs Al Ahli Benghazi",
+    "intensity": 0.88,
+    "last_results": "[]"
+  },
+  {
+    "id": 418,
+    "team_a_id": 500,
+    "team_b_id": 499,
+    "rivalry_name": "Bamako Derby",
+    "intensity": 0.93,
+    "last_results": "[]"
+  },
+  {
+    "id": 419,
+    "team_a_id": 501,
+    "team_b_id": 499,
+    "rivalry_name": "AS R\u00e9al de Bamako vs Djoliba AC Bamako",
+    "intensity": 0.91,
+    "last_results": "[]"
+  },
+  {
+    "id": 420,
+    "team_a_id": 513,
+    "team_b_id": 514,
+    "rivalry_name": "Dynamos FC vs Highlanders FC",
+    "intensity": 0.89,
+    "last_results": "[]"
+  },
+  {
+    "id": 421,
+    "team_a_id": 514,
+    "team_b_id": 513,
+    "rivalry_name": "Highlanders FC vs Dynamos FC",
+    "intensity": 0.89,
+    "last_results": "[]"
+  },
+  {
+    "id": 422,
+    "team_a_id": 515,
+    "team_b_id": 513,
+    "rivalry_name": "CAPS United vs Dynamos FC",
+    "intensity": 0.86,
+    "last_results": "[]"
+  },
+  {
+    "id": 423,
+    "team_a_id": 516,
+    "team_b_id": 517,
+    "rivalry_name": "FC Platinum vs Ngezi Platinum FC",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 424,
+    "team_a_id": 517,
+    "team_b_id": 516,
+    "rivalry_name": "Ngezi Platinum FC vs FC Platinum",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 425,
+    "team_a_id": 531,
+    "team_b_id": 532,
+    "rivalry_name": "Super Clash",
+    "intensity": 0.91,
+    "last_results": "[]"
+  },
+  {
+    "id": 426,
+    "team_a_id": 532,
+    "team_b_id": 531,
+    "rivalry_name": "Super Clash",
+    "intensity": 0.91,
+    "last_results": "[]"
+  },
+  {
+    "id": 427,
+    "team_a_id": 549,
+    "team_b_id": 551,
+    "rivalry_name": "AS Ot\u00f4ho  vs Diables Noirs",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 428,
+    "team_a_id": 550,
+    "team_b_id": 551,
+    "rivalry_name": "CARA Brazzaville vs Diables Noirs",
+    "intensity": 0.84,
+    "last_results": "[]"
+  },
+  {
+    "id": 429,
+    "team_a_id": 551,
+    "team_b_id": 550,
+    "rivalry_name": "Diables Noirs vs CARA Brazzaville",
+    "intensity": 0.84,
+    "last_results": "[]"
+  },
+  {
+    "id": 430,
+    "team_a_id": 552,
+    "team_b_id": 553,
+    "rivalry_name": "AS Cheminots de Pointe-Noire vs Inter Club Pointe Noire",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 431,
+    "team_a_id": 553,
+    "team_b_id": 552,
+    "rivalry_name": "Inter Club Pointe Noire vs AS Cheminots de Pointe-Noire",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 432,
+    "team_a_id": 554,
+    "team_b_id": 555,
+    "rivalry_name": "AS Inter Club de Brazzaville vs Racing Club de Brazzaville",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 433,
+    "team_a_id": 555,
+    "team_b_id": 554,
+    "rivalry_name": "Racing Club de Brazzaville vs AS Inter Club de Brazzaville",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 434,
+    "team_a_id": 556,
+    "team_b_id": 557,
+    "rivalry_name": "AS Jeunesse Unie de Kint\u00e9l\u00e9 vs Kouilou Football Acad\u00e9mie",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 435,
+    "team_a_id": 557,
+    "team_b_id": 556,
+    "rivalry_name": "Kouilou Football Acad\u00e9mie vs AS Jeunesse Unie de Kint\u00e9l\u00e9",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 436,
+    "team_a_id": 558,
+    "team_b_id": 559,
+    "rivalry_name": "AC L\u00e9opards de Dolisi\u00e9 vs \u00c9toile du Congo",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 437,
+    "team_a_id": 559,
+    "team_b_id": 558,
+    "rivalry_name": "\u00c9toile du Congo vs AC L\u00e9opards de Dolisi\u00e9",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 438,
+    "team_a_id": 560,
+    "team_b_id": 561,
+    "rivalry_name": "Bana Nouvelle G\u00e9n\u00e9ration vs Red Star FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 439,
+    "team_a_id": 561,
+    "team_b_id": 560,
+    "rivalry_name": "Red Star FC vs Bana Nouvelle G\u00e9n\u00e9ration",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 440,
+    "team_a_id": 562,
+    "team_b_id": 563,
+    "rivalry_name": "JS de Talanga\u00ef vs Vita Club de Mokanda",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 441,
+    "team_a_id": 563,
+    "team_b_id": 562,
+    "rivalry_name": "Vita Club de Mokanda vs JS de Talanga\u00ef",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 442,
+    "team_a_id": 564,
+    "team_b_id": 565,
+    "rivalry_name": "FC Kondzo vs AS Vegas",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 443,
+    "team_a_id": 565,
+    "team_b_id": 564,
+    "rivalry_name": "AS Vegas vs FC Kondzo",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 444,
+    "team_a_id": 566,
+    "team_b_id": 567,
+    "rivalry_name": "Sheger Derby",
+    "intensity": 0.87,
+    "last_results": "[]"
+  },
+  {
+    "id": 445,
+    "team_a_id": 567,
+    "team_b_id": 566,
+    "rivalry_name": "Sheger Derby",
+    "intensity": 0.87,
+    "last_results": "[]"
+  },
+  {
+    "id": 446,
+    "team_a_id": 568,
+    "team_b_id": 576,
+    "rivalry_name": "Defence Force SC vs Commercial Bank of Ethiopia SA",
+    "intensity": 0.8,
+    "last_results": "[]"
+  },
+  {
+    "id": 447,
+    "team_a_id": 569,
+    "team_b_id": 572,
+    "rivalry_name": "Sidama Coffee FC vs Awassa City FC",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 448,
+    "team_a_id": 570,
+    "team_b_id": 573,
+    "rivalry_name": "Fasil Ketema FC vs Bahardar FC",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 449,
+    "team_a_id": 571,
+    "team_b_id": 580,
+    "rivalry_name": "Mebrat Hayl vs Ethiopian Medhin",
+    "intensity": 0.82,
+    "last_results": "[]"
+  },
+  {
+    "id": 450,
+    "team_a_id": 572,
+    "team_b_id": 569,
+    "rivalry_name": "Awassa City FC vs Sidama Coffee FC",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 451,
+    "team_a_id": 573,
+    "team_b_id": 570,
+    "rivalry_name": "Bahardar FC vs Fasil Ketema FC",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 452,
+    "team_a_id": 574,
+    "team_b_id": 575,
+    "rivalry_name": "Adama City FC vs Dire Dawa City",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 453,
+    "team_a_id": 575,
+    "team_b_id": 574,
+    "rivalry_name": "Dire Dawa City vs Adama City FC",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 454,
+    "team_a_id": 576,
+    "team_b_id": 568,
+    "rivalry_name": "Commercial Bank of Ethiopia SA vs Defence Force SC",
+    "intensity": 0.8,
+    "last_results": "[]"
+  },
+  {
+    "id": 455,
+    "team_a_id": 577,
+    "team_b_id": 583,
+    "rivalry_name": "Shire Endaselassie FC vs Mekelle Kenema FC",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 456,
+    "team_a_id": 578,
+    "team_b_id": 579,
+    "rivalry_name": "Sheger Ketema vs Negele Arsi Ketema",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 457,
+    "team_a_id": 579,
+    "team_b_id": 578,
+    "rivalry_name": "Negele Arsi Ketema vs Sheger Ketema",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 458,
+    "team_a_id": 580,
+    "team_b_id": 571,
+    "rivalry_name": "Ethiopian Medhin vs Mebrat Hayl",
+    "intensity": 0.82,
+    "last_results": "[]"
+  },
+  {
+    "id": 459,
+    "team_a_id": 581,
+    "team_b_id": 582,
+    "rivalry_name": "Hadiya Hosaena FC vs Welayta Dicha",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 460,
+    "team_a_id": 582,
+    "team_b_id": 581,
+    "rivalry_name": "Welayta Dicha vs Hadiya Hosaena FC",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 461,
+    "team_a_id": 583,
+    "team_b_id": 577,
+    "rivalry_name": "Mekelle Kenema FC vs Shire Endaselassie FC",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 462,
+    "team_a_id": 584,
+    "team_b_id": 585,
+    "rivalry_name": "Arba Minch City FC vs Welwalo Adigrat University",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 463,
+    "team_a_id": 585,
+    "team_b_id": 584,
+    "rivalry_name": "Welwalo Adigrat University vs Arba Minch City FC",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 464,
+    "team_a_id": 586,
+    "team_b_id": 587,
+    "rivalry_name": "Elman FC vs Heegan FC",
+    "intensity": 0.85,
+    "last_results": "[]"
+  },
+  {
+    "id": 465,
+    "team_a_id": 587,
+    "team_b_id": 586,
+    "rivalry_name": "Heegan FC vs Elman FC",
+    "intensity": 0.85,
+    "last_results": "[]"
+  },
+  {
+    "id": 466,
+    "team_a_id": 598,
+    "team_b_id": 599,
+    "rivalry_name": "Olympic Real de Bangui vs AS Temp\u00eate Mocaf",
+    "intensity": 0.87,
+    "last_results": "[]"
+  },
+  {
+    "id": 467,
+    "team_a_id": 599,
+    "team_b_id": 598,
+    "rivalry_name": "AS Temp\u00eate Mocaf vs Olympic Real de Bangui",
+    "intensity": 0.87,
+    "last_results": "[]"
+  },
+  {
+    "id": 468,
+    "team_a_id": 600,
+    "team_b_id": 598,
+    "rivalry_name": "ASDR Fatima vs Olympic Real de Bangui",
+    "intensity": 0.86,
+    "last_results": "[]"
+  },
+  {
+    "id": 469,
+    "team_a_id": 601,
+    "team_b_id": 602,
+    "rivalry_name": "Stade Centrafricain Tocages vs DFC 8",
+    "intensity": 0.8,
+    "last_results": "[]"
+  },
+  {
+    "id": 470,
+    "team_a_id": 602,
+    "team_b_id": 601,
+    "rivalry_name": "DFC 8 vs Stade Centrafricain Tocages",
+    "intensity": 0.8,
+    "last_results": "[]"
+  },
+  {
+    "id": 471,
+    "team_a_id": 603,
+    "team_b_id": 599,
+    "rivalry_name": "Red Star Bangui vs AS Temp\u00eate Mocaf",
+    "intensity": 0.81,
+    "last_results": "[]"
+  },
+  {
+    "id": 472,
+    "team_a_id": 604,
+    "team_b_id": 605,
+    "rivalry_name": "USCA Bangui vs FACA",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 473,
+    "team_a_id": 605,
+    "team_b_id": 604,
+    "rivalry_name": "FACA vs USCA Bangui",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 474,
+    "team_a_id": 606,
+    "team_b_id": 607,
+    "rivalry_name": "Publique Sportive Mouara vs US Cattin",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 475,
+    "team_a_id": 607,
+    "team_b_id": 606,
+    "rivalry_name": "US Cattin vs Publique Sportive Mouara",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 476,
+    "team_a_id": 608,
+    "team_b_id": 610,
+    "rivalry_name": "UFC Bangui vs ASOPT",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 477,
+    "team_a_id": 609,
+    "team_b_id": 610,
+    "rivalry_name": "AS Gbangr\u00e9 vs ASOPT",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 478,
+    "team_a_id": 610,
+    "team_b_id": 608,
+    "rivalry_name": "ASOPT vs UFC Bangui",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 479,
+    "team_a_id": 612,
+    "team_b_id": 12,
+    "rivalry_name": "Dodoma City FC vs Dodoma Jiji FC",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 480,
+    "team_a_id": 613,
+    "team_b_id": 65,
+    "rivalry_name": "Jamuhuri vs Chake Chake FC",
+    "intensity": 0.57,
+    "last_results": "[]"
+  },
+  {
+    "id": 481,
+    "team_a_id": 614,
+    "team_b_id": 39,
+    "rivalry_name": "Ruvuma Stars vs Songea United",
+    "intensity": 0.57,
+    "last_results": "[]"
+  },
+  {
+    "id": 482,
+    "team_a_id": 615,
+    "team_b_id": 616,
+    "rivalry_name": "ASN Nigelec vs US Gendarmerie Nationale",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 483,
+    "team_a_id": 616,
+    "team_b_id": 615,
+    "rivalry_name": "US Gendarmerie Nationale vs ASN Nigelec",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 484,
+    "team_a_id": 618,
+    "team_b_id": 619,
+    "rivalry_name": "AS de Zam vs Tagour Provincial Club",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 485,
+    "team_a_id": 619,
+    "team_b_id": 618,
+    "rivalry_name": "Tagour Provincial Club vs AS de Zam",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 486,
+    "team_a_id": 620,
+    "team_b_id": 626,
+    "rivalry_name": "AS Douanes Niamey vs AS Police Niamey",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 487,
+    "team_a_id": 621,
+    "team_b_id": 386,
+    "rivalry_name": "Libert\u00e9 FC vs Espoir FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 488,
+    "team_a_id": 623,
+    "team_b_id": 628,
+    "rivalry_name": "AS Renaissance de Boukoki vs AS UAM",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 489,
+    "team_a_id": 624,
+    "team_b_id": 621,
+    "rivalry_name": "Espoir FC Zinder vs Libert\u00e9 FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 490,
+    "team_a_id": 625,
+    "team_b_id": 627,
+    "rivalry_name": "Urana FC vs Sahel Niamey",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 491,
+    "team_a_id": 626,
+    "team_b_id": 620,
+    "rivalry_name": "AS Police Niamey vs AS Douanes Niamey",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 492,
+    "team_a_id": 627,
+    "team_b_id": 625,
+    "rivalry_name": "Sahel Niamey vs Urana FC",
+    "intensity": 0.61,
+    "last_results": "[]"
+  },
+  {
+    "id": 493,
+    "team_a_id": 629,
+    "team_b_id": 630,
+    "rivalry_name": "Olympic Niamey vs JS Tahoua",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 494,
+    "team_a_id": 630,
+    "team_b_id": 629,
+    "rivalry_name": "JS Tahoua vs Olympic Niamey",
+    "intensity": 0.56,
+    "last_results": "[]"
+  },
+  {
+    "id": 495,
+    "team_a_id": 631,
+    "team_b_id": 632,
+    "rivalry_name": "Real de Banjul FC vs Fortune FC",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 496,
+    "team_a_id": 632,
+    "team_b_id": 631,
+    "rivalry_name": "Fortune FC vs Real de Banjul FC",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 497,
+    "team_a_id": 633,
+    "team_b_id": 635,
+    "rivalry_name": "BST Galaxy FC vs Brikama United FC",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 498,
+    "team_a_id": 634,
+    "team_b_id": 639,
+    "rivalry_name": "Falcons FC vs Hawks FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 499,
+    "team_a_id": 635,
+    "team_b_id": 633,
+    "rivalry_name": "Brikama United FC vs BST Galaxy FC",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 500,
+    "team_a_id": 636,
+    "team_b_id": 637,
+    "rivalry_name": "Hart Academy FC vs Steve Biko FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 501,
+    "team_a_id": 637,
+    "team_b_id": 636,
+    "rivalry_name": "Steve Biko FC vs Hart Academy FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 502,
+    "team_a_id": 639,
+    "team_b_id": 634,
+    "rivalry_name": "Hawks FC vs Falcons FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 503,
+    "team_a_id": 640,
+    "team_b_id": 638,
+    "rivalry_name": "TMT Football Academy vs Bombada FC",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 504,
+    "team_a_id": 641,
+    "team_b_id": 643,
+    "rivalry_name": "The Dutch Lions FC vs Greater Tomorrow Football Academy",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 505,
+    "team_a_id": 642,
+    "team_b_id": 644,
+    "rivalry_name": "Armed Forces FC vs Team Rhino FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 506,
+    "team_a_id": 643,
+    "team_b_id": 641,
+    "rivalry_name": "Greater Tomorrow Football Academy vs The Dutch Lions FC",
+    "intensity": 0.62,
+    "last_results": "[]"
+  },
+  {
+    "id": 507,
+    "team_a_id": 644,
+    "team_b_id": 642,
+    "rivalry_name": "Team Rhino FC vs Armed Forces FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 508,
+    "team_a_id": 645,
+    "team_b_id": 646,
+    "rivalry_name": "Banjul United vs Marimoo FC",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 509,
+    "team_a_id": 646,
+    "team_b_id": 645,
+    "rivalry_name": "Marimoo FC vs Banjul United",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 510,
+    "team_a_id": 647,
+    "team_b_id": 648,
+    "rivalry_name": "Rahimo vs ASF Dioulasso",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 511,
+    "team_a_id": 648,
+    "team_b_id": 647,
+    "rivalry_name": "ASF Dioulasso vs Rahimo",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 512,
+    "team_a_id": 649,
+    "team_b_id": 650,
+    "rivalry_name": "Sporting Cascades vs Douanes",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 513,
+    "team_a_id": 650,
+    "team_b_id": 649,
+    "rivalry_name": "Douanes vs Sporting Cascades",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 514,
+    "team_a_id": 651,
+    "team_b_id": 652,
+    "rivalry_name": "Majestic vs USFA",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 515,
+    "team_a_id": 652,
+    "team_b_id": 651,
+    "rivalry_name": "USFA vs Majestic",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 516,
+    "team_a_id": 653,
+    "team_b_id": 656,
+    "rivalry_name": "ASFA Yennega vs Kadiogo",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 517,
+    "team_a_id": 654,
+    "team_b_id": 655,
+    "rivalry_name": "Salitas vs RDF",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 518,
+    "team_a_id": 655,
+    "team_b_id": 654,
+    "rivalry_name": "RDF vs Salitas",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 519,
+    "team_a_id": 656,
+    "team_b_id": 653,
+    "rivalry_name": "Kadiogo vs ASFA Yennega",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 520,
+    "team_a_id": 657,
+    "team_b_id": 660,
+    "rivalry_name": "CFFEB vs AJEB",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 521,
+    "team_a_id": 658,
+    "team_b_id": 659,
+    "rivalry_name": "Vitesse vs Sonabel Ouagadougou",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 522,
+    "team_a_id": 659,
+    "team_b_id": 658,
+    "rivalry_name": "Sonabel Ouagadougou vs Vitesse",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 523,
+    "team_a_id": 660,
+    "team_b_id": 657,
+    "rivalry_name": "AJEB vs CFFEB",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 524,
+    "team_a_id": 661,
+    "team_b_id": 662,
+    "rivalry_name": "Etoile Filante vs Bobo-Dioulasso",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 525,
+    "team_a_id": 662,
+    "team_b_id": 661,
+    "rivalry_name": "Bobo-Dioulasso vs Etoile Filante",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 526,
+    "team_a_id": 663,
+    "team_b_id": 664,
+    "rivalry_name": "Watanga FC vs LISCR FC",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 527,
+    "team_a_id": 664,
+    "team_b_id": 663,
+    "rivalry_name": "LISCR FC vs Watanga FC",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 528,
+    "team_a_id": 665,
+    "team_b_id": 666,
+    "rivalry_name": "FC Fassell vs Paynesville FC",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 529,
+    "team_a_id": 666,
+    "team_b_id": 665,
+    "rivalry_name": "Paynesville FC vs FC Fassell",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 530,
+    "team_a_id": 667,
+    "team_b_id": 668,
+    "rivalry_name": "Wologizi FC vs FC BEA Mountain",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 531,
+    "team_a_id": 668,
+    "team_b_id": 667,
+    "rivalry_name": "FC BEA Mountain vs Wologizi FC",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 532,
+    "team_a_id": 669,
+    "team_b_id": 671,
+    "rivalry_name": "Gardnersville FC vs Heaven Eleven FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 533,
+    "team_a_id": 670,
+    "team_b_id": 672,
+    "rivalry_name": "Charlotte Independence 2 vs LPRC Oilers",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 534,
+    "team_a_id": 671,
+    "team_b_id": 669,
+    "rivalry_name": "Heaven Eleven FC vs Gardnersville FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 535,
+    "team_a_id": 672,
+    "team_b_id": 670,
+    "rivalry_name": "LPRC Oilers vs Charlotte Independence 2",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 536,
+    "team_a_id": 673,
+    "team_b_id": 674,
+    "rivalry_name": "Borough FC vs Black Man Warrior FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 537,
+    "team_a_id": 674,
+    "team_b_id": 673,
+    "rivalry_name": "Black Man Warrior FC vs Borough FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 538,
+    "team_a_id": 675,
+    "team_b_id": 676,
+    "rivalry_name": "Downtown FC vs Freeport FC",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 539,
+    "team_a_id": 676,
+    "team_b_id": 675,
+    "rivalry_name": "Freeport FC vs Downtown FC",
+    "intensity": 0.6,
+    "last_results": "[]"
+  },
+  {
+    "id": 540,
+    "team_a_id": 677,
+    "team_b_id": 676,
+    "rivalry_name": "Jubilee FC vs Freeport FC",
+    "intensity": 0.59,
+    "last_results": "[]"
+  },
+  {
+    "id": 541,
+    "team_a_id": 678,
+    "team_b_id": 679,
+    "rivalry_name": "Kallon vs Bai Bureh Warriors",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 542,
+    "team_a_id": 679,
+    "team_b_id": 678,
+    "rivalry_name": "Bai Bureh Warriors vs Kallon",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 543,
+    "team_a_id": 680,
+    "team_b_id": 681,
+    "rivalry_name": "Star Sport Academy vs Bo Rangers FC",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 544,
+    "team_a_id": 681,
+    "team_b_id": 680,
+    "rivalry_name": "Bo Rangers FC vs Star Sport Academy",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 545,
+    "team_a_id": 682,
+    "team_b_id": 684,
+    "rivalry_name": "Wilberforce Strikers FC vs Old Edwardians FC",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 546,
+    "team_a_id": 683,
+    "team_b_id": 686,
+    "rivalry_name": "Ports Authority vs Freetown City FC",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 547,
+    "team_a_id": 684,
+    "team_b_id": 682,
+    "rivalry_name": "Old Edwardians FC vs Wilberforce Strikers FC",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 548,
+    "team_a_id": 685,
+    "team_b_id": 691,
+    "rivalry_name": "Wusum Stars of Bombali vs Luawa FC",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 549,
+    "team_a_id": 686,
+    "team_b_id": 683,
+    "rivalry_name": "Freetown City FC vs Ports Authority",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 550,
+    "team_a_id": 687,
+    "team_b_id": 690,
+    "rivalry_name": "Lamboi FC vs SLIFA Mount Aureol FC",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 551,
+    "team_a_id": 688,
+    "team_b_id": 692,
+    "rivalry_name": "Diamond Stars vs Kamboi Eagles FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 552,
+    "team_a_id": 689,
+    "team_b_id": 695,
+    "rivalry_name": "Bhantal FC vs East End Lions",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 553,
+    "team_a_id": 690,
+    "team_b_id": 687,
+    "rivalry_name": "SLIFA Mount Aureol FC vs Lamboi FC",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 554,
+    "team_a_id": 691,
+    "team_b_id": 685,
+    "rivalry_name": "Luawa FC vs Wusum Stars of Bombali",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 555,
+    "team_a_id": 692,
+    "team_b_id": 688,
+    "rivalry_name": "Kamboi Eagles FC vs Diamond Stars",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 556,
+    "team_a_id": 693,
+    "team_b_id": 695,
+    "rivalry_name": "Mighty Blackpool SC vs East End Lions",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 557,
+    "team_a_id": 694,
+    "team_b_id": 686,
+    "rivalry_name": "Abacha City FC vs Freetown City FC",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 558,
+    "team_a_id": 695,
+    "team_b_id": 693,
+    "rivalry_name": "East End Lions vs Mighty Blackpool SC",
+    "intensity": 0.83,
+    "last_results": "[]"
+  },
+  {
+    "id": 559,
+    "team_a_id": 696,
+    "team_b_id": 697,
+    "rivalry_name": "AS Togo Port de Lom\u00e9 vs ASKO de Kara",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 560,
+    "team_a_id": 697,
+    "team_b_id": 696,
+    "rivalry_name": "ASKO de Kara vs AS Togo Port de Lom\u00e9",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 561,
+    "team_a_id": 698,
+    "team_b_id": 699,
+    "rivalry_name": "ASC Kara vs AC Semassi FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 562,
+    "team_a_id": 699,
+    "team_b_id": 698,
+    "rivalry_name": "AC Semassi FC vs ASC Kara",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 563,
+    "team_a_id": 700,
+    "team_b_id": 707,
+    "rivalry_name": "Etoile Filante Lom\u00e9 vs Dynamic Togolais",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 564,
+    "team_a_id": 701,
+    "team_b_id": 703,
+    "rivalry_name": "Espoir FC de Ts\u00e9vi\u00e9 vs Gomido FC",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 565,
+    "team_a_id": 702,
+    "team_b_id": 705,
+    "rivalry_name": "Tambo FC vs Gbohlo\u00e9-su des Lacs",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 566,
+    "team_a_id": 703,
+    "team_b_id": 701,
+    "rivalry_name": "Gomido FC vs Espoir FC de Ts\u00e9vi\u00e9",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 567,
+    "team_a_id": 704,
+    "team_b_id": 706,
+    "rivalry_name": "Entente II vs Unisport de Sokod\u00e9",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 568,
+    "team_a_id": 705,
+    "team_b_id": 702,
+    "rivalry_name": "Gbohlo\u00e9-su des Lacs vs Tambo FC",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 569,
+    "team_a_id": 706,
+    "team_b_id": 704,
+    "rivalry_name": "Unisport de Sokod\u00e9 vs Entente II",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 570,
+    "team_a_id": 707,
+    "team_b_id": 700,
+    "rivalry_name": "Dynamic Togolais vs Etoile Filante Lom\u00e9",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 571,
+    "team_a_id": 708,
+    "team_b_id": 709,
+    "rivalry_name": "AS Binah vs AS OTR",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 572,
+    "team_a_id": 709,
+    "team_b_id": 708,
+    "rivalry_name": "AS OTR vs AS Binah",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 573,
+    "team_a_id": 710,
+    "team_b_id": 711,
+    "rivalry_name": "SOM-Fosa Juniors FC vs Elgeco Plus Alfa",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 574,
+    "team_a_id": 711,
+    "team_b_id": 710,
+    "rivalry_name": "Elgeco Plus Alfa vs SOM-Fosa Juniors FC",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 575,
+    "team_a_id": 712,
+    "team_b_id": 713,
+    "rivalry_name": "AS Fanalamanga vs CNaPS Sport",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 576,
+    "team_a_id": 713,
+    "team_b_id": 712,
+    "rivalry_name": "CNaPS Sport vs AS Fanalamanga",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 577,
+    "team_a_id": 714,
+    "team_b_id": 715,
+    "rivalry_name": "COSFA Antananarivo vs CFFA",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 578,
+    "team_a_id": 715,
+    "team_b_id": 714,
+    "rivalry_name": "CFFA vs COSFA Antananarivo",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 579,
+    "team_a_id": 716,
+    "team_b_id": 717,
+    "rivalry_name": "Ajesaia vs Mama FCA",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 580,
+    "team_a_id": 717,
+    "team_b_id": 716,
+    "rivalry_name": "Mama FCA vs Ajesaia",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 581,
+    "team_a_id": 718,
+    "team_b_id": 719,
+    "rivalry_name": "Inate FC Rouge Vakinakaratra vs USCA Foot",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 582,
+    "team_a_id": 719,
+    "team_b_id": 718,
+    "rivalry_name": "USCA Foot vs Inate FC Rouge Vakinakaratra",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 583,
+    "team_a_id": 720,
+    "team_b_id": 721,
+    "rivalry_name": "AS Avenir Sainte Anne vs Tsaramandroso Formation FC",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 584,
+    "team_a_id": 721,
+    "team_b_id": 720,
+    "rivalry_name": "Tsaramandroso Formation FC vs AS Avenir Sainte Anne",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 585,
+    "team_a_id": 722,
+    "team_b_id": 723,
+    "rivalry_name": "AC Douane vs AS Pompiers",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 586,
+    "team_a_id": 723,
+    "team_b_id": 722,
+    "rivalry_name": "AS Pompiers vs AC Douane",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 587,
+    "team_a_id": 724,
+    "team_b_id": 726,
+    "rivalry_name": "ASC Police vs ASC Gendrim",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 588,
+    "team_a_id": 725,
+    "team_b_id": 729,
+    "rivalry_name": "FC Nouadhibou ASJN vs SNIM FC",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 589,
+    "team_a_id": 726,
+    "team_b_id": 724,
+    "rivalry_name": "ASC Gendrim vs ASC Police",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 590,
+    "team_a_id": 727,
+    "team_b_id": 728,
+    "rivalry_name": "FC NZidane vs ASC Tevragh-Ze\u00efne",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 591,
+    "team_a_id": 728,
+    "team_b_id": 727,
+    "rivalry_name": "ASC Tevragh-Ze\u00efne vs FC NZidane",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 592,
+    "team_a_id": 729,
+    "team_b_id": 725,
+    "rivalry_name": "SNIM FC vs FC Nouadhibou ASJN",
+    "intensity": 0.77,
+    "last_results": "[]"
+  },
+  {
+    "id": 593,
+    "team_a_id": 730,
+    "team_b_id": 731,
+    "rivalry_name": "Chemal FC vs Nouakchott Academie",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 594,
+    "team_a_id": 731,
+    "team_b_id": 730,
+    "rivalry_name": "Nouakchott Academie vs Chemal FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 595,
+    "team_a_id": 732,
+    "team_b_id": 733,
+    "rivalry_name": "Ka\u00e9di FC vs Nouakchott Kings",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 596,
+    "team_a_id": 733,
+    "team_b_id": 732,
+    "rivalry_name": "Nouakchott Kings vs Ka\u00e9di FC",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 597,
+    "team_a_id": 734,
+    "team_b_id": 735,
+    "rivalry_name": "FC Inter Nouakchott vs ACS Ksar",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 598,
+    "team_a_id": 735,
+    "team_b_id": 734,
+    "rivalry_name": "ACS Ksar vs FC Inter Nouakchott",
+    "intensity": 0.64,
+    "last_results": "[]"
+  },
+  {
+    "id": 599,
+    "team_a_id": 736,
+    "team_b_id": 737,
+    "rivalry_name": "La Cure Waves SC vs Cercle de Joachim SC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 600,
+    "team_a_id": 737,
+    "team_b_id": 736,
+    "rivalry_name": "Cercle de Joachim SC vs La Cure Waves SC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 601,
+    "team_a_id": 738,
+    "team_b_id": 739,
+    "rivalry_name": "Pamplemousses SC vs AS de Vacoas-Phoenix",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 602,
+    "team_a_id": 739,
+    "team_b_id": 738,
+    "rivalry_name": "AS de Vacoas-Phoenix vs Pamplemousses SC",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 603,
+    "team_a_id": 740,
+    "team_b_id": 741,
+    "rivalry_name": "AS Rivi\u00e8re du Rempart vs Chebel Citizens SC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 604,
+    "team_a_id": 741,
+    "team_b_id": 740,
+    "rivalry_name": "Chebel Citizens SC vs AS Rivi\u00e8re du Rempart",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 605,
+    "team_a_id": 742,
+    "team_b_id": 743,
+    "rivalry_name": "Petite Rivi\u00e8re Noire SC vs AS Port-Louis 2000",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 606,
+    "team_a_id": 743,
+    "team_b_id": 742,
+    "rivalry_name": "AS Port-Louis 2000 vs Petite Rivi\u00e8re Noire SC",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 607,
+    "team_a_id": 744,
+    "team_b_id": 745,
+    "rivalry_name": "Union Sportive de Beau Bassin Rose Hill vs Pointe-aux-Sables Mates",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 608,
+    "team_a_id": 745,
+    "team_b_id": 744,
+    "rivalry_name": "Pointe-aux-Sables Mates vs Union Sportive de Beau Bassin Rose Hill",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 609,
+    "team_a_id": 746,
+    "team_b_id": 747,
+    "rivalry_name": "US S\u00e8m\u00e8-Krak\u00e9 vs Buffles de Borgou FC",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 610,
+    "team_a_id": 747,
+    "team_b_id": 746,
+    "rivalry_name": "Buffles de Borgou FC vs US S\u00e8m\u00e8-Krak\u00e9",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 611,
+    "team_a_id": 748,
+    "team_b_id": 749,
+    "rivalry_name": "Damissa FC vs Dynamo Abomey FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 612,
+    "team_a_id": 749,
+    "team_b_id": 748,
+    "rivalry_name": "Dynamo Abomey FC vs Damissa FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 613,
+    "team_a_id": 750,
+    "team_b_id": 751,
+    "rivalry_name": "Cotonou Derby",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 614,
+    "team_a_id": 751,
+    "team_b_id": 750,
+    "rivalry_name": "Cotonou Derby",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 615,
+    "team_a_id": 752,
+    "team_b_id": 753,
+    "rivalry_name": "AS Cotonou vs Loto FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 616,
+    "team_a_id": 753,
+    "team_b_id": 752,
+    "rivalry_name": "Loto FC vs AS Cotonou",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 617,
+    "team_a_id": 754,
+    "team_b_id": 755,
+    "rivalry_name": "Hodio FC vs AS Dragons FC de lOu\u00e9m\u00e9",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 618,
+    "team_a_id": 755,
+    "team_b_id": 754,
+    "rivalry_name": "AS Dragons FC de lOu\u00e9m\u00e9 vs Hodio FC",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 619,
+    "team_a_id": 756,
+    "team_b_id": 757,
+    "rivalry_name": "Ayema vs Jeunesse Sportive de Pob\u00e8 FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 620,
+    "team_a_id": 757,
+    "team_b_id": 756,
+    "rivalry_name": "Jeunesse Sportive de Pob\u00e8 FC vs Ayema",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 621,
+    "team_a_id": 758,
+    "team_b_id": 759,
+    "rivalry_name": "Espoir Savalou vs AS Cavaliers",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 622,
+    "team_a_id": 759,
+    "team_b_id": 386,
+    "rivalry_name": "AS Cavaliers vs Espoir FC",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 623,
+    "team_a_id": 760,
+    "team_b_id": 761,
+    "rivalry_name": "Krak\u00e9 vs Bani Gans\u00e8 FC",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 624,
+    "team_a_id": 761,
+    "team_b_id": 760,
+    "rivalry_name": "Bani Gans\u00e8 FC vs Krak\u00e9",
+    "intensity": 0.65,
+    "last_results": "[]"
+  },
+  {
+    "id": 625,
+    "team_a_id": 762,
+    "team_b_id": 763,
+    "rivalry_name": "Dadj\u00e8 FC dAplahou\u00e9 vs ASVO",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 626,
+    "team_a_id": 763,
+    "team_b_id": 762,
+    "rivalry_name": "ASVO vs Dadj\u00e8 FC dAplahou\u00e9",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 627,
+    "team_a_id": 764,
+    "team_b_id": 765,
+    "rivalry_name": "Renaissance vs Colombe",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 628,
+    "team_a_id": 765,
+    "team_b_id": 764,
+    "rivalry_name": "Colombe vs Renaissance",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 629,
+    "team_a_id": 766,
+    "team_b_id": 767,
+    "rivalry_name": "Foullah Edifice vs Stars J. Talents",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 630,
+    "team_a_id": 767,
+    "team_b_id": 766,
+    "rivalry_name": "Stars J. Talents vs Foullah Edifice",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 631,
+    "team_a_id": 768,
+    "team_b_id": 769,
+    "rivalry_name": "Emat vs Sovotours",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 632,
+    "team_a_id": 769,
+    "team_b_id": 768,
+    "rivalry_name": "Sovotours vs Emat",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 633,
+    "team_a_id": 770,
+    "team_b_id": 771,
+    "rivalry_name": "Galactik vs USM",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 634,
+    "team_a_id": 771,
+    "team_b_id": 770,
+    "rivalry_name": "USM vs Galactik",
+    "intensity": 0.68,
+    "last_results": "[]"
+  },
+  {
+    "id": 635,
+    "team_a_id": 772,
+    "team_b_id": 773,
+    "rivalry_name": "Yves vs As Dgssie",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 636,
+    "team_a_id": 773,
+    "team_b_id": 772,
+    "rivalry_name": "As Dgssie vs Yves",
+    "intensity": 0.66,
+    "last_results": "[]"
+  },
+  {
+    "id": 637,
+    "team_a_id": 774,
+    "team_b_id": 775,
+    "rivalry_name": "Gazelle vs CotonTchad",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 638,
+    "team_a_id": 775,
+    "team_b_id": 774,
+    "rivalry_name": "CotonTchad vs Gazelle",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 639,
+    "team_a_id": 776,
+    "team_b_id": 777,
+    "rivalry_name": "Fehra vs Tourbillon",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 640,
+    "team_a_id": 777,
+    "team_b_id": 776,
+    "rivalry_name": "Tourbillon vs Fehra",
+    "intensity": 0.63,
+    "last_results": "[]"
+  },
+  {
+    "id": 641,
+    "team_a_id": 778,
+    "team_b_id": 779,
+    "rivalry_name": "Mighty Gunners vs African Stars",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 642,
+    "team_a_id": 779,
+    "team_b_id": 778,
+    "rivalry_name": "African Stars vs Mighty Gunners",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 643,
+    "team_a_id": 780,
+    "team_b_id": 781,
+    "rivalry_name": "Unam FC vs Chula Chula",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 644,
+    "team_a_id": 781,
+    "team_b_id": 780,
+    "rivalry_name": "Chula Chula vs Unam FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 645,
+    "team_a_id": 782,
+    "team_b_id": 783,
+    "rivalry_name": "KK Palace vs FC Ongos",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 646,
+    "team_a_id": 783,
+    "team_b_id": 782,
+    "rivalry_name": "FC Ongos vs KK Palace",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 647,
+    "team_a_id": 784,
+    "team_b_id": 785,
+    "rivalry_name": "Bucks Buccaneers vs Young African",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 648,
+    "team_a_id": 785,
+    "team_b_id": 784,
+    "rivalry_name": "Young African vs Bucks Buccaneers",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 649,
+    "team_a_id": 786,
+    "team_b_id": 787,
+    "rivalry_name": "Eleven Arrows vs Blue Waters",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 650,
+    "team_a_id": 787,
+    "team_b_id": 786,
+    "rivalry_name": "Blue Waters vs Eleven Arrows",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 651,
+    "team_a_id": 788,
+    "team_b_id": 789,
+    "rivalry_name": "Okahandja United vs Khomas Nampol",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 652,
+    "team_a_id": 789,
+    "team_b_id": 788,
+    "rivalry_name": "Khomas Nampol vs Okahandja United",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 653,
+    "team_a_id": 790,
+    "team_b_id": 791,
+    "rivalry_name": "Tigers vs Rundu Chiefs",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 654,
+    "team_a_id": 791,
+    "team_b_id": 790,
+    "rivalry_name": "Rundu Chiefs vs Tigers",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 655,
+    "team_a_id": 792,
+    "team_b_id": 793,
+    "rivalry_name": "Julinho Athletic vs Life Fighters",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 656,
+    "team_a_id": 793,
+    "team_b_id": 792,
+    "rivalry_name": "Life Fighters vs Julinho Athletic",
+    "intensity": 0.67,
+    "last_results": "[]"
+  },
+  {
+    "id": 657,
+    "team_a_id": 794,
+    "team_b_id": 795,
+    "rivalry_name": "Nsingizini Hotspurs vs Manzini Sea Birds",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 658,
+    "team_a_id": 795,
+    "team_b_id": 794,
+    "rivalry_name": "Manzini Sea Birds vs Nsingizini Hotspurs",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 659,
+    "team_a_id": 796,
+    "team_b_id": 797,
+    "rivalry_name": "Ezulwini vs Tabankulu",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 660,
+    "team_a_id": 797,
+    "team_b_id": 796,
+    "rivalry_name": "Tabankulu vs Ezulwini",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 661,
+    "team_a_id": 798,
+    "team_b_id": 799,
+    "rivalry_name": "Rangers FC vs Green Mamba",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 662,
+    "team_a_id": 799,
+    "team_b_id": 798,
+    "rivalry_name": "Green Mamba vs Rangers FC",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 663,
+    "team_a_id": 800,
+    "team_b_id": 801,
+    "rivalry_name": "Young Buffaloes vs Mbabane Highlanders",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 664,
+    "team_a_id": 801,
+    "team_b_id": 800,
+    "rivalry_name": "Mbabane Highlanders vs Young Buffaloes",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 665,
+    "team_a_id": 802,
+    "team_b_id": 803,
+    "rivalry_name": "Mbabane Swallows vs Malanti Chiefs",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 666,
+    "team_a_id": 803,
+    "team_b_id": 802,
+    "rivalry_name": "Malanti Chiefs vs Mbabane Swallows",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 667,
+    "team_a_id": 804,
+    "team_b_id": 805,
+    "rivalry_name": "Moneni Pirates vs Amawele",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 668,
+    "team_a_id": 805,
+    "team_b_id": 804,
+    "rivalry_name": "Amawele vs Moneni Pirates",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 669,
+    "team_a_id": 806,
+    "team_b_id": 807,
+    "rivalry_name": "Royal Leopards vs Ubombo Sugar",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 670,
+    "team_a_id": 807,
+    "team_b_id": 806,
+    "rivalry_name": "Ubombo Sugar vs Royal Leopards",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 671,
+    "team_a_id": 808,
+    "team_b_id": 809,
+    "rivalry_name": "Sisonkhe vs Manzini Wanderers",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 672,
+    "team_a_id": 809,
+    "team_b_id": 808,
+    "rivalry_name": "Manzini Wanderers vs Sisonkhe",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 673,
+    "team_a_id": 810,
+    "team_b_id": 811,
+    "rivalry_name": "Boavista FC vs Palmeira",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 674,
+    "team_a_id": 811,
+    "team_b_id": 810,
+    "rivalry_name": "Palmeira vs Boavista FC",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 675,
+    "team_a_id": 812,
+    "team_b_id": 813,
+    "rivalry_name": "Os Sanjoanenses vs Paulense",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 676,
+    "team_a_id": 813,
+    "team_b_id": 812,
+    "rivalry_name": "Paulense vs Os Sanjoanenses",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 677,
+    "team_a_id": 814,
+    "team_b_id": 815,
+    "rivalry_name": "Mindelense vs Acad\u00e9mica da Praia",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 678,
+    "team_a_id": 815,
+    "team_b_id": 814,
+    "rivalry_name": "Acad\u00e9mica da Praia vs Mindelense",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 679,
+    "team_a_id": 816,
+    "team_b_id": 817,
+    "rivalry_name": "Sal-Rei vs FC Ultramarina",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 680,
+    "team_a_id": 817,
+    "team_b_id": 816,
+    "rivalry_name": "FC Ultramarina vs Sal-Rei",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 681,
+    "team_a_id": 818,
+    "team_b_id": 819,
+    "rivalry_name": "Scorpion vs Botafogo",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 682,
+    "team_a_id": 819,
+    "team_b_id": 818,
+    "rivalry_name": "Botafogo vs Scorpion",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 683,
+    "team_a_id": 820,
+    "team_b_id": 822,
+    "rivalry_name": "Matlama vs LCS",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 684,
+    "team_a_id": 821,
+    "team_b_id": 823,
+    "rivalry_name": "Machokha FC vs Linare FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 685,
+    "team_a_id": 822,
+    "team_b_id": 820,
+    "rivalry_name": "LCS vs Matlama",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 686,
+    "team_a_id": 823,
+    "team_b_id": 821,
+    "rivalry_name": "Linare FC vs Machokha FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 687,
+    "team_a_id": 824,
+    "team_b_id": 827,
+    "rivalry_name": "Lijabatho FC vs Lioli FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 688,
+    "team_a_id": 825,
+    "team_b_id": 826,
+    "rivalry_name": "Limkokwing University FC vs Majantja FC",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 689,
+    "team_a_id": 826,
+    "team_b_id": 825,
+    "rivalry_name": "Majantja FC vs Limkokwing University FC",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 690,
+    "team_a_id": 827,
+    "team_b_id": 824,
+    "rivalry_name": "Lioli FC vs Lijabatho FC",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 691,
+    "team_a_id": 828,
+    "team_b_id": 829,
+    "rivalry_name": "Bantu FC vs Lifofane FC",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 692,
+    "team_a_id": 829,
+    "team_b_id": 828,
+    "rivalry_name": "Lifofane FC vs Bantu FC",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 693,
+    "team_a_id": 830,
+    "team_b_id": 832,
+    "rivalry_name": "Lesotho Defence Force vs LMPS",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 694,
+    "team_a_id": 831,
+    "team_b_id": 833,
+    "rivalry_name": "Liphakoe FC vs Maroala FC",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 695,
+    "team_a_id": 832,
+    "team_b_id": 830,
+    "rivalry_name": "LMPS vs Lesotho Defence Force",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 696,
+    "team_a_id": 833,
+    "team_b_id": 831,
+    "rivalry_name": "Maroala FC vs Liphakoe FC",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 697,
+    "team_a_id": 834,
+    "team_b_id": 835,
+    "rivalry_name": "Manonyane FC vs FC Members",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 698,
+    "team_a_id": 835,
+    "team_b_id": 834,
+    "rivalry_name": "FC Members vs Manonyane FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 699,
+    "team_a_id": 836,
+    "team_b_id": 837,
+    "rivalry_name": "Garde-c\u00f4tes FC vs AS Ali Sabieh Djibouti T\u00e9l\u00e9com",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 700,
+    "team_a_id": 837,
+    "team_b_id": 836,
+    "rivalry_name": "AS Ali Sabieh Djibouti T\u00e9l\u00e9com vs Garde-c\u00f4tes FC",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 701,
+    "team_a_id": 838,
+    "team_b_id": 839,
+    "rivalry_name": "Solar 7 vs FC Dikhil",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 702,
+    "team_a_id": 840,
+    "team_b_id": 841,
+    "rivalry_name": "AS du Port / TACO vs Gendarmerie Nationale",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 703,
+    "team_a_id": 841,
+    "team_b_id": 840,
+    "rivalry_name": "Gendarmerie Nationale vs AS du Port / TACO",
+    "intensity": 0.75,
+    "last_results": "[]"
+  },
+  {
+    "id": 704,
+    "team_a_id": 842,
+    "team_b_id": 843,
+    "rivalry_name": "CF Garde R\u00e9publicaine / SIAF vs FC Arta",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 705,
+    "team_a_id": 843,
+    "team_b_id": 842,
+    "rivalry_name": "FC Arta vs CF Garde R\u00e9publicaine / SIAF",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 706,
+    "team_a_id": 845,
+    "team_b_id": 844,
+    "rivalry_name": "Nourie Transit FC vs SDC Group/H\u00f4pital Balbala FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 707,
+    "team_a_id": 846,
+    "team_b_id": 858,
+    "rivalry_name": "Sony El\u00e1 Nguema vs Akonangui FC",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 708,
+    "team_a_id": 847,
+    "team_b_id": 848,
+    "rivalry_name": "The Panthers vs Cano Sport Academy",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 709,
+    "team_a_id": 848,
+    "team_b_id": 847,
+    "rivalry_name": "Cano Sport Academy vs The Panthers",
+    "intensity": 0.76,
+    "last_results": "[]"
+  },
+  {
+    "id": 710,
+    "team_a_id": 849,
+    "team_b_id": 850,
+    "rivalry_name": "Atl\u00e9tico Semu vs Real X Balompi\u00e9",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 711,
+    "team_a_id": 850,
+    "team_b_id": 849,
+    "rivalry_name": "Real X Balompi\u00e9 vs Atl\u00e9tico Semu",
+    "intensity": 0.73,
+    "last_results": "[]"
+  },
+  {
+    "id": 712,
+    "team_a_id": 851,
+    "team_b_id": 852,
+    "rivalry_name": "Estrella Roja vs Ceiba FC",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 713,
+    "team_a_id": 852,
+    "team_b_id": 851,
+    "rivalry_name": "Ceiba FC vs Estrella Roja",
+    "intensity": 0.71,
+    "last_results": "[]"
+  },
+  {
+    "id": 714,
+    "team_a_id": 853,
+    "team_b_id": 854,
+    "rivalry_name": "Recreativo Lampert vs San Pablo de Nsork",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 715,
+    "team_a_id": 854,
+    "team_b_id": 853,
+    "rivalry_name": "San Pablo de Nsork vs Recreativo Lampert",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 716,
+    "team_a_id": 855,
+    "team_b_id": 856,
+    "rivalry_name": "Deportivo Unidad vs Leones Vegetarianos",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 717,
+    "team_a_id": 856,
+    "team_b_id": 855,
+    "rivalry_name": "Leones Vegetarianos vs Deportivo Unidad",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 718,
+    "team_a_id": 857,
+    "team_b_id": 852,
+    "rivalry_name": "Santa Mar\u00eda vs Ceiba FC",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 719,
+    "team_a_id": 858,
+    "team_b_id": 846,
+    "rivalry_name": "Akonangui FC vs Sony El\u00e1 Nguema",
+    "intensity": 0.79,
+    "last_results": "[]"
+  },
+  {
+    "id": 720,
+    "team_a_id": 859,
+    "team_b_id": 858,
+    "rivalry_name": "Deportivo Mongomo vs Akonangui FC",
+    "intensity": 0.78,
+    "last_results": "[]"
+  },
+  {
+    "id": 721,
+    "team_a_id": 860,
+    "team_b_id": 861,
+    "rivalry_name": "Futuro Kings vs Atl\u00e9tico Bata",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 722,
+    "team_a_id": 861,
+    "team_b_id": 860,
+    "rivalry_name": "Atl\u00e9tico Bata vs Futuro Kings",
+    "intensity": 0.74,
+    "last_results": "[]"
+  },
+  {
+    "id": 723,
+    "team_a_id": 862,
+    "team_b_id": 863,
+    "rivalry_name": "Uni\u00f3n Vesper vs 15 de Agosto",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 724,
+    "team_a_id": 863,
+    "team_b_id": 862,
+    "rivalry_name": "15 de Agosto vs Uni\u00f3n Vesper",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 725,
+    "team_a_id": 864,
+    "team_b_id": 865,
+    "rivalry_name": "Racing de Micomeseng vs Drag\u00f3n FC",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 726,
+    "team_a_id": 865,
+    "team_b_id": 864,
+    "rivalry_name": "Drag\u00f3n FC vs Racing de Micomeseng",
+    "intensity": 0.7,
+    "last_results": "[]"
+  },
+  {
+    "id": 727,
+    "team_a_id": 866,
+    "team_b_id": 867,
+    "rivalry_name": "Fundaci\u00f3n Bata vs Deportivo Niefang",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 728,
+    "team_a_id": 867,
+    "team_b_id": 866,
+    "rivalry_name": "Deportivo Niefang vs Fundaci\u00f3n Bata",
+    "intensity": 0.69,
+    "last_results": "[]"
+  },
+  {
+    "id": 729,
+    "team_a_id": 868,
+    "team_b_id": 859,
+    "rivalry_name": "AD Mongomo vs Deportivo Mongomo",
+    "intensity": 0.72,
+    "last_results": "[]"
+  },
+  {
+    "id": 730,
+    "team_a_id": 869,
+    "team_b_id": 865,
+    "rivalry_name": "Deportivo Anoney vs Drag\u00f3n FC",
+    "intensity": 0.68,
+    "last_results": "[]"
+  }
+]

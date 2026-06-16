@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "base_currency": "USD",
+    "target_currency": "TZS",
+    "exchange_rate": 2500.0,
+    "inverse_rate": 0.0004,
+    "last_updated": 1715070000000,
+    "source": "local",
+    "is_active": 1
+  },
+  {
+    "id": 2,
+    "base_currency": "USD",
+    "target_currency": "KES",
+    "exchange_rate": 130.0,
+    "inverse_rate": 0.00769,
+    "last_updated": 1715070000000,
+    "source": "local",
+    "is_active": 1
+  },
+  {
+    "id": 3,
+    "base_currency": "USD",
+    "target_currency": "UGX",
+    "exchange_rate": 3800.0,
+    "inverse_rate": 0.00026,
+    "last_updated": 1715070000000,
+    "source": "local",
+    "is_active": 1
+  },
+  {
+    "id": 4,
+    "base_currency": "USD",
+    "target_currency": "NGN",
+    "exchange_rate": 1400.0,
+    "inverse_rate": 0.00071,
+    "last_updated": 1715070000000,
+    "source": "local",
+    "is_active": 1
+  },
+  {
+    "id": 5,
+    "base_currency": "USD",
+    "target_currency": "ZAR",
+    "exchange_rate": 18.5,
+    "inverse_rate": 0.054,
+    "last_updated": 1715070000000,
+    "source": "local",
+    "is_active": 1
+  },
+  {
+    "id": 6,
+    "base_currency": "USD",
+    "target_currency": "EGP",
+    "exchange_rate": 48.0,
+    "inverse_rate": 0.0208,
+    "last_updated": 1715070000000,
+    "source": "local",
+    "is_active": 1
+  }
+]

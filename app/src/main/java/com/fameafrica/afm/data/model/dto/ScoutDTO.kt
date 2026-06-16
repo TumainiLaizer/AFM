@@ -1,0 +1,1 @@
+// ScoutDTO.kt

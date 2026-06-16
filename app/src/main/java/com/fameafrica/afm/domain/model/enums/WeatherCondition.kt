@@ -1,0 +1,1 @@
+// WeatherCondition.kt

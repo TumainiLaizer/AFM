@@ -1,0 +1,1 @@
+// ScoreDTO.kt

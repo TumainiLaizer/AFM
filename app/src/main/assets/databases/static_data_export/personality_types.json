@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "PROFESSIONAL",
+    "description": "Focused, disciplined, consistent performer",
+    "positive_effects": "Consistency, Reliability",
+    "negative_effects": "Low flexibility",
+    "morale_effect": 1.1,
+    "form_consistency": 1.2
+  },
+  {
+    "id": 2,
+    "name": "AGGRESSIVE",
+    "description": "Competitive, intense, prone to cards",
+    "positive_effects": "High Intensity, Tough Tackling",
+    "negative_effects": "Discipline Risk, Frequent Fouls",
+    "morale_effect": 0.9,
+    "form_consistency": 0.8
+  },
+  {
+    "id": 3,
+    "name": "LOYAL",
+    "description": "Club-focused, stable, resistant to transfers",
+    "positive_effects": "Club commitment, Mentoring",
+    "negative_effects": "Low ambition",
+    "morale_effect": 1.2,
+    "form_consistency": 1.0
+  },
+  {
+    "id": 4,
+    "name": "MEDIA_FRIENDLY",
+    "description": "Charismatic, popular with fans and media",
+    "positive_effects": "Reputation Boost, Fan engagement",
+    "negative_effects": "Distraction",
+    "morale_effect": 1.1,
+    "form_consistency": 0.9
+  },
+  {
+    "id": 5,
+    "name": "MEDIA_HOSTILE",
+    "description": "Controversial, difficult with media",
+    "positive_effects": "Focus on pitch",
+    "negative_effects": "Bad Publicity, Press friction",
+    "morale_effect": 0.8,
+    "form_consistency": 0.9
+  },
+  {
+    "id": 6,
+    "name": "NATURAL_LEADER",
+    "description": "Inspirational, boosts teammates",
+    "positive_effects": "Inspiration, Youth Development",
+    "negative_effects": "Strong personality",
+    "morale_effect": 1.3,
+    "form_consistency": 1.1
+  },
+  {
+    "id": 7,
+    "name": "AMBITIOUS",
+    "description": "Driven to succeed, wants trophies",
+    "positive_effects": "High Workrate, Performance Drive",
+    "negative_effects": "Transfer Requests, Restlessness",
+    "morale_effect": 1.0,
+    "form_consistency": 1.0
+  },
+  {
+    "id": 8,
+    "name": "TEMPERAMENTAL",
+    "description": "Emotional, prone to outbursts",
+    "positive_effects": "Brilliant Moments",
+    "negative_effects": "Inconsistency, Emotional Outbursts",
+    "morale_effect": 0.7,
+    "form_consistency": 0.6
+  },
+  {
+    "id": 9,
+    "name": "TEAM_PLAYER",
+    "description": "Selfless, always puts team first",
+    "positive_effects": "Chemistry, Unselfishness",
+    "negative_effects": "Low individual stats",
+    "morale_effect": 1.1,
+    "form_consistency": 1.0
+  },
+  {
+    "id": 10,
+    "name": "INDIVIDUALIST",
+    "description": "Self-focused, seeks personal glory",
+    "positive_effects": "Individual Brilliance",
+    "negative_effects": "Selfishness, Low Chemistry",
+    "morale_effect": 0.9,
+    "form_consistency": 1.1
+  },
+  {
+    "id": 11,
+    "name": "EXPERIENCED",
+    "description": "Veteran player with extensive experience and wisdom",
+    "positive_effects": "Wisdom, Leadership",
+    "negative_effects": "Declining physicals",
+    "morale_effect": 1.1,
+    "form_consistency": 1.0
+  },
+  {
+    "id": 12,
+    "name": "YOUNG",
+    "description": "Young players with potential to improve and grow, needs training",
+    "positive_effects": "High Potential, Energy",
+    "negative_effects": "Inexperience, Tactical Naivety",
+    "morale_effect": 1.0,
+    "form_consistency": 1.3
+  }
+]

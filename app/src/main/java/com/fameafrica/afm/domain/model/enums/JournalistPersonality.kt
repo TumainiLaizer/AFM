@@ -1,0 +1,1 @@
+// JournalistPersonality.kt

@@ -1,0 +1,57 @@
+package com.fameafrica.afm.ui.map
+
+import android.graphics.RectF
+
+object AfricaMapBounds {
+
+    val bounds = mapOf(
+        "tanzania" to RectF(500f, 450f, 520f, 470f),
+        "egypt" to RectF(520f, 130f, 540f, 150f),
+        "morocco" to RectF(130f, 130f, 150f, 150f),
+        "algeria" to RectF(260f, 180f, 280f, 200f),
+        "south_africa" to RectF(440f, 720f, 460f, 740f),
+        "tunisia" to RectF(320f, 90f, 340f, 110f),
+        "congo_drc" to RectF(420f, 430f, 440f, 450f),
+        "kenya" to RectF(520f, 390f, 540f, 410f),
+        "uganda" to RectF(480f, 380f, 500f, 400f),
+        "sudan" to RectF(500f, 230f, 520f, 250f),
+        "angola" to RectF(380f, 500f, 400f, 520f),
+        "nigeria" to RectF(320f, 320f, 340f, 340f),
+        "ivory_coast" to RectF(210f, 330f, 230f, 350f),
+        "south_sudan" to RectF(480f, 310f, 500f, 330f),
+        "senegal" to RectF(90f, 270f, 110f, 290f),
+        "botswana" to RectF(440f, 620f, 460f, 640f),
+        "rwanda" to RectF(475f, 415f, 495f, 435f),
+        "cameroon" to RectF(350f, 350f, 370f, 370f),
+        "mozambique" to RectF(520f, 580f, 540f, 600f),
+        "burundi" to RectF(475f, 435f, 495f, 455f),
+        "malawi" to RectF(505f, 490f, 525f, 510f),
+        "zambia" to RectF(450f, 510f, 470f, 530f),
+        "guinea" to RectF(120f, 300f, 140f, 320f),
+        "libya" to RectF(390f, 150f, 410f, 170f),
+        "mali" to RectF(220f, 240f, 240f, 260f),
+        "zimbabwe" to RectF(480f, 560f, 500f, 580f),
+        "ghana" to RectF(240f, 330f, 260f, 350f),
+        "congo_republic" to RectF(370f, 400f, 390f, 420f),
+        "ethiopia" to RectF(540f, 300f, 560f, 320f),
+        "somalia" to RectF(590f, 350f, 610f, 370f),
+        "central_african_republic" to RectF(420f, 330f, 440f, 350f),
+        "niger" to RectF(320f, 240f, 340f, 260f),
+        "gambia" to RectF(85f, 280f, 105f, 300f),
+        "burkina_faso" to RectF(230f, 280f, 250f, 300f),
+        "liberia" to RectF(160f, 330f, 180f, 350f),
+        "sierra_leone" to RectF(140f, 320f, 160f, 340f),
+        "togo" to RectF(260f, 330f, 280f, 350f),
+        "madagascar" to RectF(630f, 600f, 650f, 620f),
+        "mauritania" to RectF(140f, 220f, 160f, 240f),
+        "mauritius" to RectF(680f, 620f, 700f, 640f),
+        "benin" to RectF(280f, 330f, 300f, 350f),
+        "chad" to RectF(400f, 260f, 420f, 280f),
+        "namibia" to RectF(390f, 620f, 410f, 640f),
+        "cape_verde" to RectF(40f, 260f, 60f, 280f),
+        "lesotho" to RectF(460f, 700f, 480f, 720f),
+        "eswatini" to RectF(490f, 680f, 510f, 700f),
+        "djibouti" to RectF(560f, 280f, 580f, 300f),
+        "equatorial_guinea" to RectF(330f, 380f, 350f, 400f)
+    )
+}

@@ -1,0 +1,3597 @@
+kotlin version: 2.2.10
+error message: org.jetbrains.kotlin.codegen.CompilationException: Back-end (JVM) Internal error: Couldn't transform method node:
+lambda__861380181$lambda$255 (Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;:
+  @Landroidx/compose/runtime/Composable;() // invisible
+  @Landroidx/compose/runtime/ComposableTarget;(applier="androidx.compose.ui.UiComposable") // invisible
+    // annotable parameter count: 2 (visible)
+    // annotable parameter count: 2 (invisible)
+   L0
+    ALOAD 0
+    LDC "C2356@112426L2,2356@112439L2,2356@112456L2,2356@112476L2,2357@112514L2,2357@112535L2,2357@112558L2,2357@112577L2,2361@112989L2,2361@113019L2,2358@112619L2,2358@112652L2,2358@112676L14,2359@112731L8,2359@112767L8,2359@112802L8,2360@112845L2,2360@112865L2,2360@112890L2,2360@112917L2,2363@113137L2,2364@113180L2,2364@113212L20,2365@113275L2,2360@112949L2,2362@113065L2,2362@113101L2,2339@111289L2002:CareerSetupScreen.kt#rb80zm"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformation (Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    ALOAD 0
+    ILOAD 1
+    ICONST_3
+    IAND
+    ICONST_2
+    IF_ICMPEQ L1
+    ICONST_1
+    GOTO L2
+   L1
+    ICONST_0
+   L2
+    ILOAD 1
+    ICONST_1
+    IAND
+    INVOKEINTERFACE androidx/compose/runtime/Composer.shouldExecute (ZI)Z (itf)
+    IFEQ L3
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.isTraceInProgress ()Z
+    IFEQ L4
+    LDC -861380181
+    ILOAD 1
+    ICONST_M1
+    LDC "afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda$-861380181.<anonymous> (CareerSetupScreen.kt:2339)"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.traceEventStart (IIILjava/lang/String;)V
+   L4
+    LINENUMBER 2341 L4
+    NEW com/fameafrica/afm2026/ui/screen/career/CareerUiState
+    DUP
+   L5
+    LINENUMBER 2342 L5
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/CareerStep.CAREER_SUMMARY : Lcom/fameafrica/afm2026/ui/screen/career/CareerStep;
+   L6
+    LINENUMBER 2341 L6
+    FCONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    NOP
+    ICONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+   L7
+    LINENUMBER 2343 L7
+    LDC "TACTICAL_GENIUS"
+   L8
+    LINENUMBER 2341 L8
+    ACONST_NULL
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    NOP
+    ICONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ICONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+   L9
+    LINENUMBER 2344 L9
+    NEW com/fameafrica/afm2026/data/database/entities/LeaguesEntity
+    DUP
+   L10
+    LINENUMBER 2345 L10
+    ICONST_1
+    LDC "Tanzania Premier League"
+    ICONST_1
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    LDC "Tanzania"
+   L11
+    LINENUMBER 2346 L11
+    ICONST_1
+    LDC "NBC"
+    LDC 1000000
+    LDC "tanzania_premier_league"
+   L12
+    LINENUMBER 2344 L12
+    INVOKESPECIAL com/fameafrica/afm2026/data/database/entities/LeaguesEntity.<init> (ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;)V
+   L13
+    LINENUMBER 2341 L13
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+   L14
+    LINENUMBER 2348 L14
+    NEW com/fameafrica/afm2026/data/database/entities/TeamsEntity
+    DUP
+   L15
+    LINENUMBER 2349 L15
+    ICONST_2
+    LDC "Young Africans SC"
+   L16
+    LINENUMBER 2348 L16
+    ACONST_NULL
+   L17
+    LINENUMBER 2349 L17
+    LDC "Tanzania Premier League"
+    SIPUSH 1825
+   L18
+    LINENUMBER 2348 L18
+    ICONST_0
+    ICONST_0
+    DCONST_0
+    ICONST_0
+   L19
+    LINENUMBER 2350 L19
+    ACONST_NULL
+   L20
+    LINENUMBER 2348 L20
+    ACONST_NULL
+    ICONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    LCONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ICONST_0
+    FCONST_0
+    ACONST_NULL
+    ICONST_0
+   L21
+    LINENUMBER 2350 L21
+    LDC "Simba SC"
+    LDC "4-3-3"
+    ACONST_NULL
+   L22
+    LINENUMBER 2348 L22
+    ICONST_0
+   L23
+    LINENUMBER 2351 L23
+    ACONST_NULL
+    ACONST_NULL
+   L24
+    LINENUMBER 2348 L24
+    ICONST_0
+    ACONST_NULL
+   L25
+    LINENUMBER 2351 L25
+    ACONST_NULL
+    ACONST_NULL
+   L26
+    LINENUMBER 2352 L26
+    LDC 75.0
+    INVOKESTATIC java/lang/Double.valueOf (D)Ljava/lang/Double;
+    LDC 72.0
+    INVOKESTATIC java/lang/Double.valueOf (D)Ljava/lang/Double;
+    LDC 74.0
+    INVOKESTATIC java/lang/Double.valueOf (D)Ljava/lang/Double;
+   L27
+    LINENUMBER 2348 L27
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    LDC 603979236
+    SIPUSH 1923
+    ACONST_NULL
+    INVOKESPECIAL com/fameafrica/afm2026/data/database/entities/TeamsEntity.<init> (ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/String;IIIDILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;IIIIJLcom/fameafrica/afm2026/data/database/entities/FinancialBehavior;Ljava/util/List;Ljava/util/List;IFLjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Long;Ljava/lang/Long;Lcom/fameafrica/afm2026/data/database/entities/Playstyle;Ljava/lang/Integer;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+   L28
+    LINENUMBER 2341 L28
+    ACONST_NULL
+    ACONST_NULL
+    NOP
+    ICONST_0
+    NOP
+    ICONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ICONST_0
+    ACONST_NULL
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ACONST_NULL
+   L29
+    LINENUMBER 2354 L29
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/Difficulty.NORMAL : Lcom/fameafrica/afm2026/ui/screen/career/Difficulty;
+   L30
+    LINENUMBER 2341 L30
+    FCONST_0
+    ACONST_NULL
+    NOP
+    ICONST_0
+    NOP
+    ICONST_0
+    NOP
+    ICONST_0
+    ACONST_NULL
+    NOP
+    ICONST_0
+    ACONST_NULL
+    ACONST_NULL
+    LDC -262146
+    LDC -536887809
+    BIPUSH 127
+    ACONST_NULL
+    INVOKESPECIAL com/fameafrica/afm2026/ui/screen/career/CareerUiState.<init> (Lcom/fameafrica/afm2026/ui/screen/career/CareerStep;FLjava/lang/String;Lcom/fameafrica/afm2026/ui/screen/career/GameMode;Lcom/fameafrica/afm2026/ui/screen/career/ManagerSelectionMode;Ljava/util/List;Lcom/fameafrica/afm2026/data/database/entities/ManagersEntity;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIILcom/fameafrica/afm2026/ui/screen/career/ManagerialStyle;Lcom/fameafrica/afm2026/ui/screen/career/CoachingLicense;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIIIILjava/lang/String;Lcom/fameafrica/afm2026/ui/screen/career/ManagerBackground;Lcom/fameafrica/afm2026/ui/screen/career/CountryModifierValues;Lcom/fameafrica/afm2026/ui/screen/career/PersonalityProfile;Lcom/fameafrica/afm2026/ui/screen/career/Agent;Ljava/util/List;ZLcom/fameafrica/afm2026/ui/screen/career/CareerVision;Lcom/fameafrica/afm2026/ui/screen/career/TacticProfile;ILjava/lang/Integer;Ljava/lang/String;Ljava/util/List;Ljava/util/Map;Lcom/fameafrica/afm2026/data/database/entities/LeaguesEntity;Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;Ljava/util/List;Lcom/fameafrica/afm2026/data/database/entities/TeamsEntity;Lcom/fameafrica/afm2026/data/database/entities/ClubDNAEntity;Lcom/fameafrica/afm2026/data/database/entities/ChairmanEntity;ZZLcom/fameafrica/afm2026/ui/screen/career/ChairmanEntryMode;Ljava/lang/String;ILjava/lang/String;IIIIILjava/lang/String;Lcom/fameafrica/afm2026/ui/screen/career/Difficulty;FLjava/lang/String;ZZZLjava/lang/String;ZLjava/lang/Long;Ljava/util/Map;IIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    ASTORE 2
+   L31
+    LINENUMBER 2356 L31
+    LDC "Tanzania Premier League"
+    BIPUSH 16
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    INVOKESTATIC kotlin/TuplesKt.to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    INVOKESTATIC kotlin/collections/MapsKt.mapOf (Lkotlin/Pair;)Ljava/util/Map;
+    ASTORE 3
+   L32
+    LINENUMBER 2341 L32
+    ALOAD 2
+   L33
+    LINENUMBER 2356 L33
+    ALOAD 3
+    ALOAD 0
+    LDC 1142371021
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L34
+    LINENUMBER 2357 L34
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L35
+    ICONST_0
+    ISTORE 7
+   L36
+    LINENUMBER 3040 L36
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L37
+    ICONST_0
+    ISTORE 9
+   L38
+    LINENUMBER 3041 L38
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L39
+   L40
+    LINENUMBER 3042 L40
+    NOP
+    ASTORE 12
+    ASTORE 11
+   L41
+    ICONST_0
+    ISTORE 10
+   L42
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function0; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      ()Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$202$lambda$201()Lkotlin/Unit;, 
+      ()Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L43
+   L43
+    ASTORE 13
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+   L44
+    LINENUMBER 3042 L44
+    ASTORE 10
+   L45
+    LINENUMBER 3043 L45
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L46
+    LINENUMBER 3044 L46
+    ALOAD 10
+   L47
+    GOTO L48
+   L39
+    LINENUMBER 3045 L39
+    ALOAD 8
+   L48
+    LINENUMBER 3040 L48
+    NOP
+   L49
+    LINENUMBER 3040 L49
+    NOP
+    GOTO L50
+   L50
+    LINENUMBER 2357 L50
+    CHECKCAST kotlin/jvm/functions/Function0
+    ASTORE 4
+   L51
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L52
+    ALOAD 0
+    LDC 1142371437
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L53
+    ICONST_0
+    ISTORE 7
+   L54
+    LINENUMBER 3040 L54
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L55
+    ICONST_0
+    ISTORE 9
+   L56
+    LINENUMBER 3041 L56
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L57
+   L58
+    LINENUMBER 3042 L58
+    NOP
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L59
+    ICONST_0
+    ISTORE 10
+   L60
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function0; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      ()Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$204$lambda$203()Lkotlin/Unit;, 
+      ()Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L61
+   L61
+    ASTORE 14
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+   L62
+    LINENUMBER 3042 L62
+    ASTORE 10
+   L63
+    LINENUMBER 3043 L63
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L64
+    LINENUMBER 3044 L64
+    ALOAD 10
+   L65
+    GOTO L66
+   L57
+    LINENUMBER 3045 L57
+    ALOAD 8
+   L66
+    LINENUMBER 3040 L66
+    NOP
+   L67
+    LINENUMBER 3040 L67
+    NOP
+    GOTO L68
+   L68
+    LINENUMBER 2357 L68
+    CHECKCAST kotlin/jvm/functions/Function0
+    ASTORE 4
+   L69
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L70
+    ALOAD 0
+    LDC 1142371981
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L71
+    ICONST_0
+    ISTORE 7
+   L72
+    LINENUMBER 3040 L72
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L73
+    ICONST_0
+    ISTORE 9
+   L74
+    LINENUMBER 3041 L74
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L75
+   L76
+    LINENUMBER 3042 L76
+    NOP
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L77
+    ICONST_0
+    ISTORE 10
+   L78
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function0; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      ()Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$206$lambda$205()Lkotlin/Unit;, 
+      ()Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L79
+   L79
+    ASTORE 15
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+   L80
+    LINENUMBER 3042 L80
+    ASTORE 10
+   L81
+    LINENUMBER 3043 L81
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L82
+    LINENUMBER 3044 L82
+    ALOAD 10
+   L83
+    GOTO L84
+   L75
+    LINENUMBER 3045 L75
+    ALOAD 8
+   L84
+    LINENUMBER 3040 L84
+    NOP
+   L85
+    LINENUMBER 3040 L85
+    NOP
+    GOTO L86
+   L86
+    LINENUMBER 2357 L86
+    CHECKCAST kotlin/jvm/functions/Function0
+    ASTORE 4
+   L87
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L88
+    ALOAD 0
+    LDC 1142372621
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L89
+    ICONST_0
+    ISTORE 7
+   L90
+    LINENUMBER 3040 L90
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L91
+    ICONST_0
+    ISTORE 9
+   L92
+    LINENUMBER 3041 L92
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L93
+   L94
+    LINENUMBER 3042 L94
+    NOP
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L95
+    ICONST_0
+    ISTORE 10
+   L96
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function0; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      ()Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$208$lambda$207()Lkotlin/Unit;, 
+      ()Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L97
+   L97
+    ASTORE 16
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+   L98
+    LINENUMBER 3042 L98
+    ASTORE 10
+   L99
+    LINENUMBER 3043 L99
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L100
+    LINENUMBER 3044 L100
+    ALOAD 10
+   L101
+    GOTO L102
+   L93
+    LINENUMBER 3045 L93
+    ALOAD 8
+   L102
+    LINENUMBER 3040 L102
+    NOP
+   L103
+    LINENUMBER 3040 L103
+    NOP
+    GOTO L104
+   L104
+    LINENUMBER 2357 L104
+    CHECKCAST kotlin/jvm/functions/Function0
+    ASTORE 4
+   L105
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L106
+    ALOAD 0
+    LDC 1142373837
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L107
+    LINENUMBER 2358 L107
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L108
+    ICONST_0
+    ISTORE 7
+   L109
+    LINENUMBER 3046 L109
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L110
+    ICONST_0
+    ISTORE 9
+   L111
+    LINENUMBER 3047 L111
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L112
+   L113
+    LINENUMBER 3048 L113
+    NOP
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L114
+    ICONST_0
+    ISTORE 10
+   L115
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$210$lambda$209(I)Lkotlin/Unit;, 
+      (Ljava/lang/Integer;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L116
+   L116
+    ASTORE 17
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+   L117
+    LINENUMBER 3048 L117
+    ASTORE 10
+   L118
+    LINENUMBER 3049 L118
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L119
+    LINENUMBER 3050 L119
+    ALOAD 10
+   L120
+    GOTO L121
+   L112
+    LINENUMBER 3051 L112
+    ALOAD 8
+   L121
+    LINENUMBER 3046 L121
+    NOP
+   L122
+    LINENUMBER 3046 L122
+    NOP
+    GOTO L123
+   L123
+    LINENUMBER 2358 L123
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L124
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L125
+    ALOAD 0
+    LDC 1142374509
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L126
+    ICONST_0
+    ISTORE 7
+   L127
+    LINENUMBER 3046 L127
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L128
+    ICONST_0
+    ISTORE 9
+   L129
+    LINENUMBER 3047 L129
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L130
+   L131
+    LINENUMBER 3048 L131
+    NOP
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L132
+    ICONST_0
+    ISTORE 10
+   L133
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$212$lambda$211(Lcom/fameafrica/afm2026/data/database/entities/LeaguesEntity;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/data/database/entities/LeaguesEntity;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L134
+   L134
+    ASTORE 18
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+   L135
+    LINENUMBER 3048 L135
+    ASTORE 10
+   L136
+    LINENUMBER 3049 L136
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L137
+    LINENUMBER 3050 L137
+    ALOAD 10
+   L138
+    GOTO L139
+   L130
+    LINENUMBER 3051 L130
+    ALOAD 8
+   L139
+    LINENUMBER 3046 L139
+    NOP
+   L140
+    LINENUMBER 3046 L140
+    NOP
+    GOTO L141
+   L141
+    LINENUMBER 2358 L141
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L142
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L143
+    ALOAD 0
+    LDC 1142375245
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L144
+    ICONST_0
+    ISTORE 7
+   L145
+    LINENUMBER 3046 L145
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L146
+    ICONST_0
+    ISTORE 9
+   L147
+    LINENUMBER 3047 L147
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L148
+   L149
+    LINENUMBER 3048 L149
+    NOP
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L150
+    ICONST_0
+    ISTORE 10
+   L151
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$214$lambda$213(Ljava/lang/Integer;)Lkotlin/Unit;, 
+      (Ljava/lang/Integer;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L152
+   L152
+    ASTORE 19
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+   L153
+    LINENUMBER 3048 L153
+    ASTORE 10
+   L154
+    LINENUMBER 3049 L154
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L155
+    LINENUMBER 3050 L155
+    ALOAD 10
+   L156
+    GOTO L157
+   L148
+    LINENUMBER 3051 L148
+    ALOAD 8
+   L157
+    LINENUMBER 3046 L157
+    NOP
+   L158
+    LINENUMBER 3046 L158
+    NOP
+    GOTO L159
+   L159
+    LINENUMBER 2358 L159
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L160
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L161
+    ALOAD 0
+    LDC 1142375853
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L162
+    ICONST_0
+    ISTORE 7
+   L163
+    LINENUMBER 3046 L163
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L164
+    ICONST_0
+    ISTORE 9
+   L165
+    LINENUMBER 3047 L165
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L166
+   L167
+    LINENUMBER 3048 L167
+    NOP
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L168
+    ICONST_0
+    ISTORE 10
+   L169
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$216$lambda$215(Lcom/fameafrica/afm2026/data/database/entities/TeamsEntity;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/data/database/entities/TeamsEntity;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L170
+   L170
+    ASTORE 20
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+   L171
+    LINENUMBER 3048 L171
+    ASTORE 10
+   L172
+    LINENUMBER 3049 L172
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L173
+    LINENUMBER 3050 L173
+    ALOAD 10
+   L174
+    GOTO L175
+   L166
+    LINENUMBER 3051 L166
+    ALOAD 8
+   L175
+    LINENUMBER 3046 L175
+    NOP
+   L176
+    LINENUMBER 3046 L176
+    NOP
+    GOTO L177
+   L177
+    LINENUMBER 2358 L177
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L178
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L179
+    ALOAD 0
+    LDC 1142389037
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L180
+    LINENUMBER 2362 L180
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L181
+    ICONST_0
+    ISTORE 7
+   L182
+    LINENUMBER 3052 L182
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L183
+    ICONST_0
+    ISTORE 9
+   L184
+    LINENUMBER 3053 L184
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L185
+   L186
+    LINENUMBER 3054 L186
+    NOP
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L187
+    ICONST_0
+    ISTORE 10
+   L188
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$218$lambda$217(Z)Lkotlin/Unit;, 
+      (Ljava/lang/Boolean;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L189
+   L189
+    ASTORE 21
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+   L190
+    LINENUMBER 3054 L190
+    ASTORE 10
+   L191
+    LINENUMBER 3055 L191
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L192
+    LINENUMBER 3056 L192
+    ALOAD 10
+   L193
+    GOTO L194
+   L185
+    LINENUMBER 3057 L185
+    ALOAD 8
+   L194
+    LINENUMBER 3052 L194
+    NOP
+   L195
+    LINENUMBER 3052 L195
+    NOP
+    GOTO L196
+   L196
+    LINENUMBER 2362 L196
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L197
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L198
+    ALOAD 0
+    LDC 1142389997
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L199
+    ICONST_0
+    ISTORE 7
+   L200
+    LINENUMBER 3052 L200
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L201
+    ICONST_0
+    ISTORE 9
+   L202
+    LINENUMBER 3053 L202
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L203
+   L204
+    LINENUMBER 3054 L204
+    NOP
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L205
+    ICONST_0
+    ISTORE 10
+   L206
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$220$lambda$219(Z)Lkotlin/Unit;, 
+      (Ljava/lang/Boolean;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L207
+   L207
+    ASTORE 22
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+   L208
+    LINENUMBER 3054 L208
+    ASTORE 10
+   L209
+    LINENUMBER 3055 L209
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L210
+    LINENUMBER 3056 L210
+    ALOAD 10
+   L211
+    GOTO L212
+   L203
+    LINENUMBER 3057 L203
+    ALOAD 8
+   L212
+    LINENUMBER 3052 L212
+    NOP
+   L213
+    LINENUMBER 3052 L213
+    NOP
+    GOTO L214
+   L214
+    LINENUMBER 2362 L214
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L215
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L216
+    ALOAD 0
+    LDC 1142377197
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L217
+    LINENUMBER 2359 L217
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L218
+    ICONST_0
+    ISTORE 7
+   L219
+    LINENUMBER 3058 L219
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L220
+    ICONST_0
+    ISTORE 9
+   L221
+    LINENUMBER 3059 L221
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L222
+   L223
+    LINENUMBER 3060 L223
+    NOP
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L224
+    ICONST_0
+    ISTORE 10
+   L225
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$222$lambda$221(Ljava/lang/String;)Lkotlin/Unit;, 
+      (Ljava/lang/String;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L226
+   L226
+    ASTORE 23
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+   L227
+    LINENUMBER 3060 L227
+    ASTORE 10
+   L228
+    LINENUMBER 3061 L228
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L229
+    LINENUMBER 3062 L229
+    ALOAD 10
+   L230
+    GOTO L231
+   L222
+    LINENUMBER 3063 L222
+    ALOAD 8
+   L231
+    LINENUMBER 3058 L231
+    NOP
+   L232
+    LINENUMBER 3058 L232
+    NOP
+    GOTO L233
+   L233
+    LINENUMBER 2359 L233
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L234
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L235
+    ALOAD 0
+    LDC 1142378253
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L236
+    ICONST_0
+    ISTORE 7
+   L237
+    LINENUMBER 3058 L237
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L238
+    ICONST_0
+    ISTORE 9
+   L239
+    LINENUMBER 3059 L239
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L240
+   L241
+    LINENUMBER 3060 L241
+    NOP
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L242
+    ICONST_0
+    ISTORE 10
+   L243
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$224$lambda$223(Ljava/lang/String;)Lkotlin/Unit;, 
+      (Ljava/lang/String;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L244
+   L244
+    ASTORE 24
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+   L245
+    LINENUMBER 3060 L245
+    ASTORE 10
+   L246
+    LINENUMBER 3061 L246
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L247
+    LINENUMBER 3062 L247
+    ALOAD 10
+   L248
+    GOTO L249
+   L240
+    LINENUMBER 3063 L240
+    ALOAD 8
+   L249
+    LINENUMBER 3058 L249
+    NOP
+   L250
+    LINENUMBER 3058 L250
+    NOP
+    GOTO L251
+   L251
+    LINENUMBER 2359 L251
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L252
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L253
+    ALOAD 0
+    LDC 1142379033
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L254
+    ICONST_0
+    ISTORE 7
+   L255
+    LINENUMBER 3058 L255
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L256
+    ICONST_0
+    ISTORE 9
+   L257
+    LINENUMBER 3059 L257
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L258
+   L259
+    LINENUMBER 3060 L259
+    NOP
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L260
+    ICONST_0
+    ISTORE 10
+   L261
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function3; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$226$lambda$225(III)Lkotlin/Unit;, 
+      (Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L262
+   L262
+    ASTORE 25
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+   L263
+    LINENUMBER 3060 L263
+    ASTORE 10
+   L264
+    LINENUMBER 3061 L264
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L265
+    LINENUMBER 3062 L265
+    ALOAD 10
+   L266
+    GOTO L267
+   L258
+    LINENUMBER 3063 L258
+    ALOAD 8
+   L267
+    LINENUMBER 3058 L267
+    NOP
+   L268
+    LINENUMBER 3058 L268
+    NOP
+    GOTO L269
+   L269
+    LINENUMBER 2359 L269
+    CHECKCAST kotlin/jvm/functions/Function3
+    ASTORE 4
+   L270
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L271
+    ALOAD 0
+    LDC 1142380787
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L272
+    LINENUMBER 2360 L272
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L273
+    ICONST_0
+    ISTORE 7
+   L274
+    LINENUMBER 3064 L274
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L275
+    ICONST_0
+    ISTORE 9
+   L276
+    LINENUMBER 3065 L276
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L277
+   L278
+    LINENUMBER 3066 L278
+    NOP
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L279
+    ICONST_0
+    ISTORE 10
+   L280
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$228$lambda$227(Lcom/fameafrica/afm2026/ui/screen/career/ManagerialStyle;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/ui/screen/career/ManagerialStyle;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L281
+   L281
+    ASTORE 26
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+   L282
+    LINENUMBER 3066 L282
+    ASTORE 10
+   L283
+    LINENUMBER 3067 L283
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L284
+    LINENUMBER 3068 L284
+    ALOAD 10
+   L285
+    GOTO L286
+   L277
+    LINENUMBER 3069 L277
+    ALOAD 8
+   L286
+    LINENUMBER 3064 L286
+    NOP
+   L287
+    LINENUMBER 3064 L287
+    NOP
+    GOTO L288
+   L288
+    LINENUMBER 2360 L288
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L289
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L290
+    ALOAD 0
+    LDC 1142381939
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L291
+    ICONST_0
+    ISTORE 7
+   L292
+    LINENUMBER 3064 L292
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L293
+    ICONST_0
+    ISTORE 9
+   L294
+    LINENUMBER 3065 L294
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L295
+   L296
+    LINENUMBER 3066 L296
+    NOP
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L297
+    ICONST_0
+    ISTORE 10
+   L298
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$230$lambda$229(Lcom/fameafrica/afm2026/ui/screen/career/CoachingLicense;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/ui/screen/career/CoachingLicense;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L299
+   L299
+    ASTORE 27
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+   L300
+    LINENUMBER 3066 L300
+    ASTORE 10
+   L301
+    LINENUMBER 3067 L301
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L302
+    LINENUMBER 3068 L302
+    ALOAD 10
+   L303
+    GOTO L304
+   L295
+    LINENUMBER 3069 L295
+    ALOAD 8
+   L304
+    LINENUMBER 3064 L304
+    NOP
+   L305
+    LINENUMBER 3064 L305
+    NOP
+    GOTO L306
+   L306
+    LINENUMBER 2360 L306
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L307
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L308
+    ALOAD 0
+    LDC 1142383059
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L309
+    ICONST_0
+    ISTORE 7
+   L310
+    LINENUMBER 3064 L310
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L311
+    ICONST_0
+    ISTORE 9
+   L312
+    LINENUMBER 3065 L312
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L313
+   L314
+    LINENUMBER 3066 L314
+    NOP
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L315
+    ICONST_0
+    ISTORE 10
+   L316
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$232$lambda$231(Ljava/lang/String;)Lkotlin/Unit;, 
+      (Ljava/lang/String;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L317
+   L317
+    ASTORE 28
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+   L318
+    LINENUMBER 3066 L318
+    ASTORE 10
+   L319
+    LINENUMBER 3067 L319
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L320
+    LINENUMBER 3068 L320
+    ALOAD 10
+   L321
+    GOTO L322
+   L313
+    LINENUMBER 3069 L313
+    ALOAD 8
+   L322
+    LINENUMBER 3064 L322
+    NOP
+   L323
+    LINENUMBER 3064 L323
+    NOP
+    GOTO L324
+   L324
+    LINENUMBER 2360 L324
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L325
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L326
+    ALOAD 0
+    LDC 1142384429
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L327
+    LINENUMBER 2361 L327
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L328
+    ICONST_0
+    ISTORE 7
+   L329
+    LINENUMBER 3070 L329
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L330
+    ICONST_0
+    ISTORE 9
+   L331
+    LINENUMBER 3071 L331
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L332
+   L333
+    LINENUMBER 3072 L333
+    NOP
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L334
+    ICONST_0
+    ISTORE 10
+   L335
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$234$lambda$233(Ljava/lang/String;)Lkotlin/Unit;, 
+      (Ljava/lang/String;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L336
+   L336
+    ASTORE 29
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+   L337
+    LINENUMBER 3072 L337
+    ASTORE 10
+   L338
+    LINENUMBER 3073 L338
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L339
+    LINENUMBER 3074 L339
+    ALOAD 10
+   L340
+    GOTO L341
+   L332
+    LINENUMBER 3075 L332
+    ALOAD 8
+   L341
+    LINENUMBER 3070 L341
+    NOP
+   L342
+    LINENUMBER 3070 L342
+    NOP
+    GOTO L343
+   L343
+    LINENUMBER 2361 L343
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L344
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L345
+    ALOAD 0
+    LDC 1142385069
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L346
+    ICONST_0
+    ISTORE 7
+   L347
+    LINENUMBER 3070 L347
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L348
+    ICONST_0
+    ISTORE 9
+   L349
+    LINENUMBER 3071 L349
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L350
+   L351
+    LINENUMBER 3072 L351
+    NOP
+    ASTORE 29
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L352
+    ICONST_0
+    ISTORE 10
+   L353
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$236$lambda$235(Lcom/fameafrica/afm2026/ui/screen/career/Agent;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/ui/screen/career/Agent;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L354
+   L354
+    ASTORE 30
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+    ALOAD 30
+   L355
+    LINENUMBER 3072 L355
+    ASTORE 10
+   L356
+    LINENUMBER 3073 L356
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L357
+    LINENUMBER 3074 L357
+    ALOAD 10
+   L358
+    GOTO L359
+   L350
+    LINENUMBER 3075 L350
+    ALOAD 8
+   L359
+    LINENUMBER 3070 L359
+    NOP
+   L360
+    LINENUMBER 3070 L360
+    NOP
+    GOTO L361
+   L361
+    LINENUMBER 2361 L361
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L362
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L363
+    ALOAD 0
+    LDC 1142385869
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L364
+    ICONST_0
+    ISTORE 7
+   L365
+    LINENUMBER 3070 L365
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L366
+    ICONST_0
+    ISTORE 9
+   L367
+    LINENUMBER 3071 L367
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L368
+   L369
+    LINENUMBER 3072 L369
+    NOP
+    ASTORE 30
+    ASTORE 29
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L370
+    ICONST_0
+    ISTORE 10
+   L371
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$238$lambda$237(Lcom/fameafrica/afm2026/ui/screen/career/Difficulty;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/ui/screen/career/Difficulty;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L372
+   L372
+    ASTORE 31
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+    ALOAD 30
+    ALOAD 31
+   L373
+    LINENUMBER 3072 L373
+    ASTORE 10
+   L374
+    LINENUMBER 3073 L374
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L375
+    LINENUMBER 3074 L375
+    ALOAD 10
+   L376
+    GOTO L377
+   L368
+    LINENUMBER 3075 L368
+    ALOAD 8
+   L377
+    LINENUMBER 3070 L377
+    NOP
+   L378
+    LINENUMBER 3070 L378
+    NOP
+    GOTO L379
+   L379
+    LINENUMBER 2361 L379
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L380
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L381
+    ALOAD 0
+    LDC 1142386733
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L382
+    ICONST_0
+    ISTORE 7
+   L383
+    LINENUMBER 3070 L383
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L384
+    ICONST_0
+    ISTORE 9
+   L385
+    LINENUMBER 3071 L385
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L386
+   L387
+    LINENUMBER 3072 L387
+    NOP
+    ASTORE 31
+    ASTORE 30
+    ASTORE 29
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L388
+    ICONST_0
+    ISTORE 10
+   L389
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$240$lambda$239(Lcom/fameafrica/afm2026/ui/screen/career/CareerVision;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/ui/screen/career/CareerVision;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L390
+   L390
+    ASTORE 32
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+    ALOAD 30
+    ALOAD 31
+    ALOAD 32
+   L391
+    LINENUMBER 3072 L391
+    ASTORE 10
+   L392
+    LINENUMBER 3073 L392
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L393
+    LINENUMBER 3074 L393
+    ALOAD 10
+   L394
+    GOTO L395
+   L386
+    LINENUMBER 3075 L386
+    ALOAD 8
+   L395
+    LINENUMBER 3070 L395
+    NOP
+   L396
+    LINENUMBER 3070 L396
+    NOP
+    GOTO L397
+   L397
+    LINENUMBER 2361 L397
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L398
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L399
+    ALOAD 0
+    LDC 1142393773
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L400
+    LINENUMBER 2364 L400
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L401
+    ICONST_0
+    ISTORE 7
+   L402
+    LINENUMBER 3076 L402
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L403
+    ICONST_0
+    ISTORE 9
+   L404
+    LINENUMBER 3077 L404
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L405
+   L406
+    LINENUMBER 3078 L406
+    NOP
+    ASTORE 32
+    ASTORE 31
+    ASTORE 30
+    ASTORE 29
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L407
+    ICONST_0
+    ISTORE 10
+   L408
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$242$lambda$241(Lcom/fameafrica/afm2026/ui/screen/career/GameMode;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/ui/screen/career/GameMode;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L409
+   L409
+    ASTORE 33
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+    ALOAD 30
+    ALOAD 31
+    ALOAD 32
+    ALOAD 33
+   L410
+    LINENUMBER 3078 L410
+    ASTORE 10
+   L411
+    LINENUMBER 3079 L411
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L412
+    LINENUMBER 3080 L412
+    ALOAD 10
+   L413
+    GOTO L414
+   L405
+    LINENUMBER 3081 L405
+    ALOAD 8
+   L414
+    LINENUMBER 3076 L414
+    NOP
+   L415
+    LINENUMBER 3076 L415
+    NOP
+    GOTO L416
+   L416
+    LINENUMBER 2364 L416
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L417
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L418
+    ALOAD 0
+    LDC 1142395149
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L419
+    LINENUMBER 2365 L419
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L420
+    ICONST_0
+    ISTORE 7
+   L421
+    LINENUMBER 3082 L421
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L422
+    ICONST_0
+    ISTORE 9
+   L423
+    LINENUMBER 3083 L423
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L424
+   L425
+    LINENUMBER 3084 L425
+    NOP
+    ASTORE 33
+    ASTORE 32
+    ASTORE 31
+    ASTORE 30
+    ASTORE 29
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L426
+    ICONST_0
+    ISTORE 10
+   L427
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$244$lambda$243(Ljava/lang/String;)Lkotlin/Unit;, 
+      (Ljava/lang/String;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L428
+   L428
+    ASTORE 34
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+    ALOAD 30
+    ALOAD 31
+    ALOAD 32
+    ALOAD 33
+    ALOAD 34
+   L429
+    LINENUMBER 3084 L429
+    ASTORE 10
+   L430
+    LINENUMBER 3085 L430
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L431
+    LINENUMBER 3086 L431
+    ALOAD 10
+   L432
+    GOTO L433
+   L424
+    LINENUMBER 3087 L424
+    ALOAD 8
+   L433
+    LINENUMBER 3082 L433
+    NOP
+   L434
+    LINENUMBER 3082 L434
+    NOP
+    GOTO L435
+   L435
+    LINENUMBER 2365 L435
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L436
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L437
+    ALOAD 0
+    LDC 1142396191
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L438
+    ICONST_0
+    ISTORE 7
+   L439
+    LINENUMBER 3082 L439
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L440
+    ICONST_0
+    ISTORE 9
+   L441
+    LINENUMBER 3083 L441
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L442
+   L443
+    LINENUMBER 3084 L443
+    NOP
+    ASTORE 34
+    ASTORE 33
+    ASTORE 32
+    ASTORE 31
+    ASTORE 30
+    ASTORE 29
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L444
+    ICONST_0
+    ISTORE 10
+   L445
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function5; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$246$lambda$245(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)Lkotlin/Unit;, 
+      (Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L446
+   L446
+    ASTORE 35
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+    ALOAD 30
+    ALOAD 31
+    ALOAD 32
+    ALOAD 33
+    ALOAD 34
+    ALOAD 35
+   L447
+    LINENUMBER 3084 L447
+    ASTORE 10
+   L448
+    LINENUMBER 3085 L448
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L449
+    LINENUMBER 3086 L449
+    ALOAD 10
+   L450
+    GOTO L451
+   L442
+    LINENUMBER 3087 L442
+    ALOAD 8
+   L451
+    LINENUMBER 3082 L451
+    NOP
+   L452
+    LINENUMBER 3082 L452
+    NOP
+    GOTO L453
+   L453
+    LINENUMBER 2365 L453
+    CHECKCAST kotlin/jvm/functions/Function5
+    ASTORE 4
+   L454
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L455
+    ALOAD 0
+    LDC 1142398189
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L456
+    LINENUMBER 2366 L456
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L457
+    ICONST_0
+    ISTORE 7
+   L458
+    LINENUMBER 3088 L458
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L459
+    ICONST_0
+    ISTORE 9
+   L460
+    LINENUMBER 3089 L460
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L461
+   L462
+    LINENUMBER 3090 L462
+    NOP
+    ASTORE 35
+    ASTORE 34
+    ASTORE 33
+    ASTORE 32
+    ASTORE 31
+    ASTORE 30
+    ASTORE 29
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L463
+    ICONST_0
+    ISTORE 10
+   L464
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$248$lambda$247(Lcom/fameafrica/afm2026/ui/screen/career/ChairmanEntryMode;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/ui/screen/career/ChairmanEntryMode;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L465
+   L465
+    ASTORE 36
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+    ALOAD 30
+    ALOAD 31
+    ALOAD 32
+    ALOAD 33
+    ALOAD 34
+    ALOAD 35
+    ALOAD 36
+   L466
+    LINENUMBER 3090 L466
+    ASTORE 10
+   L467
+    LINENUMBER 3091 L467
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L468
+    LINENUMBER 3092 L468
+    ALOAD 10
+   L469
+    GOTO L470
+   L461
+    LINENUMBER 3093 L461
+    ALOAD 8
+   L470
+    LINENUMBER 3088 L470
+    NOP
+   L471
+    LINENUMBER 3088 L471
+    NOP
+    GOTO L472
+   L472
+    LINENUMBER 2366 L472
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L473
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L474
+    ALOAD 0
+    LDC 1142387757
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L475
+    LINENUMBER 2361 L475
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L476
+    ICONST_0
+    ISTORE 7
+   L477
+    LINENUMBER 3094 L477
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L478
+    ICONST_0
+    ISTORE 9
+   L479
+    LINENUMBER 3095 L479
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L480
+   L481
+    LINENUMBER 3096 L481
+    NOP
+    ASTORE 36
+    ASTORE 35
+    ASTORE 34
+    ASTORE 33
+    ASTORE 32
+    ASTORE 31
+    ASTORE 30
+    ASTORE 29
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L482
+    ICONST_0
+    ISTORE 10
+   L483
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$250$lambda$249(Lcom/fameafrica/afm2026/ui/screen/career/ManagerSelectionMode;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/ui/screen/career/ManagerSelectionMode;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L484
+   L484
+    ASTORE 37
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+    ALOAD 30
+    ALOAD 31
+    ALOAD 32
+    ALOAD 33
+    ALOAD 34
+    ALOAD 35
+    ALOAD 36
+    ALOAD 37
+   L485
+    LINENUMBER 3096 L485
+    ASTORE 10
+   L486
+    LINENUMBER 3097 L486
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L487
+    LINENUMBER 3098 L487
+    ALOAD 10
+   L488
+    GOTO L489
+   L480
+    LINENUMBER 3099 L480
+    ALOAD 8
+   L489
+    LINENUMBER 3094 L489
+    NOP
+   L490
+    LINENUMBER 3094 L490
+    NOP
+    GOTO L491
+   L491
+    LINENUMBER 2361 L491
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L492
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L493
+    ALOAD 0
+    LDC 1142391469
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L494
+    LINENUMBER 2363 L494
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L495
+    ICONST_0
+    ISTORE 7
+   L496
+    LINENUMBER 3100 L496
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L497
+    ICONST_0
+    ISTORE 9
+   L498
+    LINENUMBER 3101 L498
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L499
+   L500
+    LINENUMBER 3102 L500
+    NOP
+    ASTORE 37
+    ASTORE 36
+    ASTORE 35
+    ASTORE 34
+    ASTORE 33
+    ASTORE 32
+    ASTORE 31
+    ASTORE 30
+    ASTORE 29
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L501
+    ICONST_0
+    ISTORE 10
+   L502
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$252$lambda$251(Lcom/fameafrica/afm2026/data/database/entities/ManagersEntity;)Lkotlin/Unit;, 
+      (Lcom/fameafrica/afm2026/data/database/entities/ManagersEntity;)Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L503
+   L503
+    ASTORE 38
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+    ALOAD 30
+    ALOAD 31
+    ALOAD 32
+    ALOAD 33
+    ALOAD 34
+    ALOAD 35
+    ALOAD 36
+    ALOAD 37
+    ALOAD 38
+   L504
+    LINENUMBER 3102 L504
+    ASTORE 10
+   L505
+    LINENUMBER 3103 L505
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L506
+    LINENUMBER 3104 L506
+    ALOAD 10
+   L507
+    GOTO L508
+   L499
+    LINENUMBER 3105 L499
+    ALOAD 8
+   L508
+    LINENUMBER 3100 L508
+    NOP
+   L509
+    LINENUMBER 3100 L509
+    NOP
+    GOTO L510
+   L510
+    LINENUMBER 2363 L510
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 4
+   L511
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L512
+    ALOAD 0
+    LDC 1142392621
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 0
+    ASTORE 5
+    NOP
+    ICONST_0
+    ISTORE 6
+    NOP
+   L513
+    ICONST_0
+    ISTORE 7
+   L514
+    LINENUMBER 3100 L514
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 8
+   L515
+    ICONST_0
+    ISTORE 9
+   L516
+    LINENUMBER 3101 L516
+    ILOAD 6
+    POP
+    ALOAD 8
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L517
+   L518
+    LINENUMBER 3102 L518
+    NOP
+    ASTORE 38
+    ASTORE 37
+    ASTORE 36
+    ASTORE 35
+    ASTORE 34
+    ASTORE 33
+    ASTORE 32
+    ASTORE 31
+    ASTORE 30
+    ASTORE 29
+    ASTORE 28
+    ASTORE 27
+    ASTORE 26
+    ASTORE 25
+    ASTORE 24
+    ASTORE 23
+    ASTORE 22
+    ASTORE 21
+    ASTORE 20
+    ASTORE 19
+    ASTORE 18
+    ASTORE 17
+    ASTORE 16
+    ASTORE 15
+    ASTORE 14
+    ASTORE 13
+    ASTORE 12
+    ASTORE 11
+   L519
+    ICONST_0
+    ISTORE 10
+   L520
+    INVOKEDYNAMIC invoke()Lkotlin/jvm/functions/Function0; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      ()Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255$lambda$254$lambda$253()Lkotlin/Unit;, 
+      ()Lkotlin/Unit;
+    ]
+    NOP
+    GOTO L521
+   L521
+    ASTORE 39
+    ALOAD 11
+    ALOAD 12
+    ALOAD 13
+    ALOAD 14
+    ALOAD 15
+    ALOAD 16
+    ALOAD 17
+    ALOAD 18
+    ALOAD 19
+    ALOAD 20
+    ALOAD 21
+    ALOAD 22
+    ALOAD 23
+    ALOAD 24
+    ALOAD 25
+    ALOAD 26
+    ALOAD 27
+    ALOAD 28
+    ALOAD 29
+    ALOAD 30
+    ALOAD 31
+    ALOAD 32
+    ALOAD 33
+    ALOAD 34
+    ALOAD 35
+    ALOAD 36
+    ALOAD 37
+    ALOAD 38
+    ALOAD 39
+   L522
+    LINENUMBER 3102 L522
+    ASTORE 10
+   L523
+    LINENUMBER 3103 L523
+    ALOAD 5
+    ALOAD 10
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L524
+    LINENUMBER 3104 L524
+    ALOAD 10
+   L525
+    GOTO L526
+   L517
+    LINENUMBER 3105 L517
+    ALOAD 8
+   L526
+    LINENUMBER 3100 L526
+    NOP
+   L527
+    LINENUMBER 3100 L527
+    NOP
+    GOTO L528
+   L528
+    LINENUMBER 2363 L528
+    CHECKCAST kotlin/jvm/functions/Function0
+    ASTORE 4
+   L529
+    ALOAD 0
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 4
+   L530
+    ALOAD 0
+    LDC 920350128
+    LDC 920350134
+    LDC 115043766
+   L531
+    LINENUMBER 2340 L531
+    INVOKESTATIC com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt.CareerSetupScreenContent (Lcom/fameafrica/afm2026/ui/screen/career/CareerUiState;Ljava/util/Map;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function5;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;III)V
+   L532
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.isTraceInProgress ()Z
+    IFEQ L533
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.traceEventEnd ()V
+   L533
+    GOTO L534
+   L3
+    LINENUMBER 2339 L3
+    ALOAD 0
+    INVOKEINTERFACE androidx/compose/runtime/Composer.skipToGroupEnd ()V (itf)
+   L534
+    LINENUMBER 2368 L534
+    NOP
+    GETSTATIC kotlin/Unit.INSTANCE : Lkotlin/Unit;
+    ARETURN
+   L535
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$1\3\3042\0 I L42 L43 10
+    LOCALVARIABLE value\2 Ljava/lang/Object; L45 L47 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\2\3040\1 I L38 L48 9
+    LOCALVARIABLE it\1 Ljava/lang/Object; L37 L48 8
+    LOCALVARIABLE $i$f$cache\1\2357 I L36 L50 7
+    LOCALVARIABLE $this$cache\1 Landroidx/compose/runtime/Composer; L35 L50 5
+    LOCALVARIABLE invalid\1 Z L35 L50 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$2\6\3042\0 I L60 L61 10
+    LOCALVARIABLE value\5 Ljava/lang/Object; L63 L65 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\5\3040\4 I L56 L66 9
+    LOCALVARIABLE it\4 Ljava/lang/Object; L55 L66 8
+    LOCALVARIABLE $i$f$cache\4\2357 I L54 L68 7
+    LOCALVARIABLE $this$cache\4 Landroidx/compose/runtime/Composer; L53 L68 5
+    LOCALVARIABLE invalid\4 Z L53 L68 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$3\9\3042\0 I L78 L79 10
+    LOCALVARIABLE value\8 Ljava/lang/Object; L81 L83 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\8\3040\7 I L74 L84 9
+    LOCALVARIABLE it\7 Ljava/lang/Object; L73 L84 8
+    LOCALVARIABLE $i$f$cache\7\2357 I L72 L86 7
+    LOCALVARIABLE $this$cache\7 Landroidx/compose/runtime/Composer; L71 L86 5
+    LOCALVARIABLE invalid\7 Z L71 L86 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$4\12\3042\0 I L96 L97 10
+    LOCALVARIABLE value\11 Ljava/lang/Object; L99 L101 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\11\3040\10 I L92 L102 9
+    LOCALVARIABLE it\10 Ljava/lang/Object; L91 L102 8
+    LOCALVARIABLE $i$f$cache\10\2357 I L90 L104 7
+    LOCALVARIABLE $this$cache\10 Landroidx/compose/runtime/Composer; L89 L104 5
+    LOCALVARIABLE invalid\10 Z L89 L104 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$5\15\3048\0 I L115 L116 10
+    LOCALVARIABLE value\14 Ljava/lang/Object; L118 L120 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\14\3046\13 I L111 L121 9
+    LOCALVARIABLE it\13 Ljava/lang/Object; L110 L121 8
+    LOCALVARIABLE $i$f$cache\13\2358 I L109 L123 7
+    LOCALVARIABLE $this$cache\13 Landroidx/compose/runtime/Composer; L108 L123 5
+    LOCALVARIABLE invalid\13 Z L108 L123 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$6\18\3048\0 I L133 L134 10
+    LOCALVARIABLE value\17 Ljava/lang/Object; L136 L138 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\17\3046\16 I L129 L139 9
+    LOCALVARIABLE it\16 Ljava/lang/Object; L128 L139 8
+    LOCALVARIABLE $i$f$cache\16\2358 I L127 L141 7
+    LOCALVARIABLE $this$cache\16 Landroidx/compose/runtime/Composer; L126 L141 5
+    LOCALVARIABLE invalid\16 Z L126 L141 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$7\21\3048\0 I L151 L152 10
+    LOCALVARIABLE value\20 Ljava/lang/Object; L154 L156 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\20\3046\19 I L147 L157 9
+    LOCALVARIABLE it\19 Ljava/lang/Object; L146 L157 8
+    LOCALVARIABLE $i$f$cache\19\2358 I L145 L159 7
+    LOCALVARIABLE $this$cache\19 Landroidx/compose/runtime/Composer; L144 L159 5
+    LOCALVARIABLE invalid\19 Z L144 L159 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$8\24\3048\0 I L169 L170 10
+    LOCALVARIABLE value\23 Ljava/lang/Object; L172 L174 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\23\3046\22 I L165 L175 9
+    LOCALVARIABLE it\22 Ljava/lang/Object; L164 L175 8
+    LOCALVARIABLE $i$f$cache\22\2358 I L163 L177 7
+    LOCALVARIABLE $this$cache\22 Landroidx/compose/runtime/Composer; L162 L177 5
+    LOCALVARIABLE invalid\22 Z L162 L177 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$9\27\3054\0 I L188 L189 10
+    LOCALVARIABLE value\26 Ljava/lang/Object; L191 L193 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\26\3052\25 I L184 L194 9
+    LOCALVARIABLE it\25 Ljava/lang/Object; L183 L194 8
+    LOCALVARIABLE $i$f$cache\25\2362 I L182 L196 7
+    LOCALVARIABLE $this$cache\25 Landroidx/compose/runtime/Composer; L181 L196 5
+    LOCALVARIABLE invalid\25 Z L181 L196 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$10\30\3054\0 I L206 L207 10
+    LOCALVARIABLE value\29 Ljava/lang/Object; L209 L211 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\29\3052\28 I L202 L212 9
+    LOCALVARIABLE it\28 Ljava/lang/Object; L201 L212 8
+    LOCALVARIABLE $i$f$cache\28\2362 I L200 L214 7
+    LOCALVARIABLE $this$cache\28 Landroidx/compose/runtime/Composer; L199 L214 5
+    LOCALVARIABLE invalid\28 Z L199 L214 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$11\33\3060\0 I L225 L226 10
+    LOCALVARIABLE value\32 Ljava/lang/Object; L228 L230 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\32\3058\31 I L221 L231 9
+    LOCALVARIABLE it\31 Ljava/lang/Object; L220 L231 8
+    LOCALVARIABLE $i$f$cache\31\2359 I L219 L233 7
+    LOCALVARIABLE $this$cache\31 Landroidx/compose/runtime/Composer; L218 L233 5
+    LOCALVARIABLE invalid\31 Z L218 L233 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$12\36\3060\0 I L243 L244 10
+    LOCALVARIABLE value\35 Ljava/lang/Object; L246 L248 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\35\3058\34 I L239 L249 9
+    LOCALVARIABLE it\34 Ljava/lang/Object; L238 L249 8
+    LOCALVARIABLE $i$f$cache\34\2359 I L237 L251 7
+    LOCALVARIABLE $this$cache\34 Landroidx/compose/runtime/Composer; L236 L251 5
+    LOCALVARIABLE invalid\34 Z L236 L251 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$13\39\3060\0 I L261 L262 10
+    LOCALVARIABLE value\38 Ljava/lang/Object; L264 L266 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\38\3058\37 I L257 L267 9
+    LOCALVARIABLE it\37 Ljava/lang/Object; L256 L267 8
+    LOCALVARIABLE $i$f$cache\37\2359 I L255 L269 7
+    LOCALVARIABLE $this$cache\37 Landroidx/compose/runtime/Composer; L254 L269 5
+    LOCALVARIABLE invalid\37 Z L254 L269 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$14\42\3066\0 I L280 L281 10
+    LOCALVARIABLE value\41 Ljava/lang/Object; L283 L285 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\41\3064\40 I L276 L286 9
+    LOCALVARIABLE it\40 Ljava/lang/Object; L275 L286 8
+    LOCALVARIABLE $i$f$cache\40\2360 I L274 L288 7
+    LOCALVARIABLE $this$cache\40 Landroidx/compose/runtime/Composer; L273 L288 5
+    LOCALVARIABLE invalid\40 Z L273 L288 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$15\45\3066\0 I L298 L299 10
+    LOCALVARIABLE value\44 Ljava/lang/Object; L301 L303 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\44\3064\43 I L294 L304 9
+    LOCALVARIABLE it\43 Ljava/lang/Object; L293 L304 8
+    LOCALVARIABLE $i$f$cache\43\2360 I L292 L306 7
+    LOCALVARIABLE $this$cache\43 Landroidx/compose/runtime/Composer; L291 L306 5
+    LOCALVARIABLE invalid\43 Z L291 L306 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$16\48\3066\0 I L316 L317 10
+    LOCALVARIABLE value\47 Ljava/lang/Object; L319 L321 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\47\3064\46 I L312 L322 9
+    LOCALVARIABLE it\46 Ljava/lang/Object; L311 L322 8
+    LOCALVARIABLE $i$f$cache\46\2360 I L310 L324 7
+    LOCALVARIABLE $this$cache\46 Landroidx/compose/runtime/Composer; L309 L324 5
+    LOCALVARIABLE invalid\46 Z L309 L324 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$17\51\3072\0 I L335 L336 10
+    LOCALVARIABLE value\50 Ljava/lang/Object; L338 L340 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\50\3070\49 I L331 L341 9
+    LOCALVARIABLE it\49 Ljava/lang/Object; L330 L341 8
+    LOCALVARIABLE $i$f$cache\49\2361 I L329 L343 7
+    LOCALVARIABLE $this$cache\49 Landroidx/compose/runtime/Composer; L328 L343 5
+    LOCALVARIABLE invalid\49 Z L328 L343 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$18\54\3072\0 I L353 L354 10
+    LOCALVARIABLE value\53 Ljava/lang/Object; L356 L358 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\53\3070\52 I L349 L359 9
+    LOCALVARIABLE it\52 Ljava/lang/Object; L348 L359 8
+    LOCALVARIABLE $i$f$cache\52\2361 I L347 L361 7
+    LOCALVARIABLE $this$cache\52 Landroidx/compose/runtime/Composer; L346 L361 5
+    LOCALVARIABLE invalid\52 Z L346 L361 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$19\57\3072\0 I L371 L372 10
+    LOCALVARIABLE value\56 Ljava/lang/Object; L374 L376 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\56\3070\55 I L367 L377 9
+    LOCALVARIABLE it\55 Ljava/lang/Object; L366 L377 8
+    LOCALVARIABLE $i$f$cache\55\2361 I L365 L379 7
+    LOCALVARIABLE $this$cache\55 Landroidx/compose/runtime/Composer; L364 L379 5
+    LOCALVARIABLE invalid\55 Z L364 L379 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$20\60\3072\0 I L389 L390 10
+    LOCALVARIABLE value\59 Ljava/lang/Object; L392 L394 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\59\3070\58 I L385 L395 9
+    LOCALVARIABLE it\58 Ljava/lang/Object; L384 L395 8
+    LOCALVARIABLE $i$f$cache\58\2361 I L383 L397 7
+    LOCALVARIABLE $this$cache\58 Landroidx/compose/runtime/Composer; L382 L397 5
+    LOCALVARIABLE invalid\58 Z L382 L397 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$21\63\3078\0 I L408 L409 10
+    LOCALVARIABLE value\62 Ljava/lang/Object; L411 L413 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\62\3076\61 I L404 L414 9
+    LOCALVARIABLE it\61 Ljava/lang/Object; L403 L414 8
+    LOCALVARIABLE $i$f$cache\61\2364 I L402 L416 7
+    LOCALVARIABLE $this$cache\61 Landroidx/compose/runtime/Composer; L401 L416 5
+    LOCALVARIABLE invalid\61 Z L401 L416 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$22\66\3084\0 I L427 L428 10
+    LOCALVARIABLE value\65 Ljava/lang/Object; L430 L432 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\65\3082\64 I L423 L433 9
+    LOCALVARIABLE it\64 Ljava/lang/Object; L422 L433 8
+    LOCALVARIABLE $i$f$cache\64\2365 I L421 L435 7
+    LOCALVARIABLE $this$cache\64 Landroidx/compose/runtime/Composer; L420 L435 5
+    LOCALVARIABLE invalid\64 Z L420 L435 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$23\69\3084\0 I L445 L446 10
+    LOCALVARIABLE value\68 Ljava/lang/Object; L448 L450 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\68\3082\67 I L441 L451 9
+    LOCALVARIABLE it\67 Ljava/lang/Object; L440 L451 8
+    LOCALVARIABLE $i$f$cache\67\2365 I L439 L453 7
+    LOCALVARIABLE $this$cache\67 Landroidx/compose/runtime/Composer; L438 L453 5
+    LOCALVARIABLE invalid\67 Z L438 L453 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$24\72\3090\0 I L464 L465 10
+    LOCALVARIABLE value\71 Ljava/lang/Object; L467 L469 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\71\3088\70 I L460 L470 9
+    LOCALVARIABLE it\70 Ljava/lang/Object; L459 L470 8
+    LOCALVARIABLE $i$f$cache\70\2366 I L458 L472 7
+    LOCALVARIABLE $this$cache\70 Landroidx/compose/runtime/Composer; L457 L472 5
+    LOCALVARIABLE invalid\70 Z L457 L472 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$25\75\3096\0 I L483 L484 10
+    LOCALVARIABLE value\74 Ljava/lang/Object; L486 L488 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\74\3094\73 I L479 L489 9
+    LOCALVARIABLE it\73 Ljava/lang/Object; L478 L489 8
+    LOCALVARIABLE $i$f$cache\73\2361 I L477 L491 7
+    LOCALVARIABLE $this$cache\73 Landroidx/compose/runtime/Composer; L476 L491 5
+    LOCALVARIABLE invalid\73 Z L476 L491 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$26\78\3102\0 I L502 L503 10
+    LOCALVARIABLE value\77 Ljava/lang/Object; L505 L507 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\77\3100\76 I L498 L508 9
+    LOCALVARIABLE it\76 Ljava/lang/Object; L497 L508 8
+    LOCALVARIABLE $i$f$cache\76\2363 I L496 L510 7
+    LOCALVARIABLE $this$cache\76 Landroidx/compose/runtime/Composer; L495 L510 5
+    LOCALVARIABLE invalid\76 Z L495 L510 6
+    LOCALVARIABLE $i$a$-cache-ComposableSingletons$CareerSetupScreenKt$lambda$-861380181$1$27\81\3102\0 I L520 L521 10
+    LOCALVARIABLE value\80 Ljava/lang/Object; L523 L525 10
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\80\3100\79 I L516 L526 9
+    LOCALVARIABLE it\79 Ljava/lang/Object; L515 L526 8
+    LOCALVARIABLE $i$f$cache\79\2363 I L514 L528 7
+    LOCALVARIABLE $this$cache\79 Landroidx/compose/runtime/Composer; L513 L528 5
+    LOCALVARIABLE invalid\79 Z L513 L528 6
+    LOCALVARIABLE $composer Landroidx/compose/runtime/Composer; L0 L535 0
+    LOCALVARIABLE $changed I L0 L535 1
+    MAXSTACK = 98
+    MAXLOCALS = 40
+
+File is unknown
+The root cause java.lang.OutOfMemoryError was thrown at: org.jetbrains.org.objectweb.asm.tree.analysis.Frame.<init>(Frame.java:96)
+	at org.jetbrains.kotlin.codegen.TransformationMethodVisitor.visitEnd(TransformationMethodVisitor.kt:89)
+	at org.jetbrains.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:796)
+	at org.jetbrains.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:770)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:469)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:419)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:388)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:431)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:95)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:36)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:29)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:102)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:22)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:53)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.runPhasedPipeline(AbstractCliPipeline.kt:109)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.execute(AbstractCliPipeline.kt:68)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:78)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:44)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:90)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.exec(CLICompiler.kt:352)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:175)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:38)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:504)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:421)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileNonIncrementally(IncrementalCompilerRunner.kt:306)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:133)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:679)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:93)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1806)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.jetbrains.org.objectweb.asm.tree.analysis.Frame.<init>(Frame.java:96)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastMethodAnalyzer._init_$lambda$0(FastMethodAnalyzer.kt:47)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastMethodAnalyzer$$Lambda/0x0000000100b08898.invoke(Unknown Source)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.fullMergeControlFlowEdge(FastAnalyzer.kt:233)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.mergeControlFlowEdge(FastAnalyzer.kt:216)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.processControlFlowEdge(FastAnalyzer.kt:208)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.processControlFlowEdge$default(FastAnalyzer.kt:206)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.visitOpInsn(FastAnalyzer.kt:292)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.visitMeaningfulInstruction(FastAnalyzer.kt:281)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.analyzeInstruction(FastAnalyzer.kt:113)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.analyzeMainLoop(FastAnalyzer.kt:74)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.analyze(FastAnalyzer.kt:53)
+	at org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer.analyze(MethodTransformer.java:49)
+	at org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer$ConstantConditionsOptimization.collectRewriteActions(ConstantConditionEliminationMethodTransformer.kt:65)
+	at org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer$ConstantConditionsOptimization.run(ConstantConditionEliminationMethodTransformer.kt:56)
+	at org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer.transform(ConstantConditionEliminationMethodTransformer.kt:39)
+	at org.jetbrains.kotlin.codegen.optimization.transformer.CompositeMethodTransformer.transform(CompositeMethodTransformer.kt:25)
+	at org.jetbrains.kotlin.codegen.optimization.OptimizationMethodVisitor.performTransformations(OptimizationMethodVisitor.kt:74)
+	at org.jetbrains.kotlin.codegen.TransformationMethodVisitor.visitEnd(TransformationMethodVisitor.kt:67)
+	at org.jetbrains.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:796)
+	at org.jetbrains.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:770)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:469)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:419)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:388)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:431)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:95)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:36)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:29)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:102)
+
+

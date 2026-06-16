@@ -1,0 +1,1 @@
+// InjuryReport.kt

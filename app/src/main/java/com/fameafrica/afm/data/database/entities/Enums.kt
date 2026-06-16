@@ -1,0 +1,185 @@
+package com.fameafrica.afm.data.database.entities
+
+enum class PlayerPosition(val value: String) {
+    GK("GK"),
+    CB("CB"), LB("LB"), RB("RB"), SW("SW"), LWB("LWB"), RWB("RWB"),
+    CDM("CDM"), CM("CM"), CAM("CAM"), LM("LM"), RM("RM"),
+    LW("LW"), RW("RW"), ST("ST"), CF("CF")
+}
+
+enum class PlayerPersonality(val value: String) {
+    PROFESSIONAL("PROFESSIONAL"),
+    AGGRESSIVE("AGGRESSIVE"),
+    LOYAL("LOYAL"),
+    MEDIA_FRIENDLY("MEDIA_FRIENDLY"),
+    MEDIA_HOSTILE("MEDIA_HOSTILE"),
+    NATURAL_LEADER("NATURAL_LEADER"),
+    AMBITIOUS("AMBITIOUS"),
+    TEMPERAMENTAL("TEMPERAMENTAL"),
+    TEAM_PLAYER("TEAM_PLAYER"),
+    INDIVIDUALIST("INDIVIDUALIST")
+}
+
+enum class PlayerArchetype(val value: String) {
+    DYNAMIC_FORWARD("DYNAMIC_FORWARD"),
+    STRATEGIC_MIDFIELDER("STRATEGIC_MIDFIELDER"),
+    RESILIENT_DEFENDER("RESILIENT_DEFENDER"),
+    INSPIRATIONAL_CAPTAIN("INSPIRATIONAL_CAPTAIN"),
+    COMPLETE_FORWARD("COMPLETE_FORWARD"),
+    BOX_TO_BOX("BOX_TO_BOX"),
+    SWEEPING_KEEPER("SWEEPING_KEEPER"),
+    TRADITIONAL_STRIKER("TRADITIONAL_STRIKER"),
+    WING_WIZARD("WING_WIZARD"),
+    ANCHOR_MAN("ANCHOR_MAN"),
+    REGISTA("REGISTA"),
+    LIBERO("LIBERO"),
+    PLAYMAKER("PLAYMAKER"),
+    WONDERKID("WONDERKID"),
+    POACHER("POACHER"),
+    POWERFUL_DEFENDER("POWERFUL_DEFENDER"),
+    TECHNICAL_FORWARD("TECHNICAL_FORWARD"),
+    EXPERIENCED_WINGER("EXPERIENCED_WINGER"),
+    PACEY_STRIKER("PACEY_STRIKER"),
+    TARGET_MAN("TARGET_MAN"),
+    EXPERIENCED_DEFENDER("EXPERIENCED_DEFENDER"),
+    TECHNICAL_MIDFIELDER("TECHNICAL_MIDFIELDER"),
+    DOMINANT_DEFENDER("DOMINANT_DEFENDER"),
+    VETERAN("VETERAN"),
+    ADVANCED_PLAYMAKER("ADVANCED_PLAYMAKER"),
+    YOUNG_SPEEDSTER("YOUNG_SPEEDSTER"),
+    DEFENSIVE_ROCK("DEFENSIVE_ROCK"),
+    CREATIVE_MIDFIELDER("CREATIVE_MIDFIELDER"),
+    DEFENSIVE_LEADER("DEFENSIVE_LEADER"),
+    DEFENSIVE_SHIELD("DEFENSIVE_SHIELD"),
+    ACROBATIC_GOALKEEPER("ACROBATIC_GOALKEEPER"),
+    CREATIVE_VETERAN("CREATIVE_VETERAN"),
+    MIDFIELD_DYNAMO("MIDFIELD_DYNAMO"),
+    TRADITIONAL_GOALKEEPER("TRADITIONAL_GOALKEEPER"),
+    SPEEDSTER("SPEEDSTER")
+}
+
+enum class InjuryStatus(val value: String) {
+    HEALTHY("HEALTHY"),
+    MINOR_INJURY("MINOR_INJURY"),
+    MAJOR_INJURY("MAJOR_INJURY"),
+    RECOVERING("RECOVERING")
+}
+
+enum class TransferStatus(val value: String) {
+    NOT_LISTED("NOT_LISTED"),
+    AVAILABLE("AVAILABLE"),
+    LOAN_LISTED("LOAN_LISTED"),
+    PENDING("Pending"),
+    NEGOTIATING("Negotiating"),
+    ACCEPTED("Accepted"),
+    REJECTED("Rejected"),
+    COMPLETED("Completed"),
+    CANCELLED("Cancelled"),
+    AWAITING_PLAYER("Awaiting Player"),
+    AWAITING_CLUB("Awaiting Club")
+}
+
+enum class WorkRate(val value: String) {
+    LOW("LOW"),
+    MEDIUM("MEDIUM"),
+    HIGH("HIGH"),
+    VERY_HIGH("VERY_HIGH")
+}
+
+enum class TransferType(val value: String) {
+    BUY("Buy"),
+    LOAN("Loan"),
+    FREE("Free")
+}
+
+enum class SquadStatus(val value: String) {
+    STAR_PLAYER("Star Player"),
+    FIRST_TEAM("First Team"),
+    ROTATION("Rotation"),
+    BACKUP("Backup"),
+    SURPLUS("Surplus")
+}
+
+enum class FormTrend {
+    RISING, STABLE, DECLINING, VOLATILE
+}
+
+enum class TrendDirection {
+    IMPROVING, DECLINING, STABLE
+}
+
+enum class TrainingIntensity(val value: String) {
+    LIGHT("LIGHT"),
+    NORMAL("NORMAL"),
+    INTENSE("INTENSE"),
+    EXTREME("EXTREME")
+}
+
+enum class Sentiment {
+    POSITIVE, NEUTRAL, NEGATIVE, CONTROVERSIAL
+}
+
+enum class InterestStatus {
+    INQUIRY, NEGOTIATING, FIRM_OFFER, REJECTED, ACCEPTED
+}
+
+enum class RelationshipType {
+    FRIEND, RIVAL, MENTOR, PROTEGE, DISLIKES
+}
+
+enum class Formation(val value: String) {
+    FORMATION_433("4-3-3"),
+    FORMATION_433_DEFENSIVE("4-3-3 Defensive"),
+    FORMATION_433_ATTACKING("4-3-3 Attacking"),
+    FORMATION_433_FLAT("4-3-3 Flat"),
+    FORMATION_442("4-4-2"),
+    FORMATION_442_DIAMOND("4-4-2 Diamond"),
+    FORMATION_4411("4-4-1-1"),
+    FORMATION_4231("4-2-3-1"),
+    FORMATION_4321("4-3-2-1"),
+    FORMATION_4141("4-1-4-1"),
+    FORMATION_41212("4-1-2-1-2"),
+    FORMATION_424("4-2-4"),
+    FORMATION_451("4-5-1"),
+    FORMATION_352("3-5-2"),
+    FORMATION_343("3-4-3"),
+    FORMATION_3412("3-4-1-2"),
+    FORMATION_3421("3-4-2-1"),
+    FORMATION_532("5-3-2"),
+    FORMATION_541("5-4-1"),
+    FORMATION_5212("5-2-1-2"),
+    FORMATION_4222("4-2-2-2"),
+    FORMATION_4312("4-3-1-2")
+}
+
+enum class Playstyle(val value: String) {
+    TIKI_TAKA("Tiki-Taka"),
+    GEGENPRESSING("Gegenpressing"),
+    WING_PLAY("Wing Play"),
+    DIRECT("Direct"),
+    PARK_THE_BUS("Park the Bus"),
+    COUNTER_ATTACK("Counter Attack"),
+    HIGH_PRESS("High Press"),
+    POSSESSION("Possession"),
+    VERTICAL_TIKI_TAKA("Vertical Tiki-Taka"),
+    OVERLAPPING_WINGS("Overlapping Wings"),
+    FLUID_ATTACK("Fluid Attack"),
+    STRUCTURED("Structured"),
+    COMPACT_DEFENSE("Compact Defense"),
+    FAST_BUILDUP("Fast Buildup"),
+    DIAMOND_ATTACK("Diamond Attack"),
+    JUA_KALI("Jua Kali"),
+    TOTAL_AFRICAN("Total African"),
+    SAHARA_LOCK("Sahara Lock"),
+    SAVANNAH_SPRINT("Savannah Sprint")
+}
+
+enum class FinancialBehavior {
+    SPENDER, FRUGAL, RISKY, UNSTABLE, PLAYER_SALES_DEPENDENT, EXPORT_CRISIS,
+    GOVERNMENT_BACKED, SPONSOR_DEPENDENT, TOURNAMENT_DRIVEN, COMMUNITY_FUNDED,
+    CORPORATE_STRUCTURED, LOW_REVENUE_SURVIVAL, AGGRESSIVE
+}
+
+enum class StoryTone {
+    PANIC, OPTIMISM, NEUTRAL, DRAMATIC, TRAGIC, TRIUMPHANT
+}

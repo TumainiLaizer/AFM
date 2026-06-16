@@ -1,0 +1,9 @@
+<record>
+  <boolean id="preload" value="false" />
+  <boolean id="amap" value="false" />
+  <list id="maps">
+    <record from="default_team_1" to="graphics/pictures/team/1/kit_textures/home" />
+    <record from="default_team_2" to="graphics/pictures/team/1/kit_textures/away" />
+    <record from="default_team_3" to="graphics/pictures/team/1/kit_textures/third" />
+  </list>
+</record>

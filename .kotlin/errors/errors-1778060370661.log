@@ -1,0 +1,798 @@
+kotlin version: 2.2.10
+error message: java.lang.RuntimeException: Exception while generating code for:
+FUN LOCAL_FUNCTION_FOR_LAMBDA name:lambda__861380181$lambda$255 visibility:private modality:FINAL returnType:kotlin.Unit?
+  VALUE_PARAMETER kind:Regular name:$composer index:0 type:androidx.compose.runtime.Composer? [assignable]
+  VALUE_PARAMETER kind:Regular name:$changed index:1 type:kotlin.Int
+  annotations:
+    Composable
+    ComposableTarget(applier = "androidx.compose.ui.UiComposable")
+  BLOCK_BODY
+    CALL 'public final fun sourceInformation (composer: androidx.compose.runtime.Composer, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+      ARG sourceInformation: CONST String type=kotlin.String value="C2356@112426L2,2356@112439L2,2356@112456L2,2356@112476L2,2357@112514L2,2357@112535L2,2357@112558L2,2357@112577L2,2361@112989L2,2361@113019L2,2358@112619L2,2358@112652L2,2358@112676L14,2359@112731L8,2359@112767L8,2359@112802L8,2360@112845L2,2360@112865L2,2360@112890L2,2360@112917L2,2363@113137L2,2364@113180L2,2364@113212L20,2365@113275L2,2360@112949L2,2362@113065L2,2362@113101L2,2339@111289L2002:CareerSetupScreen.kt#rb80zm"
+    WHEN type=kotlin.Unit origin=IF
+      BRANCH
+        if: CALL 'public abstract fun shouldExecute (parametersChanged: kotlin.Boolean, flags: kotlin.Int): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+          ARG parametersChanged: CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+            ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+              ARG arg0: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                ARG <this>: GET_VAR '$changed: kotlin.Int declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Int origin=null
+                ARG other: CONST Int type=kotlin.Int value=3
+              ARG arg1: CONST Int type=kotlin.Int value=2
+          ARG flags: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+            ARG <this>: GET_VAR '$changed: kotlin.Int declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Int origin=null
+            ARG other: CONST Int type=kotlin.Int value=1
+        then: BLOCK type=kotlin.Unit origin=null
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventStart (key: kotlin.Int, dirty1: kotlin.Int, dirty2: kotlin.Int, info: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG key: CONST Int type=kotlin.Int value=-861380181
+                ARG dirty1: GET_VAR '$changed: kotlin.Int declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Int origin=null
+                ARG dirty2: CONST Int type=kotlin.Int value=-1
+                ARG info: CONST String type=kotlin.String value="afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda$-861380181.<anonymous> (CareerSetupScreen.kt:2339)"
+          BLOCK type=kotlin.Unit origin=ARGUMENTS_REORDERING_FOR_CALL
+            VAR IR_TEMPORARY_VARIABLE name:tmp0_uiState type:afm.ui.screen.career.CareerUiState [val]
+              CONSTRUCTOR_CALL 'public constructor <init> (currentStep: afm.ui.screen.career.CareerStep?, initializationProgress: kotlin.Float, initializationStatus: kotlin.String?, gameMode: afm.ui.screen.career.GameMode?, managerSelectionMode: afm.ui.screen.career.ManagerSelectionMode?, availableManagers: kotlin.collections.List<afm.data.database.entities.ManagersEntity>?, selectedExistingManager: afm.data.database.entities.ManagersEntity?, isLoadingManagers: kotlin.Boolean, managerName: kotlin.String?, managerNameError: kotlin.String?, managerNationality: kotlin.String?, managerAge: kotlin.Int, managerBirthYear: kotlin.Int, managerBirthMonth: kotlin.Int, managerBirthDay: kotlin.Int, managerStyle: afm.ui.screen.career.ManagerialStyle?, coachingLicense: afm.ui.screen.career.CoachingLicense?, preferredFormation: kotlin.String?, specialAbility: kotlin.String?, selectedAvatar: kotlin.String?, tacticalFlexibility: kotlin.Int, playerMotivation: kotlin.Int, youthDevelopmentFocus: kotlin.Int, financialSavvy: kotlin.Int, mediaHandling: kotlin.Int, disciplineLevel: kotlin.Int, adaptability: kotlin.Int, managerReputationLevel: kotlin.String?, managerBackground: afm.ui.screen.career.ManagerBackground?, countryModifier: afm.ui.screen.career.CountryModifierValues?, personalityProfile: afm.ui.screen.career.PersonalityProfile?, assignedAgent: afm.ui.screen.career.Agent?, availableAgents: kotlin.collections.List<afm.ui.screen.career.Agent>?, isLoadingAgents: kotlin.Boolean, careerVision: afm.ui.screen.career.CareerVision?, favoriteTactics: afm.ui.screen.career.TacticProfile?, matchesManaged: kotlin.Int, selectedCountryId: kotlin.Int?, selectedCountryName: kotlin.String?, availableLeagues: kotlin.collections.List<afm.data.database.entities.LeaguesEntity>?, leaguesByLevel: kotlin.collections.Map<kotlin.Int, kotlin.collections.List<afm.data.database.entities.LeaguesEntity>>?, selectedLeague: afm.data.database.entities.LeaguesEntity?, availableClubs: kotlin.collections.List<afm.data.database.entities.TeamsEntity>?, availableDivisions: kotlin.collections.List<afm.ui.screen.career.DivisionInfo>?, selectedDivisionId: kotlin.Int?, filteredClubs: kotlin.collections.List<afm.data.database.entities.TeamsEntity>?, selectedClub: afm.data.database.entities.TeamsEntity?, selectedClubDNA: afm.data.database.entities.ClubDNAEntity?, selectedClubChairman: afm.data.database.entities.ChairmanEntity?, showDNADialog: kotlin.Boolean, showOwnershipDialog: kotlin.Boolean, chairmanEntryMode: afm.ui.screen.career.ChairmanEntryMode?, chairmanName: kotlin.String?, chairmanAge: kotlin.Int, chairmanNationality: kotlin.String?, chairmanWealth: kotlin.Int, chairmanAmbition: kotlin.Int, chairmanPatience: kotlin.Int, chairmanBusiness: kotlin.Int, chairmanFootballKnowledge: kotlin.Int, chairmanStyle: kotlin.String?, selectedDifficulty: afm.ui.screen.career.Difficulty?, preparationProgress: kotlin.Float, preparationStatus: kotlin.String?, isFirstCareer: kotlin.Boolean, canStartCareer: kotlin.Boolean, isLoading: kotlin.Boolean, errorMessage: kotlin.String?, setupComplete: kotlin.Boolean, careerId: kotlin.Long?, leaguesByCountry: kotlin.collections.Map<kotlin.String, kotlin.collections.List<afm.data.database.entities.LeaguesEntity>>?, $mask0: kotlin.Int, $mask1: kotlin.Int, $mask2: kotlin.Int, $marker: kotlin.jvm.internal.DefaultConstructorMarker?) declared in afm.ui.screen.career.CareerUiState' type=afm.ui.screen.career.CareerUiState origin=DEFAULT_DISPATCH_CALL
+                ARG currentStep: GET_FIELD 'FIELD FIELD_FOR_ENUM_ENTRY name:CAREER_SUMMARY type:afm.ui.screen.career.CareerStep visibility:public [final,static] declared in afm.ui.screen.career.CareerStep' type=afm.ui.screen.career.CareerStep origin=null
+                ARG initializationProgress: COMPOSITE type=kotlin.Float origin=DEFAULT_VALUE
+                  CONST Float type=kotlin.Float value=0.0
+                ARG initializationStatus: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG gameMode: COMPOSITE type=afm.ui.screen.career.GameMode? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.GameMode? value=null
+                ARG managerSelectionMode: COMPOSITE type=afm.ui.screen.career.ManagerSelectionMode? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.ManagerSelectionMode? value=null
+                ARG availableManagers: COMPOSITE type=kotlin.collections.List<afm.data.database.entities.ManagersEntity>? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.collections.List<afm.data.database.entities.ManagersEntity>? value=null
+                ARG selectedExistingManager: COMPOSITE type=afm.data.database.entities.ManagersEntity? origin=DEFAULT_VALUE
+                  CONST Null type=afm.data.database.entities.ManagersEntity? value=null
+                ARG isLoadingManagers: COMPOSITE type=kotlin.Boolean origin=DEFAULT_VALUE
+                  CONST Boolean type=kotlin.Boolean value=false
+                ARG managerName: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG managerNameError: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG managerNationality: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG managerAge: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG managerBirthYear: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG managerBirthMonth: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG managerBirthDay: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG managerStyle: COMPOSITE type=afm.ui.screen.career.ManagerialStyle? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.ManagerialStyle? value=null
+                ARG coachingLicense: COMPOSITE type=afm.ui.screen.career.CoachingLicense? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.CoachingLicense? value=null
+                ARG preferredFormation: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG specialAbility: CONST String type=kotlin.String value="TACTICAL_GENIUS"
+                ARG selectedAvatar: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG tacticalFlexibility: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG playerMotivation: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG youthDevelopmentFocus: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG financialSavvy: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG mediaHandling: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG disciplineLevel: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG adaptability: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG managerReputationLevel: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG managerBackground: COMPOSITE type=afm.ui.screen.career.ManagerBackground? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.ManagerBackground? value=null
+                ARG countryModifier: COMPOSITE type=afm.ui.screen.career.CountryModifierValues? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.CountryModifierValues? value=null
+                ARG personalityProfile: COMPOSITE type=afm.ui.screen.career.PersonalityProfile? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.PersonalityProfile? value=null
+                ARG assignedAgent: COMPOSITE type=afm.ui.screen.career.Agent? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.Agent? value=null
+                ARG availableAgents: COMPOSITE type=kotlin.collections.List<afm.ui.screen.career.Agent>? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.collections.List<afm.ui.screen.career.Agent>? value=null
+                ARG isLoadingAgents: COMPOSITE type=kotlin.Boolean origin=DEFAULT_VALUE
+                  CONST Boolean type=kotlin.Boolean value=false
+                ARG careerVision: COMPOSITE type=afm.ui.screen.career.CareerVision? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.CareerVision? value=null
+                ARG favoriteTactics: COMPOSITE type=afm.ui.screen.career.TacticProfile? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.TacticProfile? value=null
+                ARG matchesManaged: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG selectedCountryId: COMPOSITE type=kotlin.Int? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.Int? value=null
+                ARG selectedCountryName: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG availableLeagues: COMPOSITE type=kotlin.collections.List<afm.data.database.entities.LeaguesEntity>? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.collections.List<afm.data.database.entities.LeaguesEntity>? value=null
+                ARG leaguesByLevel: COMPOSITE type=kotlin.collections.Map<kotlin.Int, kotlin.collections.List<afm.data.database.entities.LeaguesEntity>>? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.collections.Map<kotlin.Int, kotlin.collections.List<afm.data.database.entities.LeaguesEntity>>? value=null
+                ARG selectedLeague: CONSTRUCTOR_CALL 'public constructor <init> (id: kotlin.Int, name: kotlin.String, countryId: kotlin.Int?, country: kotlin.String?, level: kotlin.Int, sponsor: kotlin.String?, prizeMoney: kotlin.Int, logo: kotlin.String?) [primary] declared in afm.data.database.entities.LeaguesEntity' type=afm.data.database.entities.LeaguesEntity origin=null
+                  ARG id: CONST Int type=kotlin.Int value=1
+                  ARG name: CONST String type=kotlin.String value="Tanzania Premier League"
+                  ARG countryId: CONST Int type=kotlin.Int value=1
+                  ARG country: CONST String type=kotlin.String value="Tanzania"
+                  ARG level: CONST Int type=kotlin.Int value=1
+                  ARG sponsor: CONST String type=kotlin.String value="NBC"
+                  ARG prizeMoney: CONST Int type=kotlin.Int value=1000000
+                  ARG logo: CONST String type=kotlin.String value="tanzania_premier_league"
+                ARG availableClubs: COMPOSITE type=kotlin.collections.List<afm.data.database.entities.TeamsEntity>? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.collections.List<afm.data.database.entities.TeamsEntity>? value=null
+                ARG availableDivisions: COMPOSITE type=kotlin.collections.List<afm.ui.screen.career.DivisionInfo>? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.collections.List<afm.ui.screen.career.DivisionInfo>? value=null
+                ARG selectedDivisionId: COMPOSITE type=kotlin.Int? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.Int? value=null
+                ARG filteredClubs: COMPOSITE type=kotlin.collections.List<afm.data.database.entities.TeamsEntity>? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.collections.List<afm.data.database.entities.TeamsEntity>? value=null
+                ARG selectedClub: CONSTRUCTOR_CALL 'public constructor <init> (id: kotlin.Int, name: kotlin.String, leagueId: kotlin.Int?, league: kotlin.String, eloRating: kotlin.Int, reputation: kotlin.Int, points: kotlin.Int, revenue: kotlin.Double, morale: kotlin.Int, logoPath: kotlin.String?, homeStadium: kotlin.String?, stadiumCapacity: kotlin.Int, country: kotlin.String?, region: kotlin.String?, fanLoyalty: kotlin.Int, fanSentiment: kotlin.Int, boardConfidence: kotlin.Int, managerSecurity: kotlin.Int, debtLevel: kotlin.Long, financialBehavior: afm.data.database.entities.FinancialBehavior?, financialTrend: kotlin.collections.List<kotlin.Long>?, performanceTrend: kotlin.collections.List<kotlin.Int>?, identityStrength: kotlin.Int, moraleMomentum: kotlin.Float, formStreak: kotlin.String?, tacticalStability: kotlin.Int, rivalTeam: kotlin.String?, formation: kotlin.String?, cupQualification: kotlin.String?, cupWinner: kotlin.Int, cupStage: kotlin.String?, cupName: kotlin.String?, crowdSupport: kotlin.Int, sponsorships: kotlin.String?, cupStatus: kotlin.String?, managerId: kotlin.Int?, avgAttackingAbility: kotlin.Double?, avgDefenceAbility: kotlin.Double?, avgPlaymakingAbility: kotlin.Double?, transferFee: kotlin.Long?, wageBudget: kotlin.Long?, primaryStyle: afm.data.database.entities.Playstyle?, rivalTeamId: kotlin.Int?, $mask0: kotlin.Int, $mask1: kotlin.Int, $marker: kotlin.jvm.internal.DefaultConstructorMarker?) declared in afm.data.database.entities.TeamsEntity' type=afm.data.database.entities.TeamsEntity origin=DEFAULT_DISPATCH_CALL
+                  ARG id: CONST Int type=kotlin.Int value=2
+                  ARG name: CONST String type=kotlin.String value="Young Africans SC"
+                  ARG leagueId: COMPOSITE type=kotlin.Int? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.Int? value=null
+                  ARG league: CONST String type=kotlin.String value="Tanzania Premier League"
+                  ARG eloRating: CONST Int type=kotlin.Int value=1825
+                  ARG reputation: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG points: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG revenue: COMPOSITE type=kotlin.Double origin=DEFAULT_VALUE
+                    CONST Double type=kotlin.Double value=0.0
+                  ARG morale: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG logoPath: CONST Null type=kotlin.Nothing? value=null
+                  ARG homeStadium: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.String? value=null
+                  ARG stadiumCapacity: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG country: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.String? value=null
+                  ARG region: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.String? value=null
+                  ARG fanLoyalty: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG fanSentiment: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG boardConfidence: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG managerSecurity: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG debtLevel: COMPOSITE type=kotlin.Long origin=DEFAULT_VALUE
+                    CONST Long type=kotlin.Long value=0
+                  ARG financialBehavior: COMPOSITE type=afm.data.database.entities.FinancialBehavior? origin=DEFAULT_VALUE
+                    CONST Null type=afm.data.database.entities.FinancialBehavior? value=null
+                  ARG financialTrend: COMPOSITE type=kotlin.collections.List<kotlin.Long>? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.collections.List<kotlin.Long>? value=null
+                  ARG performanceTrend: COMPOSITE type=kotlin.collections.List<kotlin.Int>? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.collections.List<kotlin.Int>? value=null
+                  ARG identityStrength: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG moraleMomentum: COMPOSITE type=kotlin.Float origin=DEFAULT_VALUE
+                    CONST Float type=kotlin.Float value=0.0
+                  ARG formStreak: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.String? value=null
+                  ARG tacticalStability: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG rivalTeam: CONST String type=kotlin.String value="Simba SC"
+                  ARG formation: CONST String type=kotlin.String value="4-3-3"
+                  ARG cupQualification: CONST Null type=kotlin.Nothing? value=null
+                  ARG cupWinner: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG cupStage: CONST Null type=kotlin.Nothing? value=null
+                  ARG cupName: CONST Null type=kotlin.Nothing? value=null
+                  ARG crowdSupport: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                    CONST Int type=kotlin.Int value=0
+                  ARG sponsorships: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.String? value=null
+                  ARG cupStatus: CONST Null type=kotlin.Nothing? value=null
+                  ARG managerId: CONST Null type=kotlin.Nothing? value=null
+                  ARG avgAttackingAbility: CONST Double type=kotlin.Double value=75.0
+                  ARG avgDefenceAbility: CONST Double type=kotlin.Double value=72.0
+                  ARG avgPlaymakingAbility: CONST Double type=kotlin.Double value=74.0
+                  ARG transferFee: COMPOSITE type=kotlin.Long? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.Long? value=null
+                  ARG wageBudget: COMPOSITE type=kotlin.Long? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.Long? value=null
+                  ARG primaryStyle: COMPOSITE type=afm.data.database.entities.Playstyle? origin=DEFAULT_VALUE
+                    CONST Null type=afm.data.database.entities.Playstyle? value=null
+                  ARG rivalTeamId: COMPOSITE type=kotlin.Int? origin=DEFAULT_VALUE
+                    CONST Null type=kotlin.Int? value=null
+                  ARG $mask0: CONST Int type=kotlin.Int value=603979236
+                  ARG $mask1: CONST Int type=kotlin.Int value=1923
+                  ARG $marker: CONST Null type=kotlin.jvm.internal.DefaultConstructorMarker? value=null
+                ARG selectedClubDNA: COMPOSITE type=afm.data.database.entities.ClubDNAEntity? origin=DEFAULT_VALUE
+                  CONST Null type=afm.data.database.entities.ClubDNAEntity? value=null
+                ARG selectedClubChairman: COMPOSITE type=afm.data.database.entities.ChairmanEntity? origin=DEFAULT_VALUE
+                  CONST Null type=afm.data.database.entities.ChairmanEntity? value=null
+                ARG showDNADialog: COMPOSITE type=kotlin.Boolean origin=DEFAULT_VALUE
+                  CONST Boolean type=kotlin.Boolean value=false
+                ARG showOwnershipDialog: COMPOSITE type=kotlin.Boolean origin=DEFAULT_VALUE
+                  CONST Boolean type=kotlin.Boolean value=false
+                ARG chairmanEntryMode: COMPOSITE type=afm.ui.screen.career.ChairmanEntryMode? origin=DEFAULT_VALUE
+                  CONST Null type=afm.ui.screen.career.ChairmanEntryMode? value=null
+                ARG chairmanName: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG chairmanAge: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG chairmanNationality: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG chairmanWealth: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG chairmanAmbition: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG chairmanPatience: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG chairmanBusiness: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG chairmanFootballKnowledge: COMPOSITE type=kotlin.Int origin=DEFAULT_VALUE
+                  CONST Int type=kotlin.Int value=0
+                ARG chairmanStyle: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG selectedDifficulty: GET_FIELD 'FIELD FIELD_FOR_ENUM_ENTRY name:NORMAL type:afm.ui.screen.career.Difficulty visibility:public [final,static] declared in afm.ui.screen.career.Difficulty' type=afm.ui.screen.career.Difficulty origin=null
+                ARG preparationProgress: COMPOSITE type=kotlin.Float origin=DEFAULT_VALUE
+                  CONST Float type=kotlin.Float value=0.0
+                ARG preparationStatus: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG isFirstCareer: COMPOSITE type=kotlin.Boolean origin=DEFAULT_VALUE
+                  CONST Boolean type=kotlin.Boolean value=false
+                ARG canStartCareer: COMPOSITE type=kotlin.Boolean origin=DEFAULT_VALUE
+                  CONST Boolean type=kotlin.Boolean value=false
+                ARG isLoading: COMPOSITE type=kotlin.Boolean origin=DEFAULT_VALUE
+                  CONST Boolean type=kotlin.Boolean value=false
+                ARG errorMessage: COMPOSITE type=kotlin.String? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.String? value=null
+                ARG setupComplete: COMPOSITE type=kotlin.Boolean origin=DEFAULT_VALUE
+                  CONST Boolean type=kotlin.Boolean value=false
+                ARG careerId: COMPOSITE type=kotlin.Long? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.Long? value=null
+                ARG leaguesByCountry: COMPOSITE type=kotlin.collections.Map<kotlin.String, kotlin.collections.List<afm.data.database.entities.LeaguesEntity>>? origin=DEFAULT_VALUE
+                  CONST Null type=kotlin.collections.Map<kotlin.String, kotlin.collections.List<afm.data.database.entities.LeaguesEntity>>? value=null
+                ARG $mask0: CONST Int type=kotlin.Int value=-262146
+                ARG $mask1: CONST Int type=kotlin.Int value=-536887809
+                ARG $mask2: CONST Int type=kotlin.Int value=127
+                ARG $marker: CONST Null type=kotlin.jvm.internal.DefaultConstructorMarker? value=null
+            VAR IR_TEMPORARY_VARIABLE name:tmp1_teamCounts type:kotlin.collections.Map<kotlin.String, kotlin.Int> [val]
+              CALL 'public final fun mapOf <K, V> (pair: kotlin.Pair<K of kotlin.collections.MapsKt.mapOf, V of kotlin.collections.MapsKt.mapOf>): kotlin.collections.Map<K of kotlin.collections.MapsKt.mapOf, V of kotlin.collections.MapsKt.mapOf> declared in kotlin.collections.MapsKt' type=kotlin.collections.Map<kotlin.String, kotlin.Int> origin=null
+                TYPE_ARG K: kotlin.String
+                TYPE_ARG V: kotlin.Int
+                ARG pair: CALL 'public final fun to <A, B> (<this>: A of kotlin.TuplesKt.to, that: B of kotlin.TuplesKt.to): kotlin.Pair<A of kotlin.TuplesKt.to, B of kotlin.TuplesKt.to> [infix] declared in kotlin.TuplesKt' type=kotlin.Pair<kotlin.String, kotlin.Int> origin=null
+                  TYPE_ARG A: kotlin.String
+                  TYPE_ARG B: kotlin.Int
+                  ARG <this>: CONST String type=kotlin.String value="Tanzania Premier League"
+                  ARG that: CONST Int type=kotlin.Int value=16
+            CALL 'public final fun CareerSetupScreenContent (uiState: afm.ui.screen.career.CareerUiState, teamCounts: kotlin.collections.Map<kotlin.String, kotlin.Int>, onBack: kotlin.Function0<kotlin.Unit>, onNext: kotlin.Function0<kotlin.Unit>, onPrevious: kotlin.Function0<kotlin.Unit>, onStartCareer: kotlin.Function0<kotlin.Unit>, onSelectCountry: kotlin.Function1<kotlin.Int, kotlin.Unit>, onSelectLeague: kotlin.Function1<afm.data.database.entities.LeaguesEntity, kotlin.Unit>, onSelectDivision: kotlin.Function1<kotlin.Int?, kotlin.Unit>, onSelectClub: kotlin.Function1<afm.data.database.entities.TeamsEntity, kotlin.Unit>, onToggleDNADialog: kotlin.Function1<kotlin.Boolean, kotlin.Unit>, onToggleOwnershipDialog: kotlin.Function1<kotlin.Boolean, kotlin.Unit>, onUpdateManagerName: kotlin.Function1<kotlin.String, kotlin.Unit>, onUpdateManagerNationality: kotlin.Function1<kotlin.String, kotlin.Unit>, onUpdateBirthDate: kotlin.Function3<kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Unit>, onUpdateManagerStyle: kotlin.Function1<afm.ui.screen.career.ManagerialStyle, kotlin.Unit>, onUpdateCoachingLicense: kotlin.Function1<afm.ui.screen.career.CoachingLicense, kotlin.Unit>, onUpdateSpecialAbility: kotlin.Function1<kotlin.String, kotlin.Unit>, onSelectAvatar: kotlin.Function1<kotlin.String, kotlin.Unit>, onSelectAgent: kotlin.Function1<afm.ui.screen.career.Agent, kotlin.Unit>, onSelectDifficulty: kotlin.Function1<afm.ui.screen.career.Difficulty, kotlin.Unit>, onSelectCareerVision: kotlin.Function1<afm.ui.screen.career.CareerVision, kotlin.Unit>, onSetGameMode: kotlin.Function1<afm.ui.screen.career.GameMode, kotlin.Unit>, onUpdateChairmanName: kotlin.Function1<kotlin.String, kotlin.Unit>, onUpdateChairmanAttribute: kotlin.Function5<kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Unit>, onSetChairmanEntryMode: kotlin.Function1<afm.ui.screen.career.ChairmanEntryMode, kotlin.Unit>, onSetManagerSelectionMode: kotlin.Function1<afm.ui.screen.career.ManagerSelectionMode, kotlin.Unit>, onSelectExistingManager: kotlin.Function1<afm.data.database.entities.ManagersEntity, kotlin.Unit>, onProceedFromManagerSelection: kotlin.Function0<kotlin.Unit>, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int, $changed1: kotlin.Int, $changed2: kotlin.Int): kotlin.Unit declared in afm.ui.screen.career.CareerSetupScreenKt' type=kotlin.Unit origin=null
+              ARG uiState: GET_VAR 'val tmp0_uiState: afm.ui.screen.career.CareerUiState [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=afm.ui.screen.career.CareerUiState origin=null
+              ARG teamCounts: GET_VAR 'val tmp1_teamCounts: kotlin.collections.Map<kotlin.String, kotlin.Int> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.collections.Map<kotlin.String, kotlin.Int> origin=null
+              ARG onBack: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142371021
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp0_group type:kotlin.Function0<kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$202 (): kotlin.Function0<kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp0_group: kotlin.Function0<kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function0<kotlin.Unit> origin=null
+              ARG onNext: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142371437
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp1_group type:kotlin.Function0<kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$204 (): kotlin.Function0<kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp1_group: kotlin.Function0<kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function0<kotlin.Unit> origin=null
+              ARG onPrevious: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142371981
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp2_group type:kotlin.Function0<kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$206 (): kotlin.Function0<kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp2_group: kotlin.Function0<kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function0<kotlin.Unit> origin=null
+              ARG onStartCareer: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142372621
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp3_group type:kotlin.Function0<kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$208 (): kotlin.Function0<kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp3_group: kotlin.Function0<kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function0<kotlin.Unit> origin=null
+              ARG onSelectCountry: BLOCK type=kotlin.Function1<kotlin.Int, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142373837
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp4_group type:kotlin.Function1<kotlin.Int, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<kotlin.Int, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<kotlin.Int, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<kotlin.Int, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$210 (): kotlin.Function1<kotlin.Int, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<kotlin.Int, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp4_group: kotlin.Function1<kotlin.Int, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<kotlin.Int, kotlin.Unit> origin=null
+              ARG onSelectLeague: BLOCK type=kotlin.Function1<afm.data.database.entities.LeaguesEntity, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142374509
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp5_group type:kotlin.Function1<afm.data.database.entities.LeaguesEntity, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.data.database.entities.LeaguesEntity, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.data.database.entities.LeaguesEntity, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.data.database.entities.LeaguesEntity, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$212 (): kotlin.Function1<afm.data.database.entities.LeaguesEntity, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.data.database.entities.LeaguesEntity, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp5_group: kotlin.Function1<afm.data.database.entities.LeaguesEntity, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.data.database.entities.LeaguesEntity, kotlin.Unit> origin=null
+              ARG onSelectDivision: BLOCK type=kotlin.Function1<kotlin.Int?, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142375245
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp6_group type:kotlin.Function1<kotlin.Int?, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<kotlin.Int?, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<kotlin.Int?, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<kotlin.Int?, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$214 (): kotlin.Function1<kotlin.Int?, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<kotlin.Int?, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp6_group: kotlin.Function1<kotlin.Int?, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<kotlin.Int?, kotlin.Unit> origin=null
+              ARG onSelectClub: BLOCK type=kotlin.Function1<afm.data.database.entities.TeamsEntity, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142375853
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp7_group type:kotlin.Function1<afm.data.database.entities.TeamsEntity, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.data.database.entities.TeamsEntity, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.data.database.entities.TeamsEntity, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.data.database.entities.TeamsEntity, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$216 (): kotlin.Function1<afm.data.database.entities.TeamsEntity, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.data.database.entities.TeamsEntity, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp7_group: kotlin.Function1<afm.data.database.entities.TeamsEntity, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.data.database.entities.TeamsEntity, kotlin.Unit> origin=null
+              ARG onToggleDNADialog: BLOCK type=kotlin.Function1<kotlin.Boolean, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142389037
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp8_group type:kotlin.Function1<kotlin.Boolean, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<kotlin.Boolean, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<kotlin.Boolean, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<kotlin.Boolean, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$218 (): kotlin.Function1<kotlin.Boolean, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<kotlin.Boolean, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp8_group: kotlin.Function1<kotlin.Boolean, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<kotlin.Boolean, kotlin.Unit> origin=null
+              ARG onToggleOwnershipDialog: BLOCK type=kotlin.Function1<kotlin.Boolean, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142389997
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp9_group type:kotlin.Function1<kotlin.Boolean, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<kotlin.Boolean, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<kotlin.Boolean, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<kotlin.Boolean, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$220 (): kotlin.Function1<kotlin.Boolean, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<kotlin.Boolean, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp9_group: kotlin.Function1<kotlin.Boolean, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<kotlin.Boolean, kotlin.Unit> origin=null
+              ARG onUpdateManagerName: BLOCK type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142377197
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp10_group type:kotlin.Function1<kotlin.String, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<kotlin.String, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<kotlin.String, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$222 (): kotlin.Function1<kotlin.String, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<kotlin.String, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp10_group: kotlin.Function1<kotlin.String, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+              ARG onUpdateManagerNationality: BLOCK type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142378253
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp11_group type:kotlin.Function1<kotlin.String, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<kotlin.String, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<kotlin.String, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$224 (): kotlin.Function1<kotlin.String, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<kotlin.String, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp11_group: kotlin.Function1<kotlin.String, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+              ARG onUpdateBirthDate: BLOCK type=kotlin.Function3<kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142379033
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp12_group type:kotlin.Function3<kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function3<kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function3<kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function3<kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$226 (): kotlin.Function3<kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function3<kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp12_group: kotlin.Function3<kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function3<kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Unit> origin=null
+              ARG onUpdateManagerStyle: BLOCK type=kotlin.Function1<afm.ui.screen.career.ManagerialStyle, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142380787
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp13_group type:kotlin.Function1<afm.ui.screen.career.ManagerialStyle, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.ui.screen.career.ManagerialStyle, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.ui.screen.career.ManagerialStyle, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.ManagerialStyle, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$228 (): kotlin.Function1<afm.ui.screen.career.ManagerialStyle, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.ManagerialStyle, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp13_group: kotlin.Function1<afm.ui.screen.career.ManagerialStyle, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.ui.screen.career.ManagerialStyle, kotlin.Unit> origin=null
+              ARG onUpdateCoachingLicense: BLOCK type=kotlin.Function1<afm.ui.screen.career.CoachingLicense, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142381939
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp14_group type:kotlin.Function1<afm.ui.screen.career.CoachingLicense, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.ui.screen.career.CoachingLicense, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.ui.screen.career.CoachingLicense, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.CoachingLicense, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$230 (): kotlin.Function1<afm.ui.screen.career.CoachingLicense, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.CoachingLicense, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp14_group: kotlin.Function1<afm.ui.screen.career.CoachingLicense, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.ui.screen.career.CoachingLicense, kotlin.Unit> origin=null
+              ARG onUpdateSpecialAbility: BLOCK type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142383059
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp15_group type:kotlin.Function1<kotlin.String, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<kotlin.String, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<kotlin.String, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$232 (): kotlin.Function1<kotlin.String, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<kotlin.String, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp15_group: kotlin.Function1<kotlin.String, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+              ARG onSelectAvatar: BLOCK type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142384429
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp16_group type:kotlin.Function1<kotlin.String, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<kotlin.String, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<kotlin.String, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$234 (): kotlin.Function1<kotlin.String, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<kotlin.String, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp16_group: kotlin.Function1<kotlin.String, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+              ARG onSelectAgent: BLOCK type=kotlin.Function1<afm.ui.screen.career.Agent, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142385069
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp17_group type:kotlin.Function1<afm.ui.screen.career.Agent, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.ui.screen.career.Agent, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.ui.screen.career.Agent, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.Agent, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$236 (): kotlin.Function1<afm.ui.screen.career.Agent, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.Agent, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp17_group: kotlin.Function1<afm.ui.screen.career.Agent, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.ui.screen.career.Agent, kotlin.Unit> origin=null
+              ARG onSelectDifficulty: BLOCK type=kotlin.Function1<afm.ui.screen.career.Difficulty, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142385869
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp18_group type:kotlin.Function1<afm.ui.screen.career.Difficulty, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.ui.screen.career.Difficulty, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.ui.screen.career.Difficulty, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.Difficulty, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$238 (): kotlin.Function1<afm.ui.screen.career.Difficulty, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.Difficulty, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp18_group: kotlin.Function1<afm.ui.screen.career.Difficulty, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.ui.screen.career.Difficulty, kotlin.Unit> origin=null
+              ARG onSelectCareerVision: BLOCK type=kotlin.Function1<afm.ui.screen.career.CareerVision, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142386733
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp19_group type:kotlin.Function1<afm.ui.screen.career.CareerVision, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.ui.screen.career.CareerVision, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.ui.screen.career.CareerVision, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.CareerVision, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$240 (): kotlin.Function1<afm.ui.screen.career.CareerVision, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.CareerVision, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp19_group: kotlin.Function1<afm.ui.screen.career.CareerVision, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.ui.screen.career.CareerVision, kotlin.Unit> origin=null
+              ARG onSetGameMode: BLOCK type=kotlin.Function1<afm.ui.screen.career.GameMode, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142393773
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp20_group type:kotlin.Function1<afm.ui.screen.career.GameMode, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.ui.screen.career.GameMode, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.ui.screen.career.GameMode, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.GameMode, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$242 (): kotlin.Function1<afm.ui.screen.career.GameMode, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.GameMode, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp20_group: kotlin.Function1<afm.ui.screen.career.GameMode, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.ui.screen.career.GameMode, kotlin.Unit> origin=null
+              ARG onUpdateChairmanName: BLOCK type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142395149
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp21_group type:kotlin.Function1<kotlin.String, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<kotlin.String, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<kotlin.String, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$244 (): kotlin.Function1<kotlin.String, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<kotlin.String, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp21_group: kotlin.Function1<kotlin.String, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+              ARG onUpdateChairmanAttribute: BLOCK type=kotlin.Function5<kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142396191
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp22_group type:kotlin.Function5<kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function5<kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function5<kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function5<kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$246 (): kotlin.Function5<kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function5<kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp22_group: kotlin.Function5<kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function5<kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Int?, kotlin.Unit> origin=null
+              ARG onSetChairmanEntryMode: BLOCK type=kotlin.Function1<afm.ui.screen.career.ChairmanEntryMode, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142398189
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp23_group type:kotlin.Function1<afm.ui.screen.career.ChairmanEntryMode, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.ui.screen.career.ChairmanEntryMode, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.ui.screen.career.ChairmanEntryMode, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.ChairmanEntryMode, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$248 (): kotlin.Function1<afm.ui.screen.career.ChairmanEntryMode, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.ChairmanEntryMode, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp23_group: kotlin.Function1<afm.ui.screen.career.ChairmanEntryMode, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.ui.screen.career.ChairmanEntryMode, kotlin.Unit> origin=null
+              ARG onSetManagerSelectionMode: BLOCK type=kotlin.Function1<afm.ui.screen.career.ManagerSelectionMode, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142387757
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp24_group type:kotlin.Function1<afm.ui.screen.career.ManagerSelectionMode, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.ui.screen.career.ManagerSelectionMode, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.ui.screen.career.ManagerSelectionMode, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.ManagerSelectionMode, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$250 (): kotlin.Function1<afm.ui.screen.career.ManagerSelectionMode, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.ui.screen.career.ManagerSelectionMode, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp24_group: kotlin.Function1<afm.ui.screen.career.ManagerSelectionMode, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.ui.screen.career.ManagerSelectionMode, kotlin.Unit> origin=null
+              ARG onSelectExistingManager: BLOCK type=kotlin.Function1<afm.data.database.entities.ManagersEntity, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142391469
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp25_group type:kotlin.Function1<afm.data.database.entities.ManagersEntity, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function1<afm.data.database.entities.ManagersEntity, kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function1<afm.data.database.entities.ManagersEntity, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function1<afm.data.database.entities.ManagersEntity, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$252 (): kotlin.Function1<afm.data.database.entities.ManagersEntity, kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function1<afm.data.database.entities.ManagersEntity, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp25_group: kotlin.Function1<afm.data.database.entities.ManagersEntity, kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function1<afm.data.database.entities.ManagersEntity, kotlin.Unit> origin=null
+              ARG onProceedFromManagerSelection: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=1142392621
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):CareerSetupScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp26_group type:kotlin.Function0<kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                    TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                    ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun lambda__861380181$lambda$255$lambda$254 (): kotlin.Function0<kotlin.Unit> declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp26_group: kotlin.Function0<kotlin.Unit> [val] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=kotlin.Function0<kotlin.Unit> origin=null
+              ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+              ARG $changed: CONST Int type=kotlin.Int value=920350128
+              ARG $changed1: CONST Int type=kotlin.Int value=920350134
+              ARG $changed2: CONST Int type=kotlin.Int value=115043766
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventEnd (): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      BRANCH
+        if: CONST Boolean type=kotlin.Boolean value=true
+        then: CALL 'public abstract fun skipToGroupEnd (): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.ComposableSingletons$CareerSetupScreenKt.lambda__861380181$lambda$255' type=androidx.compose.runtime.Composer? origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:43)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:419)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:388)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:431)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:95)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:36)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:29)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:102)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:22)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:53)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.runPhasedPipeline(AbstractCliPipeline.kt:109)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.execute(AbstractCliPipeline.kt:68)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:78)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:44)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:90)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.exec(CLICompiler.kt:352)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:175)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:38)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:504)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:421)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileNonIncrementally(IncrementalCompilerRunner.kt:306)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:133)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:679)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:93)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1806)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.base/java.util.HashMap.resize(Unknown Source)
+	at java.base/java.util.HashMap.putVal(Unknown Source)
+	at java.base/java.util.HashMap.put(Unknown Source)
+	at java.base/java.util.HashSet.add(Unknown Source)
+	at java.base/java.util.AbstractCollection.addAll(Unknown Source)
+	at java.base/java.util.LinkedHashSet.<init>(Unknown Source)
+	at kotlin.collections.CollectionsKt___CollectionsKt.toMutableSet(_Collections.kt:1710)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.updateCallSiteLineNumbers(MethodInliner.kt:449)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:431)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:98)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.inlineCall(IrInlineCodegen.kt:314)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genInlineCall(IrInlineCodegen.kt:68)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCallGenerator.genCall(IrInlineCallGenerator.kt:36)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:586)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitVariable(ExpressionCodegen.kt:725)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitVariable(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.declarations.IrVariable.accept(IrVariable.kt:36)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.gen(ExpressionCodegen.kt:214)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrCallGenerator.genValueAndPut(IrCallGenerator.kt:48)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:564)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:577)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+
+

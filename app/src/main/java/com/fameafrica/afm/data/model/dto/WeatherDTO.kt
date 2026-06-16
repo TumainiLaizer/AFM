@@ -1,0 +1,1 @@
+// WeatherDTO.kt

@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "name": "Omary Katanga",
+    "media_company": "Azam Media",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\azam_media.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 2,
+    "name": "ZBC News",
+    "media_company": "ZBC",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\zbc_logo.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 3,
+    "name": "TBC Michezo",
+    "media_company": "TBC",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\tbc_logo.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 4,
+    "name": "Mpenja TV",
+    "media_company": "Mpenja TV",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\mpenjatv_logo.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 5,
+    "name": "Global Sports",
+    "media_company": "Global TV",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\global_tv.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 6,
+    "name": "ITV Michezo",
+    "media_company": "ITV",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\itv.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 7,
+    "name": "Shaffih Dauda",
+    "media_company": "Clouds TV",
+    "expertise": "Transfer",
+    "logo": "assets\\visuals\\media\\clouds_logo.png",
+    "personality": "Critical"
+  },
+  {
+    "id": 8,
+    "name": "Millard Ayo",
+    "media_company": "Milard Ayo TV",
+    "expertise": "General",
+    "logo": "assets\\visuals\\media\\millard_logo.png",
+    "personality": "Friendly"
+  },
+  {
+    "id": 9,
+    "name": "Crown Sports",
+    "media_company": "Crown Media",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\crown_logo.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 10,
+    "name": "Maulid Kitenge",
+    "media_company": "Wasafi TV",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\wasafi_sports.png",
+    "personality": "Friendly"
+  },
+  {
+    "id": 11,
+    "name": "Mwanaspoti",
+    "media_company": "Mwanaspoti",
+    "expertise": "General",
+    "logo": "assets\\visuals\\media\\mwanaspoti_logo.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 12,
+    "name": "KipengaXtra",
+    "media_company": "Kipenga Extra",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\kipenga_extra.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 13,
+    "name": "StarTimes",
+    "media_company": "StarTimes TV",
+    "expertise": "General",
+    "logo": "assets\\visuals\\media\\startv_logo.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 14,
+    "name": "Nipashe",
+    "media_company": "Nipashe",
+    "expertise": "General",
+    "logo": "assets\\visuals\\media\\nipashe.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 15,
+    "name": "TV3",
+    "media_company": "TV3 Media",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\tv3_logo.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 16,
+    "name": "Edu Sports",
+    "media_company": "EduSportsTZ",
+    "expertise": "Gossip",
+    "logo": "assets\\visuals\\media\\edusports_logo.png",
+    "personality": "Aggressive"
+  },
+  {
+    "id": 17,
+    "name": "Saleh Jembe",
+    "media_company": "Saleh Sports",
+    "expertise": "Transfer",
+    "logo": "assets\\visuals\\media\\salehjembe_logo.png",
+    "personality": "Critical"
+  },
+  {
+    "id": 18,
+    "name": "EATV Sports",
+    "media_company": "EATV",
+    "expertise": "General",
+    "logo": "assets\\visuals\\media\\eatv_logo.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 19,
+    "name": "Udaku Michezo",
+    "media_company": "Udaku",
+    "expertise": "Gossip",
+    "logo": "assets\\visuals\\media\\udaku_logo.png",
+    "personality": "Biased"
+  },
+  {
+    "id": 20,
+    "name": "SpotiLeo",
+    "media_company": "SpotiLeo",
+    "expertise": "Match Reporting",
+    "logo": "assets\\visuals\\media\\spotileo_logo.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 21,
+    "name": "MwanaHabari",
+    "media_company": "MwanaHabari Digital",
+    "expertise": "General",
+    "logo": "assets\\visuals\\media\\mwanahabari_digital.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 22,
+    "name": "Championi",
+    "media_company": "Championi",
+    "expertise": "Honours",
+    "logo": "assets\\visuals\\media\\championi.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 23,
+    "name": "Azam Sports",
+    "media_company": "Azam Media",
+    "expertise": "Match Reporting",
+    "logo": "media/azam_media.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 24,
+    "name": "Wasafi Sports",
+    "media_company": "Wasafi TV",
+    "expertise": "General",
+    "logo": null,
+    "personality": "Neutral"
+  },
+  {
+    "id": 25,
+    "name": "Micky Jnr",
+    "media_company": "Micky Jnr",
+    "expertise": "General",
+    "logo": "media/micky_jnr.png",
+    "personality": "Friendly"
+  },
+  {
+    "id": 26,
+    "name": "TFF Radio",
+    "media_company": "TFF",
+    "expertise": "Football Authority",
+    "logo": "media/tff.png",
+    "personality": "Neutral"
+  },
+  {
+    "id": 27,
+    "name": "Fame Africa",
+    "media_company": "FAME Africa\u2122",
+    "expertise": "Developer",
+    "logo": "media/fame_africa.png",
+    "personality": "Friendly"
+  }
+]

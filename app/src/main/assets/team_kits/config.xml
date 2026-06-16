@@ -1,0 +1,9 @@
+<record>
+  <boolean id="preload" value="false" />
+  <boolean id="amap" value="false" />
+  <list id="maps">
+    <record from="Azam_FC_1" to="graphics/pictures/team/1/kits/home" />
+    <record from="Azam_FC_2" to="graphics/pictures/team/1/kits/away" />
+    <record from="Azam_FC_3" to="graphics/pictures/team/1/kits/third" />
+  </list>
+</record>

@@ -1,0 +1,2479 @@
+kotlin version: 2.2.10
+error message: org.jetbrains.kotlin.codegen.CompilationException: Back-end (JVM) Internal error: Couldn't transform method node:
+TeamOfTheWeekPage (Ljava/util/List;Ljava/lang/String;IILkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V:
+  @Landroidx/compose/runtime/Composable;() // invisible
+  @Landroidx/compose/runtime/ComposableTarget;(applier="androidx.compose.ui.UiComposable") // invisible
+    // annotable parameter count: 7 (visible)
+    // annotable parameter count: 7 (invisible)
+    @Lorg/jetbrains/annotations/NotNull;() // invisible, parameter 0
+    @Lorg/jetbrains/annotations/NotNull;() // invisible, parameter 1
+    @Lorg/jetbrains/annotations/NotNull;() // invisible, parameter 4
+    @Lorg/jetbrains/annotations/Nullable;() // invisible, parameter 5
+   L0
+    ALOAD 0
+    LDC "totwPlayers"
+    INVOKESTATIC kotlin/jvm/internal/Intrinsics.checkNotNullParameter (Ljava/lang/Object;Ljava/lang/String;)V
+    ALOAD 1
+    LDC "formation"
+    INVOKESTATIC kotlin/jvm/internal/Intrinsics.checkNotNullParameter (Ljava/lang/Object;Ljava/lang/String;)V
+    ALOAD 4
+    LDC "onRoundChange"
+    INVOKESTATIC kotlin/jvm/internal/Intrinsics.checkNotNullParameter (Ljava/lang/Object;Ljava/lang/String;)V
+   L1
+    LINENUMBER 677 L1
+    ALOAD 5
+    LDC 1647958558
+    INVOKEINTERFACE androidx/compose/runtime/Composer.startRestartGroup (I)Landroidx/compose/runtime/Composer; (itf)
+    ASTORE 5
+    ALOAD 5
+    LDC "C(TeamOfTheWeekPage)N(totwPlayers,formation,currentRound,maxRounds,onRoundChange)677@29200L5123:LeagueTableScreen.kt#mzx1zl"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformation (Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    ILOAD 6
+    ISTORE 7
+   L2
+    ILOAD 6
+    BIPUSH 6
+    IAND
+    IFNE L3
+    ILOAD 7
+    ALOAD 5
+    ALOAD 0
+    INVOKEINTERFACE androidx/compose/runtime/Composer.changedInstance (Ljava/lang/Object;)Z (itf)
+    IFEQ L4
+    ICONST_4
+    GOTO L5
+   L4
+    ICONST_2
+   L5
+    IOR
+    ISTORE 7
+   L3
+    ILOAD 6
+    BIPUSH 48
+    IAND
+    IFNE L6
+    ILOAD 7
+    ALOAD 5
+    ALOAD 1
+    INVOKEINTERFACE androidx/compose/runtime/Composer.changed (Ljava/lang/Object;)Z (itf)
+    IFEQ L7
+    BIPUSH 32
+    GOTO L8
+   L7
+    BIPUSH 16
+   L8
+    IOR
+    ISTORE 7
+   L6
+    ILOAD 6
+    SIPUSH 384
+    IAND
+    IFNE L9
+    ILOAD 7
+    ALOAD 5
+    ILOAD 2
+    INVOKEINTERFACE androidx/compose/runtime/Composer.changed (I)Z (itf)
+    IFEQ L10
+    SIPUSH 256
+    GOTO L11
+   L10
+    SIPUSH 128
+   L11
+    IOR
+    ISTORE 7
+   L9
+    ILOAD 6
+    SIPUSH 3072
+    IAND
+    IFNE L12
+    ILOAD 7
+    ALOAD 5
+    ILOAD 3
+    INVOKEINTERFACE androidx/compose/runtime/Composer.changed (I)Z (itf)
+    IFEQ L13
+    SIPUSH 2048
+    GOTO L14
+   L13
+    SIPUSH 1024
+   L14
+    IOR
+    ISTORE 7
+   L12
+    ILOAD 6
+    SIPUSH 24576
+    IAND
+    IFNE L15
+    ILOAD 7
+    ALOAD 5
+    ALOAD 4
+    INVOKEINTERFACE androidx/compose/runtime/Composer.changedInstance (Ljava/lang/Object;)Z (itf)
+    IFEQ L16
+    SIPUSH 16384
+    GOTO L17
+   L16
+    SIPUSH 8192
+   L17
+    IOR
+    ISTORE 7
+   L15
+    ALOAD 5
+    ILOAD 7
+    SIPUSH 9363
+    IAND
+    SIPUSH 9362
+    IF_ICMPEQ L18
+    ICONST_1
+    GOTO L19
+   L18
+    ICONST_0
+   L19
+    ILOAD 7
+    ICONST_1
+    IAND
+    INVOKEINTERFACE androidx/compose/runtime/Composer.shouldExecute (ZI)Z (itf)
+    IFEQ L20
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.isTraceInProgress ()Z
+    IFEQ L21
+    LDC 1647958558
+    ILOAD 7
+    ICONST_M1
+    LDC "afm.ui.screen.league.TeamOfTheWeekPage (LeagueTableScreen.kt:676)"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.traceEventStart (IIILjava/lang/String;)V
+   L21
+    LINENUMBER 678 L21
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    FCONST_0
+    ICONST_1
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.fillMaxSize$default (Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    ASTORE 8
+    ALOAD 5
+    ASTORE 11
+    BIPUSH 6
+    ISTORE 12
+    NOP
+   L22
+    ICONST_0
+    ISTORE 13
+   L23
+    ALOAD 11
+    LDC 1341605231
+    LDC "CC(Column)N(modifier,verticalArrangement,horizontalAlignment,content)87@4443L61,88@4509L134:Column.kt#2w3rfo"
+   L24
+    LINENUMBER 2079 L24
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L25
+    LINENUMBER 2080 L25
+    GETSTATIC androidx/compose/foundation/layout/Arrangement.INSTANCE : Landroidx/compose/foundation/layout/Arrangement;
+    INVOKEVIRTUAL androidx/compose/foundation/layout/Arrangement.getTop ()Landroidx/compose/foundation/layout/Arrangement$Vertical;
+    ASTORE 9
+   L26
+    LINENUMBER 2081 L26
+    GETSTATIC androidx/compose/ui/Alignment.Companion : Landroidx/compose/ui/Alignment$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/Alignment$Companion.getStart ()Landroidx/compose/ui/Alignment$Horizontal;
+    ASTORE 10
+   L27
+    LINENUMBER 2084 L27
+    ALOAD 9
+    ALOAD 10
+    ALOAD 11
+    BIPUSH 14
+    ILOAD 12
+    ICONST_3
+    ISHR
+    IAND
+    BIPUSH 112
+    ILOAD 12
+    ICONST_3
+    ISHR
+    IAND
+    IOR
+    INVOKESTATIC androidx/compose/foundation/layout/ColumnKt.columnMeasurePolicy (Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/layout/MeasurePolicy;
+    ASTORE 14
+   L28
+    LINENUMBER 2088 L28
+    ALOAD 8
+    ASTORE 15
+   L29
+    LINENUMBER 2087 L29
+    ALOAD 14
+    ASTORE 16
+    ALOAD 11
+    ASTORE 17
+    BIPUSH 112
+    ILOAD 12
+    ICONST_3
+    ISHL
+    IAND
+    ISTORE 18
+   L30
+    LINENUMBER 2085 L30
+    NOP
+   L31
+    ICONST_0
+    ISTORE 19
+   L32
+    ALOAD 17
+    LDC -1159599143
+    LDC "CC(Layout)P(!1,2)81@3355L27,84@3521L416:Layout.kt#80mrfh"
+   L33
+    LINENUMBER 2089 L33
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L34
+    LINENUMBER 2090 L34
+    ALOAD 17
+    ICONST_0
+    INVOKESTATIC androidx/compose/runtime/ComposablesKt.getCurrentCompositeKeyHashCode (Landroidx/compose/runtime/Composer;I)J
+    INVOKESTATIC java/lang/Long.hashCode (J)I
+    ISTORE 20
+   L35
+    ALOAD 17
+   L36
+    LINENUMBER 2091 L36
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getCurrentCompositionLocalMap ()Landroidx/compose/runtime/CompositionLocalMap; (itf)
+    ASTORE 21
+   L37
+    ALOAD 17
+   L38
+    LINENUMBER 2092 L38
+    ALOAD 15
+    INVOKESTATIC androidx/compose/ui/ComposedModifierKt.materializeModifier (Landroidx/compose/runtime/Composer;Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    ASTORE 22
+   L39
+    LINENUMBER 2094 L39
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getConstructor ()Lkotlin/jvm/functions/Function0;
+    ASTORE 23
+    ALOAD 17
+    ASTORE 24
+    BIPUSH 6
+    SIPUSH 896
+    ILOAD 18
+    BIPUSH 6
+    ISHL
+    IAND
+    IOR
+    ISTORE 25
+   L40
+    LINENUMBER 2093 L40
+    NOP
+   L41
+    ICONST_0
+    ISTORE 26
+   L42
+    ALOAD 24
+    LDC -553112988
+    LDC "CC(ReusableComposeNode)N(factory,update,content)399@15590L9:Composables.kt#9igjgp"
+   L43
+    LINENUMBER 2095 L43
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L44
+    LINENUMBER 2096 L44
+    ALOAD 24
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getApplier ()Landroidx/compose/runtime/Applier; (itf)
+    INSTANCEOF androidx/compose/runtime/Applier
+    IFNE L45
+    INVOKESTATIC androidx/compose/runtime/ComposablesKt.invalidApplier ()V
+   L45
+    ALOAD 24
+   L46
+    LINENUMBER 2097 L46
+    INVOKEINTERFACE androidx/compose/runtime/Composer.startReusableNode ()V (itf)
+   L47
+    LINENUMBER 2098 L47
+    ALOAD 24
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getInserting ()Z (itf)
+    IFEQ L48
+    ALOAD 24
+   L49
+    LINENUMBER 2099 L49
+    ALOAD 23
+    INVOKEINTERFACE androidx/compose/runtime/Composer.createNode (Lkotlin/jvm/functions/Function0;)V (itf)
+    GOTO L50
+   L48
+    ALOAD 24
+   L51
+    LINENUMBER 2101 L51
+    INVOKEINTERFACE androidx/compose/runtime/Composer.useNode ()V (itf)
+   L50
+    LINENUMBER 2103 L50
+    ALOAD 24
+    INVOKESTATIC androidx/compose/runtime/Updater.constructor-impl (Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
+    ASTORE 27
+   L52
+    ICONST_0
+    ISTORE 28
+   L53
+    LINENUMBER 2104 L53
+    ALOAD 27
+    ALOAD 16
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetMeasurePolicy ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L54
+    LINENUMBER 2105 L54
+    ALOAD 27
+    ALOAD 21
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetResolvedCompositionLocals ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L55
+    LINENUMBER 2106 L55
+    ALOAD 27
+    ILOAD 20
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetCompositeKeyHash ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.init-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L56
+    LINENUMBER 2107 L56
+    ALOAD 27
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getApplyOnDeactivatedNodeAssertion ()Lkotlin/jvm/functions/Function1;
+    INVOKESTATIC androidx/compose/runtime/Updater.reconcile-impl (Landroidx/compose/runtime/Composer;Lkotlin/jvm/functions/Function1;)V
+   L57
+    LINENUMBER 2108 L57
+    ALOAD 27
+    ALOAD 22
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetModifier ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L58
+    LINENUMBER 2109 L58
+    NOP
+   L59
+    LINENUMBER 2103 L59
+    NOP
+   L60
+    LINENUMBER 2110 L60
+    ALOAD 24
+    BIPUSH 14
+    ILOAD 25
+    BIPUSH 6
+    ISHR
+    IAND
+    ISTORE 29
+    ASTORE 30
+   L61
+    ICONST_0
+    ISTORE 31
+   L62
+    ALOAD 30
+    LDC 2093002350
+    LDC "C89@4557L9:Column.kt#2w3rfo"
+   L63
+    LINENUMBER 2086 L63
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    GETSTATIC androidx/compose/foundation/layout/ColumnScopeInstance.INSTANCE : Landroidx/compose/foundation/layout/ColumnScopeInstance;
+    ALOAD 30
+    BIPUSH 6
+    BIPUSH 112
+    ILOAD 12
+    BIPUSH 6
+    ISHR
+    IAND
+    IOR
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    CHECKCAST java/lang/Number
+    INVOKEVIRTUAL java/lang/Number.intValue ()I
+    ISTORE 32
+    CHECKCAST androidx/compose/runtime/Composer
+    ASTORE 33
+    CHECKCAST androidx/compose/foundation/layout/ColumnScope
+    ASTORE 34
+    INVOKESTATIC kotlin/jvm/internal/InlineMarker.beforeInlineCall ()V
+   L64
+    ICONST_0
+    ISTORE 35
+   L65
+    ALOAD 33
+    LDC 1226103246
+    LDC "C679@29280L1654,752@32146L1710,745@31843L2013,795@33866L41:LeagueTableScreen.kt#mzx1zl"
+   L66
+    LINENUMBER 680 L66
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L67
+    LINENUMBER 681 L67
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    FCONST_0
+    ICONST_1
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.fillMaxWidth$default (Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    BIPUSH 16
+    ISTORE 36
+   L68
+    ICONST_0
+    ISTORE 37
+   L69
+    LINENUMBER 2111 L69
+    ILOAD 36
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L70
+   L70
+    LINENUMBER 681 L70
+    INVOKESTATIC androidx/compose/foundation/layout/PaddingKt.padding-3ABfNKs (Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
+    ASTORE 36
+   L71
+    LINENUMBER 682 L71
+    GETSTATIC androidx/compose/foundation/layout/Arrangement.INSTANCE : Landroidx/compose/foundation/layout/Arrangement;
+    INVOKEVIRTUAL androidx/compose/foundation/layout/Arrangement.getSpaceBetween ()Landroidx/compose/foundation/layout/Arrangement$HorizontalOrVertical;
+    CHECKCAST androidx/compose/foundation/layout/Arrangement$Horizontal
+    ASTORE 37
+   L72
+    LINENUMBER 683 L72
+    GETSTATIC androidx/compose/ui/Alignment.Companion : Landroidx/compose/ui/Alignment$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/Alignment$Companion.getCenterVertically ()Landroidx/compose/ui/Alignment$Vertical;
+    ASTORE 38
+    ALOAD 33
+    ASTORE 39
+    SIPUSH 438
+    ISTORE 40
+   L73
+    LINENUMBER 680 L73
+    NOP
+   L74
+    ICONST_0
+    ISTORE 41
+   L75
+    ALOAD 39
+    LDC 844473419
+    LDC "CC(Row)N(modifier,horizontalArrangement,verticalAlignment,content)99@5125L58,100@5188L131:Row.kt#2w3rfo"
+   L76
+    LINENUMBER 2112 L76
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L77
+    LINENUMBER 2113 L77
+    ALOAD 37
+    ALOAD 38
+    ALOAD 39
+    BIPUSH 14
+    ILOAD 40
+    ICONST_3
+    ISHR
+    IAND
+    BIPUSH 112
+    ILOAD 40
+    ICONST_3
+    ISHR
+    IAND
+    IOR
+    INVOKESTATIC androidx/compose/foundation/layout/RowKt.rowMeasurePolicy (Landroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/layout/MeasurePolicy;
+    ASTORE 42
+   L78
+    LINENUMBER 2117 L78
+    ALOAD 36
+    ASTORE 43
+   L79
+    LINENUMBER 2116 L79
+    ALOAD 42
+    ASTORE 44
+    ALOAD 39
+    ASTORE 45
+    BIPUSH 112
+    ILOAD 40
+    ICONST_3
+    ISHL
+    IAND
+    ISTORE 46
+   L80
+    LINENUMBER 2114 L80
+    NOP
+   L81
+    ICONST_0
+    ISTORE 47
+   L82
+    ALOAD 45
+    LDC -1159599143
+    LDC "CC(Layout)P(!1,2)81@3355L27,84@3521L416:Layout.kt#80mrfh"
+   L83
+    LINENUMBER 2118 L83
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L84
+    LINENUMBER 2119 L84
+    ALOAD 45
+    ICONST_0
+    INVOKESTATIC androidx/compose/runtime/ComposablesKt.getCurrentCompositeKeyHashCode (Landroidx/compose/runtime/Composer;I)J
+    INVOKESTATIC java/lang/Long.hashCode (J)I
+    ISTORE 48
+   L85
+    ALOAD 45
+   L86
+    LINENUMBER 2120 L86
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getCurrentCompositionLocalMap ()Landroidx/compose/runtime/CompositionLocalMap; (itf)
+    ASTORE 49
+   L87
+    ALOAD 45
+   L88
+    LINENUMBER 2121 L88
+    ALOAD 43
+    INVOKESTATIC androidx/compose/ui/ComposedModifierKt.materializeModifier (Landroidx/compose/runtime/Composer;Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    ASTORE 50
+   L89
+    LINENUMBER 2123 L89
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getConstructor ()Lkotlin/jvm/functions/Function0;
+    ASTORE 51
+    ALOAD 45
+    ASTORE 52
+    BIPUSH 6
+    SIPUSH 896
+    ILOAD 46
+    BIPUSH 6
+    ISHL
+    IAND
+    IOR
+    ISTORE 53
+   L90
+    LINENUMBER 2122 L90
+    NOP
+   L91
+    ICONST_0
+    ISTORE 54
+   L92
+    ALOAD 52
+    LDC -553112988
+    LDC "CC(ReusableComposeNode)N(factory,update,content)399@15590L9:Composables.kt#9igjgp"
+   L93
+    LINENUMBER 2124 L93
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L94
+    LINENUMBER 2125 L94
+    ALOAD 52
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getApplier ()Landroidx/compose/runtime/Applier; (itf)
+    INSTANCEOF androidx/compose/runtime/Applier
+    IFNE L95
+    INVOKESTATIC androidx/compose/runtime/ComposablesKt.invalidApplier ()V
+   L95
+    ALOAD 52
+   L96
+    LINENUMBER 2126 L96
+    INVOKEINTERFACE androidx/compose/runtime/Composer.startReusableNode ()V (itf)
+   L97
+    LINENUMBER 2127 L97
+    ALOAD 52
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getInserting ()Z (itf)
+    IFEQ L98
+    ALOAD 52
+   L99
+    LINENUMBER 2128 L99
+    ALOAD 51
+    INVOKEINTERFACE androidx/compose/runtime/Composer.createNode (Lkotlin/jvm/functions/Function0;)V (itf)
+    GOTO L100
+   L98
+    ALOAD 52
+   L101
+    LINENUMBER 2130 L101
+    INVOKEINTERFACE androidx/compose/runtime/Composer.useNode ()V (itf)
+   L100
+    LINENUMBER 2132 L100
+    ALOAD 52
+    INVOKESTATIC androidx/compose/runtime/Updater.constructor-impl (Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
+    ASTORE 55
+   L102
+    ICONST_0
+    ISTORE 56
+   L103
+    LINENUMBER 2133 L103
+    ALOAD 55
+    ALOAD 44
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetMeasurePolicy ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L104
+    LINENUMBER 2134 L104
+    ALOAD 55
+    ALOAD 49
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetResolvedCompositionLocals ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L105
+    LINENUMBER 2135 L105
+    ALOAD 55
+    ILOAD 48
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetCompositeKeyHash ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.init-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L106
+    LINENUMBER 2136 L106
+    ALOAD 55
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getApplyOnDeactivatedNodeAssertion ()Lkotlin/jvm/functions/Function1;
+    INVOKESTATIC androidx/compose/runtime/Updater.reconcile-impl (Landroidx/compose/runtime/Composer;Lkotlin/jvm/functions/Function1;)V
+   L107
+    LINENUMBER 2137 L107
+    ALOAD 55
+    ALOAD 50
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetModifier ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L108
+    LINENUMBER 2138 L108
+    NOP
+   L109
+    LINENUMBER 2132 L109
+    NOP
+   L110
+    LINENUMBER 2139 L110
+    ALOAD 52
+    BIPUSH 14
+    ILOAD 53
+    BIPUSH 6
+    ISHR
+    IAND
+    ISTORE 57
+    ASTORE 58
+   L111
+    ICONST_0
+    ISTORE 59
+   L112
+    ALOAD 58
+    LDC 1456264949
+    LDC "C101@5233L9:Row.kt#2w3rfo"
+   L113
+    LINENUMBER 2115 L113
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    GETSTATIC androidx/compose/foundation/layout/RowScopeInstance.INSTANCE : Landroidx/compose/foundation/layout/RowScopeInstance;
+    ALOAD 58
+    BIPUSH 6
+    BIPUSH 112
+    ILOAD 40
+    BIPUSH 6
+    ISHR
+    IAND
+    IOR
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    CHECKCAST java/lang/Number
+    INVOKEVIRTUAL java/lang/Number.intValue ()I
+    ISTORE 60
+    CHECKCAST androidx/compose/runtime/Composer
+    ASTORE 61
+    CHECKCAST androidx/compose/foundation/layout/RowScope
+    ASTORE 62
+   L114
+    ICONST_0
+    ISTORE 63
+   L115
+    ALOAD 61
+    LDC -549391736
+    LDC "C685@29531L57,687@29647L259,684@29493L413,695@29920L554,711@30526L65,713@30658L266,710@30488L436:LeagueTableScreen.kt#mzx1zl"
+   L116
+    LINENUMBER 685 L116
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 61
+    LDC 1229203517
+    LDC "CC(remember):LeagueTableScreen.kt#9igjgp"
+   L117
+    LINENUMBER 686 L117
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 61
+    ASTORE 64
+    ILOAD 7
+    SIPUSH 896
+    IAND
+    SIPUSH 256
+    IF_ICMPNE L118
+    ICONST_1
+    GOTO L119
+   L118
+    ICONST_0
+   L119
+    ILOAD 7
+    LDC 57344
+    IAND
+    SIPUSH 16384
+    IF_ICMPNE L120
+    ICONST_1
+    GOTO L121
+   L120
+    ICONST_0
+   L121
+    IOR
+    ISTORE 65
+   L122
+    ICONST_0
+    ISTORE 66
+   L123
+    LINENUMBER 2140 L123
+    ALOAD 64
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 67
+   L124
+    ICONST_0
+    ISTORE 68
+   L125
+    LINENUMBER 2141 L125
+    ILOAD 65
+    IFNE L126
+    ALOAD 67
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L127
+   L126
+    LINENUMBER 2142 L126
+    ICONST_0
+    ISTORE 69
+   L128
+    LINENUMBER 686 L128
+    ILOAD 2
+    ALOAD 4
+    INVOKEDYNAMIC invoke(ILkotlin/jvm/functions/Function1;)Lkotlin/jvm/functions/Function0; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      ()Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/league/LeagueTableScreenKt.TeamOfTheWeekPage$lambda$167$lambda$155$lambda$149$lambda$148(ILkotlin/jvm/functions/Function1;)Lkotlin/Unit;, 
+      ()Lkotlin/Unit;
+    ]
+    GOTO L129
+   L129
+    LINENUMBER 2142 L129
+    ASTORE 70
+   L130
+    LINENUMBER 2143 L130
+    ALOAD 64
+    ALOAD 70
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L131
+    LINENUMBER 2144 L131
+    ALOAD 70
+   L132
+    GOTO L133
+   L127
+    LINENUMBER 2145 L127
+    ALOAD 67
+   L133
+    LINENUMBER 2140 L133
+    NOP
+   L134
+    LINENUMBER 2140 L134
+    GOTO L135
+   L135
+    LINENUMBER 686 L135
+    CHECKCAST kotlin/jvm/functions/Function0
+    ASTORE 71
+    ALOAD 61
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 71
+    ACONST_NULL
+   L136
+    LINENUMBER 687 L136
+    ILOAD 2
+    ICONST_1
+    IF_ICMPLE L137
+    ICONST_1
+    GOTO L138
+   L137
+    ICONST_0
+   L138
+    ACONST_NULL
+    ACONST_NULL
+   L139
+    LINENUMBER 688 L139
+    LDC 1014425223
+    ICONST_1
+    ILOAD 2
+    INVOKEDYNAMIC invoke(I)Lkotlin/jvm/functions/Function2; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/league/LeagueTableScreenKt.TeamOfTheWeekPage$lambda$167$lambda$155$lambda$150(ILandroidx/compose/runtime/Composer;I)Lkotlin/Unit;, 
+      (Landroidx/compose/runtime/Composer;Ljava/lang/Integer;)Lkotlin/Unit;
+    ]
+    ALOAD 61
+    BIPUSH 54
+    INVOKESTATIC androidx/compose/runtime/internal/ComposableLambdaKt.rememberComposableLambda (IZLjava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/internal/ComposableLambda;
+    CHECKCAST kotlin/jvm/functions/Function2
+    ALOAD 61
+    LDC 196608
+    BIPUSH 26
+   L140
+    LINENUMBER 685 L140
+    INVOKESTATIC androidx/compose/material3/IconButtonKt.IconButton (Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/material3/IconButtonColors;Landroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+   L141
+    LINENUMBER 696 L141
+    GETSTATIC androidx/compose/ui/Alignment.Companion : Landroidx/compose/ui/Alignment$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/Alignment$Companion.getCenterHorizontally ()Landroidx/compose/ui/Alignment$Horizontal;
+    ASTORE 65
+    ALOAD 61
+    ASTORE 66
+    SIPUSH 384
+    ISTORE 67
+   L142
+    ICONST_0
+    ISTORE 68
+   L143
+    ALOAD 66
+    LDC 1341605231
+    LDC "CC(Column)N(modifier,verticalArrangement,horizontalAlignment,content)87@4443L61,88@4509L134:Column.kt#2w3rfo"
+   L144
+    LINENUMBER 2146 L144
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L145
+    LINENUMBER 2147 L145
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    ASTORE 71
+   L146
+    LINENUMBER 2148 L146
+    GETSTATIC androidx/compose/foundation/layout/Arrangement.INSTANCE : Landroidx/compose/foundation/layout/Arrangement;
+    INVOKEVIRTUAL androidx/compose/foundation/layout/Arrangement.getTop ()Landroidx/compose/foundation/layout/Arrangement$Vertical;
+    ASTORE 64
+   L147
+    LINENUMBER 2152 L147
+    ALOAD 64
+    ALOAD 65
+    ALOAD 66
+    BIPUSH 14
+    ILOAD 67
+    ICONST_3
+    ISHR
+    IAND
+    BIPUSH 112
+    ILOAD 67
+    ICONST_3
+    ISHR
+    IAND
+    IOR
+    INVOKESTATIC androidx/compose/foundation/layout/ColumnKt.columnMeasurePolicy (Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/layout/MeasurePolicy;
+    ASTORE 69
+   L148
+    LINENUMBER 2156 L148
+    ALOAD 71
+    ASTORE 70
+   L149
+    LINENUMBER 2155 L149
+    ALOAD 69
+    ASTORE 72
+    ALOAD 66
+    ASTORE 73
+    BIPUSH 112
+    ILOAD 67
+    ICONST_3
+    ISHL
+    IAND
+    ISTORE 74
+   L150
+    LINENUMBER 2153 L150
+    NOP
+   L151
+    ICONST_0
+    ISTORE 75
+   L152
+    ALOAD 73
+    LDC -1159599143
+    LDC "CC(Layout)P(!1,2)81@3355L27,84@3521L416:Layout.kt#80mrfh"
+   L153
+    LINENUMBER 2157 L153
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L154
+    LINENUMBER 2158 L154
+    ALOAD 73
+    ICONST_0
+    INVOKESTATIC androidx/compose/runtime/ComposablesKt.getCurrentCompositeKeyHashCode (Landroidx/compose/runtime/Composer;I)J
+    INVOKESTATIC java/lang/Long.hashCode (J)I
+    ISTORE 76
+   L155
+    ALOAD 73
+   L156
+    LINENUMBER 2159 L156
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getCurrentCompositionLocalMap ()Landroidx/compose/runtime/CompositionLocalMap; (itf)
+    ASTORE 77
+   L157
+    ALOAD 73
+   L158
+    LINENUMBER 2160 L158
+    ALOAD 70
+    INVOKESTATIC androidx/compose/ui/ComposedModifierKt.materializeModifier (Landroidx/compose/runtime/Composer;Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    ASTORE 78
+   L159
+    LINENUMBER 2162 L159
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getConstructor ()Lkotlin/jvm/functions/Function0;
+    ASTORE 79
+    ALOAD 73
+    ASTORE 80
+    BIPUSH 6
+    SIPUSH 896
+    ILOAD 74
+    BIPUSH 6
+    ISHL
+    IAND
+    IOR
+    ISTORE 81
+   L160
+    LINENUMBER 2161 L160
+    NOP
+   L161
+    ICONST_0
+    ISTORE 82
+   L162
+    ALOAD 80
+    LDC -553112988
+    LDC "CC(ReusableComposeNode)N(factory,update,content)399@15590L9:Composables.kt#9igjgp"
+   L163
+    LINENUMBER 2163 L163
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L164
+    LINENUMBER 2164 L164
+    ALOAD 80
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getApplier ()Landroidx/compose/runtime/Applier; (itf)
+    INSTANCEOF androidx/compose/runtime/Applier
+    IFNE L165
+    INVOKESTATIC androidx/compose/runtime/ComposablesKt.invalidApplier ()V
+   L165
+    ALOAD 80
+   L166
+    LINENUMBER 2165 L166
+    INVOKEINTERFACE androidx/compose/runtime/Composer.startReusableNode ()V (itf)
+   L167
+    LINENUMBER 2166 L167
+    ALOAD 80
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getInserting ()Z (itf)
+    IFEQ L168
+    ALOAD 80
+   L169
+    LINENUMBER 2167 L169
+    ALOAD 79
+    INVOKEINTERFACE androidx/compose/runtime/Composer.createNode (Lkotlin/jvm/functions/Function0;)V (itf)
+    GOTO L170
+   L168
+    ALOAD 80
+   L171
+    LINENUMBER 2169 L171
+    INVOKEINTERFACE androidx/compose/runtime/Composer.useNode ()V (itf)
+   L170
+    LINENUMBER 2171 L170
+    ALOAD 80
+    INVOKESTATIC androidx/compose/runtime/Updater.constructor-impl (Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
+    ASTORE 83
+   L172
+    ICONST_0
+    ISTORE 84
+   L173
+    LINENUMBER 2172 L173
+    ALOAD 83
+    ALOAD 72
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetMeasurePolicy ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L174
+    LINENUMBER 2173 L174
+    ALOAD 83
+    ALOAD 77
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetResolvedCompositionLocals ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L175
+    LINENUMBER 2174 L175
+    ALOAD 83
+    ILOAD 76
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetCompositeKeyHash ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.init-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L176
+    LINENUMBER 2175 L176
+    ALOAD 83
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getApplyOnDeactivatedNodeAssertion ()Lkotlin/jvm/functions/Function1;
+    INVOKESTATIC androidx/compose/runtime/Updater.reconcile-impl (Landroidx/compose/runtime/Composer;Lkotlin/jvm/functions/Function1;)V
+   L177
+    LINENUMBER 2176 L177
+    ALOAD 83
+    ALOAD 78
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetModifier ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L178
+    LINENUMBER 2177 L178
+    NOP
+   L179
+    LINENUMBER 2171 L179
+    NOP
+   L180
+    LINENUMBER 2178 L180
+    ALOAD 80
+    BIPUSH 14
+    ILOAD 81
+    BIPUSH 6
+    ISHR
+    IAND
+    ISTORE 85
+    ASTORE 86
+   L181
+    ICONST_0
+    ISTORE 87
+   L182
+    ALOAD 86
+    LDC 2093002350
+    LDC "C89@4557L9:Column.kt#2w3rfo"
+   L183
+    LINENUMBER 2154 L183
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    GETSTATIC androidx/compose/foundation/layout/ColumnScopeInstance.INSTANCE : Landroidx/compose/foundation/layout/ColumnScopeInstance;
+    ALOAD 86
+    BIPUSH 6
+    BIPUSH 112
+    ILOAD 67
+    BIPUSH 6
+    ISHR
+    IAND
+    IOR
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    CHECKCAST java/lang/Number
+    INVOKEVIRTUAL java/lang/Number.intValue ()I
+    ISTORE 88
+    CHECKCAST androidx/compose/runtime/Composer
+    ASTORE 89
+    CHECKCAST androidx/compose/foundation/layout/ColumnScope
+    ASTORE 90
+   L184
+    ICONST_0
+    ISTORE 91
+   L185
+    ALOAD 89
+    LDC 145480390
+    LDC "C696@29997L268,703@30282L178:LeagueTableScreen.kt#mzx1zl"
+   L186
+    LINENUMBER 697 L186
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L187
+    LINENUMBER 699 L187
+    INVOKESTATIC com/fameafrica/afm2026/ui/theme/TypographyKt.getAFM2026Typography ()Landroidx/compose/material3/Typography;
+    INVOKEVIRTUAL androidx/compose/material3/Typography.getTitleMedium ()Landroidx/compose/ui/text/TextStyle;
+    ASTORE 92
+   L188
+    LINENUMBER 700 L188
+    GETSTATIC com/fameafrica/afm2026/ui/theme/FameColors.INSTANCE : Lcom/fameafrica/afm2026/ui/theme/FameColors;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/theme/FameColors.getChampionsGold-0d7_KjU ()J
+    LSTORE 93
+   L189
+    LINENUMBER 701 L189
+    GETSTATIC androidx/compose/ui/text/font/FontWeight.Companion : Landroidx/compose/ui/text/font/FontWeight$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/text/font/FontWeight$Companion.getBlack ()Landroidx/compose/ui/text/font/FontWeight;
+    ASTORE 95
+   L190
+    LINENUMBER 702 L190
+    ICONST_1
+    INVOKESTATIC androidx/compose/ui/unit/TextUnitKt.getSp (I)J
+    LSTORE 96
+   L191
+    LINENUMBER 698 L191
+    LDC "TEAM OF THE WEEK"
+    ACONST_NULL
+   L192
+    LINENUMBER 700 L192
+    LLOAD 93
+    LCONST_0
+    ACONST_NULL
+   L193
+    LINENUMBER 701 L193
+    ALOAD 95
+    ACONST_NULL
+   L194
+    LINENUMBER 702 L194
+    LLOAD 96
+    ACONST_NULL
+    ACONST_NULL
+    LCONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ACONST_NULL
+   L195
+    LINENUMBER 699 L195
+    ALOAD 92
+    ALOAD 89
+    LDC 12779910
+    ICONST_0
+    LDC 65370
+   L196
+    LINENUMBER 697 L196
+    INVOKESTATIC androidx/compose/material3/TextKt.Text--4IGK_g (Ljava/lang/String;Landroidx/compose/ui/Modifier;JJLandroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontFamily;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/text/style/TextAlign;JIZIILkotlin/jvm/functions/Function1;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/runtime/Composer;III)V
+   L197
+    LINENUMBER 705 L197
+    ILOAD 2
+    INVOKEDYNAMIC makeConcatWithConstants(I)Ljava/lang/String; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/StringConcatFactory.makeConcatWithConstants(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      "ROUND \u0001"
+    ]
+    ASTORE 92
+   L198
+    LINENUMBER 706 L198
+    INVOKESTATIC com/fameafrica/afm2026/ui/theme/TypographyKt.getAFM2026Typography ()Landroidx/compose/material3/Typography;
+    INVOKEVIRTUAL androidx/compose/material3/Typography.getLabelSmall ()Landroidx/compose/ui/text/TextStyle;
+    ASTORE 98
+   L199
+    LINENUMBER 707 L199
+    GETSTATIC com/fameafrica/afm2026/ui/theme/FameColors.INSTANCE : Lcom/fameafrica/afm2026/ui/theme/FameColors;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/theme/FameColors.getMutedParchment-0d7_KjU ()J
+    LSTORE 99
+   L200
+    LINENUMBER 705 L200
+    ALOAD 92
+    ACONST_NULL
+   L201
+    LINENUMBER 707 L201
+    LLOAD 99
+    LCONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    LCONST_0
+    ACONST_NULL
+    ACONST_NULL
+    LCONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ACONST_NULL
+   L202
+    LINENUMBER 706 L202
+    ALOAD 98
+    ALOAD 89
+    SIPUSH 384
+    ICONST_0
+    LDC 65530
+   L203
+    LINENUMBER 704 L203
+    INVOKESTATIC androidx/compose/material3/TextKt.Text--4IGK_g (Ljava/lang/String;Landroidx/compose/ui/Modifier;JJLandroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontFamily;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/text/style/TextAlign;JIZIILkotlin/jvm/functions/Function1;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/runtime/Composer;III)V
+    ALOAD 89
+   L204
+    LINENUMBER 697 L204
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L205
+    LINENUMBER 709 L205
+    GOTO L206
+   L206
+    GETSTATIC kotlin/Unit.INSTANCE : Lkotlin/Unit;
+   L207
+    LINENUMBER 2154 L207
+    POP
+    ALOAD 86
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L208
+    LINENUMBER 2178 L208
+    ALOAD 80
+   L209
+    LINENUMBER 2179 L209
+    INVOKEINTERFACE androidx/compose/runtime/Composer.endNode ()V (itf)
+    ALOAD 80
+   L210
+    LINENUMBER 2163 L210
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L211
+    LINENUMBER 2180 L211
+    NOP
+   L212
+    ALOAD 73
+   L213
+    LINENUMBER 2157 L213
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L214
+    LINENUMBER 2181 L214
+    NOP
+   L215
+    ALOAD 66
+   L216
+    LINENUMBER 2146 L216
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L217
+    LINENUMBER 2182 L217
+    GOTO L218
+   L218
+    ALOAD 61
+    LDC 1229235365
+    LDC "CC(remember):LeagueTableScreen.kt#9igjgp"
+   L219
+    LINENUMBER 712 L219
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 61
+    ASTORE 64
+    ILOAD 7
+    SIPUSH 896
+    IAND
+    SIPUSH 256
+    IF_ICMPNE L220
+    ICONST_1
+    GOTO L221
+   L220
+    ICONST_0
+   L221
+    ILOAD 7
+    SIPUSH 7168
+    IAND
+    SIPUSH 2048
+    IF_ICMPNE L222
+    ICONST_1
+    GOTO L223
+   L222
+    ICONST_0
+   L223
+    IOR
+    ILOAD 7
+    LDC 57344
+    IAND
+    SIPUSH 16384
+    IF_ICMPNE L224
+    ICONST_1
+    GOTO L225
+   L224
+    ICONST_0
+   L225
+    IOR
+    ISTORE 65
+   L226
+    ICONST_0
+    ISTORE 66
+   L227
+    LINENUMBER 2183 L227
+    ALOAD 64
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 67
+   L228
+    ICONST_0
+    ISTORE 68
+   L229
+    LINENUMBER 2184 L229
+    ILOAD 65
+    IFNE L230
+    ALOAD 67
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L231
+   L230
+    LINENUMBER 2185 L230
+    ICONST_0
+    ISTORE 69
+   L232
+    LINENUMBER 712 L232
+    ILOAD 2
+    ILOAD 3
+    ALOAD 4
+    INVOKEDYNAMIC invoke(IILkotlin/jvm/functions/Function1;)Lkotlin/jvm/functions/Function0; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      ()Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/league/LeagueTableScreenKt.TeamOfTheWeekPage$lambda$167$lambda$155$lambda$153$lambda$152(IILkotlin/jvm/functions/Function1;)Lkotlin/Unit;, 
+      ()Lkotlin/Unit;
+    ]
+    GOTO L233
+   L233
+    LINENUMBER 2185 L233
+    ASTORE 70
+   L234
+    LINENUMBER 2186 L234
+    ALOAD 64
+    ALOAD 70
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L235
+    LINENUMBER 2187 L235
+    ALOAD 70
+   L236
+    GOTO L237
+   L231
+    LINENUMBER 2188 L231
+    ALOAD 67
+   L237
+    LINENUMBER 2183 L237
+    NOP
+   L238
+    LINENUMBER 2183 L238
+    GOTO L239
+   L239
+    LINENUMBER 712 L239
+    CHECKCAST kotlin/jvm/functions/Function0
+    ASTORE 71
+    ALOAD 61
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 71
+    ACONST_NULL
+   L240
+    LINENUMBER 713 L240
+    ILOAD 2
+    ILOAD 3
+    IF_ICMPGE L241
+    ICONST_1
+    GOTO L242
+   L241
+    ICONST_0
+   L242
+    ACONST_NULL
+    ACONST_NULL
+   L243
+    LINENUMBER 714 L243
+    LDC -1140136656
+    ICONST_1
+    ILOAD 2
+    ILOAD 3
+    INVOKEDYNAMIC invoke(II)Lkotlin/jvm/functions/Function2; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/league/LeagueTableScreenKt.TeamOfTheWeekPage$lambda$167$lambda$155$lambda$154(IILandroidx/compose/runtime/Composer;I)Lkotlin/Unit;, 
+      (Landroidx/compose/runtime/Composer;Ljava/lang/Integer;)Lkotlin/Unit;
+    ]
+    ALOAD 61
+    BIPUSH 54
+    INVOKESTATIC androidx/compose/runtime/internal/ComposableLambdaKt.rememberComposableLambda (IZLjava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/internal/ComposableLambda;
+    CHECKCAST kotlin/jvm/functions/Function2
+    ALOAD 61
+    LDC 196608
+    BIPUSH 26
+   L244
+    LINENUMBER 711 L244
+    INVOKESTATIC androidx/compose/material3/IconButtonKt.IconButton (Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/material3/IconButtonColors;Landroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+    ALOAD 61
+   L245
+    LINENUMBER 685 L245
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L246
+    LINENUMBER 721 L246
+    GOTO L247
+   L247
+    GETSTATIC kotlin/Unit.INSTANCE : Lkotlin/Unit;
+   L248
+    LINENUMBER 2115 L248
+    POP
+    ALOAD 58
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L249
+    LINENUMBER 2139 L249
+    ALOAD 52
+   L250
+    LINENUMBER 2189 L250
+    INVOKEINTERFACE androidx/compose/runtime/Composer.endNode ()V (itf)
+    ALOAD 52
+   L251
+    LINENUMBER 2124 L251
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L252
+    LINENUMBER 2190 L252
+    NOP
+   L253
+    ALOAD 45
+   L254
+    LINENUMBER 2118 L254
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L255
+    LINENUMBER 2191 L255
+    NOP
+   L256
+    ALOAD 39
+   L257
+    LINENUMBER 2112 L257
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L258
+    LINENUMBER 2192 L258
+    GOTO L259
+   L259
+    LINENUMBER 724 L259
+    NOP
+    ALOAD 1
+    CHECKCAST java/lang/CharSequence
+    INVOKEINTERFACE java/lang/CharSequence.length ()I (itf)
+    IFLE L260
+    ICONST_1
+    GOTO L261
+   L260
+    ICONST_0
+   L261
+    GOTO L262
+   L262
+    LINENUMBER 724 L262
+    IFEQ L263
+    ALOAD 33
+    LDC 1227677115
+    INVOKEINTERFACE androidx/compose/runtime/Composer.startReplaceGroup (I)V (itf)
+    ALOAD 33
+    LDC "724@31013L775"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformation (Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+   L264
+    LINENUMBER 726 L264
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    FCONST_0
+    ICONST_1
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.fillMaxWidth$default (Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    BIPUSH 16
+    ISTORE 36
+   L265
+    ICONST_0
+    ISTORE 37
+   L266
+    LINENUMBER 2193 L266
+    ILOAD 36
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L267
+   L267
+    LINENUMBER 726 L267
+    FCONST_0
+    ICONST_2
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/layout/PaddingKt.padding-VpY3zN4$default (Landroidx/compose/ui/Modifier;FFILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    ASTORE 36
+   L268
+    LINENUMBER 727 L268
+    GETSTATIC androidx/compose/foundation/layout/Arrangement.INSTANCE : Landroidx/compose/foundation/layout/Arrangement;
+    INVOKEVIRTUAL androidx/compose/foundation/layout/Arrangement.getCenter ()Landroidx/compose/foundation/layout/Arrangement$HorizontalOrVertical;
+    CHECKCAST androidx/compose/foundation/layout/Arrangement$Horizontal
+    ASTORE 37
+    ALOAD 33
+    ASTORE 39
+    BIPUSH 54
+    ISTORE 40
+   L269
+    LINENUMBER 725 L269
+    NOP
+   L270
+    ICONST_0
+    ISTORE 41
+   L271
+    ALOAD 39
+    LDC 844473419
+    LDC "CC(Row)N(modifier,horizontalArrangement,verticalAlignment,content)99@5125L58,100@5188L131:Row.kt#2w3rfo"
+   L272
+    LINENUMBER 2194 L272
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L273
+    LINENUMBER 2195 L273
+    GETSTATIC androidx/compose/ui/Alignment.Companion : Landroidx/compose/ui/Alignment$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/Alignment$Companion.getTop ()Landroidx/compose/ui/Alignment$Vertical;
+    ASTORE 38
+   L274
+    LINENUMBER 2198 L274
+    ALOAD 37
+    ALOAD 38
+    ALOAD 39
+    BIPUSH 14
+    ILOAD 40
+    ICONST_3
+    ISHR
+    IAND
+    BIPUSH 112
+    ILOAD 40
+    ICONST_3
+    ISHR
+    IAND
+    IOR
+    INVOKESTATIC androidx/compose/foundation/layout/RowKt.rowMeasurePolicy (Landroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/layout/MeasurePolicy;
+    ASTORE 42
+   L275
+    LINENUMBER 2202 L275
+    ALOAD 36
+    ASTORE 43
+   L276
+    LINENUMBER 2201 L276
+    ALOAD 42
+    ASTORE 44
+    ALOAD 39
+    ASTORE 45
+    BIPUSH 112
+    ILOAD 40
+    ICONST_3
+    ISHL
+    IAND
+    ISTORE 46
+   L277
+    LINENUMBER 2199 L277
+    NOP
+   L278
+    ICONST_0
+    ISTORE 47
+   L279
+    ALOAD 45
+    LDC -1159599143
+    LDC "CC(Layout)P(!1,2)81@3355L27,84@3521L416:Layout.kt#80mrfh"
+   L280
+    LINENUMBER 2203 L280
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L281
+    LINENUMBER 2204 L281
+    ALOAD 45
+    ICONST_0
+    INVOKESTATIC androidx/compose/runtime/ComposablesKt.getCurrentCompositeKeyHashCode (Landroidx/compose/runtime/Composer;I)J
+    INVOKESTATIC java/lang/Long.hashCode (J)I
+    ISTORE 48
+   L282
+    ALOAD 45
+   L283
+    LINENUMBER 2205 L283
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getCurrentCompositionLocalMap ()Landroidx/compose/runtime/CompositionLocalMap; (itf)
+    ASTORE 49
+   L284
+    ALOAD 45
+   L285
+    LINENUMBER 2206 L285
+    ALOAD 43
+    INVOKESTATIC androidx/compose/ui/ComposedModifierKt.materializeModifier (Landroidx/compose/runtime/Composer;Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    ASTORE 50
+   L286
+    LINENUMBER 2208 L286
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getConstructor ()Lkotlin/jvm/functions/Function0;
+    ASTORE 51
+    ALOAD 45
+    ASTORE 52
+    BIPUSH 6
+    SIPUSH 896
+    ILOAD 46
+    BIPUSH 6
+    ISHL
+    IAND
+    IOR
+    ISTORE 53
+   L287
+    LINENUMBER 2207 L287
+    NOP
+   L288
+    ICONST_0
+    ISTORE 54
+   L289
+    ALOAD 52
+    LDC -553112988
+    LDC "CC(ReusableComposeNode)N(factory,update,content)399@15590L9:Composables.kt#9igjgp"
+   L290
+    LINENUMBER 2209 L290
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L291
+    LINENUMBER 2210 L291
+    ALOAD 52
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getApplier ()Landroidx/compose/runtime/Applier; (itf)
+    INSTANCEOF androidx/compose/runtime/Applier
+    IFNE L292
+    INVOKESTATIC androidx/compose/runtime/ComposablesKt.invalidApplier ()V
+   L292
+    ALOAD 52
+   L293
+    LINENUMBER 2211 L293
+    INVOKEINTERFACE androidx/compose/runtime/Composer.startReusableNode ()V (itf)
+   L294
+    LINENUMBER 2212 L294
+    ALOAD 52
+    INVOKEINTERFACE androidx/compose/runtime/Composer.getInserting ()Z (itf)
+    IFEQ L295
+    ALOAD 52
+   L296
+    LINENUMBER 2213 L296
+    ALOAD 51
+    INVOKEINTERFACE androidx/compose/runtime/Composer.createNode (Lkotlin/jvm/functions/Function0;)V (itf)
+    GOTO L297
+   L295
+    ALOAD 52
+   L298
+    LINENUMBER 2215 L298
+    INVOKEINTERFACE androidx/compose/runtime/Composer.useNode ()V (itf)
+   L297
+    LINENUMBER 2217 L297
+    ALOAD 52
+    INVOKESTATIC androidx/compose/runtime/Updater.constructor-impl (Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
+    ASTORE 55
+   L299
+    ICONST_0
+    ISTORE 56
+   L300
+    LINENUMBER 2218 L300
+    ALOAD 55
+    ALOAD 44
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetMeasurePolicy ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L301
+    LINENUMBER 2219 L301
+    ALOAD 55
+    ALOAD 49
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetResolvedCompositionLocals ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L302
+    LINENUMBER 2220 L302
+    ALOAD 55
+    ILOAD 48
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetCompositeKeyHash ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.init-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L303
+    LINENUMBER 2221 L303
+    ALOAD 55
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getApplyOnDeactivatedNodeAssertion ()Lkotlin/jvm/functions/Function1;
+    INVOKESTATIC androidx/compose/runtime/Updater.reconcile-impl (Landroidx/compose/runtime/Composer;Lkotlin/jvm/functions/Function1;)V
+   L304
+    LINENUMBER 2222 L304
+    ALOAD 55
+    ALOAD 50
+    GETSTATIC androidx/compose/ui/node/ComposeUiNode.Companion : Landroidx/compose/ui/node/ComposeUiNode$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/node/ComposeUiNode$Companion.getSetModifier ()Lkotlin/jvm/functions/Function2;
+    INVOKESTATIC androidx/compose/runtime/Updater.set-impl (Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+   L305
+    LINENUMBER 2223 L305
+    NOP
+   L306
+    LINENUMBER 2217 L306
+    NOP
+   L307
+    LINENUMBER 2224 L307
+    ALOAD 52
+    BIPUSH 14
+    ILOAD 53
+    BIPUSH 6
+    ISHR
+    IAND
+    ISTORE 57
+    ASTORE 58
+   L308
+    ICONST_0
+    ISTORE 59
+   L309
+    ALOAD 58
+    LDC 1456264949
+    LDC "C101@5233L9:Row.kt#2w3rfo"
+   L310
+    LINENUMBER 2200 L310
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    GETSTATIC androidx/compose/foundation/layout/RowScopeInstance.INSTANCE : Landroidx/compose/foundation/layout/RowScopeInstance;
+    ALOAD 58
+    BIPUSH 6
+    BIPUSH 112
+    ILOAD 40
+    BIPUSH 6
+    ISHR
+    IAND
+    IOR
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    CHECKCAST java/lang/Number
+    INVOKEVIRTUAL java/lang/Number.intValue ()I
+    ISTORE 60
+    CHECKCAST androidx/compose/runtime/Composer
+    ASTORE 61
+    CHECKCAST androidx/compose/foundation/layout/RowScope
+    ASTORE 62
+   L311
+    ICONST_0
+    ISTORE 63
+   L312
+    ALOAD 61
+    LDC 896939761
+    LDC "C732@31411L363,728@31189L585:LeagueTableScreen.kt#mzx1zl"
+   L313
+    LINENUMBER 729 L313
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L314
+    LINENUMBER 730 L314
+    GETSTATIC com/fameafrica/afm2026/ui/theme/FameColors.INSTANCE : Lcom/fameafrica/afm2026/ui/theme/FameColors;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/theme/FameColors.getPitchGreen-0d7_KjU ()J
+    LDC 0.2
+    FCONST_0
+    FCONST_0
+    FCONST_0
+    BIPUSH 14
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/ui/graphics/Color.copy-wmQWz5c$default (JFFFFILjava/lang/Object;)J
+    LSTORE 101
+   L315
+    LINENUMBER 731 L315
+    ICONST_4
+    ISTORE 66
+   L316
+    ICONST_0
+    ISTORE 67
+   L317
+    LINENUMBER 2225 L317
+    ILOAD 66
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L318
+   L318
+    LINENUMBER 731 L318
+    INVOKESTATIC androidx/compose/foundation/shape/RoundedCornerShapeKt.RoundedCornerShape-0680j_4 (F)Landroidx/compose/foundation/shape/RoundedCornerShape;
+    ASTORE 68
+   L319
+    LINENUMBER 732 L319
+    ICONST_1
+    ISTORE 67
+   L320
+    ICONST_0
+    ISTORE 69
+   L321
+    LINENUMBER 2226 L321
+    ILOAD 67
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L322
+   L322
+    LINENUMBER 732 L322
+    GETSTATIC com/fameafrica/afm2026/ui/theme/FameColors.INSTANCE : Lcom/fameafrica/afm2026/ui/theme/FameColors;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/theme/FameColors.getPitchGreen-0d7_KjU ()J
+    INVOKESTATIC androidx/compose/foundation/BorderStrokeKt.BorderStroke-cXLIe8U (FJ)Landroidx/compose/foundation/BorderStroke;
+    ASTORE 66
+    ACONST_NULL
+   L323
+    LINENUMBER 731 L323
+    ALOAD 68
+    CHECKCAST androidx/compose/ui/graphics/Shape
+   L324
+    LINENUMBER 730 L324
+    LLOAD 101
+    LCONST_0
+    FCONST_0
+    FCONST_0
+   L325
+    LINENUMBER 732 L325
+    ALOAD 66
+   L326
+    LINENUMBER 733 L326
+    LDC 1985752398
+    ICONST_1
+    ALOAD 1
+    INVOKEDYNAMIC invoke(Ljava/lang/String;)Lkotlin/jvm/functions/Function2; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/league/LeagueTableScreenKt.TeamOfTheWeekPage$lambda$167$lambda$157$lambda$156(Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;, 
+      (Landroidx/compose/runtime/Composer;Ljava/lang/Integer;)Lkotlin/Unit;
+    ]
+    ALOAD 61
+    BIPUSH 54
+    INVOKESTATIC androidx/compose/runtime/internal/ComposableLambdaKt.rememberComposableLambda (IZLjava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/internal/ComposableLambda;
+    CHECKCAST kotlin/jvm/functions/Function2
+    ALOAD 61
+    LDC 14156160
+    BIPUSH 57
+   L327
+    LINENUMBER 729 L327
+    INVOKESTATIC androidx/compose/material3/SurfaceKt.Surface-T9BRK9s (Landroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/Shape;JJFFLandroidx/compose/foundation/BorderStroke;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+    ALOAD 61
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L328
+    LINENUMBER 742 L328
+    GOTO L329
+   L329
+    GETSTATIC kotlin/Unit.INSTANCE : Lkotlin/Unit;
+   L330
+    LINENUMBER 2200 L330
+    POP
+    ALOAD 58
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L331
+    LINENUMBER 2224 L331
+    ALOAD 52
+   L332
+    LINENUMBER 2227 L332
+    INVOKEINTERFACE androidx/compose/runtime/Composer.endNode ()V (itf)
+    ALOAD 52
+   L333
+    LINENUMBER 2209 L333
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L334
+    LINENUMBER 2228 L334
+    NOP
+   L335
+    ALOAD 45
+   L336
+    LINENUMBER 2203 L336
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L337
+    LINENUMBER 2229 L337
+    NOP
+   L338
+    ALOAD 39
+   L339
+    LINENUMBER 2194 L339
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L340
+    LINENUMBER 2230 L340
+    GOTO L341
+   L341
+    LINENUMBER 724 L341
+    ALOAD 33
+    INVOKEINTERFACE androidx/compose/runtime/Composer.endReplaceGroup ()V (itf)
+    GOTO L342
+   L263
+    ALOAD 33
+    LDC 1196900346
+    INVOKEINTERFACE androidx/compose/runtime/Composer.startReplaceGroup (I)V (itf)
+    ALOAD 33
+    INVOKEINTERFACE androidx/compose/runtime/Composer.endReplaceGroup ()V (itf)
+   L342
+    LINENUMBER 747 L342
+    ALOAD 34
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+   L343
+    LINENUMBER 748 L343
+    FCONST_0
+    ICONST_1
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.fillMaxWidth$default (Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+   L344
+    LINENUMBER 749 L344
+    FCONST_1
+    ICONST_0
+    ICONST_2
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/layout/ColumnScope.weight$default (Landroidx/compose/foundation/layout/ColumnScope;Landroidx/compose/ui/Modifier;FZILjava/lang/Object;)Landroidx/compose/ui/Modifier; (itf)
+   L345
+    LINENUMBER 750 L345
+    BIPUSH 16
+    ISTORE 36
+   L346
+    ICONST_0
+    ISTORE 37
+   L347
+    LINENUMBER 2231 L347
+    ILOAD 36
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L348
+   L348
+    LINENUMBER 750 L348
+    BIPUSH 8
+    ISTORE 36
+   L349
+    ICONST_0
+    ISTORE 37
+   L350
+    LINENUMBER 2231 L350
+    ILOAD 36
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L351
+   L351
+    LINENUMBER 750 L351
+    INVOKESTATIC androidx/compose/foundation/layout/PaddingKt.padding-VpY3zN4 (Landroidx/compose/ui/Modifier;FF)Landroidx/compose/ui/Modifier;
+   L352
+    LINENUMBER 751 L352
+    BIPUSH 12
+    ISTORE 36
+   L353
+    ICONST_0
+    ISTORE 37
+   L354
+    LINENUMBER 2232 L354
+    ILOAD 36
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L355
+   L355
+    LINENUMBER 751 L355
+    INVOKESTATIC androidx/compose/foundation/shape/RoundedCornerShapeKt.RoundedCornerShape-0680j_4 (F)Landroidx/compose/foundation/shape/RoundedCornerShape;
+    CHECKCAST androidx/compose/ui/graphics/Shape
+    INVOKESTATIC androidx/compose/ui/draw/ClipKt.clip (Landroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/Shape;)Landroidx/compose/ui/Modifier;
+   L356
+    LINENUMBER 752 L356
+    GETSTATIC com/fameafrica/afm2026/ui/theme/FameColors.INSTANCE : Lcom/fameafrica/afm2026/ui/theme/FameColors;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/theme/FameColors.getPitchGreen-0d7_KjU ()J
+    LDC 0.4
+    FCONST_0
+    FCONST_0
+    FCONST_0
+    BIPUSH 14
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/ui/graphics/Color.copy-wmQWz5c$default (JFFFFILjava/lang/Object;)J
+    ACONST_NULL
+    ICONST_2
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/BackgroundKt.background-bw27NRU$default (Landroidx/compose/ui/Modifier;JLandroidx/compose/ui/graphics/Shape;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    ACONST_NULL
+    ICONST_0
+   L357
+    LINENUMBER 753 L357
+    LDC 1203785682
+    ICONST_1
+    ALOAD 1
+    ALOAD 0
+    INVOKEDYNAMIC invoke(Ljava/lang/String;Ljava/util/List;)Lkotlin/jvm/functions/Function3; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/league/LeagueTableScreenKt.TeamOfTheWeekPage$lambda$167$lambda$163(Ljava/lang/String;Ljava/util/List;Landroidx/compose/foundation/layout/BoxWithConstraintsScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;, 
+      (Landroidx/compose/foundation/layout/BoxWithConstraintsScope;Landroidx/compose/runtime/Composer;Ljava/lang/Integer;)Lkotlin/Unit;
+    ]
+    ALOAD 33
+    BIPUSH 54
+    INVOKESTATIC androidx/compose/runtime/internal/ComposableLambdaKt.rememberComposableLambda (IZLjava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/internal/ComposableLambda;
+    CHECKCAST kotlin/jvm/functions/Function3
+    ALOAD 33
+    SIPUSH 3072
+    BIPUSH 6
+   L358
+    LINENUMBER 746 L358
+    INVOKESTATIC androidx/compose/foundation/layout/BoxWithConstraintsKt.BoxWithConstraints (Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Alignment;ZLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
+   L359
+    LINENUMBER 796 L359
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    BIPUSH 16
+    ISTORE 36
+   L360
+    ICONST_0
+    ISTORE 37
+   L361
+    LINENUMBER 2233 L361
+    ILOAD 36
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L362
+   L362
+    LINENUMBER 796 L362
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.height-3ABfNKs (Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
+    ALOAD 33
+    BIPUSH 6
+    INVOKESTATIC androidx/compose/foundation/layout/SpacerKt.Spacer (Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)V
+   L363
+    LINENUMBER 799 L363
+    NOP
+    ALOAD 0
+    CHECKCAST java/util/Collection
+    INVOKEINTERFACE java/util/Collection.isEmpty ()Z (itf)
+    IFNE L364
+    ICONST_1
+    GOTO L365
+   L364
+    ICONST_0
+   L365
+    GOTO L366
+   L366
+    LINENUMBER 799 L366
+    IFEQ L367
+    ALOAD 33
+    LDC 1230615140
+    INVOKEINTERFACE androidx/compose/runtime/Composer.startReplaceGroup (I)V (itf)
+    ALOAD 33
+    LDC "802@34176L131,799@33989L318"
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformation (Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+   L368
+    LINENUMBER 801 L368
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    FCONST_0
+    ICONST_1
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.fillMaxWidth$default (Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    BIPUSH 16
+    ISTORE 36
+   L369
+    ICONST_0
+    ISTORE 37
+   L370
+    LINENUMBER 2234 L370
+    ILOAD 36
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L371
+   L371
+    LINENUMBER 801 L371
+    BIPUSH 8
+    ISTORE 36
+   L372
+    ICONST_0
+    ISTORE 37
+   L373
+    LINENUMBER 2234 L373
+    ILOAD 36
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L374
+   L374
+    LINENUMBER 801 L374
+    INVOKESTATIC androidx/compose/foundation/layout/PaddingKt.padding-VpY3zN4 (Landroidx/compose/ui/Modifier;FF)Landroidx/compose/ui/Modifier;
+    ACONST_NULL
+    ACONST_NULL
+    ICONST_0
+   L375
+    LINENUMBER 802 L375
+    GETSTATIC androidx/compose/foundation/layout/Arrangement.INSTANCE : Landroidx/compose/foundation/layout/Arrangement;
+    BIPUSH 8
+    ISTORE 36
+   L376
+    ICONST_0
+    ISTORE 37
+   L377
+    LINENUMBER 2235 L377
+    ILOAD 36
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L378
+   L378
+    LINENUMBER 802 L378
+    INVOKEVIRTUAL androidx/compose/foundation/layout/Arrangement.spacedBy-0680j_4 (F)Landroidx/compose/foundation/layout/Arrangement$HorizontalOrVertical;
+    CHECKCAST androidx/compose/foundation/layout/Arrangement$Horizontal
+    ACONST_NULL
+    ACONST_NULL
+    ICONST_0
+    ACONST_NULL
+    ALOAD 33
+    LDC -514485845
+    LDC "CC(remember):LeagueTableScreen.kt#9igjgp"
+   L379
+    LINENUMBER 803 L379
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 33
+    ASTORE 37
+    ALOAD 5
+    ALOAD 0
+    INVOKEINTERFACE androidx/compose/runtime/Composer.changedInstance (Ljava/lang/Object;)Z (itf)
+    ISTORE 38
+   L380
+    ICONST_0
+    ISTORE 39
+   L381
+    LINENUMBER 2236 L381
+    ALOAD 37
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 40
+   L382
+    ICONST_0
+    ISTORE 41
+   L383
+    LINENUMBER 2237 L383
+    ILOAD 38
+    IFNE L384
+    ALOAD 40
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L385
+   L384
+    LINENUMBER 2238 L384
+    ASTORE 103
+    ISTORE 104
+    ASTORE 105
+    ASTORE 106
+    ASTORE 107
+    ISTORE 108
+    ASTORE 109
+    ASTORE 110
+    ASTORE 111
+    ICONST_0
+    ISTORE 42
+   L386
+    LINENUMBER 803 L386
+    ALOAD 0
+    INVOKEDYNAMIC invoke(Ljava/util/List;)Lkotlin/jvm/functions/Function1; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/league/LeagueTableScreenKt.TeamOfTheWeekPage$lambda$167$lambda$166$lambda$165(Ljava/util/List;Landroidx/compose/foundation/lazy/LazyListScope;)Lkotlin/Unit;, 
+      (Landroidx/compose/foundation/lazy/LazyListScope;)Lkotlin/Unit;
+    ]
+    GOTO L387
+   L387
+    ASTORE 112
+    ALOAD 111
+    ALOAD 110
+    ALOAD 109
+    ILOAD 108
+    ALOAD 107
+    ALOAD 106
+    ALOAD 105
+    ILOAD 104
+    ALOAD 103
+    ALOAD 112
+   L388
+    LINENUMBER 2238 L388
+    ASTORE 43
+   L389
+    LINENUMBER 2239 L389
+    ALOAD 37
+    ALOAD 43
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L390
+    LINENUMBER 2240 L390
+    ALOAD 43
+   L391
+    GOTO L392
+   L385
+    LINENUMBER 2241 L385
+    ALOAD 40
+   L392
+    LINENUMBER 2236 L392
+    NOP
+   L393
+    LINENUMBER 2236 L393
+    GOTO L394
+   L394
+    LINENUMBER 803 L394
+    CHECKCAST kotlin/jvm/functions/Function1
+    ASTORE 36
+    ALOAD 33
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 36
+    ALOAD 33
+    SIPUSH 24582
+    SIPUSH 494
+   L395
+    LINENUMBER 800 L395
+    INVOKESTATIC androidx/compose/foundation/lazy/LazyDslKt.LazyRow (Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/lazy/LazyListState;Landroidx/compose/foundation/layout/PaddingValues;ZLandroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/foundation/gestures/FlingBehavior;ZLandroidx/compose/foundation/OverscrollEffect;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V
+   L396
+    LINENUMBER 799 L396
+    ALOAD 33
+    INVOKEINTERFACE androidx/compose/runtime/Composer.endReplaceGroup ()V (itf)
+    GOTO L397
+   L367
+    ALOAD 33
+    LDC 1196900346
+    INVOKEINTERFACE androidx/compose/runtime/Composer.startReplaceGroup (I)V (itf)
+    ALOAD 33
+    INVOKEINTERFACE androidx/compose/runtime/Composer.endReplaceGroup ()V (itf)
+   L397
+    ALOAD 33
+   L398
+    LINENUMBER 680 L398
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L399
+    LINENUMBER 809 L399
+    NOP
+    GOTO L400
+   L400
+    GETSTATIC kotlin/Unit.INSTANCE : Lkotlin/Unit;
+    INVOKESTATIC kotlin/jvm/internal/InlineMarker.afterInlineCall ()V
+   L401
+    LINENUMBER 2086 L401
+    POP
+    ALOAD 30
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L402
+    LINENUMBER 2110 L402
+    ALOAD 24
+   L403
+    LINENUMBER 2242 L403
+    INVOKEINTERFACE androidx/compose/runtime/Composer.endNode ()V (itf)
+    ALOAD 24
+   L404
+    LINENUMBER 2095 L404
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L405
+    LINENUMBER 2243 L405
+    NOP
+   L406
+    ALOAD 17
+   L407
+    LINENUMBER 2089 L407
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L408
+    LINENUMBER 2244 L408
+    NOP
+   L409
+    ALOAD 11
+   L410
+    LINENUMBER 2079 L410
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L411
+    LINENUMBER 2245 L411
+    NOP
+    GOTO L412
+   L412
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.isTraceInProgress ()Z
+    IFEQ L413
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.traceEventEnd ()V
+   L413
+    GOTO L414
+   L20
+    LINENUMBER 670 L20
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.skipToGroupEnd ()V (itf)
+   L414
+    LINENUMBER 810 L414
+    ALOAD 5
+    INVOKEINTERFACE androidx/compose/runtime/Composer.endRestartGroup ()Landroidx/compose/runtime/ScopeUpdateScope; (itf)
+    ASTORE 8
+   L415
+    ALOAD 8
+    IFNULL L416
+    ALOAD 8
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ALOAD 4
+    ILOAD 6
+    INVOKEDYNAMIC invoke(Ljava/util/List;Ljava/lang/String;IILkotlin/jvm/functions/Function1;I)Lkotlin/jvm/functions/Function2; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/league/LeagueTableScreenKt.TeamOfTheWeekPage$lambda$168(Ljava/util/List;Ljava/lang/String;IILkotlin/jvm/functions/Function1;ILandroidx/compose/runtime/Composer;I)Lkotlin/Unit;, 
+      (Landroidx/compose/runtime/Composer;Ljava/lang/Integer;)Lkotlin/Unit;
+    ]
+    INVOKEINTERFACE androidx/compose/runtime/ScopeUpdateScope.updateScope (Lkotlin/jvm/functions/Function2;)V (itf)
+    GOTO L417
+   L416
+    NOP
+   L417
+    NOP
+    RETURN
+   L418
+    LOCALVARIABLE $i$f$getDp\7\681 I L69 L70 37
+    LOCALVARIABLE $this$dp\7 I L68 L70 36
+    LOCALVARIABLE $i$a$-cache-LeagueTableScreenKt$TeamOfTheWeekPage$1$1$1\16\2142\13 I L128 L129 69
+    LOCALVARIABLE value\15 Ljava/lang/Object; L130 L132 70
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\15\2140\14 I L125 L133 68
+    LOCALVARIABLE it\14 Ljava/lang/Object; L124 L133 67
+    LOCALVARIABLE $i$f$cache\14\686 I L123 L135 66
+    LOCALVARIABLE $this$cache\14 Landroidx/compose/runtime/Composer; L122 L135 64
+    LOCALVARIABLE invalid\14 Z L122 L135 65
+    LOCALVARIABLE $i$a$-Column-LeagueTableScreenKt$TeamOfTheWeekPage$1$1$3\22\2154\13 I L185 L206 91
+    LOCALVARIABLE $this$TeamOfTheWeekPage_u24lambda_u24167_u24lambda_u24155_u24lambda_u24151\22 Landroidx/compose/foundation/layout/ColumnScope; L184 L206 90
+    LOCALVARIABLE $composer\22 Landroidx/compose/runtime/Composer; L184 L206 89
+    LOCALVARIABLE $changed\22 I L184 L206 88
+    LOCALVARIABLE $i$a$-Layout-ColumnKt$Column$1\21\2178\17 I L182 L208 87
+    LOCALVARIABLE $composer\21 Landroidx/compose/runtime/Composer; L181 L208 86
+    LOCALVARIABLE $changed\21 I L181 L208 85
+    LOCALVARIABLE $i$a$-ReusableComposeNode-LayoutKt$Layout$1\20\2171\18 I L173 L179 84
+    LOCALVARIABLE $this$Layout_u24lambda_u240\20 Landroidx/compose/runtime/Composer; L172 L179 83
+    LOCALVARIABLE $i$f$ReusableComposeNode\19\2161 I L162 L212 82
+    LOCALVARIABLE factory\19 Lkotlin/jvm/functions/Function0; L161 L212 79
+    LOCALVARIABLE $composer\19 Landroidx/compose/runtime/Composer; L161 L212 80
+    LOCALVARIABLE $changed\19 I L161 L212 81
+    LOCALVARIABLE $i$f$Layout\18\2153 I L152 L215 75
+    LOCALVARIABLE compositeKeyHash\18 I L155 L215 76
+    LOCALVARIABLE localMap\18 Landroidx/compose/runtime/CompositionLocalMap; L157 L215 77
+    LOCALVARIABLE materialized\18 Landroidx/compose/ui/Modifier; L159 L215 78
+    LOCALVARIABLE modifier\18 Landroidx/compose/ui/Modifier; L151 L215 70
+    LOCALVARIABLE measurePolicy\18 Landroidx/compose/ui/layout/MeasurePolicy; L151 L215 72
+    LOCALVARIABLE $composer\18 Landroidx/compose/runtime/Composer; L151 L215 73
+    LOCALVARIABLE $changed\18 I L151 L215 74
+    LOCALVARIABLE $i$f$Column\17\696 I L143 L218 68
+    LOCALVARIABLE measurePolicy\17 Landroidx/compose/ui/layout/MeasurePolicy; L148 L218 69
+    LOCALVARIABLE modifier\17 Landroidx/compose/ui/Modifier; L146 L218 71
+    LOCALVARIABLE verticalArrangement\17 Landroidx/compose/foundation/layout/Arrangement$Vertical; L147 L218 64
+    LOCALVARIABLE horizontalAlignment\17 Landroidx/compose/ui/Alignment$Horizontal; L142 L218 65
+    LOCALVARIABLE $composer\17 Landroidx/compose/runtime/Composer; L142 L218 66
+    LOCALVARIABLE $changed\17 I L142 L218 67
+    LOCALVARIABLE $i$a$-cache-LeagueTableScreenKt$TeamOfTheWeekPage$1$1$4\25\2185\13 I L232 L233 69
+    LOCALVARIABLE value\24 Ljava/lang/Object; L234 L236 70
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\24\2183\23 I L229 L237 68
+    LOCALVARIABLE it\23 Ljava/lang/Object; L228 L237 67
+    LOCALVARIABLE $i$f$cache\23\712 I L227 L239 66
+    LOCALVARIABLE $this$cache\23 Landroidx/compose/runtime/Composer; L226 L239 64
+    LOCALVARIABLE invalid\23 Z L226 L239 65
+    LOCALVARIABLE $i$a$-Row-LeagueTableScreenKt$TeamOfTheWeekPage$1$1\13\2115\6 I L115 L247 63
+    LOCALVARIABLE $this$TeamOfTheWeekPage_u24lambda_u24167_u24lambda_u24155\13 Landroidx/compose/foundation/layout/RowScope; L114 L247 62
+    LOCALVARIABLE $composer\13 Landroidx/compose/runtime/Composer; L114 L247 61
+    LOCALVARIABLE $changed\13 I L114 L247 60
+    LOCALVARIABLE $i$a$-Layout-RowKt$Row$1\12\2139\8 I L112 L249 59
+    LOCALVARIABLE $composer\12 Landroidx/compose/runtime/Composer; L111 L249 58
+    LOCALVARIABLE $changed\12 I L111 L249 57
+    LOCALVARIABLE $i$a$-ReusableComposeNode-LayoutKt$Layout$1\11\2132\9 I L103 L109 56
+    LOCALVARIABLE $this$Layout_u24lambda_u240\11 Landroidx/compose/runtime/Composer; L102 L109 55
+    LOCALVARIABLE $i$f$ReusableComposeNode\10\2122 I L92 L253 54
+    LOCALVARIABLE factory\10 Lkotlin/jvm/functions/Function0; L91 L253 51
+    LOCALVARIABLE $composer\10 Landroidx/compose/runtime/Composer; L91 L253 52
+    LOCALVARIABLE $changed\10 I L91 L253 53
+    LOCALVARIABLE $i$f$Layout\9\2114 I L82 L256 47
+    LOCALVARIABLE compositeKeyHash\9 I L85 L256 48
+    LOCALVARIABLE localMap\9 Landroidx/compose/runtime/CompositionLocalMap; L87 L256 49
+    LOCALVARIABLE materialized\9 Landroidx/compose/ui/Modifier; L89 L256 50
+    LOCALVARIABLE modifier\9 Landroidx/compose/ui/Modifier; L81 L256 43
+    LOCALVARIABLE measurePolicy\9 Landroidx/compose/ui/layout/MeasurePolicy; L81 L256 44
+    LOCALVARIABLE $composer\9 Landroidx/compose/runtime/Composer; L81 L256 45
+    LOCALVARIABLE $changed\9 I L81 L256 46
+    LOCALVARIABLE $i$f$Row\8\680 I L75 L259 41
+    LOCALVARIABLE measurePolicy\8 Landroidx/compose/ui/layout/MeasurePolicy; L78 L259 42
+    LOCALVARIABLE modifier\8 Landroidx/compose/ui/Modifier; L74 L259 36
+    LOCALVARIABLE horizontalArrangement\8 Landroidx/compose/foundation/layout/Arrangement$Horizontal; L74 L259 37
+    LOCALVARIABLE verticalAlignment\8 Landroidx/compose/ui/Alignment$Vertical; L74 L259 38
+    LOCALVARIABLE $composer\8 Landroidx/compose/runtime/Composer; L74 L259 39
+    LOCALVARIABLE $changed\8 I L74 L259 40
+    LOCALVARIABLE $i$f$getDp\26\726 I L266 L267 37
+    LOCALVARIABLE $this$dp\26 I L265 L267 36
+    LOCALVARIABLE $i$f$getDp\33\731 I L317 L318 67
+    LOCALVARIABLE $this$dp\33 I L316 L318 66
+    LOCALVARIABLE $i$f$getDp\34\732 I L321 L322 69
+    LOCALVARIABLE $this$dp\34 I L320 L322 67
+    LOCALVARIABLE $i$a$-Row-LeagueTableScreenKt$TeamOfTheWeekPage$1$2\32\2200\6 I L312 L329 63
+    LOCALVARIABLE $this$TeamOfTheWeekPage_u24lambda_u24167_u24lambda_u24157\32 Landroidx/compose/foundation/layout/RowScope; L311 L329 62
+    LOCALVARIABLE $composer\32 Landroidx/compose/runtime/Composer; L311 L329 61
+    LOCALVARIABLE $changed\32 I L311 L329 60
+    LOCALVARIABLE $i$a$-Layout-RowKt$Row$1\31\2224\27 I L309 L331 59
+    LOCALVARIABLE $composer\31 Landroidx/compose/runtime/Composer; L308 L331 58
+    LOCALVARIABLE $changed\31 I L308 L331 57
+    LOCALVARIABLE $i$a$-ReusableComposeNode-LayoutKt$Layout$1\30\2217\28 I L300 L306 56
+    LOCALVARIABLE $this$Layout_u24lambda_u240\30 Landroidx/compose/runtime/Composer; L299 L306 55
+    LOCALVARIABLE $i$f$ReusableComposeNode\29\2207 I L289 L335 54
+    LOCALVARIABLE factory\29 Lkotlin/jvm/functions/Function0; L288 L335 51
+    LOCALVARIABLE $composer\29 Landroidx/compose/runtime/Composer; L288 L335 52
+    LOCALVARIABLE $changed\29 I L288 L335 53
+    LOCALVARIABLE $i$f$Layout\28\2199 I L279 L338 47
+    LOCALVARIABLE compositeKeyHash\28 I L282 L338 48
+    LOCALVARIABLE localMap\28 Landroidx/compose/runtime/CompositionLocalMap; L284 L338 49
+    LOCALVARIABLE materialized\28 Landroidx/compose/ui/Modifier; L286 L338 50
+    LOCALVARIABLE modifier\28 Landroidx/compose/ui/Modifier; L278 L338 43
+    LOCALVARIABLE measurePolicy\28 Landroidx/compose/ui/layout/MeasurePolicy; L278 L338 44
+    LOCALVARIABLE $composer\28 Landroidx/compose/runtime/Composer; L278 L338 45
+    LOCALVARIABLE $changed\28 I L278 L338 46
+    LOCALVARIABLE $i$f$Row\27\725 I L271 L341 41
+    LOCALVARIABLE measurePolicy\27 Landroidx/compose/ui/layout/MeasurePolicy; L275 L341 42
+    LOCALVARIABLE modifier\27 Landroidx/compose/ui/Modifier; L270 L341 36
+    LOCALVARIABLE horizontalArrangement\27 Landroidx/compose/foundation/layout/Arrangement$Horizontal; L270 L341 37
+    LOCALVARIABLE verticalAlignment\27 Landroidx/compose/ui/Alignment$Vertical; L274 L341 38
+    LOCALVARIABLE $composer\27 Landroidx/compose/runtime/Composer; L270 L341 39
+    LOCALVARIABLE $changed\27 I L270 L341 40
+    LOCALVARIABLE $i$f$getDp\35\750 I L347 L348 37
+    LOCALVARIABLE $this$dp\35 I L346 L348 36
+    LOCALVARIABLE $i$f$getDp\36\750 I L350 L351 37
+    LOCALVARIABLE $this$dp\36 I L349 L351 36
+    LOCALVARIABLE $i$f$getDp\37\751 I L354 L355 37
+    LOCALVARIABLE $this$dp\37 I L353 L355 36
+    LOCALVARIABLE $i$f$getDp\38\796 I L361 L362 37
+    LOCALVARIABLE $this$dp\38 I L360 L362 36
+    LOCALVARIABLE $i$f$getDp\39\801 I L370 L371 37
+    LOCALVARIABLE $this$dp\39 I L369 L371 36
+    LOCALVARIABLE $i$f$getDp\40\801 I L373 L374 37
+    LOCALVARIABLE $this$dp\40 I L372 L374 36
+    LOCALVARIABLE $i$f$getDp\41\802 I L377 L378 37
+    LOCALVARIABLE $this$dp\41 I L376 L378 36
+    LOCALVARIABLE $i$a$-cache-LeagueTableScreenKt$TeamOfTheWeekPage$1$4\44\2238\6 I L386 L387 42
+    LOCALVARIABLE value\43 Ljava/lang/Object; L389 L391 43
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\43\2236\42 I L383 L392 41
+    LOCALVARIABLE it\42 Ljava/lang/Object; L382 L392 40
+    LOCALVARIABLE $i$f$cache\42\803 I L381 L394 39
+    LOCALVARIABLE $this$cache\42 Landroidx/compose/runtime/Composer; L380 L394 37
+    LOCALVARIABLE invalid\42 Z L380 L394 38
+    LOCALVARIABLE $i$a$-Column-LeagueTableScreenKt$TeamOfTheWeekPage$1\6\2086\0 I L65 L400 35
+    LOCALVARIABLE $this$TeamOfTheWeekPage_u24lambda_u24167\6 Landroidx/compose/foundation/layout/ColumnScope; L64 L400 34
+    LOCALVARIABLE $composer\6 Landroidx/compose/runtime/Composer; L64 L400 33
+    LOCALVARIABLE $changed\6 I L64 L400 32
+    LOCALVARIABLE $i$a$-Layout-ColumnKt$Column$1\5\2110\1 I L62 L402 31
+    LOCALVARIABLE $composer\5 Landroidx/compose/runtime/Composer; L61 L402 30
+    LOCALVARIABLE $changed\5 I L61 L402 29
+    LOCALVARIABLE $i$a$-ReusableComposeNode-LayoutKt$Layout$1\4\2103\2 I L53 L59 28
+    LOCALVARIABLE $this$Layout_u24lambda_u240\4 Landroidx/compose/runtime/Composer; L52 L59 27
+    LOCALVARIABLE $i$f$ReusableComposeNode\3\2093 I L42 L406 26
+    LOCALVARIABLE factory\3 Lkotlin/jvm/functions/Function0; L41 L406 23
+    LOCALVARIABLE $composer\3 Landroidx/compose/runtime/Composer; L41 L406 24
+    LOCALVARIABLE $changed\3 I L41 L406 25
+    LOCALVARIABLE $i$f$Layout\2\2085 I L32 L409 19
+    LOCALVARIABLE compositeKeyHash\2 I L35 L409 20
+    LOCALVARIABLE localMap\2 Landroidx/compose/runtime/CompositionLocalMap; L37 L409 21
+    LOCALVARIABLE materialized\2 Landroidx/compose/ui/Modifier; L39 L409 22
+    LOCALVARIABLE modifier\2 Landroidx/compose/ui/Modifier; L31 L409 15
+    LOCALVARIABLE measurePolicy\2 Landroidx/compose/ui/layout/MeasurePolicy; L31 L409 16
+    LOCALVARIABLE $composer\2 Landroidx/compose/runtime/Composer; L31 L409 17
+    LOCALVARIABLE $changed\2 I L31 L409 18
+    LOCALVARIABLE $i$f$Column\1\678 I L23 L412 13
+    LOCALVARIABLE measurePolicy\1 Landroidx/compose/ui/layout/MeasurePolicy; L28 L412 14
+    LOCALVARIABLE modifier\1 Landroidx/compose/ui/Modifier; L22 L412 8
+    LOCALVARIABLE verticalArrangement\1 Landroidx/compose/foundation/layout/Arrangement$Vertical; L26 L412 9
+    LOCALVARIABLE horizontalAlignment\1 Landroidx/compose/ui/Alignment$Horizontal; L27 L412 10
+    LOCALVARIABLE $composer\1 Landroidx/compose/runtime/Composer; L22 L412 11
+    LOCALVARIABLE $changed\1 I L22 L412 12
+    LOCALVARIABLE $dirty I L2 L418 7
+    LOCALVARIABLE totwPlayers Ljava/util/List; L0 L418 0
+    LOCALVARIABLE formation Ljava/lang/String; L0 L418 1
+    LOCALVARIABLE currentRound I L0 L418 2
+    LOCALVARIABLE maxRounds I L0 L418 3
+    LOCALVARIABLE onRoundChange Lkotlin/jvm/functions/Function1; L0 L418 4
+    LOCALVARIABLE $composer Landroidx/compose/runtime/Composer; L0 L418 5
+    LOCALVARIABLE $changed I L0 L418 6
+    MAXSTACK = 25
+    MAXLOCALS = 113
+
+File is unknown
+The root cause java.lang.OutOfMemoryError was thrown at: org.jetbrains.org.objectweb.asm.tree.analysis.Frame.<init>(Frame.java:96)
+	at org.jetbrains.kotlin.codegen.TransformationMethodVisitor.visitEnd(TransformationMethodVisitor.kt:89)
+	at org.jetbrains.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:796)
+	at org.jetbrains.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:770)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:469)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:419)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:388)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:431)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:95)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:36)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:29)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:102)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:22)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:53)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.runPhasedPipeline(AbstractCliPipeline.kt:109)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.execute(AbstractCliPipeline.kt:68)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:78)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:44)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:90)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.exec(CLICompiler.kt:352)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:175)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:38)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:504)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:421)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileNonIncrementally(IncrementalCompilerRunner.kt:306)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:133)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:679)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:93)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1806)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.jetbrains.org.objectweb.asm.tree.analysis.Frame.<init>(Frame.java:96)
+	at org.jetbrains.kotlin.codegen.optimization.fixStack.FixStackAnalyzer$FixStackFrame.<init>(FixStackAnalyzer.kt:98)
+	at org.jetbrains.kotlin.codegen.optimization.fixStack.FixStackAnalyzer.analyzer$lambda$0(FixStackAnalyzer.kt:46)
+	at org.jetbrains.kotlin.codegen.optimization.fixStack.FixStackAnalyzer$$Lambda/0x0000000100b3eea8.invoke(Unknown Source)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.fastMergeControlFlowEdge(FastAnalyzer.kt:256)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.mergeControlFlowEdge(FastAnalyzer.kt:214)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.processControlFlowEdge(FastAnalyzer.kt:208)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.processControlFlowEdge$default(FastAnalyzer.kt:206)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.visitOpInsn(FastAnalyzer.kt:292)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.visitMeaningfulInstruction(FastAnalyzer.kt:281)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.analyzeInstruction(FastAnalyzer.kt:113)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.analyzeMainLoop(FastAnalyzer.kt:74)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.analyze(FastAnalyzer.kt:53)
+	at org.jetbrains.kotlin.codegen.optimization.fixStack.FixStackAnalyzer.analyze(FixStackAnalyzer.kt:60)
+	at org.jetbrains.kotlin.codegen.optimization.fixStack.FixStackMethodTransformer.analyzeAndTransformBreakContinueGotos(FixStackMethodTransformer.kt:55)
+	at org.jetbrains.kotlin.codegen.optimization.fixStack.FixStackMethodTransformer.transform(FixStackMethodTransformer.kt:44)
+	at org.jetbrains.kotlin.codegen.optimization.transformer.CompositeMethodTransformer.transform(CompositeMethodTransformer.kt:25)
+	at org.jetbrains.kotlin.codegen.optimization.transformer.CompositeMethodTransformer.transform(CompositeMethodTransformer.kt:25)
+	at org.jetbrains.kotlin.codegen.optimization.OptimizationMethodVisitor.performTransformations(OptimizationMethodVisitor.kt:70)
+	at org.jetbrains.kotlin.codegen.TransformationMethodVisitor.visitEnd(TransformationMethodVisitor.kt:67)
+	at org.jetbrains.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:796)
+	at org.jetbrains.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:770)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:469)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:419)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:388)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:431)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:95)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:36)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:29)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+
+

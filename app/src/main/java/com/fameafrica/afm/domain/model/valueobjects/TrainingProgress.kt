@@ -1,0 +1,1 @@
+// TrainingProgress.kt

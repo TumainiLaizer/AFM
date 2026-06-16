@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "archetype_name": "DYNAMIC_FORWARD",
+    "primary_trait": "BOLD",
+    "secondary_trait": "CONFIDENT",
+    "gameplay_focus": "SCORING,DRIBBLING,IMPROVISATION",
+    "attribute_boost": "{\"finishing\": 5, \"pace\": 5, \"dribbling\": 5}",
+    "description": "Explosive attacker with flair and creativity"
+  },
+  {
+    "id": 2,
+    "archetype_name": "STRATEGIC_MIDFIELDER",
+    "primary_trait": "FORTHRIGHT",
+    "secondary_trait": "ADAPTABLE",
+    "gameplay_focus": "PASSING,TEMPO,CONTROL",
+    "attribute_boost": "{\"passing\": 5, \"vision\": 5, \"decisions\": 5}",
+    "description": "Intelligent playmaker who dictates game flow"
+  },
+  {
+    "id": 3,
+    "archetype_name": "RESILIENT_DEFENDER",
+    "primary_trait": "DISCIPLINED",
+    "secondary_trait": "RESILIENT",
+    "gameplay_focus": "TACKLING,POSITIONING,READING",
+    "attribute_boost": "{\"defending\": 5, \"positioning\": 5, \"strength\": 5}",
+    "description": "Solid defender with excellent game intelligence"
+  },
+  {
+    "id": 4,
+    "archetype_name": "INSPIRATIONAL_CAPTAIN",
+    "primary_trait": "EMOTIONALLY_STABLE",
+    "secondary_trait": "SOCIALLY_WARM",
+    "gameplay_focus": "LEADERSHIP,MENTORING,MOTIVATION",
+    "attribute_boost": "{\"leadership\": 10, \"motivation\": 5, \"composure\": 5}",
+    "description": "Natural leader who inspires teammates"
+  },
+  {
+    "id": 5,
+    "archetype_name": "COMPLETE_FORWARD",
+    "primary_trait": "VERSATILE",
+    "secondary_trait": "INTELLIGENT",
+    "gameplay_focus": "LINKUP,HOLDUP,FINISHING",
+    "attribute_boost": "{\"finishing\": 3, \"passing\": 3, \"strength\": 3}",
+    "description": "All-around forward with tactical flexibility"
+  },
+  {
+    "id": 6,
+    "archetype_name": "BOX_TO_BOX",
+    "primary_trait": "ENERGETIC",
+    "secondary_trait": "DETERMINED",
+    "gameplay_focus": "STAMINA,PRESSING,TRANSITIONS",
+    "attribute_boost": "{\"stamina\": 10, \"work_rate\": 2, \"aggression\": 3}",
+    "description": "High-energy midfielder covering all areas"
+  },
+  {
+    "id": 7,
+    "archetype_name": "SWEEPING_KEEPER",
+    "primary_trait": "BRAVE",
+    "secondary_trait": "DECISIVE",
+    "gameplay_focus": "SWEEPING,DISTRIBUTION,COMMAND",
+    "attribute_boost": "{\"reflexes\": 3, \"kicking\": 5, \"command_of_area\": 5}",
+    "description": "Modern goalkeeper who acts as extra defender"
+  },
+  {
+    "id": 8,
+    "archetype_name": "TRADITIONAL_STRIKER",
+    "primary_trait": "BOLD",
+    "secondary_trait": "CONFIDENT",
+    "gameplay_focus": "FINISHING,POSITIONING,POACHING",
+    "attribute_boost": "{\"finishing\": 8, \"positioning\": 5, \"heading\": 4}",
+    "description": "Classic goal poacher and finisher"
+  },
+  {
+    "id": 9,
+    "archetype_name": "WING_WIZARD",
+    "primary_trait": "CREATIVE",
+    "secondary_trait": "CONFIDENT",
+    "gameplay_focus": "DRIBBLING,CROSSING,CUTTING_INSIDE",
+    "attribute_boost": "{\"dribbling\": 8, \"crossing\": 6, \"pace\": 4}",
+    "description": "Skilled winger with exceptional dribbling"
+  },
+  {
+    "id": 10,
+    "archetype_name": "ANCHOR_MAN",
+    "primary_trait": "DISCIPLINED",
+    "secondary_trait": "RESILIENT",
+    "gameplay_focus": "INTERCEPTIONS,TACKLING,SHIELDING",
+    "attribute_boost": "{\"defending\": 6, \"strength\": 5, \"positioning\": 4}",
+    "description": "Defensive midfielder who protects the back line"
+  },
+  {
+    "id": 11,
+    "archetype_name": "REGISTA",
+    "primary_trait": "INTELLIGENT",
+    "secondary_trait": "CREATIVE",
+    "gameplay_focus": "PASSING,VISION,CONTROL",
+    "attribute_boost": "{\"passing\": 8, \"vision\": 7, \"decisions\": 5}",
+    "description": "Deep-lying playmaker who orchestrates from deep"
+  },
+  {
+    "id": 12,
+    "archetype_name": "LIBERO",
+    "primary_trait": "INTELLIGENT",
+    "secondary_trait": "BRAVE",
+    "gameplay_focus": "SWEEPING,BALL_PLAYING,READING",
+    "attribute_boost": "{\"defending\": 6, \"passing\": 5, \"vision\": 4}",
+    "description": "Classic sweeper who starts attacks from defense"
+  },
+  {
+    "id": 13,
+    "archetype_name": "PLAYMAKER",
+    "primary_trait": "CREATIVE",
+    "secondary_trait": "TECHNICAL",
+    "gameplay_focus": "PASSING,VISION,CREATIVITY",
+    "attribute_boost": "{\"passing\": 6, \"vision\": 8, \"creativity\": 7, \"technique\": 5}",
+    "description": "Creative midfielder who orchestrates attacks with exceptional vision and passing"
+  },
+  {
+    "id": 14,
+    "archetype_name": "WONDERKID",
+    "primary_trait": "ENERGETIC",
+    "secondary_trait": "AMBITIOUS",
+    "gameplay_focus": "LEARNING,DEVELOPMENT,POTENTIAL",
+    "attribute_boost": "{\"potential\": 15, \"technique\": 5, \"creativity\": 4}",
+    "description": "Young prodigy with exceptional potential and rapid development curve"
+  },
+  {
+    "id": 15,
+    "archetype_name": "POACHER",
+    "primary_trait": "BOLD",
+    "secondary_trait": "OPPORTUNISTIC",
+    "gameplay_focus": "FINISHING,POSITIONING,ANTICIPATION",
+    "attribute_boost": "{\"finishing\": 10, \"positioning\": 8, \"anticipation\": 6}",
+    "description": "Goal-scoring specialist who thrives on chances in the box"
+  },
+  {
+    "id": 16,
+    "archetype_name": "POWERFUL_DEFENDER",
+    "primary_trait": "DOMINANT",
+    "secondary_trait": "PHYSICAL",
+    "gameplay_focus": "STRENGTH,TACKLING,AERIAL_DUELS",
+    "attribute_boost": "{\"strength\": 8, \"defending\": 6, \"heading\": 7}",
+    "description": "Physically dominant center-back who wins aerial battles"
+  },
+  {
+    "id": 17,
+    "archetype_name": "TECHNICAL_FORWARD",
+    "primary_trait": "TECHNICAL",
+    "secondary_trait": "CREATIVE",
+    "gameplay_focus": "DRIBBLING,SKILL,IMPROVISATION",
+    "attribute_boost": "{\"dribbling\": 8, \"technique\": 7, \"creativity\": 6}",
+    "description": "Skilled attacker with excellent dribbling and creative flair"
+  },
+  {
+    "id": 18,
+    "archetype_name": "EXPERIENCED_WINGER",
+    "primary_trait": "EXPERIENCED",
+    "secondary_trait": "INTELLIGENT",
+    "gameplay_focus": "CROSSING,POSITIONING,VISION",
+    "attribute_boost": "{\"crossing\": 7, \"positioning\": 6, \"vision\": 5, \"experience\": 4}",
+    "description": "Veteran wide player with intelligence, crossing ability, and tactical awareness"
+  },
+  {
+    "id": 19,
+    "archetype_name": "PACEY_STRIKER",
+    "primary_trait": "EXPLOSIVE",
+    "secondary_trait": "CONFIDENT",
+    "gameplay_focus": "PACE,FINISHING,OFF_THE_BALL",
+    "attribute_boost": "{\"pace\": 10, \"acceleration\": 8, \"finishing\": 6}",
+    "description": "Fast forward who uses explosive speed to get behind defenses"
+  },
+  {
+    "id": 20,
+    "archetype_name": "TARGET_MAN",
+    "primary_trait": "PHYSICAL",
+    "secondary_trait": "DOMINANT",
+    "gameplay_focus": "HOLDUP,HEADING,STRENGTH",
+    "attribute_boost": "{\"strength\": 9, \"heading\": 8, \"hold_up_play\": 7}",
+    "description": "Strong forward who holds up play and wins aerial duels"
+  },
+  {
+    "id": 21,
+    "archetype_name": "EXPERIENCED_DEFENDER",
+    "primary_trait": "EXPERIENCED",
+    "secondary_trait": "DISCIPLINED",
+    "gameplay_focus": "POSITIONING,READING,LEADERSHIP",
+    "attribute_boost": "{\"positioning\": 7, \"anticipation\": 6, \"leadership\": 5, \"experience\": 4}",
+    "description": "Veteran defender with excellent positioning, reading of the game, and leadership"
+  },
+  {
+    "id": 22,
+    "archetype_name": "TECHNICAL_MIDFIELDER",
+    "primary_trait": "SKILLFUL",
+    "secondary_trait": "INTELLIGENT",
+    "gameplay_focus": "TECHNIQUE,VISION,CONTROL",
+    "attribute_boost": "{\"skill\": 9, \"driblling\": 8, \"vision\": 6}",
+    "description": "Player with exceptional technical ability, ball control, and vision"
+  },
+  {
+    "id": 23,
+    "archetype_name": "DOMINANT_DEFENDER",
+    "primary_trait": "DOMINANT",
+    "secondary_trait": "PHYSICAL",
+    "gameplay_focus": "AERIAL_DUELS,TACKLING,STRENGTH",
+    "attribute_boost": "{\"aerial_ability\": 9, \"defending\": 7, \"strength\": 8}",
+    "description": "Commanding defender who dominates physical battles and aerial duels"
+  },
+  {
+    "id": 24,
+    "archetype_name": "VETERAN",
+    "primary_trait": "EXPERIENCED",
+    "secondary_trait": "WISE",
+    "gameplay_focus": "LEADERSHIP,MENTORING,INTELLIGENCE",
+    "attribute_boost": "{\"leadership\": 8, \"mentoring\": 7, \"decisions\": 6, \"experience\": 5}",
+    "description": "Experienced player providing leadership, wisdom, and mentorship to younger teammates"
+  },
+  {
+    "id": 25,
+    "archetype_name": "ADVANCED_PLAYMAKER",
+    "primary_trait": "CREATIVE",
+    "secondary_trait": "INTELLIGENT",
+    "gameplay_focus": "PASSING,VISION,FINAL_THIRD",
+    "attribute_boost": "{\"passing\": 7, \"vision\": 9, \"creativity\": 8, \"final_third\": 6}",
+    "description": "Creative midfielder operating in advanced positions with exceptional vision in final third"
+  },
+  {
+    "id": 26,
+    "archetype_name": "YOUNG_SPEEDSTER",
+    "primary_trait": "EXPLOSIVE",
+    "secondary_trait": "AMBITIOUS",
+    "gameplay_focus": "PACE,ACCELERATION,ENERGY",
+    "attribute_boost": "{\"pace\": 12, \"acceleration\": 10, \"stamina\": 5}",
+    "description": "Young player with exceptional speed, acceleration, and high energy levels"
+  },
+  {
+    "id": 27,
+    "archetype_name": "DEFENSIVE_ROCK",
+    "primary_trait": "DISCIPLINED",
+    "secondary_trait": "RESILIENT",
+    "gameplay_focus": "TACKLING,BLOCKING,ORGANIZATION",
+    "attribute_boost": "{\"defending\": 8, \"strength\": 7, \"positioning\": 6}",
+    "description": "Immovable defensive presence with excellent tackling and organizational skills"
+  },
+  {
+    "id": 28,
+    "archetype_name": "CREATIVE_MIDFIELDER",
+    "primary_trait": "CREATIVE",
+    "secondary_trait": "INTELLIGENT",
+    "gameplay_focus": "PASSING,VISION,INNOVATION",
+    "attribute_boost": "{\"passing\": 7, \"vision\": 8, \"creativity\": 9}",
+    "description": "Midfielder with exceptional creativity, vision, and innovative passing"
+  },
+  {
+    "id": 29,
+    "archetype_name": "DEFENSIVE_LEADER",
+    "primary_trait": "LEADER",
+    "secondary_trait": "ORGANIZED",
+    "gameplay_focus": "ORGANIZATION,COMMUNICATION,READING",
+    "attribute_boost": "{\"leadership\": 9, \"positioning\": 7, \"anticipation\": 6}",
+    "description": "Defensive organizer who leads the back line with communication and tactical awareness"
+  },
+  {
+    "id": 30,
+    "archetype_name": "DEFENSIVE_SHIELD",
+    "primary_trait": "PROTECTIVE",
+    "secondary_trait": "DISCIPLINED",
+    "gameplay_focus": "INTERCEPTIONS,COVERING,SPACING",
+    "attribute_boost": "{\"interceptions\": 8, \"positioning\": 7, \"work_rate\": 6}",
+    "description": "Defensive midfielder who shields the defense with excellent interception and covering skills"
+  },
+  {
+    "id": 31,
+    "archetype_name": "ACROBATIC_GOALKEEPER",
+    "primary_trait": "AGILE",
+    "secondary_trait": "BRAVE",
+    "gameplay_focus": "REFLEXES,AGILITY,ACROBATICS",
+    "attribute_boost": "{\"reflexes\": 9, \"agility\": 8, \"acrobatics\": 7}",
+    "description": "Goalkeeper with exceptional reflexes, agility, and acrobatic saves"
+  },
+  {
+    "id": 32,
+    "archetype_name": "CREATIVE_VETERAN",
+    "primary_trait": "EXPERIENCED",
+    "secondary_trait": "INTELLIGENT",
+    "gameplay_focus": "PASSING,VISION,CONTROL",
+    "attribute_boost": "{\"passing\": 7, \"vision\": 8, \"experience\": 6, \"composure\": 5}",
+    "description": "Experienced creative player with excellent vision and composure on the ball"
+  },
+  {
+    "id": 33,
+    "archetype_name": "MIDFIELD_DYNAMO",
+    "primary_trait": "ENERGETIC",
+    "secondary_trait": "DETERMINED",
+    "gameplay_focus": "STAMINA,PRESSING,BOX_TO_BOX",
+    "attribute_boost": "{\"stamina\": 10, \"work_rate\": 9, \"aggression\": 6}",
+    "description": "High-energy midfielder with exceptional stamina and pressing ability"
+  },
+  {
+    "id": 34,
+    "archetype_name": "TRADITIONAL_GOALKEEPER",
+    "primary_trait": "SAFE",
+    "secondary_trait": "DISCIPLINED",
+    "gameplay_focus": "HANDLING,COMMAND,POSITIONING",
+    "attribute_boost": "{\"handling\": 8, \"command_of_area\": 7, \"positioning\": 6}",
+    "description": "Classic goalkeeper with excellent handling, command of area, and positioning"
+  },
+  {
+    "id": 35,
+    "archetype_name": "SPEEDSTER",
+    "primary_trait": "EXPLOSIVE",
+    "secondary_trait": "DIRECT",
+    "gameplay_focus": "PACE,ACCELERATION,DIRECTNESS",
+    "attribute_boost": "{\"pace\": 11, \"acceleration\": 9, \"dribbling\": 5}",
+    "description": "Player with exceptional speed and direct running ability"
+  }
+]

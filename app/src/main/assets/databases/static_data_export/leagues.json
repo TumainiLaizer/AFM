@@ -1,0 +1,532 @@
+[
+  {
+    "id": 1,
+    "name": "Tanzania Premier League",
+    "country_id": 1,
+    "country": "Tanzania",
+    "level": 1,
+    "sponsor": "NBC",
+    "prize_money": 230400,
+    "logo": "league_logos/tanzania_premier_league.png"
+  },
+  {
+    "id": 2,
+    "name": "Tanzania Championship League",
+    "country_id": 1,
+    "country": "Tanzania",
+    "level": 2,
+    "sponsor": "NBC",
+    "prize_money": 92160,
+    "logo": "league_logos/tanzania_championship_league.png"
+  },
+  {
+    "id": 3,
+    "name": "Tanzania First League",
+    "country_id": 1,
+    "country": "Tanzania",
+    "level": 3,
+    "sponsor": "CRDB",
+    "prize_money": 46080,
+    "logo": "league_logos/tanzania_first_league.png"
+  },
+  {
+    "id": 4,
+    "name": "Tanzania Regional Champions League",
+    "country_id": 1,
+    "country": "Tanzania",
+    "level": 4,
+    "sponsor": "CRDB",
+    "prize_money": 23040,
+    "logo": "league_logos/tanzania_regional_champions_league.png"
+  },
+  {
+    "id": 5,
+    "name": "Zanzibar Premier League",
+    "country_id": 1,
+    "country": "Zanzibar",
+    "level": 1,
+    "sponsor": "PBZ",
+    "prize_money": 115200,
+    "logo": "league_logos/zanzibar_premier_league.png"
+  },
+  {
+    "id": 6,
+    "name": "Zanzibar Championship League",
+    "country_id": 1,
+    "country": "Zanzibar",
+    "level": 2,
+    "sponsor": "PBZ",
+    "prize_money": 28800,
+    "logo": "league_logos/zanzibar_championship_league.png"
+  },
+  {
+    "id": 7,
+    "name": "Tanzania Regional Division League 2",
+    "country_id": 1,
+    "country": "Tanzania",
+    "level": 5,
+    "sponsor": "CRDB",
+    "prize_money": 11520,
+    "logo": "league_logos/tanzania_regional_division_league_2.png"
+  },
+  {
+    "id": 8,
+    "name": "Egyptian Premier League",
+    "country_id": 25,
+    "country": "Egypt",
+    "level": 1,
+    "sponsor": "Vodafone",
+    "prize_money": 480000,
+    "logo": "league_logos/egyptian_premier_league.png"
+  },
+  {
+    "id": 9,
+    "name": "Morocco Botola Pro",
+    "country_id": 17,
+    "country": "Morocco",
+    "level": 1,
+    "sponsor": "Inwi",
+    "prize_money": 572160,
+    "logo": "league_logos/morocco_botola_pro.png"
+  },
+  {
+    "id": 10,
+    "name": "Algeria League 1",
+    "country_id": 23,
+    "country": "Algeria",
+    "level": 1,
+    "sponsor": "Mobilis",
+    "prize_money": 250000,
+    "logo": "league_logos/algeria_ligue_1.png"
+  },
+  {
+    "id": 11,
+    "name": "South African PSL",
+    "country_id": 19,
+    "country": "South Africa",
+    "level": 1,
+    "sponsor": "ABSA",
+    "prize_money": 770880,
+    "logo": "league_logos/south_african_psl.png"
+  },
+  {
+    "id": 12,
+    "name": "Tunisia Ligue 1",
+    "country_id": 24,
+    "country": "Tunisia",
+    "level": 1,
+    "sponsor": "Halkbank",
+    "prize_money": 288000,
+    "logo": "league_logos/tunisia_ligue_1.png"
+  },
+  {
+    "id": 13,
+    "name": "Congo DR Super League",
+    "country_id": 6,
+    "country": "Congo DRC",
+    "level": 1,
+    "sponsor": "Vodacom",
+    "prize_money": 150000,
+    "logo": "league_logos/congo_dr_super_league.png"
+  },
+  {
+    "id": 14,
+    "name": "Kenyan Premier League",
+    "country_id": 2,
+    "country": "Kenya",
+    "level": 1,
+    "sponsor": "SportPesa",
+    "prize_money": 96339,
+    "logo": "league_logos/kenyan_premier_league.png"
+  },
+  {
+    "id": 15,
+    "name": "Uganda Premier League",
+    "country_id": 3,
+    "country": "Uganda",
+    "level": 1,
+    "sponsor": "StarTimes",
+    "prize_money": 50000,
+    "logo": "league_logos/uganda_premier_league.png"
+  },
+  {
+    "id": 16,
+    "name": "Sudani Premier League",
+    "country_id": 41,
+    "country": "Sudan",
+    "level": 1,
+    "sponsor": "MTN",
+    "prize_money": 90000,
+    "logo": "league_logos/sudani_premier_league.png"
+  },
+  {
+    "id": 17,
+    "name": "Angola Girabola",
+    "country_id": 26,
+    "country": "Angola",
+    "level": 1,
+    "sponsor": "Unitel",
+    "prize_money": 147976,
+    "logo": "league_logos/angola_girabola.png"
+  },
+  {
+    "id": 18,
+    "name": "Nigerian NPFL",
+    "country_id": 12,
+    "country": "Nigeria",
+    "level": 1,
+    "sponsor": "Bet9ja",
+    "prize_money": 182400,
+    "logo": "league_logos/nigerian_npfl.png"
+  },
+  {
+    "id": 19,
+    "name": "Ivory Coast League 1",
+    "country_id": 14,
+    "country": "Ivory Coast",
+    "level": 1,
+    "sponsor": "MTN",
+    "prize_money": 120000,
+    "logo": "league_logos/ivory_coast_league_1.png"
+  },
+  {
+    "id": 20,
+    "name": "South Sudan Premier League",
+    "country_id": 20,
+    "country": "South Sudan",
+    "level": 1,
+    "sponsor": "MTN",
+    "prize_money": 10000,
+    "logo": "league_logos/south_sudan_premier_league.png"
+  },
+  {
+    "id": 21,
+    "name": "Senegal Premier League",
+    "country_id": 15,
+    "country": "Senegal",
+    "level": 1,
+    "sponsor": "Orange",
+    "prize_money": 140000,
+    "logo": "league_logos/senegal_premier_league.png"
+  },
+  {
+    "id": 22,
+    "name": "Botswana Premier League",
+    "country_id": 22,
+    "country": "Botswana",
+    "level": 1,
+    "sponsor": "BTC",
+    "prize_money": 52800,
+    "logo": "league_logos/botswana_premier_league.png"
+  },
+  {
+    "id": 23,
+    "name": "Rwanda Premier League",
+    "country_id": 4,
+    "country": "Rwanda",
+    "level": 1,
+    "sponsor": "Primus",
+    "prize_money": 70000,
+    "logo": "league_logos/rwanda_premier_league.png"
+  },
+  {
+    "id": 24,
+    "name": "Cameroon Elite One",
+    "country_id": 13,
+    "country": "Cameroon",
+    "level": 1,
+    "sponsor": "MTN",
+    "prize_money": 152000,
+    "logo": "league_logos/cameroon_elite_one.png"
+  },
+  {
+    "id": 25,
+    "name": "Mozambique Mocambola",
+    "country_id": 21,
+    "country": "Mozambique",
+    "level": 1,
+    "sponsor": "Mozal",
+    "prize_money": 60000,
+    "logo": "league_logos/mozambique_mocambola.png"
+  },
+  {
+    "id": 26,
+    "name": "Burundi Premier League",
+    "country_id": 5,
+    "country": "Burundi",
+    "level": 1,
+    "sponsor": "Primus",
+    "prize_money": 50000,
+    "logo": "league_logos/burundi_premier_league.png"
+  },
+  {
+    "id": 27,
+    "name": "Malawi Super League",
+    "country_id": 18,
+    "country": "Malawi",
+    "level": 1,
+    "sponsor": "TNM",
+    "prize_money": 45000,
+    "logo": "league_logos/malawi_super_league.png"
+  },
+  {
+    "id": 28,
+    "name": "Zambia Super League",
+    "country_id": 8,
+    "country": "Zambia",
+    "level": 1,
+    "sponsor": "MTN",
+    "prize_money": 90000,
+    "logo": "league_logos/zambia_super_league.png"
+  },
+  {
+    "id": 29,
+    "name": "Guinea League 1 Pro",
+    "country_id": 31,
+    "country": "Guinea",
+    "level": 1,
+    "sponsor": "Orange",
+    "prize_money": 70000,
+    "logo": "league_logos/guinea_league_1_pro.png"
+  },
+  {
+    "id": 30,
+    "name": "Libyan Premier League",
+    "country_id": 53,
+    "country": "Libya",
+    "level": 1,
+    "sponsor": "Libyana",
+    "prize_money": 85000,
+    "logo": "league_logos/libyan_premier_league.png"
+  },
+  {
+    "id": 31,
+    "name": "Malian Premi\u00e8re Division",
+    "country_id": 16,
+    "country": "Mali",
+    "level": 1,
+    "sponsor": "Orange",
+    "prize_money": 75000,
+    "logo": "league_logos/malian_premi\u00e8re_division.png"
+  },
+  {
+    "id": 32,
+    "name": "Zimbabwe Premier Soccer League",
+    "country_id": 9,
+    "country": "Zimbabwe",
+    "level": 1,
+    "sponsor": "Delta",
+    "prize_money": 70000,
+    "logo": "league_logos/zimbabwe_premier_soccer_league.png"
+  },
+  {
+    "id": 33,
+    "name": "Ghana Premier League",
+    "country_id": 11,
+    "country": "Ghana",
+    "level": 1,
+    "sponsor": "BetPawa",
+    "prize_money": 150000,
+    "logo": "league_logos/ghana_premier_league.png"
+  },
+  {
+    "id": 34,
+    "name": "Congo Premier League",
+    "country_id": 7,
+    "country": "Congo Republic",
+    "level": 1,
+    "sponsor": "MTN",
+    "prize_money": 80000,
+    "logo": "league_logos/congo_premier_league.png"
+  },
+  {
+    "id": 35,
+    "name": "Ethiopia Premier League",
+    "country_id": 117,
+    "country": "Ethiopia",
+    "level": 1,
+    "sponsor": "Ethio Telecom",
+    "prize_money": 187200,
+    "logo": "league_logos/ethiopia_premier_league.png"
+  },
+  {
+    "id": 36,
+    "name": "Somali First Division",
+    "country_id": 40,
+    "country": "Somalia",
+    "level": 1,
+    "sponsor": "Hormuud",
+    "prize_money": 15000,
+    "logo": "league_logos/somali_first_division.png"
+  },
+  {
+    "id": 37,
+    "name": "CAR Premier League",
+    "country_id": 33,
+    "country": "Central African Republic",
+    "level": 1,
+    "sponsor": "Orange",
+    "prize_money": 25000,
+    "logo": "league_logos/car_premier_league.png"
+  },
+  {
+    "id": 38,
+    "name": "Niger Super League",
+    "country_id": 46,
+    "country": "Niger",
+    "level": 1,
+    "sponsor": "MTN",
+    "prize_money": 20000,
+    "logo": "league_logos/niger_super_league.png"
+  },
+  {
+    "id": 39,
+    "name": "Gambia GFA Premier League",
+    "country_id": 30,
+    "country": "Gambia",
+    "level": 1,
+    "sponsor": "Gambia Ports Authority",
+    "prize_money": 25000,
+    "logo": "league_logos/gambia_gfa_premier_league.png"
+  },
+  {
+    "id": 40,
+    "name": "Burkinabe Premier League",
+    "country_id": 10,
+    "country": "Burkina Faso",
+    "level": 1,
+    "sponsor": "Orange",
+    "prize_money": 20000,
+    "logo": "league_logos/burkinabe_premier_league.png"
+  },
+  {
+    "id": 41,
+    "name": "Liberia First Division",
+    "country_id": 42,
+    "country": "Liberia",
+    "level": 1,
+    "sponsor": "Lonestar",
+    "prize_money": 15000,
+    "logo": "league_logos/liberia_first_division.png"
+  },
+  {
+    "id": 42,
+    "name": "Sierra Leone National Premier League",
+    "country_id": 43,
+    "country": "Sierra Leone",
+    "level": 1,
+    "sponsor": "Africell",
+    "prize_money": 15000,
+    "logo": "league_logos/sierra_leone_national_premier_league.png"
+  },
+  {
+    "id": 43,
+    "name": "Togo Championnat National",
+    "country_id": 45,
+    "country": "Togo",
+    "level": 1,
+    "sponsor": "Moov",
+    "prize_money": 15000,
+    "logo": "league_logos/togo_championnat_national.png"
+  },
+  {
+    "id": 44,
+    "name": "Madagascar Pro League",
+    "country_id": 47,
+    "country": "Madagascar",
+    "level": 1,
+    "sponsor": "Orange",
+    "prize_money": 20000,
+    "logo": "league_logos/madagascar_pro_league.png"
+  },
+  {
+    "id": 45,
+    "name": "Mauritania Super D1 League",
+    "country_id": 48,
+    "country": "Mauritania",
+    "level": 1,
+    "sponsor": "Mauritel",
+    "prize_money": 20000,
+    "logo": "league_logos/mauritania_super_d1_league.png"
+  },
+  {
+    "id": 46,
+    "name": "Mauritius Super League",
+    "country_id": 49,
+    "country": "Mauritius",
+    "level": 1,
+    "sponsor": "Orange",
+    "prize_money": 15000,
+    "logo": "league_logos/mauritius_super_league.png"
+  },
+  {
+    "id": 47,
+    "name": "Benin Championnat National",
+    "country_id": 44,
+    "country": "Benin",
+    "level": 1,
+    "sponsor": "Moov",
+    "prize_money": 15000,
+    "logo": "league_logos/benin_championnat_national.png"
+  },
+  {
+    "id": 48,
+    "name": "Chad Premiere Division",
+    "country_id": 35,
+    "country": "Chad",
+    "level": 1,
+    "sponsor": "Tigo",
+    "prize_money": 15000,
+    "logo": "league_logos/chad_premiere_division.png"
+  },
+  {
+    "id": 49,
+    "name": "Namibian Premier League",
+    "country_id": 27,
+    "country": "Namibia",
+    "level": 1,
+    "sponsor": "MTC",
+    "prize_money": 15000,
+    "logo": "league_logos/namibian_premier_league.png"
+  },
+  {
+    "id": 50,
+    "name": "Cape Verde Campionato Nacional",
+    "country_id": 51,
+    "country": "Cape Verde",
+    "level": 1,
+    "sponsor": "Cabo Verde Telecom",
+    "prize_money": 15000,
+    "logo": "league_logos/cape_verde_campionato_nacional.png"
+  },
+  {
+    "id": 51,
+    "name": "Lesotho Premier League",
+    "country_id": 28,
+    "country": "Lesotho",
+    "level": 1,
+    "sponsor": "Lesotho Post",
+    "prize_money": 15000,
+    "logo": "league_logos/lesotho_premier_league.png"
+  },
+  {
+    "id": 52,
+    "name": "Djibouti Division 1",
+    "country_id": 37,
+    "country": "Djibouti",
+    "level": 1,
+    "sponsor": "Djibouti Telecom",
+    "prize_money": 15000,
+    "logo": "league_logos/djibouti_division_1.png"
+  },
+  {
+    "id": 53,
+    "name": "Equatorial Guinea Premier League",
+    "country_id": 34,
+    "country": "Equatorial Guinea",
+    "level": 1,
+    "sponsor": "GEPetrol",
+    "prize_money": 15000,
+    "logo": "league_logos/equatorial_guinea_premier_league.png"
+  }
+]

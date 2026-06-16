@@ -1,0 +1,1 @@
+// InjuryDTO.kt

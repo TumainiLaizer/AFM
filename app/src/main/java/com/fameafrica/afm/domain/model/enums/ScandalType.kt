@@ -1,0 +1,1 @@
+// ScandalType.kt

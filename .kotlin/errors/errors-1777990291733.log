@@ -1,0 +1,735 @@
+kotlin version: 2.2.10
+error message: java.lang.RuntimeException: Exception while generating code for:
+FUN LOCAL_FUNCTION_FOR_LAMBDA name:ManagerCreationStep$lambda$283$lambda$277 visibility:private modality:FINAL returnType:kotlin.Unit?
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$uiState index:0 type:afm.ui.screen.career.CareerUiState
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$onUpdateName index:1 type:kotlin.Function1<kotlin.String, kotlin.Unit>
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$onUpdateNationality index:2 type:kotlin.Function1<kotlin.String, kotlin.Unit>
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$datePickerDialog index:3 type:android.app.DatePickerDialog
+  VALUE_PARAMETER kind:Regular name:$this$SidebarCard index:4 type:androidx.compose.foundation.layout.ColumnScope
+  VALUE_PARAMETER kind:Regular name:$composer index:5 type:androidx.compose.runtime.Composer? [assignable]
+  VALUE_PARAMETER kind:Regular name:$changed index:6 type:kotlin.Int
+  annotations:
+    Composable
+    ComposableTarget(applier = "androidx.compose.ui.UiComposable")
+  BLOCK_BODY
+    CALL 'public final fun sourceInformation (composer: androidx.compose.runtime.Composer, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=androidx.compose.runtime.Composer? origin=null
+      ARG sourceInformation: CONST String type=kotlin.String value="C1633@78053L2491:CareerSetupScreen.kt#rb80zm"
+    WHEN type=kotlin.Unit origin=IF
+      BRANCH
+        if: CALL 'public abstract fun shouldExecute (parametersChanged: kotlin.Boolean, flags: kotlin.Int): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=androidx.compose.runtime.Composer? origin=null
+          ARG parametersChanged: CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+            ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+              ARG arg0: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                ARG <this>: GET_VAR '$changed: kotlin.Int declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=kotlin.Int origin=null
+                ARG other: CONST Int type=kotlin.Int value=17
+              ARG arg1: CONST Int type=kotlin.Int value=16
+          ARG flags: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+            ARG <this>: GET_VAR '$changed: kotlin.Int declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=kotlin.Int origin=null
+            ARG other: CONST Int type=kotlin.Int value=1
+        then: BLOCK type=kotlin.Unit origin=null
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventStart (key: kotlin.Int, dirty1: kotlin.Int, dirty2: kotlin.Int, info: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG key: CONST Int type=kotlin.Int value=-1309379308
+                ARG dirty1: GET_VAR '$changed: kotlin.Int declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=kotlin.Int origin=null
+                ARG dirty2: CONST Int type=kotlin.Int value=-1
+                ARG info: CONST String type=kotlin.String value="afm.ui.screen.career.ManagerCreationStep.<anonymous>.<anonymous> (CareerSetupScreen.kt:1633)"
+          CALL 'public final fun Column (modifier: androidx.compose.ui.Modifier?, verticalArrangement: androidx.compose.foundation.layout.Arrangement.Vertical?, horizontalAlignment: androidx.compose.ui.Alignment.Horizontal?, content: @[ExtensionFunctionType] kotlin.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit>, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int, $default: kotlin.Int): kotlin.Unit [inline] declared in androidx.compose.foundation.layout.ColumnKt' type=kotlin.Unit origin=null
+            ARG modifier: CALL 'public final fun padding-3ABfNKs ($this$padding: androidx.compose.ui.Modifier, all: androidx.compose.ui.unit.Dp): androidx.compose.ui.Modifier declared in androidx.compose.foundation.layout.PaddingKt' type=androidx.compose.ui.Modifier origin=null
+              ARG $this$padding: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:Companion type:androidx.compose.ui.Modifier.Companion visibility:public [final,static] declared in androidx.compose.ui.Modifier' type=androidx.compose.ui.Modifier.Companion origin=null
+              ARG all: CALL 'public final fun <get-dp> (<this>: kotlin.Int): androidx.compose.ui.unit.Dp [inline] declared in androidx.compose.ui.unit.DpKt' type=androidx.compose.ui.unit.Dp origin=GET_PROPERTY
+                ARG <this>: CONST Int type=kotlin.Int value=16
+            ARG verticalArrangement: COMPOSITE type=kotlin.Nothing? origin=DEFAULT_VALUE
+              CONST Null type=kotlin.Nothing? value=null
+            ARG horizontalAlignment: COMPOSITE type=kotlin.Nothing? origin=DEFAULT_VALUE
+              CONST Null type=kotlin.Nothing? value=null
+            ARG content: BLOCK type=@[ExtensionFunctionType] kotlin.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit> origin=LAMBDA
+              COMPOSITE type=kotlin.Unit origin=null
+              FUNCTION_REFERENCE 'private final fun ManagerCreationStep$lambda$283$lambda$277$lambda$276 ($this$Column: androidx.compose.foundation.layout.ColumnScope, $uiState: afm.ui.screen.career.CareerUiState, $onUpdateName: kotlin.Function1<kotlin.String, kotlin.Unit>, $onUpdateNationality: kotlin.Function1<kotlin.String, kotlin.Unit>, $datePickerDialog: android.app.DatePickerDialog, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): kotlin.Unit declared in afm.ui.screen.career.CareerSetupScreenKt' type=@[ExtensionFunctionType] kotlin.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit> origin=INLINE_LAMBDA reflectionTarget=null
+                ARG $uiState: GET_VAR '$uiState: afm.ui.screen.career.CareerUiState declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=afm.ui.screen.career.CareerUiState origin=null
+                ARG $onUpdateName: GET_VAR '$onUpdateName: kotlin.Function1<kotlin.String, kotlin.Unit> declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                ARG $onUpdateNationality: GET_VAR '$onUpdateNationality: kotlin.Function1<kotlin.String, kotlin.Unit> declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=kotlin.Function1<kotlin.String, kotlin.Unit> origin=null
+                ARG $datePickerDialog: GET_VAR '$datePickerDialog: android.app.DatePickerDialog declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=android.app.DatePickerDialog origin=null
+            ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=androidx.compose.runtime.Composer? origin=null
+            ARG $changed: CONST Int type=kotlin.Int value=6
+            ARG $default: CONST Int type=kotlin.Int value=6
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventEnd (): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      BRANCH
+        if: CONST Boolean type=kotlin.Boolean value=true
+        then: CALL 'public abstract fun skipToGroupEnd (): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277' type=androidx.compose.runtime.Composer? origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:43)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:419)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:388)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:431)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:95)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:36)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:29)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:102)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:22)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:53)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.runPhasedPipeline(AbstractCliPipeline.kt:109)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.execute(AbstractCliPipeline.kt:68)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:78)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:44)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:90)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.exec(CLICompiler.kt:352)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:175)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:38)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:504)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:421)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileNonIncrementally(IncrementalCompilerRunner.kt:306)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:133)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:679)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:93)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1806)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.jetbrains.kotlin.codegen.CompilationException: Back-end (JVM) Internal error: Couldn't inline method call: CALL 'public final fun Column (modifier: androidx.compose.ui.Modifier?, verticalArrangement: androidx.compose.foundation.layout.Arrangement.Vertical?, horizontalAlignment: androidx.compose.ui.Alignment.Horizontal?, content: @[ExtensionFunctionType] kotlin.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit>, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int, $default: kotlin.Int): kotlin.Unit [inline] declared in androidx.compose.foundation.layout.ColumnKt' type=kotlin.Unit origin=null
+File is unknown
+The root cause org.jetbrains.kotlin.codegen.inline.InlineException was thrown at: org.jetbrains.kotlin.codegen.inline.MethodInliner.wrapException(MethodInliner.kt:1000)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genInlineCall(IrInlineCodegen.kt:76)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCallGenerator.genCall(IrInlineCallGenerator.kt:36)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:586)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:1049)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrWhen.accept(IrWhen.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:532)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	... 45 more
+Caused by: org.jetbrains.kotlin.codegen.inline.InlineException: Lambda inlining com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt$ManagerCreationStep$1$1$1: couldn't inline method call
+Cause: ManagerCreationStep$lambda$283$lambda$277$lambda$276 (Landroidx/compose/foundation/layout/ColumnScope;Landroidx/compose/runtime/Composer;ILcom/fameafrica/afm2026/ui/screen/career/CareerUiState;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroid/app/DatePickerDialog;)V:
+  @Landroidx/compose/runtime/Composable;() // invisible
+  @Landroidx/compose/runtime/ComposableTarget;(applier="androidx.compose.ui.UiComposable") // invisible
+   L0
+    ICONST_0
+    ISTORE 7
+   L1
+    ALOAD 1
+    LDC 730036105
+    LDC "C1640@78478L434,1634@78114L870,1650@79001L41,1652@79060L68,1654@79146L41,1657@79244L27,1660@79464L797,1656@79205L1056,1674@80279L41,1675@80337L193:CareerSetupScreen.kt#rb80zm"
+   L2
+    LINENUMBER 1635 L2
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+   L3
+    LINENUMBER 1636 L3
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt$ManagerCreationStep$1$1$1.$$$$uiState : Lcom/fameafrica/afm2026/ui/screen/career/CareerUiState;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/screen/career/CareerUiState.getManagerName ()Ljava/lang/String;
+    ASTORE 8
+   L4
+    LINENUMBER 1639 L4
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    FCONST_0
+    ICONST_1
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.fillMaxWidth$default (Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    ASTORE 9
+   L5
+    LINENUMBER 1640 L5
+    ICONST_2
+    ISTORE 11
+   L6
+    ICONST_0
+    ISTORE 12
+   L7
+    LINENUMBER 2457 L7
+    ILOAD 11
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L8
+   L8
+    LINENUMBER 1640 L8
+    INVOKESTATIC androidx/compose/foundation/shape/RoundedCornerShapeKt.RoundedCornerShape-0680j_4 (F)Landroidx/compose/foundation/shape/RoundedCornerShape;
+    ASTORE 10
+   L9
+    LINENUMBER 1641 L9
+    GETSTATIC androidx/compose/material3/OutlinedTextFieldDefaults.INSTANCE : Landroidx/compose/material3/OutlinedTextFieldDefaults;
+    ASTORE 12
+   L10
+    LINENUMBER 1642 L10
+    GETSTATIC androidx/compose/ui/graphics/Color.Companion : Landroidx/compose/ui/graphics/Color$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/graphics/Color$Companion.getWhite-0d7_KjU ()J
+    LDC 0.1
+    FCONST_0
+    FCONST_0
+    FCONST_0
+    BIPUSH 14
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/ui/graphics/Color.copy-wmQWz5c$default (JFFFFILjava/lang/Object;)J
+    LSTORE 13
+   L11
+    LINENUMBER 1643 L11
+    GETSTATIC com/fameafrica/afm2026/ui/theme/FameColors.INSTANCE : Lcom/fameafrica/afm2026/ui/theme/FameColors;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/theme/FameColors.getTrophyGold-0d7_KjU ()J
+    LSTORE 15
+   L12
+    LINENUMBER 1644 L12
+    GETSTATIC androidx/compose/ui/graphics/Color.Companion : Landroidx/compose/ui/graphics/Color$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/graphics/Color$Companion.getWhite-0d7_KjU ()J
+    LDC 0.4
+    FCONST_0
+    FCONST_0
+    FCONST_0
+    BIPUSH 14
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/ui/graphics/Color.copy-wmQWz5c$default (JFFFFILjava/lang/Object;)J
+    LSTORE 17
+   L13
+    LINENUMBER 1645 L13
+    GETSTATIC com/fameafrica/afm2026/ui/theme/FameColors.INSTANCE : Lcom/fameafrica/afm2026/ui/theme/FameColors;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/theme/FameColors.getTrophyGold-0d7_KjU ()J
+    LSTORE 19
+   L14
+    LINENUMBER 1646 L14
+    GETSTATIC androidx/compose/ui/graphics/Color.Companion : Landroidx/compose/ui/graphics/Color$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/graphics/Color$Companion.getWhite-0d7_KjU ()J
+    LSTORE 21
+   L15
+    LINENUMBER 1647 L15
+    GETSTATIC androidx/compose/ui/graphics/Color.Companion : Landroidx/compose/ui/graphics/Color$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/graphics/Color$Companion.getWhite-0d7_KjU ()J
+    LSTORE 23
+   L16
+    LINENUMBER 1641 L16
+    ALOAD 12
+   L17
+    LINENUMBER 1647 L17
+    LLOAD 23
+   L18
+    LINENUMBER 1646 L18
+    LLOAD 21
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    ACONST_NULL
+   L19
+    LINENUMBER 1643 L19
+    LLOAD 15
+   L20
+    LINENUMBER 1642 L20
+    LLOAD 13
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+   L21
+    LINENUMBER 1645 L21
+    LLOAD 19
+   L22
+    LINENUMBER 1644 L22
+    LLOAD 17
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    LCONST_0
+    ALOAD 1
+    BIPUSH 54
+    SIPUSH 432
+    SIPUSH 27648
+    ICONST_0
+    SIPUSH 3072
+    LDC 2122311676
+    SIPUSH 4095
+   L23
+    LINENUMBER 1641 L23
+    INVOKEVIRTUAL androidx/compose/material3/OutlinedTextFieldDefaults.colors-0hiis_0 (JJJJJJJJJJLandroidx/compose/foundation/text/selection/TextSelectionColors;JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJLandroidx/compose/runtime/Composer;IIIIIII)Landroidx/compose/material3/TextFieldColors;
+    ASTORE 11
+   L24
+    LINENUMBER 1649 L24
+    GETSTATIC com/fameafrica/afm2026/ui/theme/AFMTextStyles.INSTANCE : Lcom/fameafrica/afm2026/ui/theme/AFMTextStyles;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/theme/AFMTextStyles.getTextSM ()Landroidx/compose/ui/text/TextStyle;
+    ASTORE 12
+   L25
+    LINENUMBER 1636 L25
+    ALOAD 8
+   L26
+    LINENUMBER 1637 L26
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt$ManagerCreationStep$1$1$1.$$$$onUpdateName : Lkotlin/jvm/functions/Function1;
+   L27
+    LINENUMBER 1639 L27
+    ALOAD 9
+    ICONST_0
+    ICONST_0
+   L28
+    LINENUMBER 1649 L28
+    ALOAD 12
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.INSTANCE : Lcom/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/screen/career/ComposableSingletons$CareerSetupScreenKt.getLambda$-440025180$app ()Lkotlin/jvm/functions/Function2;
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ICONST_0
+    ACONST_NULL
+    ACONST_NULL
+    ACONST_NULL
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ACONST_NULL
+   L29
+    LINENUMBER 1640 L29
+    ALOAD 10
+    CHECKCAST androidx/compose/ui/graphics/Shape
+   L30
+    LINENUMBER 1641 L30
+    ALOAD 11
+    ALOAD 1
+    LDC 1769856
+    ICONST_0
+    ICONST_0
+    LDC 2097048
+   L31
+    LINENUMBER 1635 L31
+    INVOKESTATIC androidx/compose/material3/OutlinedTextFieldKt.OutlinedTextField (Ljava/lang/String;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;ZZLandroidx/compose/ui/text/TextStyle;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;ZLandroidx/compose/ui/text/input/VisualTransformation;Landroidx/compose/foundation/text/KeyboardOptions;Landroidx/compose/foundation/text/KeyboardActions;ZIILandroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/material3/TextFieldColors;Landroidx/compose/runtime/Composer;IIII)V
+   L32
+    LINENUMBER 1651 L32
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    BIPUSH 16
+    ISTORE 8
+   L33
+    ICONST_0
+    ISTORE 9
+   L34
+    LINENUMBER 2458 L34
+    ILOAD 8
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L35
+   L35
+    LINENUMBER 1651 L35
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.height-3ABfNKs (Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
+    ALOAD 1
+    BIPUSH 6
+    INVOKESTATIC androidx/compose/foundation/layout/SpacerKt.Spacer (Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)V
+   L36
+    LINENUMBER 1653 L36
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt$ManagerCreationStep$1$1$1.$$$$uiState : Lcom/fameafrica/afm2026/ui/screen/career/CareerUiState;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/screen/career/CareerUiState.getManagerNationality ()Ljava/lang/String;
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt$ManagerCreationStep$1$1$1.$$$$onUpdateNationality : Lkotlin/jvm/functions/Function1;
+    ALOAD 1
+    ICONST_0
+    INVOKESTATIC com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt.NationalitySelector (Ljava/lang/String;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
+   L37
+    LINENUMBER 1655 L37
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    BIPUSH 16
+    ISTORE 8
+   L38
+    ICONST_0
+    ISTORE 9
+   L39
+    LINENUMBER 2459 L39
+    ILOAD 8
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L40
+   L40
+    LINENUMBER 1655 L40
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.height-3ABfNKs (Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
+    ALOAD 1
+    BIPUSH 6
+    INVOKESTATIC androidx/compose/foundation/layout/SpacerKt.Spacer (Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)V
+   L41
+    LINENUMBER 1659 L41
+    GETSTATIC androidx/compose/ui/graphics/Color.Companion : Landroidx/compose/ui/graphics/Color$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/graphics/Color$Companion.getTransparent-0d7_KjU ()J
+    LSTORE 8
+   L42
+    LINENUMBER 1660 L42
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    FCONST_0
+    ICONST_1
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.fillMaxWidth$default (Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    ICONST_1
+    ISTORE 11
+   L43
+    ICONST_0
+    ISTORE 12
+   L44
+    LINENUMBER 2460 L44
+    ILOAD 11
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L45
+   L45
+    LINENUMBER 1660 L45
+    GETSTATIC androidx/compose/ui/graphics/Color.Companion : Landroidx/compose/ui/graphics/Color$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/graphics/Color$Companion.getWhite-0d7_KjU ()J
+    LDC 0.1
+    FCONST_0
+    FCONST_0
+    FCONST_0
+    BIPUSH 14
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/ui/graphics/Color.copy-wmQWz5c$default (JFFFFILjava/lang/Object;)J
+    ICONST_2
+    ISTORE 11
+   L46
+    ICONST_0
+    ISTORE 12
+   L47
+    LINENUMBER 2460 L47
+    ILOAD 11
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L48
+   L48
+    LINENUMBER 1660 L48
+    INVOKESTATIC androidx/compose/foundation/shape/RoundedCornerShapeKt.RoundedCornerShape-0680j_4 (F)Landroidx/compose/foundation/shape/RoundedCornerShape;
+    CHECKCAST androidx/compose/ui/graphics/Shape
+    INVOKESTATIC androidx/compose/foundation/BorderKt.border-xT4_qwU (Landroidx/compose/ui/Modifier;FJLandroidx/compose/ui/graphics/Shape;)Landroidx/compose/ui/Modifier;
+    ASTORE 10
+    ALOAD 1
+    LDC -1777531995
+    LDC "CC(remember):CareerSetupScreen.kt#9igjgp"
+   L49
+    LINENUMBER 1658 L49
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerStart (Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    ALOAD 1
+    ASTORE 12
+    ALOAD 1
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt$ManagerCreationStep$1$1$1.$$$$datePickerDialog : Landroid/app/DatePickerDialog;
+    INVOKEINTERFACE androidx/compose/runtime/Composer.changedInstance (Ljava/lang/Object;)Z (itf)
+    ISTORE 13
+   L50
+    ICONST_0
+    ISTORE 14
+   L51
+    LINENUMBER 2461 L51
+    ALOAD 12
+    INVOKEINTERFACE androidx/compose/runtime/Composer.rememberedValue ()Ljava/lang/Object; (itf)
+    ASTORE 15
+   L52
+    ICONST_0
+    ISTORE 16
+   L53
+    LINENUMBER 2462 L53
+    ILOAD 13
+    IFNE L54
+    ALOAD 15
+    GETSTATIC androidx/compose/runtime/Composer.Companion : Landroidx/compose/runtime/Composer$Companion;
+    INVOKEVIRTUAL androidx/compose/runtime/Composer$Companion.getEmpty ()Ljava/lang/Object;
+    IF_ACMPNE L55
+   L54
+    LINENUMBER 2463 L54
+    NOP
+    ICONST_0
+    ISTORE 17
+   L56
+    LINENUMBER 1658 L56
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt$ManagerCreationStep$1$1$1.$$$$datePickerDialog : Landroid/app/DatePickerDialog;
+    INVOKEDYNAMIC invoke(Landroid/app/DatePickerDialog;)Lkotlin/jvm/functions/Function0; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      ()Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277$lambda$276$lambda$272$lambda$271(Landroid/app/DatePickerDialog;)Lkotlin/Unit;, 
+      ()Lkotlin/Unit;
+    ]
+    GOTO L57
+   L57
+   L58
+    LINENUMBER 2463 L58
+    ASTORE 18
+   L59
+    LINENUMBER 2464 L59
+    ALOAD 12
+    ALOAD 18
+    INVOKEINTERFACE androidx/compose/runtime/Composer.updateRememberedValue (Ljava/lang/Object;)V (itf)
+   L60
+    LINENUMBER 2465 L60
+    ALOAD 18
+   L61
+    GOTO L62
+   L55
+    LINENUMBER 2466 L55
+    ALOAD 15
+   L62
+    LINENUMBER 2461 L62
+    NOP
+   L63
+    LINENUMBER 2461 L63
+    GOTO L64
+   L64
+    LINENUMBER 1658 L64
+    CHECKCAST kotlin/jvm/functions/Function0
+    ASTORE 11
+    ALOAD 1
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+    ALOAD 11
+   L65
+    LINENUMBER 1660 L65
+    ALOAD 10
+    ICONST_0
+    ACONST_NULL
+   L66
+    LINENUMBER 1659 L66
+    LLOAD 8
+    LCONST_0
+    FCONST_0
+    FCONST_0
+    ACONST_NULL
+    ACONST_NULL
+   L67
+    LINENUMBER 1661 L67
+    LDC 412267989
+    ICONST_1
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt$ManagerCreationStep$1$1$1.$$$$uiState : Lcom/fameafrica/afm2026/ui/screen/career/CareerUiState;
+    INVOKEDYNAMIC invoke(Lcom/fameafrica/afm2026/ui/screen/career/CareerUiState;)Lkotlin/jvm/functions/Function2; [
+      // handle kind 0x6 : INVOKESTATIC
+      java/lang/invoke/LambdaMetafactory.metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+      // arguments:
+      (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+      // handle kind 0x6 : INVOKESTATIC
+      com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt.ManagerCreationStep$lambda$283$lambda$277$lambda$276$lambda$275(Lcom/fameafrica/afm2026/ui/screen/career/CareerUiState;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;, 
+      (Landroidx/compose/runtime/Composer;Ljava/lang/Integer;)Lkotlin/Unit;
+    ]
+    ALOAD 1
+    BIPUSH 54
+    INVOKESTATIC androidx/compose/runtime/internal/ComposableLambdaKt.rememberComposableLambda (IZLjava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/internal/ComposableLambda;
+    CHECKCAST kotlin/jvm/functions/Function2
+    ALOAD 1
+    SIPUSH 24576
+    BIPUSH 6
+    SIPUSH 1004
+   L68
+    LINENUMBER 1657 L68
+    INVOKESTATIC androidx/compose/material3/SurfaceKt.Surface-o_FOJdg (Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/ui/graphics/Shape;JJFFLandroidx/compose/foundation/BorderStroke;Landroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;III)V
+   L69
+    LINENUMBER 1675 L69
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    BIPUSH 12
+    ISTORE 8
+   L70
+    ICONST_0
+    ISTORE 9
+   L71
+    LINENUMBER 2467 L71
+    ILOAD 8
+    I2F
+    INVOKESTATIC androidx/compose/ui/unit/Dp.constructor-impl (F)F
+    GOTO L72
+   L72
+    LINENUMBER 1675 L72
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.height-3ABfNKs (Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
+    ALOAD 1
+    BIPUSH 6
+    INVOKESTATIC androidx/compose/foundation/layout/SpacerKt.Spacer (Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)V
+   L73
+    LINENUMBER 1676 L73
+    GETSTATIC com/fameafrica/afm2026/ui/screen/career/CareerSetupScreenKt$ManagerCreationStep$1$1$1.$$$$uiState : Lcom/fameafrica/afm2026/ui/screen/career/CareerUiState;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/screen/career/CareerUiState.getCareerStage ()Ljava/lang/String;
+    GETSTATIC java/util/Locale.ROOT : Ljava/util/Locale;
+    INVOKEVIRTUAL java/lang/String.toUpperCase (Ljava/util/Locale;)Ljava/lang/String;
+    DUP
+    LDC "toUpperCase(...)"
+    INVOKESTATIC kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue (Ljava/lang/Object;Ljava/lang/String;)V
+    GOTO L74
+   L74
+    LINENUMBER 1676 L74
+    ASTORE 8
+    GETSTATIC com/fameafrica/afm2026/ui/theme/AFMTextStyles.INSTANCE : Lcom/fameafrica/afm2026/ui/theme/AFMTextStyles;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/theme/AFMTextStyles.getTextXS ()Landroidx/compose/ui/text/TextStyle;
+    ASTORE 9
+    GETSTATIC com/fameafrica/afm2026/ui/theme/FameColors.INSTANCE : Lcom/fameafrica/afm2026/ui/theme/FameColors;
+    INVOKEVIRTUAL com/fameafrica/afm2026/ui/theme/FameColors.getGrowthGreen-0d7_KjU ()J
+    LSTORE 10
+    GETSTATIC androidx/compose/ui/text/font/FontWeight.Companion : Landroidx/compose/ui/text/font/FontWeight$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/text/font/FontWeight$Companion.getBlack ()Landroidx/compose/ui/text/font/FontWeight;
+    ASTORE 12
+    GETSTATIC androidx/compose/ui/text/style/TextAlign.Companion : Landroidx/compose/ui/text/style/TextAlign$Companion;
+    INVOKEVIRTUAL androidx/compose/ui/text/style/TextAlign$Companion.getEnd-e0LSkKk ()I
+    ISTORE 13
+    GETSTATIC androidx/compose/ui/Modifier.Companion : Landroidx/compose/ui/Modifier$Companion;
+    CHECKCAST androidx/compose/ui/Modifier
+    FCONST_0
+    ICONST_1
+    ACONST_NULL
+    INVOKESTATIC androidx/compose/foundation/layout/SizeKt.fillMaxWidth$default (Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    ASTORE 14
+    ALOAD 8
+    ALOAD 14
+    LLOAD 10
+    LCONST_0
+    ACONST_NULL
+    ALOAD 12
+    ACONST_NULL
+    LCONST_0
+    ACONST_NULL
+    ILOAD 13
+    INVOKESTATIC androidx/compose/ui/text/style/TextAlign.box-impl (I)Landroidx/compose/ui/text/style/TextAlign;
+    LCONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ACONST_NULL
+    ALOAD 9
+    ALOAD 1
+    LDC 197040
+    LDC 1572864
+    LDC 64984
+    INVOKESTATIC androidx/compose/material3/TextKt.Text--4IGK_g (Ljava/lang/String;Landroidx/compose/ui/Modifier;JJLandroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontFamily;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/text/style/TextAlign;JIZIILkotlin/jvm/functions/Function1;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/runtime/Composer;III)V
+    ALOAD 1
+   L75
+    LINENUMBER 1635 L75
+    INVOKESTATIC androidx/compose/runtime/ComposerKt.sourceInformationMarkerEnd (Landroidx/compose/runtime/Composer;)V
+   L76
+    LINENUMBER 1677 L76
+    RETURN
+   L77
+    LOCALVARIABLE $i$f$getDp\8\1640 I L7 L8 12
+    LOCALVARIABLE $this$dp\8 I L6 L8 11
+    LOCALVARIABLE $i$f$getDp\9\1651 I L34 L35 9
+    LOCALVARIABLE $this$dp\9 I L33 L35 8
+    LOCALVARIABLE $i$f$getDp\10\1655 I L39 L40 9
+    LOCALVARIABLE $this$dp\10 I L38 L40 8
+    LOCALVARIABLE $i$f$getDp\11\1660 I L44 L45 12
+    LOCALVARIABLE $this$dp\11 I L43 L45 11
+    LOCALVARIABLE $i$f$getDp\12\1660 I L47 L48 12
+    LOCALVARIABLE $this$dp\12 I L46 L48 11
+    LOCALVARIABLE $i$a$-cache-CareerSetupScreenKt$ManagerCreationStep$1$1$1$1\15\2463\7 I L56 L57 17
+    LOCALVARIABLE value\14 Ljava/lang/Object; L59 L61 18
+    LOCALVARIABLE $i$a$-let-ComposerKt$cache$1\14\2461\13 I L53 L62 16
+    LOCALVARIABLE it\13 Ljava/lang/Object; L52 L62 15
+    LOCALVARIABLE $i$f$cache\13\1658 I L51 L64 14
+    LOCALVARIABLE $this$cache\13 Landroidx/compose/runtime/Composer; L50 L64 12
+    LOCALVARIABLE invalid\13 Z L50 L64 13
+    LOCALVARIABLE $i$f$getDp\16\1675 I L71 L72 9
+    LOCALVARIABLE $this$dp\16 I L70 L72 8
+    LOCALVARIABLE $i$a$-Column-CareerSetupScreenKt$ManagerCreationStep$1$1$1\7\2465\0 I L1 L77 7
+    LOCALVARIABLE $this$ManagerCreationStep_u24lambda_u24283_u24lambda_u24277_u24lambda_u24276\7 Landroidx/compose/foundation/layout/ColumnScope; L0 L77 0
+    LOCALVARIABLE $uiState\7 Lcom/fameafrica/afm2026/ui/screen/career/CareerUiState; L0 L77 3
+    LOCALVARIABLE $onUpdateName\7 Lkotlin/jvm/functions/Function1; L0 L77 4
+    LOCALVARIABLE $onUpdateNationality\7 Lkotlin/jvm/functions/Function1; L0 L77 5
+    LOCALVARIABLE $datePickerDialog\7 Landroid/app/DatePickerDialog; L0 L77 6
+    LOCALVARIABLE $composer\7 Landroidx/compose/runtime/Composer; L0 L77 1
+    LOCALVARIABLE $changed\7 I L0 L77 2
+    MAXSTACK = 94
+    MAXLOCALS = 29
+
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.wrapException(MethodInliner.kt:1000)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.preprocessNodeBeforeInline(MethodInliner.kt:783)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable(MethodInliner.kt:605)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:93)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.access$doInline(MethodInliner.kt:41)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner$doInline$lambdaInliner$1.visitMethodInsn(MethodInliner.kt:346)
+	at org.jetbrains.org.objectweb.asm.tree.MethodInsnNode.accept(MethodInsnNode.java:115)
+	at org.jetbrains.org.objectweb.asm.tree.InsnList.accept(InsnList.java:144)
+	at org.jetbrains.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:749)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:426)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:98)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.inlineCall(IrInlineCodegen.kt:314)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genInlineCall(IrInlineCodegen.kt:68)
+	... 66 more
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.jetbrains.org.objectweb.asm.tree.analysis.Frame.<init>(Frame.java:96)
+	at org.jetbrains.kotlin.codegen.optimization.temporaryVals.StoreLoadFrame.<init>(FastStoreLoadAnalyzer.kt:46)
+	at org.jetbrains.kotlin.codegen.optimization.temporaryVals.FastStoreLoadAnalyzer._init_$lambda$0(FastStoreLoadAnalyzer.kt:69)
+	at org.jetbrains.kotlin.codegen.optimization.temporaryVals.FastStoreLoadAnalyzer$$Lambda/0x0000000100b44f50.invoke(Unknown Source)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.fullMergeControlFlowEdge(FastAnalyzer.kt:233)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.mergeControlFlowEdge(FastAnalyzer.kt:216)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.processControlFlowEdge(FastAnalyzer.kt:208)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.processControlFlowEdge$default(FastAnalyzer.kt:206)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.visitOpInsn(FastAnalyzer.kt:292)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.visitMeaningfulInstruction(FastAnalyzer.kt:281)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.analyzeInstruction(FastAnalyzer.kt:113)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.analyzeMainLoop(FastAnalyzer.kt:74)
+	at org.jetbrains.kotlin.codegen.optimization.common.FastAnalyzer.analyze(FastAnalyzer.kt:53)
+	at org.jetbrains.kotlin.codegen.optimization.temporaryVals.TemporaryValsAnalyzer.analyze(TemporaryVals.kt:107)
+	at org.jetbrains.kotlin.codegen.optimization.temporaryVals.TemporaryVariablesEliminationTransformer.transform(TemporaryVariablesEliminationTransformer.kt:36)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.preprocessNodeBeforeInline(MethodInliner.kt:781)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable(MethodInliner.kt:605)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:93)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.access$doInline(MethodInliner.kt:41)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner$doInline$lambdaInliner$1.visitMethodInsn(MethodInliner.kt:346)
+	at org.jetbrains.org.objectweb.asm.tree.MethodInsnNode.accept(MethodInsnNode.java:115)
+	at org.jetbrains.org.objectweb.asm.tree.InsnList.accept(InsnList.java:144)
+	at org.jetbrains.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:749)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:426)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:98)
+	at org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline(MethodInliner.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.inlineCall(IrInlineCodegen.kt:314)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genInlineCall(IrInlineCodegen.kt:68)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCallGenerator.genCall(IrInlineCallGenerator.kt:36)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:586)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+
+

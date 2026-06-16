@@ -1,0 +1,203 @@
+kotlin version: 2.2.10
+error message: java.lang.RuntimeException: Exception while generating code for:
+FUN LOCAL_FUNCTION_FOR_LAMBDA name:SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122 visibility:private modality:FINAL returnType:kotlin.Unit?
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$icon index:0 type:androidx.compose.ui.graphics.vector.ImageVector
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$color index:1 type:androidx.compose.ui.graphics.Color
+  VALUE_PARAMETER kind:Regular name:$composer index:2 type:androidx.compose.runtime.Composer? [assignable]
+  VALUE_PARAMETER kind:Regular name:$changed index:3 type:kotlin.Int
+  annotations:
+    Composable
+    ComposableTarget(applier = "androidx.compose.ui.UiComposable")
+  BLOCK_BODY
+    CALL 'public final fun sourceInformation (composer: androidx.compose.runtime.Composer, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122' type=androidx.compose.runtime.Composer? origin=null
+      ARG sourceInformation: CONST String type=kotlin.String value="C630@29755L297:CareerSetupScreen.kt#rb80zm"
+    WHEN type=kotlin.Unit origin=IF
+      BRANCH
+        if: CALL 'public abstract fun shouldExecute (parametersChanged: kotlin.Boolean, flags: kotlin.Int): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122' type=androidx.compose.runtime.Composer? origin=null
+          ARG parametersChanged: CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+            ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+              ARG arg0: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                ARG <this>: GET_VAR '$changed: kotlin.Int declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122' type=kotlin.Int origin=null
+                ARG other: CONST Int type=kotlin.Int value=3
+              ARG arg1: CONST Int type=kotlin.Int value=2
+          ARG flags: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+            ARG <this>: GET_VAR '$changed: kotlin.Int declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122' type=kotlin.Int origin=null
+            ARG other: CONST Int type=kotlin.Int value=1
+        then: BLOCK type=kotlin.Unit origin=null
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventStart (key: kotlin.Int, dirty1: kotlin.Int, dirty2: kotlin.Int, info: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG key: CONST Int type=kotlin.Int value=2112339319
+                ARG dirty1: GET_VAR '$changed: kotlin.Int declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122' type=kotlin.Int origin=null
+                ARG dirty2: CONST Int type=kotlin.Int value=-1
+                ARG info: CONST String type=kotlin.String value="afm.ui.screen.career.SelectionModeHeroCard.<anonymous>.<anonymous>.<anonymous> (CareerSetupScreen.kt:630)"
+          CALL 'public final fun Box (modifier: androidx.compose.ui.Modifier?, contentAlignment: androidx.compose.ui.Alignment?, propagateMinConstraints: kotlin.Boolean, content: @[ExtensionFunctionType] kotlin.Function3<androidx.compose.foundation.layout.BoxScope, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit>, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int, $default: kotlin.Int): kotlin.Unit [inline] declared in androidx.compose.foundation.layout.BoxKt' type=kotlin.Unit origin=null
+            ARG modifier: COMPOSITE type=kotlin.Nothing? origin=DEFAULT_VALUE
+              CONST Null type=kotlin.Nothing? value=null
+            ARG contentAlignment: CALL 'public final fun <get-Center> (): androidx.compose.ui.Alignment declared in androidx.compose.ui.Alignment.Companion' type=androidx.compose.ui.Alignment origin=GET_PROPERTY
+              ARG <this>: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:Companion type:androidx.compose.ui.Alignment.Companion visibility:public [final,static] declared in androidx.compose.ui.Alignment' type=androidx.compose.ui.Alignment.Companion origin=null
+            ARG propagateMinConstraints: COMPOSITE type=kotlin.Boolean origin=DEFAULT_VALUE
+              CONST Boolean type=kotlin.Boolean value=false
+            ARG content: BLOCK type=@[ExtensionFunctionType] kotlin.Function3<androidx.compose.foundation.layout.BoxScope, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit> origin=LAMBDA
+              COMPOSITE type=kotlin.Unit origin=null
+              FUNCTION_REFERENCE 'private final fun SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122$lambda$121 ($this$Box: androidx.compose.foundation.layout.BoxScope, $icon: androidx.compose.ui.graphics.vector.ImageVector, $color: androidx.compose.ui.graphics.Color, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): kotlin.Unit declared in afm.ui.screen.career.CareerSetupScreenKt' type=@[ExtensionFunctionType] kotlin.Function3<androidx.compose.foundation.layout.BoxScope, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit> origin=INLINE_LAMBDA reflectionTarget=null
+                ARG $icon: GET_VAR '$icon: androidx.compose.ui.graphics.vector.ImageVector declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122' type=androidx.compose.ui.graphics.vector.ImageVector origin=null
+                ARG $color: GET_VAR '$color: androidx.compose.ui.graphics.Color declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122' type=androidx.compose.ui.graphics.Color origin=null
+            ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122' type=androidx.compose.runtime.Composer? origin=null
+            ARG $changed: CONST Int type=kotlin.Int value=48
+            ARG $default: CONST Int type=kotlin.Int value=5
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventEnd (): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      BRANCH
+        if: CONST Boolean type=kotlin.Boolean value=true
+        then: CALL 'public abstract fun skipToGroupEnd (): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122' type=androidx.compose.runtime.Composer? origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:43)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:419)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:388)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:431)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:95)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:36)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:29)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:102)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:22)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:53)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.runPhasedPipeline(AbstractCliPipeline.kt:109)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.execute(AbstractCliPipeline.kt:68)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:78)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:44)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:90)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.exec(CLICompiler.kt:352)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:175)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:38)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:504)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:421)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileNonIncrementally(IncrementalCompilerRunner.kt:306)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:133)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:679)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:93)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1806)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN INLINE_LAMBDA name:SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122$lambda$121 visibility:private modality:FINAL returnType:kotlin.Unit
+  VALUE_PARAMETER kind:ExtensionReceiver name:$this$Box index:0 type:androidx.compose.foundation.layout.BoxScope
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$icon index:1 type:androidx.compose.ui.graphics.vector.ImageVector
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$color index:2 type:androidx.compose.ui.graphics.Color
+  VALUE_PARAMETER kind:Regular name:$composer index:3 type:androidx.compose.runtime.Composer? [assignable]
+  VALUE_PARAMETER kind:Regular name:$changed index:4 type:kotlin.Int
+  annotations:
+    Composable
+    ComposableTarget(applier = "androidx.compose.ui.UiComposable")
+  BLOCK_BODY
+    VAR name:$i$a$-Box-CareerSetupScreenKt$SelectionModeHeroCard$1$1$1$1 type:kotlin.Int [val]
+      CONST Int type=kotlin.Int value=0
+    BLOCK type=kotlin.Unit origin=null
+      CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+        ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122$lambda$121' type=androidx.compose.runtime.Composer? origin=null
+        ARG key: CONST Int type=kotlin.Int value=-295669094
+        ARG sourceInformation: CONST String type=kotlin.String value="C631@29818L216:CareerSetupScreen.kt#rb80zm"
+      COMPOSITE type=kotlin.Unit origin=null
+        BLOCK type=kotlin.Unit origin=ARGUMENTS_REORDERING_FOR_CALL
+          VAR IR_TEMPORARY_VARIABLE name:tmp0_modifier type:androidx.compose.ui.Modifier [val]
+            CALL 'public final fun size-3ABfNKs ($this$size: androidx.compose.ui.Modifier, size: androidx.compose.ui.unit.Dp): androidx.compose.ui.Modifier declared in androidx.compose.foundation.layout.SizeKt' type=androidx.compose.ui.Modifier origin=null
+              ARG $this$size: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:Companion type:androidx.compose.ui.Modifier.Companion visibility:public [final,static] declared in androidx.compose.ui.Modifier' type=androidx.compose.ui.Modifier.Companion origin=null
+              ARG size: CALL 'public final fun <get-dp> (<this>: kotlin.Int): androidx.compose.ui.unit.Dp [inline] declared in androidx.compose.ui.unit.DpKt' type=androidx.compose.ui.unit.Dp origin=GET_PROPERTY
+                ARG <this>: CONST Int type=kotlin.Int value=28
+          CALL 'public final fun Icon-ww6aTOc (imageVector: androidx.compose.ui.graphics.vector.ImageVector, contentDescription: kotlin.String?, modifier: androidx.compose.ui.Modifier?, tint: androidx.compose.ui.graphics.Color, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int, $default: kotlin.Int): kotlin.Unit declared in androidx.compose.material3.IconKt' type=kotlin.Unit origin=null
+            ARG imageVector: GET_VAR '$icon: androidx.compose.ui.graphics.vector.ImageVector declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122$lambda$121' type=androidx.compose.ui.graphics.vector.ImageVector origin=null
+            ARG contentDescription: CONST Null type=kotlin.Nothing? value=null
+            ARG modifier: GET_VAR 'val tmp0_modifier: androidx.compose.ui.Modifier [val] declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122$lambda$121' type=androidx.compose.ui.Modifier origin=null
+            ARG tint: GET_VAR '$color: androidx.compose.ui.graphics.Color declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122$lambda$121' type=androidx.compose.ui.graphics.Color origin=null
+            ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122$lambda$121' type=androidx.compose.runtime.Composer? origin=null
+            ARG $changed: CONST Int type=kotlin.Int value=432
+            ARG $default: CONST Int type=kotlin.Int value=0
+      CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+        ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in afm.ui.screen.career.CareerSetupScreenKt.SelectionModeHeroCard_Ccamzx0$lambda$127$lambda$126$lambda$122$lambda$121' type=androidx.compose.runtime.Composer? origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrSourceCompilerForInline.generateLambdaBody(IrSourceCompilerForInline.kt:72)
+	at org.jetbrains.kotlin.codegen.inline.ExpressionLambda.generateLambdaBody(LambdaInfo.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genValueAndPut(IrInlineCodegen.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:564)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:577)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:1049)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrWhen.accept(IrWhen.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:532)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	... 45 more
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at kotlin.TuplesKt.to(Tuples.kt:43)
+	at org.jetbrains.kotlin.codegen.inline.MaxStackFrameSizeAndLocalsCalculator.addSuccessor(MaxStackFrameSizeAndLocalsCalculator.kt:227)
+	at org.jetbrains.kotlin.codegen.inline.MaxStackFrameSizeAndLocalsCalculator.visitLabel(MaxStackFrameSizeAndLocalsCalculator.kt:142)
+	at org.jetbrains.org.objectweb.asm.commons.InstructionAdapter.mark(InstructionAdapter.java:1301)
+	at org.jetbrains.org.objectweb.asm.commons.InstructionAdapter.visitLabel(InstructionAdapter.java:614)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.markNewLabel(ExpressionCodegen.kt:197)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:415)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitComposite(IrVisitor.kt:125)
+	at org.jetbrains.kotlin.ir.expressions.IrComposite.accept(IrComposite.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:532)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrSourceCompilerForInline.generateLambdaBody(IrSourceCompilerForInline.kt:72)
+	at org.jetbrains.kotlin.codegen.inline.ExpressionLambda.generateLambdaBody(LambdaInfo.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genValueAndPut(IrInlineCodegen.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:564)
+
+
