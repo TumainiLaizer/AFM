@@ -313,57 +313,59 @@ class GameManager @Inject constructor(
                 return
             }
 
-            // Health Check: Verify database integrity
-            val healthStartTime = System.currentTimeMillis()
-            val teamCount = teamsRepository.getTotalTeamCount()
-            if (teamCount == 0) {
-                Log.e("AFM_CORE", "Database health check FAILED: 0 teams found!")
-                // Attempt restore
-                if (databaseProvider.restoreFromBackup(careerId)) {
-                    initializeGameInternal(careerId) // Recursive retry after restore
-                    return
+            withContext(Dispatchers.IO) {
+                // Health Check: Verify database integrity
+                val healthStartTime = System.currentTimeMillis()
+                val teamCount = teamsRepository.getTotalTeamCount()
+                if (teamCount == 0) {
+                    Log.e("AFM_CORE", "Database health check FAILED: 0 teams found!")
+                    // Attempt restore
+                    if (databaseProvider.restoreFromBackup(careerId)) {
+                        initializeGameInternal(careerId) // Recursive retry after restore
+                        return@withContext
+                    }
+                    throw IllegalStateException("Career database is empty or corrupted (0 teams).")
                 }
-                throw IllegalStateException("Career database is empty or corrupted (0 teams).")
+                Log.d("AFM_CORE", "Health check took ${System.currentTimeMillis() - healthStartTime}ms (Found $teamCount teams)")
+
+                _initializationState.value = InitializationState.Loading(LoadingPhase.LOADING_WORLD, 0.6f)
+                
+                val season = gameDateManager.getSeasonString(state.week)
+                val team = teamsRepository.getTeamById(state.teamId)
+                val manager = managersRepository.getManagerById(state.managerId)
+                val league = team?.league?.let { leaguesRepository.getLeagueByName(it) }
+                val domesticCup = league?.countryId?.let { cid -> cupsRepository.getDomesticCupsByCountry(cid).firstOrNull()?.firstOrNull()?.name }
+
+                val context = GameContext(
+                    careerId = state.id, managerId = state.managerId, teamId = state.teamId, teamName = state.teamName,
+                    managerName = state.managerName, managerAvatar = manager?.faceImage, season = season, week = state.week,
+                    gameDateDisplay = gameDateManager.formatGameDate(state.week), currentDate = gameDateManager.formatGameDateForDb(state.week),
+                    isPreseason = seasonCalendarRepository.getSeasonPhase(state.week) == SeasonCalendarRepository.SeasonPhase.PRESEASON,
+                    isTransferWindowOpen = seasonCalendarRepository.isTransferWindowOpen(state.week),
+                    leagueName = team?.league, domesticCupName = domesticCup, saveName = state.name,
+                    difficulty = gameSettingsRepository.getDifficulty(),
+                    careerMode = state.careerMode
+                )
+
+                startDataObservation(state.teamId, season, state.week)
+                
+                // Phase 10 Optimization: Move player generation to a background task that doesn't block the init flow
+                gameScope.launch {
+                    playerGenerator.generateMissingPlayers()
+                }
+
+                ensureSeasonInitialized(context) { progress, message ->
+                    _initializationState.value = InitializationState.Loading(LoadingPhase.GENERATING_FIXTURES, 0.9f + (progress * 0.09f))
+                    _processingStatus.value = message
+                }
+
+                // Force world state update to populate initial rankings (fix for empty World screen)
+                worldSimulationEngine.updateWorldState(context.week, context.season)
+                
+                activeCareerId = careerId
+                _gameState.value = GameState.Active(context)
+                _initializationState.value = InitializationState.Ready(careerId)
             }
-            Log.d("AFM_CORE", "Health check took ${System.currentTimeMillis() - healthStartTime}ms (Found $teamCount teams)")
-
-            _initializationState.value = InitializationState.Loading(LoadingPhase.LOADING_WORLD, 0.6f)
-            
-            val season = gameDateManager.getSeasonString(state.week)
-            val team = teamsRepository.getTeamById(state.teamId)
-            val manager = managersRepository.getManagerById(state.managerId)
-            val league = team?.league?.let { leaguesRepository.getLeagueByName(it) }
-            val domesticCup = league?.countryId?.let { cid -> cupsRepository.getDomesticCupsByCountry(cid).firstOrNull()?.firstOrNull()?.name }
-
-            val context = GameContext(
-                careerId = state.id, managerId = state.managerId, teamId = state.teamId, teamName = state.teamName,
-                managerName = state.managerName, managerAvatar = manager?.faceImage, season = season, week = state.week,
-                gameDateDisplay = gameDateManager.formatGameDate(state.week), currentDate = gameDateManager.formatGameDateForDb(state.week),
-                isPreseason = seasonCalendarRepository.getSeasonPhase(state.week) == SeasonCalendarRepository.SeasonPhase.PRESEASON,
-                isTransferWindowOpen = seasonCalendarRepository.isTransferWindowOpen(state.week),
-                leagueName = team?.league, domesticCupName = domesticCup, saveName = state.name,
-                difficulty = gameSettingsRepository.getDifficulty(),
-                careerMode = state.careerMode
-            )
-
-            startDataObservation(state.teamId, season, state.week)
-            
-            // Phase 10 Optimization: Move player generation to a lower priority or run only if necessary
-            gameScope.launch {
-                playerGenerator.generateMissingPlayers()
-            }
-
-            ensureSeasonInitialized(context) { progress, message ->
-                _initializationState.value = InitializationState.Loading(LoadingPhase.GENERATING_FIXTURES, 0.9f + (progress * 0.09f))
-                _processingStatus.value = message
-            }
-
-            // Force world state update to populate initial rankings (fix for empty World screen)
-            worldSimulationEngine.updateWorldState(context.week, context.season)
-            
-            activeCareerId = careerId
-            _gameState.value = GameState.Active(context)
-            _initializationState.value = InitializationState.Ready(careerId)
             
             Log.d("AFM_CORE", "✅ GameManager READY in ${System.currentTimeMillis() - startTime}ms")
 

@@ -194,16 +194,6 @@ fun LeagueTableContent(
                 }
             }
         }
-
-        // Bottom Action
-        Surface(
-            color = FameColors.AfroSunOrange,
-            modifier = Modifier.fillMaxWidth().height(56.dp).clickable { onBack() }
-        ) {
-            Box(contentAlignment = Alignment.Center) {
-                Text("DONE", color = Color.Black, fontWeight = FontWeight.Black, fontSize = 16.sp)
-            }
-        }
     }
 }
 

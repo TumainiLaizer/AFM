@@ -91,6 +91,18 @@ class SeasonPredictorEngine @Inject constructor(
             p.copy(predictedPosition = index + 1) 
         }
 
+        if (rankedStandings.isEmpty()) {
+            return SeasonPrediction(
+                leagueName = league.name,
+                predictedStandings = emptyList(),
+                championId = -1,
+                top4Ids = emptyList(),
+                cafCLQualifiedIds = emptyList(),
+                cafCCQualifiedIds = emptyList(),
+                relegationIds = emptyList()
+            )
+        }
+
         val rank = LeagueRankings.getLeagueRank(league.country ?: "", league.level)
         val isTop5 = league.country in setOf("Egypt", "Morocco", "South Africa", "Algeria", "Tanzania")
         val isTop11 = rank <= 11
@@ -98,12 +110,16 @@ class SeasonPredictorEngine @Inject constructor(
         val clIds = mutableListOf<Int>()
         val ccIds = mutableListOf<Int>()
 
-        if (isTop11) {
+        if (isTop11 && rankedStandings.isNotEmpty()) {
             clIds.add(rankedStandings[0].teamId) // 1st always CL
-            ccIds.add(rankedStandings[2].teamId) // 3rd always CC
+            if (rankedStandings.size >= 3) {
+                ccIds.add(rankedStandings[2].teamId) // 3rd always CC
+            }
             
-            if (isTop5) {
+            if (isTop5 && rankedStandings.size >= 2) {
                 clIds.add(rankedStandings[1].teamId) // 2nd CL for Top 5
+            }
+            if (isTop5 && rankedStandings.size >= 4) {
                 ccIds.add(rankedStandings[3].teamId) // 4th CC for Top 5
             }
         }
@@ -125,7 +141,7 @@ class SeasonPredictorEngine @Inject constructor(
             top4Ids = rankedStandings.take(4).map { it.teamId },
             cafCLQualifiedIds = clIds,
             cafCCQualifiedIds = ccIds,
-            relegationIds = rankedStandings.takeLast(league.relegationSpots).map { it.teamId }
+            relegationIds = rankedStandings.takeLast(league.relegationSpots.coerceAtMost(rankedStandings.size)).map { it.teamId }
         )
     }
 

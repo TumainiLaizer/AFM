@@ -12,7 +12,7 @@ object FameColors {
     // ============ BRAND COLORS - NEW DESIGN SYSTEM ============
 
     /** Deep Navy Charcoal - Updated to greyish background */
-    val DeepNavyBlack = Color(0xFF44474E)
+    val DeepNavyBlack = Color(0xFF3C434B)
 
     /** Header Gradient Start - Dark Grey */
     val HeaderDark = Color(0xFF2C2E33)

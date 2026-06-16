@@ -390,18 +390,20 @@ fun DashboardNextMatchCard(
                         }
                     }
                     
-                    Button(
-                        onClick = onSimulate,
-                        enabled = !isAdvancing,
-                        modifier = Modifier.weight(1f).height(44.dp),
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1B3A26)),
-                        shape = RoundedCornerShape(4.dp),
-                        border = BorderStroke(1.dp, FameColors.GrowthGreen.copy(alpha = 0.5f)),
-                        contentPadding = PaddingValues(horizontal = 4.dp)
-                    ) {
-                        Icon(Icons.Default.PlayArrow, null, tint = Color.White, modifier = Modifier.size(16.dp))
-                        Spacer(modifier = Modifier.width(4.dp))
-                        Text("SIMULATE", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 11.sp, maxLines = 1)
+                    if (!isMatchToday) {
+                        Button(
+                            onClick = onSimulate,
+                            enabled = !isAdvancing,
+                            modifier = Modifier.weight(1f).height(44.dp),
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1B3A26)),
+                            shape = RoundedCornerShape(4.dp),
+                            border = BorderStroke(1.dp, FameColors.GrowthGreen.copy(alpha = 0.5f)),
+                            contentPadding = PaddingValues(horizontal = 4.dp)
+                        ) {
+                            Icon(Icons.Default.PlayArrow, null, tint = Color.White, modifier = Modifier.size(16.dp))
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text("SIMULATE", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 11.sp, maxLines = 1)
+                        }
                     }
                 }
             }
