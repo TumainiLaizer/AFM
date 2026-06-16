@@ -480,18 +480,7 @@ interface PlayersDao {
     """)
     fun getPlayersByLeague(leagueName: String): Flow<List<PlayersEntity>>
 
-    @Query("""
-        SELECT 
-            id, name, age, position, position_category, nationality, 
-            team_name, team_id, rating, potential, market_value, salary, 
-            morale, current_form, injury_status, suspended, retired, 
-            free_agent, transfer_list_status, personality_type, 
-            pace, acceleration, stamina, passing, vision, finishing, 
-            defending, strength, dribbling, crossing, heading, 
-            creativity, skill, agility, positioning, anticipation, 
-            decisions, teamwork, composure, aggression, injury_risk, region, contract_expiry
-        FROM players 
-        ORDER BY rating DESC
-    """)
+    @SuppressWarnings(RoomWarnings.QUERY_MISMATCH)
+    @Query("SELECT * FROM players ORDER BY rating DESC")
     fun getAllSummaries(): Flow<List<PlayerSummary>>
 }

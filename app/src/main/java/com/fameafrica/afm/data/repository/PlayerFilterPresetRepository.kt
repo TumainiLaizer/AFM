@@ -2,7 +2,7 @@ package com.fameafrica.afm.data.repository
 
 import com.fameafrica.afm.data.database.dao.PlayerFilterPresetDao
 import com.fameafrica.afm.data.database.entities.PlayerFilterPresetEntity
-import com.fameafrica.afm.data.model.PlayerFilter
+import com.fameafrica.afm.data.database.model.PlayerFilter
 import kotlinx.coroutines.flow.Flow
 import kotlinx.serialization.json.Json
 import javax.inject.Inject

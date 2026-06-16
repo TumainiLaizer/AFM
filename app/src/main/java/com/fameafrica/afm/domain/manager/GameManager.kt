@@ -8,6 +8,7 @@ import com.fameafrica.afm.data.repository.*
 import com.fameafrica.afm.domain.model.SimulationEvent
 import com.fameafrica.afm.utils.GameDateManager
 import kotlinx.coroutines.*
+import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -44,7 +45,8 @@ class GameManager @Inject constructor(
     private val trainingSchedulerEngine: TrainingSchedulerEngine,
     private val economyManager: EconomyManager,
     private val leagueSimulator: LeagueSimulator,
-    private val seasonPreviewNewsGenerator: SeasonPreviewNewsGenerator
+    private val seasonPreviewNewsGenerator: SeasonPreviewNewsGenerator,
+    private val inboxActionEngine: com.fameafrica.afm.domain.manager.inbox.InboxActionEngine
 ) {
 
     enum class CareerMode {
@@ -109,13 +111,14 @@ class GameManager @Inject constructor(
     private val _initializationState = MutableStateFlow<InitializationState>(InitializationState.Idle)
     val initializationState: StateFlow<InitializationState> = _initializationState.asStateFlow()
 
-    private val _gameEvents = MutableSharedFlow<GameEvent>(extraBufferCapacity = 32)
+    private val _gameEvents = MutableSharedFlow<GameEvent>(extraBufferCapacity = 32, onBufferOverflow = BufferOverflow.DROP_OLDEST)
     val gameEvents: SharedFlow<GameEvent> = _gameEvents.asSharedFlow()
 
     private val _dailyEvents = MutableStateFlow<List<SimulationEvent>>(emptyList())
     val dailyEvents: StateFlow<List<SimulationEvent>> = _dailyEvents.asStateFlow()
 
-    private var stopSimulation = false
+    @Volatile private var stopSimulation = false
+    @Volatile private var isInitialized = false
 
     private val gameScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
 
@@ -256,7 +259,7 @@ class GameManager @Inject constructor(
             
             initializationJob = gameScope.launch {
                 try {
-                    withTimeout(120000) {
+                    withTimeout(60000) {
                         initializeGameInternal(careerId)
                     }
                 } catch (e: TimeoutCancellationException) {
@@ -350,7 +353,7 @@ class GameManager @Inject constructor(
                 startDataObservation(state.teamId, season, state.week)
                 
                 // Phase 10 Optimization: Move player generation to a background task that doesn't block the init flow
-                gameScope.launch {
+                gameScope.launch(Dispatchers.Default) {
                     playerGenerator.generateMissingPlayers()
                 }
 
@@ -363,6 +366,7 @@ class GameManager @Inject constructor(
                 worldSimulationEngine.updateWorldState(context.week, context.season)
                 
                 activeCareerId = careerId
+                isInitialized = true
                 _gameState.value = GameState.Active(context)
                 _initializationState.value = InitializationState.Ready(careerId)
             }
@@ -391,13 +395,18 @@ class GameManager @Inject constructor(
             }
             launch {
                 while(isActive) {
-                    val team = teamsRepository.getTeamById(teamId)
-                    if (team != _currentTeam.value) _currentTeam.value = team
-                    
-                    val manager = managersRepository.getManagerByTeamId(teamId)
-                    if (manager != _currentManager.value) _currentManager.value = manager
-                    
-                    delay(10000) // Poll for static/slow changes
+                    try {
+                        val team = teamsRepository.getTeamById(teamId)
+                        if (team != _currentTeam.value) _currentTeam.value = team
+                        
+                        val manager = managersRepository.getManagerByTeamId(teamId)
+                        if (manager != _currentManager.value) _currentManager.value = manager
+                        
+                        yield()
+                        delay(5000) // Poll for static/slow changes
+                    } catch (e: Exception) {
+                        Log.e("AFM_CORE", "Error during observation polling", e)
+                    }
                 }
             }
             launch {
@@ -466,6 +475,14 @@ class GameManager @Inject constructor(
                         // Update time to the new day
                         advanceTime(context, newDay)
                         
+                        // Check for mandatory events and pause if necessary
+                        if (events.any { it.shouldStop }) {
+                            events.filter { it.shouldStop }.forEach { event ->
+                                inboxActionEngine.processEvent(event)
+                            }
+                            stopSimulation = true
+                        }
+                        
                         saveGame(context.careerId)
                         databaseProvider.backupDatabase(context.careerId)
                     }
@@ -506,9 +523,11 @@ class GameManager @Inject constructor(
         // Log memory status for monitoring
         Log.d("AFM_CORE", "Memory: Used=${used/1024/1024}MB, Max=${max/1024/1024}MB, Free=${free/1024/1024}MB")
 
-        if (free < 30 * 1024 * 1024) { // 30MB threshold
-            Log.w("AFM_CORE", "Memory pressure detected, triggering GC")
+        // Aggressive memory management for 1GB RAM devices
+        if (free < 100 * 1024 * 1024) { // 100MB threshold for lower-end devices
+            Log.w("AFM_CORE", "Memory pressure high (${used/1024/1024}MB), triggering aggressive GC")
             System.gc()
+            System.runFinalization()
         }
     }
 
@@ -562,12 +581,14 @@ class GameManager @Inject constructor(
             val leagues = leaguesRepository.getAllLeagues().firstOrNull() ?: emptyList()
             val totalLeagues = leagues.size
             
-            leagues.forEachIndexed { index, league ->
-                onProgress(index.toFloat() / totalLeagues, "Scheduling ${league.name}...")
-                val teams = teamsRepository.getTeamsByLeague(league.name).firstOrNull() ?: emptyList()
-                if (teams.isNotEmpty()) {
-                    fixturesRepository.generateBalancedLeagueFixtures(league.name, newSeason, teams, "${year}-08-15 15:00")
-                    leagueStandingsRepository.initializeLeagueStandings(league.name, year, teams)
+            leagues.chunked(5).forEach { chunk ->
+                chunk.forEach { league ->
+                    val teams = teamsRepository.getTeamsByLeague(league.name).firstOrNull() ?: emptyList()
+                    if (teams.isNotEmpty()) {
+                        fixturesRepository.generateBalancedLeagueFixtures(league.name, newSeason, teams, "${year}-08-15 15:00")
+                        leagueStandingsRepository.initializeLeagueStandings(league.name, year, teams)
+                    }
+                    yield() // Prevent blocking
                 }
             }
             

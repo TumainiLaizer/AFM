@@ -9,9 +9,8 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.catch
-import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.*
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -62,24 +61,22 @@ class NewsViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true) }
 
-            combine(
-                newsRepository.getAllNews(),
-                newsRepository.getTopNews(10),
-                newsRepository.getTransferNews(),
-                newsRepository.getNewsByTeam(teamId)
-            ) { all, top, transfers, team ->
+            // Using Dispatchers.IO for database access
+            val news = withContext(Dispatchers.IO) {
+                val allFlow = newsRepository.getAllNews().firstOrNull() ?: emptyList()
+                val top = newsRepository.getTopNews(10).firstOrNull() ?: emptyList()
+                val transfers = newsRepository.getTransferNews().firstOrNull() ?: emptyList()
+                val team = newsRepository.getNewsByTeam(teamId).firstOrNull() ?: emptyList()
+
                 NewsUiState(
-                    allNews = all.sortedByDescending { it.timestamp },
+                    allNews = allFlow.take(50).sortedByDescending { it.timestamp },
                     topNews = top,
-                    transferNews = transfers,
-                    teamNews = team,
+                    transferNews = transfers.take(20),
+                    teamNews = team.take(20),
                     isLoading = false
                 )
-            }.catch { e ->
-                _uiState.update { it.copy(isLoading = false, error = e.message) }
-            }.collect { newState ->
-                _uiState.value = newState
             }
+            _uiState.value = news
         }
     }
 

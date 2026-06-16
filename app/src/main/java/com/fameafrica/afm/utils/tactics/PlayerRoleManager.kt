@@ -2,8 +2,8 @@ package com.fameafrica.afm.utils.tactics
 
 import com.fameafrica.afm.data.database.entities.PlayersEntity
 import com.fameafrica.afm.data.database.entities.TacticsEntity
-import com.fameafrica.afm.domain.model.enums.PlayerArchetype
-import com.fameafrica.afm.domain.model.enums.PlayerRole
+import com.fameafrica.afm.data.database.model.enums.PlayerArchetype
+import com.fameafrica.afm.data.database.model.enums.PlayerRole
 
 object PlayerRoleManager {
 

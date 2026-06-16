@@ -2,8 +2,8 @@ package com.fameafrica.afm.domain.manager
 
 import com.fameafrica.afm.data.database.entities.*
 import com.fameafrica.afm.data.repository.*
-import com.fameafrica.afm.domain.model.match.MatchIntensity
-import com.fameafrica.afm.domain.model.match.MatchUpdate
+import com.fameafrica.afm.data.database.model.match.MatchIntensity
+import com.fameafrica.afm.data.database.model.match.MatchUpdate
 import com.fameafrica.afm.utils.constants.AfricanFootballDataHelper
 import com.fameafrica.afm.utils.tactics.LineupUtils
 import com.fameafrica.afm.utils.tactics.TacticalMatchupEngine
@@ -120,7 +120,7 @@ class MatchSimulationEngine @Inject constructor(
     fun simulateMatch(
         fixture: FixturesEntity,
         userTeamId: Int = -1
-    ): Flow<MatchUpdate> = flow {
+    ): Flow<com.fameafrica.afm.data.database.model.match.MatchUpdate> = flow {
         val homeTeamObj = teamsRepository.getTeamById(fixture.homeTeamId)!!
         val awayTeamObj = teamsRepository.getTeamById(fixture.awayTeamId)!!
 
@@ -169,31 +169,31 @@ class MatchSimulationEngine @Inject constructor(
         val totalMinutes = 90 + Random.nextInt(2, 6)
         
         for (min in 1..totalMinutes) {
-            emit(MatchUpdate.MinuteUpdate(min))
+            emit(_root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchUpdate.MinuteUpdate(min))
             
             processManagerAI(min, homeSim, awaySim, fixture.id)
             processManagerAI(min, awaySim, homeSim, fixture.id)
             
             // Check for substitution events to emit
             (homeSim.events + awaySim.events).filter { it.minute == min && (it.eventType == EventType.SUBSTITUTION.value) }.forEach {
-                emit(MatchUpdate.EventUpdate(it, intensity = MatchIntensity.LOW))
+                emit(_root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchUpdate.EventUpdate(it, intensity = _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.LOW))
             }
 
             val event = simulateMinuteAndReturn(min, homeSim, awaySim, fixture, params, weather)
             if (event != null) {
                 updateInGameMomentum(homeSim, awaySim, event)
-                emit(MatchUpdate.EventUpdate(event, intensity = mapEventToIntensity(event)))
+                emit(_root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchUpdate.EventUpdate(event, intensity = mapEventToIntensity(event)))
                 if (event.eventType == EventType.GOAL.value || event.eventType == EventType.PENALTY_SCORED.value) {
-                    emit(MatchUpdate.ScoreUpdate(homeSim.score, awaySim.score))
+                    emit(_root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchUpdate.ScoreUpdate(homeSim.score, awaySim.score))
                 }
             }
 
             if (min == 45) {
-                emit(MatchUpdate.HalfTime)
+                emit(_root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchUpdate.HalfTime)
             }
         }
 
-        emit(MatchUpdate.FullTime)
+        emit(_root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchUpdate.FullTime)
     }
 
     private fun simulateMinuteAndReturn(
@@ -207,23 +207,23 @@ class MatchSimulationEngine @Inject constructor(
         return result
     }
 
-    private fun mapEventToIntensity(event: MatchEventsEntity): MatchIntensity {
+    private fun mapEventToIntensity(event: MatchEventsEntity): com.fameafrica.afm.data.database.model.match.MatchIntensity {
         return when (event.eventType) {
             EventType.GOAL.value,
             EventType.PENALTY_SCORED.value,
             EventType.OWN_GOAL.value ->
-                MatchIntensity.GOAL
+                _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.GOAL
 
             EventType.SHOT_ON_TARGET.value,
             EventType.PENALTY_MISSED.value,
             EventType.BIG_CHANCE_MISSED.value,
-            EventType.SAVE.value -> MatchIntensity.BIG_CHANCE
+            EventType.SAVE.value -> _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.BIG_CHANCE
 
             EventType.RED_CARD.value,
             EventType.INJURY.value,
-            EventType.VAR.value -> MatchIntensity.DRAMA
+            EventType.VAR.value -> _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.DRAMA
 
-            EventType.YELLOW_CARD.value -> MatchIntensity.CARD
+            EventType.YELLOW_CARD.value -> _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.CARD
 
             EventType.SHOT.value,
             EventType.SHOT_OFF_TARGET.value,
@@ -231,7 +231,7 @@ class MatchSimulationEngine @Inject constructor(
             EventType.OFFSIDE.value,
             EventType.KEY_PASS.value,
             EventType.DRIBBLE.value,
-            EventType.CROSS.value -> MatchIntensity.BUILD_UP
+            EventType.CROSS.value -> _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.BUILD_UP
 
             EventType.SUBSTITUTION.value,
             EventType.FOUL.value,
@@ -239,9 +239,9 @@ class MatchSimulationEngine @Inject constructor(
             EventType.TACKLE.value,
             EventType.INTERCEPTION.value,
             EventType.BLOCK.value,
-            EventType.ASSIST.value -> MatchIntensity.LOW
+            EventType.ASSIST.value -> _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.LOW
 
-            else -> MatchIntensity.LOW
+            else -> _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.LOW
         }
     }
 

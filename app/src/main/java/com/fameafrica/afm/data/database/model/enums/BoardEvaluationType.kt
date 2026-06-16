@@ -1,4 +1,4 @@
-package com.fameafrica.afm.domain.model.enums
+package com.fameafrica.afm.data.database.model.enums
 
 enum class BoardStatus(val value: String) {
     SAFE("Safe"),

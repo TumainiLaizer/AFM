@@ -20,7 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.fameafrica.afm.data.model.PlayerFilter
+import com.fameafrica.afm.data.database.model.PlayerFilter
 import com.fameafrica.afm.ui.theme.AFMTextStyles
 import com.fameafrica.afm.ui.theme.FameColors
 

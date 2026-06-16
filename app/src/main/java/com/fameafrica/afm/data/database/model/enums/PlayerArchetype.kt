@@ -1,4 +1,4 @@
-package com.fameafrica.afm.domain.model.enums
+package com.fameafrica.afm.data.database.model.enums
 
 enum class PlayerArchetype(val value: String) {
     DYNAMIC_FORWARD("DYNAMIC_FORWARD"),

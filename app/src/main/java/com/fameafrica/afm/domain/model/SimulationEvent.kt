@@ -225,4 +225,17 @@ sealed class SimulationEvent {
         override val importance: Int = 8,
         override val shouldStop: Boolean = true
     ) : SimulationEvent()
+
+    data class NationalTeamCallUp(
+        val countryName: String,
+        val playersSelected: List<String>,
+        override val importance: Int = 9,
+        override val shouldStop: Boolean = false
+    ) : SimulationEvent()
+
+    data class InternationalBreak(
+        val message: String,
+        override val importance: Int = 10,
+        override val shouldStop: Boolean = true
+    ) : SimulationEvent()
 }

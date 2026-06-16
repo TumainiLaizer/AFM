@@ -5,7 +5,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.fameafrica.afm.data.database.entities.*
-import com.fameafrica.afm.data.model.CareerSaveModel
+import com.fameafrica.afm.data.database.model.CareerSaveModel
 import com.fameafrica.afm.data.repository.*
 import com.fameafrica.afm.domain.manager.CareerManager
 import com.fameafrica.afm.domain.manager.GameManager

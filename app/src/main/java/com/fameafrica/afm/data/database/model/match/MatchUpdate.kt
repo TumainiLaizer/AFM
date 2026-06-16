@@ -1,4 +1,4 @@
-package com.fameafrica.afm.domain.model.match
+package com.fameafrica.afm.data.database.model.match
 
 import com.fameafrica.afm.data.database.entities.MatchCommentaryEntity
 import com.fameafrica.afm.data.database.entities.MatchEventsEntity
@@ -8,7 +8,7 @@ sealed class MatchUpdate {
     data class EventUpdate(
         val event: MatchEventsEntity,
         val commentary: MatchCommentaryEntity? = null,
-        val intensity: MatchIntensity = MatchIntensity.LOW
+        val intensity: com.fameafrica.afm.data.database.model.match.MatchIntensity = _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.LOW
     ) : MatchUpdate()
     data class ScoreUpdate(val homeScore: Int, val awayScore: Int) : MatchUpdate()
     object HalfTime : MatchUpdate()

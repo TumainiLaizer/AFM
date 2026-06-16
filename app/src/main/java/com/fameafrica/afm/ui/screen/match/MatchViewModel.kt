@@ -8,8 +8,8 @@ import com.fameafrica.afm.domain.manager.GameManager
 import com.fameafrica.afm.domain.manager.MatchSimulationEngine
 import com.fameafrica.afm.utils.commentary.AfricanFootballCommentaryGenerator
 import com.fameafrica.afm.utils.constants.AfricanFootballDataHelper
-import com.fameafrica.afm.domain.model.match.MatchSpeed
-import com.fameafrica.afm.domain.model.match.MatchUpdate
+import com.fameafrica.afm.data.database.model.match.MatchSpeed
+import com.fameafrica.afm.data.database.model.match.MatchUpdate
 import com.fameafrica.afm.domain.manager.DynamicPacingEngine
 import com.fameafrica.afm.ui.screen.match.model.MatchVisualizerUiState
 import com.fameafrica.afm.ui.screen.match.model.MomentumPoint
@@ -170,7 +170,7 @@ data class MatchUiState(
     val manOfTheMatch: PlayerLineupUiModel? = null,
     val possession: Float = 50f,
     val currentMinute: Int = 0,
-    val matchSpeed: MatchSpeed = MatchSpeed.NORMAL,
+    val matchSpeed: com.fameafrica.afm.data.database.model.match.MatchSpeed = _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchSpeed.NORMAL,
     val isPaused: Boolean = false,
     val canSkip: Boolean = true,
     val otherFixtures: List<FixtureUiModel> = emptyList(),

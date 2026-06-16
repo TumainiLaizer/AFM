@@ -3,10 +3,10 @@ package com.fameafrica.afm.data.repository.impl
 import com.fameafrica.afm.data.database.dao.FixturesDao
 import com.fameafrica.afm.data.database.dao.PlayersDao
 import com.fameafrica.afm.data.database.dao.TeamsDao
-import com.fameafrica.afm.domain.model.core.Match
-import com.fameafrica.afm.domain.model.core.Player
-import com.fameafrica.afm.domain.model.core.Team
-import com.fameafrica.afm.domain.repository.GameRepository
+import com.fameafrica.afm.data.database.model.core.Match
+import com.fameafrica.afm.data.database.model.core.Player
+import com.fameafrica.afm.data.database.model.core.Team
+import com.fameafrica.afm.data.repository.GameRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
@@ -17,10 +17,10 @@ class GameRepositoryImpl @Inject constructor(
     private val fixturesDao: FixturesDao,
 ) : GameRepository {
 
-    override fun getPlayersForTeam(teamId: Int): Flow<List<Player>> {
+    override fun getPlayersForTeam(teamId: Int): Flow<List<com.fameafrica.afm.data.database.model.core.Player>> {
         return playersDao.getPlayersByTeamId(teamId).map { entities ->
             entities.map { entity ->
-                Player(
+                _root_ide_package_.com.fameafrica.afm.data.database.model.core.Player(
                     id = entity.id,
                     name = entity.name,
                     teamId = entity.teamId,
@@ -39,10 +39,10 @@ class GameRepositoryImpl @Inject constructor(
         }
     }
 
-    override fun getTeam(teamId: Int): Flow<Team?> {
+    override fun getTeam(teamId: Int): Flow<com.fameafrica.afm.data.database.model.core.Team?> {
         return teamsDao.getByIdFlow(teamId).map { entity ->
             entity?.let {
-                Team(
+                _root_ide_package_.com.fameafrica.afm.data.database.model.core.Team(
                     id = it.id,
                     name = it.name,
                     league = it.league,
@@ -61,11 +61,11 @@ class GameRepositoryImpl @Inject constructor(
         }
     }
 
-    override fun getNextMatch(teamId: Int): Flow<Match?> {
+    override fun getNextMatch(teamId: Int): Flow<com.fameafrica.afm.data.database.model.core.Match?> {
         // We'll use getUpcomingFixturesByTeam and take the first one
         return fixturesDao.getUpcomingFixturesByTeam(teamId, "2025-01-01").map { entities ->
             entities.firstOrNull()?.let {
-                Match(
+                _root_ide_package_.com.fameafrica.afm.data.database.model.core.Match(
                     id = it.id,
                     homeTeamId = it.homeTeamId,
                     homeTeamName = it.homeTeam,

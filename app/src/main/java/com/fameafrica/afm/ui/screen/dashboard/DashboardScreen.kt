@@ -181,7 +181,8 @@ fun DashboardContent(
                         reputation = uiState.reputationValue,
                         xpCurrent = uiState.managerXp,
                         xpMax = uiState.managerMaxXp,
-                        country = uiState.managerNationality
+                        country = uiState.managerNationality,
+                        gameDate = uiState.gameDate
                     )
                 }
 
@@ -196,19 +197,21 @@ fun DashboardContent(
                 }
 
                 item {
-                    DashboardNextMatchCard(
-                        homeTeam = uiState.clubName,
-                        awayTeam = uiState.nextMatchOpponent,
-                        matchDate = uiState.nextMatchDate,
-                        matchTime = uiState.nextMatchTime,
-                        stadium = uiState.nextMatchStadium,
-                        leagueMatchday = uiState.nextMatchCompetition,
-                        isMatchToday = uiState.isMatchToday,
-                        isAdvancing = uiState.isAdvancing,
-                        onContinue = onAdvanceDay,
-                        onSimulate = onSimulate,
-                        onPlayMatch = { onNavigateToMatch(uiState.nextMatchId) }
-                    )
+                    if (!uiState.isPreseason || uiState.nextMatchCompetition.isNotEmpty()) {
+                        DashboardNextMatchCard(
+                            homeTeam = uiState.clubName,
+                            awayTeam = uiState.nextMatchOpponent,
+                            matchDate = uiState.nextMatchDate,
+                            matchTime = uiState.nextMatchTime,
+                            stadium = uiState.nextMatchStadium,
+                            leagueMatchday = uiState.nextMatchCompetition,
+                            isMatchToday = uiState.isMatchToday,
+                            isAdvancing = uiState.isAdvancing,
+                            onContinue = onAdvanceDay,
+                            onSimulate = onSimulate,
+                            onPlayMatch = { onNavigateToMatch(uiState.nextMatchId) }
+                        )
+                    }
                 }
 
                 item {
@@ -265,6 +268,10 @@ fun DashboardContent(
                     }
                 }
             )
+        }
+
+        if (uiState.isAdvancing) {
+            com.fameafrica.afm.ui.components.common.ProcessingOverlay()
         }
     }
 }

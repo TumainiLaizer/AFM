@@ -4,8 +4,8 @@ import com.fameafrica.afm.data.database.dao.BoardEvaluationDao
 import com.fameafrica.afm.data.database.dao.EvaluationWithDetails
 import com.fameafrica.afm.data.database.entities.BoardEvaluationEntity
 import com.fameafrica.afm.data.database.entities.FinancialBehavior
-import com.fameafrica.afm.domain.model.enums.BoardStatus
-import com.fameafrica.afm.domain.model.enums.FinancialStatus
+import com.fameafrica.afm.data.database.model.enums.BoardStatus
+import com.fameafrica.afm.data.database.model.enums.FinancialStatus
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 import javax.inject.Provider
@@ -84,14 +84,14 @@ class BoardEvaluationRepository @Inject constructor(
             }
 
             val financialStatus = when {
-                finances.bankBalance > 10_000_000 -> FinancialStatus.RICH.value
-                finances.profitLoss > 0 && wageBillRatio < 0.7 -> FinancialStatus.STABLE.value
-                wageBillRatio > 0.9 || finances.bankBalance < 0 -> FinancialStatus.IN_DEBT.value
-                else -> FinancialStatus.STABLE.value
+                finances.bankBalance > 10_000_000 -> _root_ide_package_.com.fameafrica.afm.data.database.model.enums.FinancialStatus.RICH.value
+                finances.profitLoss > 0 && wageBillRatio < 0.7 -> _root_ide_package_.com.fameafrica.afm.data.database.model.enums.FinancialStatus.STABLE.value
+                wageBillRatio > 0.9 || finances.bankBalance < 0 -> _root_ide_package_.com.fameafrica.afm.data.database.model.enums.FinancialStatus.IN_DEBT.value
+                else -> _root_ide_package_.com.fameafrica.afm.data.database.model.enums.FinancialStatus.STABLE.value
             }
             
-            if (financialStatus == FinancialStatus.IN_DEBT.value) satisfactionAdjustment -= 5
-            if (financialStatus == FinancialStatus.RICH.value) satisfactionAdjustment += 2
+            if (financialStatus == _root_ide_package_.com.fameafrica.afm.data.database.model.enums.FinancialStatus.IN_DEBT.value) satisfactionAdjustment -= 5
+            if (financialStatus == _root_ide_package_.com.fameafrica.afm.data.database.model.enums.FinancialStatus.RICH.value) satisfactionAdjustment += 2
             
             updateFinancialStatus(managerId, financialStatus)
         }
@@ -200,11 +200,11 @@ class BoardEvaluationRepository @Inject constructor(
         val events = mutableListOf<com.fameafrica.afm.domain.model.SimulationEvent>()
 
         val newStatus = when {
-            evaluation.boardSatisfaction >= 60 -> BoardStatus.SAFE.value
-            evaluation.boardSatisfaction >= 45 -> BoardStatus.UNDER_REVIEW.value
-            evaluation.boardSatisfaction >= 30 -> BoardStatus.ON_THIN_ICE.value
-            evaluation.boardSatisfaction >= 15 -> BoardStatus.CRITICAL.value
-            else -> BoardStatus.SACKED.value
+            evaluation.boardSatisfaction >= 60 -> _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.SAFE.value
+            evaluation.boardSatisfaction >= 45 -> _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.UNDER_REVIEW.value
+            evaluation.boardSatisfaction >= 30 -> _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.ON_THIN_ICE.value
+            evaluation.boardSatisfaction >= 15 -> _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.CRITICAL.value
+            else -> _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.SACKED.value
         }
 
         if (evaluation.status != newStatus) {
@@ -212,15 +212,15 @@ class BoardEvaluationRepository @Inject constructor(
             
             // Trigger specific events based on status change
             when (newStatus) {
-                BoardStatus.CRITICAL.value -> {
+                _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.CRITICAL.value -> {
                     triggerBoardMeeting(managerId)
                     events.add(com.fameafrica.afm.domain.model.SimulationEvent.BoardMeeting(
                         title = "Critical Performance Review",
                         message = "The board is extremely disappointed with recent results. Your job is at immediate risk."
                     ))
                 }
-                BoardStatus.ON_THIN_ICE.value -> triggerMediaLeaks(managerId)
-                BoardStatus.SACKED.value -> {
+                _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.ON_THIN_ICE.value -> triggerMediaLeaks(managerId)
+                _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.SACKED.value -> {
                     processDismissal(managerId)
                     events.add(com.fameafrica.afm.domain.model.SimulationEvent.BoardMeeting(
                         title = "Termination of Contract",
@@ -341,8 +341,8 @@ class BoardEvaluationRepository @Inject constructor(
                 managerId = managerId,
                 managerName = managerName,
                 boardSatisfaction = 50,
-                financialStatus = FinancialStatus.STABLE.value,
-                status = BoardStatus.SAFE.value
+                financialStatus = _root_ide_package_.com.fameafrica.afm.data.database.model.enums.FinancialStatus.STABLE.value,
+                status = _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.SAFE.value
             )
             boardEvaluationDao.insert(evaluation)
             evaluation
@@ -376,9 +376,9 @@ class BoardEvaluationRepository @Inject constructor(
             teamName = details?.teamName,
             teamLeague = details?.teamLeague,
             isAtRisk = evaluation.status in listOf(
-                BoardStatus.UNDER_REVIEW.value,
-                BoardStatus.ON_THIN_ICE.value,
-                BoardStatus.CRITICAL.value
+                _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.UNDER_REVIEW.value,
+                _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.ON_THIN_ICE.value,
+                _root_ide_package_.com.fameafrica.afm.data.database.model.enums.BoardStatus.CRITICAL.value
             )
         )
     }

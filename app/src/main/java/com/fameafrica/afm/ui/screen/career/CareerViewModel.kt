@@ -2,7 +2,7 @@ package com.fameafrica.afm.ui.screen.career
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.fameafrica.afm.data.model.CareerSaveModel
+import com.fameafrica.afm.data.database.model.CareerSaveModel
 import com.fameafrica.afm.domain.manager.CareerManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

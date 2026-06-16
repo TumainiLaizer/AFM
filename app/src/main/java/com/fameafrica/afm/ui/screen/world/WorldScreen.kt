@@ -8,7 +8,6 @@ import androidx.compose.foundation.lazy.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.Article
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.material3.TabRowDefaults.tabIndicatorOffset
@@ -28,7 +27,9 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
-import com.fameafrica.afm.R
+import com.fameafrica.afm.data.database.model.GlobalClubRanking
+import com.fameafrica.afm.data.database.model.GlobalLeagueRanking
+import com.fameafrica.afm.data.database.model.GlobalManagerRanking
 import com.fameafrica.afm.domain.model.SimulationEvent
 import com.fameafrica.afm.ui.components.common.SidebarSectionTitle
 import com.fameafrica.afm.ui.components.common.TeamLogo
@@ -627,7 +628,7 @@ fun RegionalFilterChairmanAAA(selected: String, regions: List<String>, onSelecte
 }
 
 @Composable
-fun LeagueRankingsTableAAA(rankings: List<com.fameafrica.afm.data.models.GlobalLeagueRanking>, onNavigateToLeague: (String) -> Unit) {
+fun LeagueRankingsTableAAA(rankings: List<GlobalLeagueRanking>, onNavigateToLeague: (String) -> Unit) {
     DashboardSectionCard(modifier = Modifier.fillMaxWidth()) {
         rankings.forEach { r ->
             Row(
@@ -663,7 +664,7 @@ fun LeagueRankingsTableAAA(rankings: List<com.fameafrica.afm.data.models.GlobalL
 }
 
 @Composable
-fun ClubRankingsTableAAA(rankings: List<com.fameafrica.afm.data.models.GlobalClubRanking>) {
+fun ClubRankingsTableAAA(rankings: List<GlobalClubRanking>) {
     DashboardSectionCard(modifier = Modifier.fillMaxWidth()) {
         rankings.take(10).forEach { r ->
             Row(
@@ -696,7 +697,7 @@ fun ClubRankingsTableAAA(rankings: List<com.fameafrica.afm.data.models.GlobalClu
 }
 
 @Composable
-fun ManagerRankingsTableAAA(rankings: List<com.fameafrica.afm.data.models.GlobalManagerRanking>) {
+fun ManagerRankingsTableAAA(rankings: List<GlobalManagerRanking>) {
     DashboardSectionCard(modifier = Modifier.fillMaxWidth()) {
         rankings.take(10).forEach { r ->
             Row(

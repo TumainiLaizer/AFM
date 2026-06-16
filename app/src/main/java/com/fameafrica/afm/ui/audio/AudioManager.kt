@@ -286,27 +286,15 @@ class AudioManager @Inject constructor(
     }
 
     fun onAppForeground() {
-        if (isMusicEnabled && bgmPlayer != null && ambiencePlayer == null) {
-            try {
-                bgmPlayer?.start()
-            } catch (e: Exception) {
-                Log.e(TAG, "Error starting BGM on foreground: ${e.message}")
-            }
-        } else if (isSoundEnabled && ambiencePlayer != null) {
-            try {
-                ambiencePlayer?.start()
-            } catch (e: Exception) {
-                Log.e(TAG, "Error starting ambience on foreground: ${e.message}")
-            }
+        if (isMusicEnabled) {
+            startBGM()
         }
+        // Ambience will be restarted when needed by the Match Engine
     }
 
     fun onAppBackground() {
-        try {
-            bgmPlayer?.pause()
-            ambiencePlayer?.pause()
-        } catch (e: Exception) {
-            Log.e(TAG, "Error pausing players on background: ${e.message}")
-        }
+        // Fully release resources when moving to background to prevent RAM usage and crashes
+        stopBGM()
+        stopAmbience()
     }
 }

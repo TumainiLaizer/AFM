@@ -2,6 +2,7 @@ package com.fameafrica.afm.ui.screen.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.fameafrica.afm.data.database.model.CareerSaveModel
 import com.fameafrica.afm.domain.manager.CareerManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
@@ -10,7 +11,7 @@ import javax.inject.Inject
 
 data class LoadGameUiState(
     val isLoading: Boolean = true,
-    val saveGames: List<com.fameafrica.afm.data.model.CareerSaveModel> = emptyList(),
+    val saveGames: List<CareerSaveModel> = emptyList(),
     val errorMessage: String? = null
 )
 

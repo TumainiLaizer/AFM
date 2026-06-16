@@ -116,11 +116,18 @@ class DashboardViewModel @Inject constructor(
                         else FootballThemePreset.MANAGER_MODE
                     )
                     
+                    // Move processing to Dispatchers.Default
                     withContext(Dispatchers.Default) {
-                        val headlines = state.world.newsHeadlines.take(10).map { it.headline }
+                        // Prioritize league news
+                        val allHeadlines = state.world.newsHeadlines
+                        val leagueHeadlines = allHeadlines.filter { it.category == state.competition.leagueName }
+                        val otherHeadlines = allHeadlines.filter { it.category != state.competition.leagueName }
+                        val sortedHeadlines = (leagueHeadlines + otherHeadlines).take(5).map { it.headline }
+
                         val standings = state.competition.leagueStandings.take(5).map { s ->
                             StandingUiModel(s.position, s.teamName, s.matchesPlayed, s.goalDifference, s.points)
                         }
+                        val feedItems = state.world.dailyEvents.take(5)
 
                         _uiState.update { current ->
                             current.copy(
@@ -146,8 +153,8 @@ class DashboardViewModel @Inject constructor(
                                 squadDepth = state.club.squad.size,
                                 pendingTransfers = state.transfer.activeBids.size,
                                 openVacancies = state.world.newsHeadlines.count { it.headline.contains("Vacancy", true) || it.headline.contains("Sacked", true) },
-                                liveHeadlines = headlines,
-                                feedItems = state.world.dailyEvents,
+                                liveHeadlines = sortedHeadlines,
+                                feedItems = feedItems,
                                 standings = standings,
                                 clubTheme = currentTheme
                             )
@@ -184,7 +191,9 @@ class DashboardViewModel @Inject constructor(
                     current.copy(
                         isMatchToday = match != null && match.matchDate == current.gameDate,
                         nextMatchId = match?.id ?: 0,
-                        nextMatchOpponent = match?.let { if (it.homeTeamId == current.clubId) it.awayTeam else it.homeTeam } ?: "No Match",
+                        nextMatchOpponent = match?.let { 
+                            if (it.homeTeamId == current.clubId) it.awayTeam else it.homeTeam 
+                        } ?: "No Match",
                         nextMatchDate = match?.matchDate ?: "",
                         nextMatchStadium = match?.stadium ?: "TBD",
                         nextMatchCompetition = match?.cupName ?: match?.league ?: "Friendly"
@@ -196,6 +205,10 @@ class DashboardViewModel @Inject constructor(
 
     fun startAdvancement() {
         gameManager.processNextTurn()
+        viewModelScope.launch {
+            kotlinx.coroutines.delay(3000)
+            _uiState.update { it.copy(isAdvancing = false) }
+        }
     }
 
     fun stopAdvancement() {

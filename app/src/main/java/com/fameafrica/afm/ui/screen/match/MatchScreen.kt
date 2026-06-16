@@ -31,7 +31,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
 import com.fameafrica.afm.R
 import com.fameafrica.afm.data.database.entities.*
-import com.fameafrica.afm.domain.model.match.MatchSpeed
+import com.fameafrica.afm.data.database.model.match.MatchSpeed
 import com.fameafrica.afm.ui.components.common.*
 import com.fameafrica.afm.ui.screen.match.components.MatchVisualizerPitch
 import com.fameafrica.afm.ui.theme.*
@@ -76,7 +76,7 @@ fun MatchScreenContent(
     onProceedToNextState: () -> Unit,
     onSkipMatch: () -> Unit,
     onSubmitPressConferenceResponse: (String) -> Unit,
-    onSetMatchSpeed: (MatchSpeed) -> Unit,
+    onSetMatchSpeed: (com.fameafrica.afm.data.database.model.match.MatchSpeed) -> Unit,
     onTogglePause: () -> Unit
 ) {
     BackHandler(enabled = uiState.matchStatus !in listOf(MatchStatus.MATCH_SUMMARY, MatchStatus.FULL_TIME)) { }
@@ -143,7 +143,7 @@ fun LiveMatchScreen(
     onNavigateToTactics: () -> Unit,
     onProceedToNextState: () -> Unit,
     onSkipMatch: () -> Unit,
-    onSetMatchSpeed: (MatchSpeed) -> Unit,
+    onSetMatchSpeed: (com.fameafrica.afm.data.database.model.match.MatchSpeed) -> Unit,
     onTogglePause: () -> Unit,
     onToggleStats: () -> Unit
 ) {
@@ -213,10 +213,10 @@ fun LiveMatchScreen(
 }
 
 @Composable
-fun SpeedControlButtons(currentSpeed: MatchSpeed, onSet: (MatchSpeed) -> Unit) {
+fun SpeedControlButtons(currentSpeed: com.fameafrica.afm.data.database.model.match.MatchSpeed, onSet: (com.fameafrica.afm.data.database.model.match.MatchSpeed) -> Unit) {
     Surface(color = Color.Black.copy(alpha = 0.6f), shape = RoundedCornerShape(4.dp)) {
         Column(modifier = Modifier.padding(2.dp)) {
-            MatchSpeed.entries.take(3).forEach { speed ->
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchSpeed.entries.take(3).forEach { speed ->
                 val isSelected = currentSpeed == speed
                 Box(
                     modifier = Modifier
@@ -228,9 +228,9 @@ fun SpeedControlButtons(currentSpeed: MatchSpeed, onSet: (MatchSpeed) -> Unit) {
                 ) {
                     Text(
                         text = when(speed) {
-                            MatchSpeed.FAST -> "x4"
-                            MatchSpeed.NORMAL -> "x2"
-                            MatchSpeed.EXTENDED -> "x1"
+                            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchSpeed.FAST -> "x4"
+                            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchSpeed.NORMAL -> "x2"
+                            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchSpeed.EXTENDED -> "x1"
                             else -> "x1"
                         },
                         color = if (isSelected) Color.Black else Color.White,

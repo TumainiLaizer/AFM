@@ -1,6 +1,6 @@
 package com.fameafrica.afm.domain.manager
 
-import com.fameafrica.afm.domain.model.core.Player
+import com.fameafrica.afm.data.database.model.core.Player
 import com.fameafrica.afm.data.database.entities.TrainingSessionType
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -13,7 +13,7 @@ class TrainingImpactSystem @Inject constructor() {
      * Returns a pair of (Attribute Growth, Fatigue Increase).
      */
     fun calculateSessionImpact(
-        player: Player,
+        player: com.fameafrica.afm.data.database.model.core.Player,
         sessionType: TrainingSessionType
     ): TrainingImpact {
         return when (sessionType) {

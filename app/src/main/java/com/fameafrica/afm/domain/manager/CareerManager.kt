@@ -6,7 +6,7 @@ import com.fameafrica.afm.data.database.CareerDatabaseProvider
 import com.fameafrica.afm.data.database.StaticDatabaseProvider
 import com.fameafrica.afm.data.repository.*
 import com.fameafrica.afm.data.database.entities.*
-import com.fameafrica.afm.data.model.CareerSaveModel
+import com.fameafrica.afm.data.database.model.CareerSaveModel
 import com.fameafrica.afm.ui.theme.FootballThemePreset
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.*

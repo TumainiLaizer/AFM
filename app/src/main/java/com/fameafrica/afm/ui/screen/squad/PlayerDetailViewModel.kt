@@ -10,6 +10,7 @@ import com.fameafrica.afm.utils.formatters.CurrencyFormatter
 import com.fameafrica.afm.utils.NationalityUtils
 import com.fameafrica.afm.utils.tactics.PlayerRoleManager
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -259,7 +260,7 @@ class PlayerDetailViewModel @Inject constructor(
     }
 
     private fun refreshPlayer(playerId: Int) {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             _uiState.update { it.copy(isLoading = true) }
             val player = playersRepository.getPlayerById(playerId)
             if (player == null) {
@@ -269,36 +270,19 @@ class PlayerDetailViewModel @Inject constructor(
 
             val currencyContext = currencyFormatter.getCurrentContext()
             val isUserPlayer = player.teamName == uiState.value.currentTeamName
-
-            val contractDef = async { playerContractsRepository.getContractByPlayerId(playerId) }
-            val agentDef = async { agentClientsRepository.getAgentByPlayerId(playerId) }
-            val awardsDef = async { seasonAwardsRepository.getPlayerAwards(playerId).firstOrNull() ?: emptyList() }
-            val interviewsDef = async { interviewsRepository.getPlayerInterviews(playerId).firstOrNull() ?: emptyList() }
-            val reactionsDef = async { playerReactionsRepository.getPlayerReactionsDashboard(playerId, player.name) }
-            val activeLoanDef = async { playerLoansRepository.getActiveLoanByPlayerId(playerId) }
-            val teamDef = async { player.teamId?.let { teamsRepository.getTeamById(it) } }
-            val contractDashboardDef = async { playerContractsRepository.getTeamContractDashboard(player.teamName) }
-            val shortlistDef = async { shortlistRepository.isShortlisted(playerId).firstOrNull() ?: false }
-
-            val goals = matchEventsRepository.getPlayerGoalCount(playerId)
-            val assists = matchEventsRepository.getPlayerAssistCount(playerId)
-            val formHistory = generateFormHistory(playerId)
-            val recentMatches = loadRecentMatches(playerId)
+            
+            // Only load overview data initially
             val playerStatus = loadPlayerStatus(player)
+            val attributes = PlayerAttributesUiModel.fromPlayersEntity(player)
             val attributeTrends = loadAttributeTrends(playerId)
-            val transferInterest = loadTransferInterest(playerId, currencyContext)
-
-            val playerEvents = matchEventsRepository.getEventsByPlayer(playerId).firstOrNull() ?: emptyList()
-            val shots = playerEvents.count { it.eventType in listOf("SHOT", "SHOT_ON_TARGET", "GOAL") }
-
-            // Get roles based on archetype
+            
+            // Roles
             val roles = PlayerRoleManager.mapArchetypeToRoles(player.archetype)
 
             _uiState.update {
                 it.copy(
                     isLoading = false,
                     isUserPlayer = isUserPlayer,
-                    isShortlisted = shortlistDef.await(),
                     player = PlayerDetailUiModel(
                         id = player.id,
                         name = player.name,
@@ -320,15 +304,9 @@ class PlayerDetailViewModel @Inject constructor(
                         isCaptain = player.isCaptain,
                         isViceCaptain = player.isViceCaptain,
                         marketValue = player.marketValue,
-                        formattedValue = currencyFormatter.format(
-                            player.marketValue.toDouble(),
-                            currencyContext
-                        ),
+                        formattedValue = currencyFormatter.format(player.marketValue.toDouble(), currencyContext),
                         wage = player.salary,
-                        formattedWage = currencyFormatter.formatWage(
-                            player.salary,
-                            currencyContext
-                        ),
+                        formattedWage = currencyFormatter.formatWage(player.salary, currencyContext),
                         contractExpiry = player.contractExpiry,
                         injuryStatus = player.injuryStatus,
                         personality = player.personalityType,
@@ -338,107 +316,119 @@ class PlayerDetailViewModel @Inject constructor(
                         experience = player.experience,
                         positionCategory = player.positionCategory,
                     ),
-                    attributes = PlayerAttributesUiModel.fromPlayersEntity(player),
-                    formHistory = formHistory,
-                    seasonStats = SeasonStatsUiModel(
-                        matches = player.matches, goals = goals, assists = assists,
-                        manOfMatch = player.manOfMatch, yellowCards = player.yellowCards,
-                        redCards = player.redCards, passAccuracy = 85, tackles = 0,
-                        shots = shots, shotsOnTarget = 0, fouls = 0, offsides = 0,
-                        minutesPlayed = player.matches * 90, expectedGoals = 0.0,
-                        expectedAssists = 0.0, goalConversionRate = if (shots > 0) (goals * 100 / shots) else 0,
-                        cleanSheets = player.cleanSheets
-                    ),
-                    contract = contractDef.await()?.let { c ->
-                        ContractUiModel(
-                            salary = c.salary.toLong(),
-                            formattedSalary = currencyFormatter.formatWage(c.salary.toDouble(), currencyContext),
-                            expiry = c.contractEndDate,
-                            isExpiring = c.contractStatus == "EXPIRING",
-                            releaseClause = c.releaseClause,
-                            formattedReleaseClause = currencyFormatter.format(c.releaseClause.toDouble(), currencyContext),
-                            signingBonus = c.signingBonus ?: 0,
-                            formattedSigningBonus = currencyFormatter.format(c.signingBonus?.toDouble() ?: 0.0, currencyContext),
-                            isNegotiable = c.isNegotiable
-                        )
-                    },
-                    agent = agentDef.await()?.let { a ->
-                        AgentUiModel(
-                            name = a.agentName,
-                            agency = a.agency ?: "",
-                            negotiationPower = a.negotiationPower,
-                            commissionRate = a.commissionRate.toDouble(),
-                            reputation = a.reputation,
-                            yearsExperience = a.yearsExperience,
-                            successfulDeals = a.successfulDeals,
-                            totalDealValue = a.totalDealValue
-                        )
-                    },
-                    careerAwards = awardsDef.await().map { a ->
-                        AwardUiModel(
-                            awardType = a.awardType,
-                            season = a.season,
-                            category = a.awardCategory,
-                            description = a.description ?: "",
-                            prizeMoney = a.prizeMoney ?: 0,
-                            formattedPrizeMoney = currencyFormatter.format(a.prizeMoney?.toDouble() ?: 0.0, currencyContext)
-                        )
-                    },
-                    recentInterviews = interviewsDef.await().take(5).map { i ->
-                        InterviewUiModel(
-                            journalistName = i.journalistName,
-                            date = i.dateRequested,
-                            topic = i.topic,
-                            responseType = i.responseType,
-                            impactOnMorale = i.impactOnMorale
-                        )
-                    },
-                    injuryHistory = if (player.isInjured) listOf(
-                        InjuryUiModel(
-                            type = player.injuryStatus,
-                            severity = "MODERATE",
-                            date = player.updatedAt,
-                            days = player.recoveryTime,
-                            injuryStatus = player.injuryStatus,
-                            recoveryTime = player.recoveryTime
-                        )
-                    ) else emptyList(),
+                    attributes = attributes,
                     playerStatus = playerStatus,
-                    attributeTrends = attributeTrends,
-                    recentMatches = recentMatches,
-                    transferInterest = transferInterest,
-                    relationships = emptyList(),
-                    mediaBuzz = emptyList(),
-                    trainingProgress = TrainingProgressUiModel(
-                        overallProgress = calculateTrainingProgress(player),
-                        recentImprovements = emptyList(),
-                        focusArea = player.gameplayFocus,
-                        intensity = TrainingIntensity.NORMAL,
-                        satisfaction = 75
-                    ),
-                    injuryRisk = null,
-                    playerReactions = reactionsDef.await(),
-                    activeLoan = activeLoanDef.await()?.let { loan ->
-                        LoanUiModel(
-                            receivingTeam = loan.receivingTeam,
-                            duration = loan.duration,
-                            optionToBuy = loan.optionToBuy,
-                            formattedBuyOptionFee = currencyFormatter.format(loan.buyOptionFee?.toDouble() ?: 0.0, currencyContext)
-                        )
-                    },
-                    teamInfo = teamDef.await(),
-                    contractDashboard = contractDashboardDef.await(),
-                    transferWindowOpen = transferWindowsRepository.getCurrentWindow() != null,
-                    teamForm = null,
-                    trainingOutcome = TrainingOutcomeUiModel(
-                        moraleEffect = (player.morale / 20) - 2,
-                        fatigueImpact = (100 - player.stamina) / 10,
-                        injuryProbability = if (player.isInjured) 100 else (100 - player.stamina) / 5,
-                        focusArea = player.gameplayFocus ?: "General",
-                        intensity = TrainingIntensity.NORMAL
-                    )
+                    attributeTrends = attributeTrends
                 )
             }
+            
+            // Load remaining data asynchronously without blocking UI update
+            loadAdditionalTabData(playerId, currencyContext)
+        }
+    }
+
+    private suspend fun loadAdditionalTabData(playerId: Int, currencyContext: CurrencyFormatter.CurrencyContext) {
+        val player = playersRepository.getPlayerById(playerId) ?: return
+        
+        val contract = playerContractsRepository.getContractByPlayerId(playerId)
+        val agent = agentClientsRepository.getAgentByPlayerId(playerId)
+        val awards = seasonAwardsRepository.getPlayerAwards(playerId).firstOrNull() ?: emptyList()
+        val interviews = interviewsRepository.getPlayerInterviews(playerId).firstOrNull() ?: emptyList()
+        val reactions = playerReactionsRepository.getPlayerReactionsDashboard(playerId, player.name)
+        val activeLoan = playerLoansRepository.getActiveLoanByPlayerId(playerId)
+        val team = player.teamId?.let { teamsRepository.getTeamById(it) }
+        val contractDashboard = playerContractsRepository.getTeamContractDashboard(player.teamName)
+        val isShortlisted = shortlistRepository.isShortlisted(playerId).firstOrNull() ?: false
+
+        val goals = matchEventsRepository.getPlayerGoalCount(playerId)
+        val assists = matchEventsRepository.getPlayerAssistCount(playerId)
+        val formHistory = generateFormHistory(playerId)
+        val recentMatches = loadRecentMatches(playerId)
+        val transferInterest = loadTransferInterest(playerId, currencyContext)
+        val playerEvents = matchEventsRepository.getEventsByPlayer(playerId).firstOrNull() ?: emptyList()
+        val shots = playerEvents.count { it.eventType in listOf("SHOT", "SHOT_ON_TARGET", "GOAL") }
+
+        _uiState.update {
+            it.copy(
+                isShortlisted = isShortlisted,
+                seasonStats = SeasonStatsUiModel(
+                    matches = player.matches, goals = goals, assists = assists,
+                    manOfMatch = player.manOfMatch, yellowCards = player.yellowCards,
+                    redCards = player.redCards, passAccuracy = 85, tackles = 0,
+                    shots = shots, shotsOnTarget = 0, fouls = 0, offsides = 0,
+                    minutesPlayed = player.matches * 90, expectedGoals = 0.0,
+                    expectedAssists = 0.0, goalConversionRate = if (shots > 0) (goals * 100 / shots) else 0,
+                    cleanSheets = player.cleanSheets
+                ),
+                contract = contract?.let { c ->
+                    ContractUiModel(
+                        salary = c.salary.toLong(),
+                        formattedSalary = currencyFormatter.formatWage(c.salary.toDouble(), currencyContext),
+                        expiry = c.contractEndDate,
+                        isExpiring = c.contractStatus == "EXPIRING",
+                        releaseClause = c.releaseClause,
+                        formattedReleaseClause = currencyFormatter.format(c.releaseClause.toDouble(), currencyContext),
+                        signingBonus = c.signingBonus ?: 0,
+                        formattedSigningBonus = currencyFormatter.format(c.signingBonus?.toDouble() ?: 0.0, currencyContext),
+                        isNegotiable = c.isNegotiable
+                    )
+                },
+                agent = agent?.let { a ->
+                    AgentUiModel(
+                        name = a.agentName,
+                        agency = a.agency ?: "",
+                        negotiationPower = a.negotiationPower,
+                        commissionRate = a.commissionRate.toDouble(),
+                        reputation = a.reputation,
+                        yearsExperience = a.yearsExperience,
+                        successfulDeals = a.successfulDeals,
+                        totalDealValue = a.totalDealValue
+                    )
+                },
+                careerAwards = awards.map { a ->
+                    AwardUiModel(
+                        awardType = a.awardType,
+                        season = a.season,
+                        category = a.awardCategory,
+                        description = a.description ?: "",
+                        prizeMoney = a.prizeMoney ?: 0,
+                        formattedPrizeMoney = currencyFormatter.format(a.prizeMoney?.toDouble() ?: 0.0, currencyContext)
+                    )
+                },
+                recentInterviews = interviews.take(5).map { i ->
+                    InterviewUiModel(
+                        journalistName = i.journalistName,
+                        date = i.dateRequested,
+                        topic = i.topic,
+                        responseType = i.responseType,
+                        impactOnMorale = i.impactOnMorale
+                    )
+                },
+                injuryHistory = if (player.isInjured) listOf(
+                    InjuryUiModel(
+                        type = player.injuryStatus,
+                        severity = "MODERATE",
+                        date = player.updatedAt,
+                        days = player.recoveryTime,
+                        injuryStatus = player.injuryStatus,
+                        recoveryTime = player.recoveryTime
+                    )
+                ) else emptyList(),
+                formHistory = formHistory,
+                recentMatches = recentMatches,
+                transferInterest = transferInterest,
+                playerReactions = reactions,
+                activeLoan = activeLoan?.let { loan ->
+                    LoanUiModel(
+                        receivingTeam = loan.receivingTeam,
+                        duration = loan.duration,
+                        optionToBuy = loan.optionToBuy,
+                        formattedBuyOptionFee = currencyFormatter.format(loan.buyOptionFee?.toDouble() ?: 0.0, currencyContext)
+                    )
+                },
+                teamInfo = team,
+                contractDashboard = contractDashboard
+            )
         }
     }
 

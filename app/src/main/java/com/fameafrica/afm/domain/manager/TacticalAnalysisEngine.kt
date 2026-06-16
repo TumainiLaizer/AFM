@@ -1,6 +1,6 @@
 package com.fameafrica.afm.domain.manager
 
-import com.fameafrica.afm.domain.model.core.Player
+import com.fameafrica.afm.data.database.model.core.Player
 import com.fameafrica.afm.data.database.entities.TacticsEntity
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -12,7 +12,7 @@ class TacticalAnalysisEngine @Inject constructor() {
      * Analyzes how well a squad fits a specific tactical setup.
      * Returns a score from 0-100.
      */
-    fun calculateSquadTacticalFit(players: List<Player>, tactics: TacticsEntity): Int {
+    fun calculateSquadTacticalFit(players: List<com.fameafrica.afm.data.database.model.core.Player>, tactics: TacticsEntity): Int {
         if (players.isEmpty()) return 0
         
         var totalFit = 0
@@ -23,7 +23,7 @@ class TacticalAnalysisEngine @Inject constructor() {
         return (totalFit / players.size).coerceIn(0, 100)
     }
 
-    private fun calculatePlayerRoleFit(player: Player, tactics: TacticsEntity): Int {
+    private fun calculatePlayerRoleFit(player: com.fameafrica.afm.data.database.model.core.Player, tactics: TacticsEntity): Int {
         // Simplified logic: Check if player's position matches formation requirements
         // and if their attributes align with playstyle (e.g., Pace for Counter-Attack)
         val positionFit = if (tactics.formation.contains(player.position)) 80 else 40

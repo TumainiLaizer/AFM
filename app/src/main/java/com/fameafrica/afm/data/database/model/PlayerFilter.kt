@@ -1,4 +1,4 @@
-package com.fameafrica.afm.data.model
+package com.fameafrica.afm.data.database.model
 
 import kotlinx.serialization.Serializable
 

@@ -1,7 +1,7 @@
 package com.fameafrica.afm.domain.manager
 
-import com.fameafrica.afm.domain.model.match.MatchIntensity
-import com.fameafrica.afm.domain.model.match.MatchSpeed
+import com.fameafrica.afm.data.database.model.match.MatchIntensity
+import com.fameafrica.afm.data.database.model.match.MatchSpeed
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -9,22 +9,22 @@ import javax.inject.Singleton
 class DynamicPacingEngine @Inject constructor() {
 
     fun calculateDelay(
-        intensity: MatchIntensity,
-        speed: MatchSpeed,
+        intensity: com.fameafrica.afm.data.database.model.match.MatchIntensity,
+        speed: com.fameafrica.afm.data.database.model.match.MatchSpeed,
         minute: Int,
         scoreDifference: Int,
         isDerby: Boolean = false,
         isFinal: Boolean = false
     ): Long {
         var baseDelay = when (intensity) {
-            MatchIntensity.LOW -> 1500L
-            MatchIntensity.BUILD_UP -> 1200L
-            MatchIntensity.BIG_CHANCE -> 800L
-            MatchIntensity.GOAL -> 3000L
-            MatchIntensity.CARD -> 2000L
-            MatchIntensity.VAR -> 3500L
-            MatchIntensity.DRAMA -> 2500L
-            MatchIntensity.FINAL_MOMENTS -> 1000L
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.LOW -> 1500L
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.BUILD_UP -> 1200L
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.BIG_CHANCE -> 800L
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.GOAL -> 3000L
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.CARD -> 2000L
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.VAR -> 3500L
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.DRAMA -> 2500L
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchIntensity.FINAL_MOMENTS -> 1000L
         }
 
         // Contextual modifiers
@@ -37,10 +37,10 @@ class DynamicPacingEngine @Inject constructor() {
         }
 
         return when (speed) {
-            MatchSpeed.INSTANT -> 0L
-            MatchSpeed.FAST -> (baseDelay * 0.4).toLong()
-            MatchSpeed.NORMAL -> baseDelay
-            MatchSpeed.EXTENDED -> (baseDelay * 1.8).toLong()
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchSpeed.INSTANT -> 0L
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchSpeed.FAST -> (baseDelay * 0.4).toLong()
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchSpeed.NORMAL -> baseDelay
+            _root_ide_package_.com.fameafrica.afm.data.database.model.match.MatchSpeed.EXTENDED -> (baseDelay * 1.8).toLong()
         }
     }
 }

@@ -10,9 +10,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
-import androidx.compose.material.icons.automirrored.filled.Sort
 import androidx.compose.material.icons.filled.*
-import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.*
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.*
@@ -35,7 +33,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
 import com.fameafrica.afm.R
 import com.fameafrica.afm.data.database.entities.PlayerFilterPresetEntity
-import com.fameafrica.afm.data.model.PlayerFilter
+import com.fameafrica.afm.data.database.model.PlayerFilter
 import com.fameafrica.afm.ui.common.*
 import com.fameafrica.afm.ui.theme.*
 import com.fameafrica.afm.utils.formatters.CurrencyFormatter

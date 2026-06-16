@@ -2,6 +2,9 @@ package com.fameafrica.afm.ui.screen.world
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.fameafrica.afm.data.database.model.GlobalClubRanking
+import com.fameafrica.afm.data.database.model.GlobalLeagueRanking
+import com.fameafrica.afm.data.database.model.GlobalManagerRanking
 import com.fameafrica.afm.data.repository.*
 import com.fameafrica.afm.domain.manager.GameManager
 import com.fameafrica.afm.domain.model.SimulationEvent
@@ -26,9 +29,9 @@ data class WorldUiState(
     val clubRankings: List<ClubRankingUiModel> = emptyList(),
     val internationalFixtures: List<InternationalFixtureUiModel> = emptyList(),
     val transferNews: List<TransferNewsUiModel> = emptyList(),
-    val globalLeagueRankings: List<com.fameafrica.afm.data.models.GlobalLeagueRanking> = emptyList(),
-    val globalClubRankings: List<com.fameafrica.afm.data.models.GlobalClubRanking> = emptyList(),
-    val globalManagerRankings: List<com.fameafrica.afm.data.models.GlobalManagerRanking> = emptyList(),
+    val globalLeagueRankings: List<GlobalLeagueRanking> = emptyList(),
+    val globalClubRankings: List<GlobalClubRanking> = emptyList(),
+    val globalManagerRankings: List<GlobalManagerRanking> = emptyList(),
     val wonderkids: List<PlayerStatUiModel> = emptyList(),
     val dailySimulationEvents: List<SimulationEvent> = emptyList(),
     val nextMatch: MatchHubUiModel? = null,
@@ -272,9 +275,9 @@ class WorldViewModel @Inject constructor(
             val clubRankingsJson = rankingsRepository.getRankingsByType("CLUB").firstOrNull()?.jsonData
             val managerRankingsJson = rankingsRepository.getRankingsByType("MANAGER").firstOrNull()?.jsonData
 
-            val globalLeagues = leagueRankingsJson?.let { json.decodeFromString<List<com.fameafrica.afm.data.models.GlobalLeagueRanking>>(it) } ?: emptyList()
-            val globalClubs = clubRankingsJson?.let { json.decodeFromString<List<com.fameafrica.afm.data.models.GlobalClubRanking>>(it) } ?: emptyList()
-            val globalManagers = managerRankingsJson?.let { json.decodeFromString<List<com.fameafrica.afm.data.models.GlobalManagerRanking>>(it) } ?: emptyList()
+            val globalLeagues = leagueRankingsJson?.let { json.decodeFromString<List<GlobalLeagueRanking>>(it) } ?: emptyList()
+            val globalClubs = clubRankingsJson?.let { json.decodeFromString<List<GlobalClubRanking>>(it) } ?: emptyList()
+            val globalManagers = managerRankingsJson?.let { json.decodeFromString<List<GlobalManagerRanking>>(it) } ?: emptyList()
             val lastUpdated = rankingsRepository.getRankingsByType("LEAGUE").firstOrNull()?.lastUpdated ?: 0L
 
             // Group leagues by African Football Regions

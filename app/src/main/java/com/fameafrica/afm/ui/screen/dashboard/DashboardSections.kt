@@ -37,108 +37,70 @@ fun DashboardManagerHeader(
     xpCurrent: Int,
     xpMax: Int,
     country: String,
+    gameDate: String,
     modifier: Modifier = Modifier
 ) {
     Column(
         modifier = modifier
             .fillMaxWidth()
-            .background(
-                Brush.verticalGradient(
-                    listOf(Color.Black, Color.Transparent)
-                )
-            )
+            .background(Brush.verticalGradient(listOf(Color.Black, Color.Transparent)))
             .padding(12.dp)
     ) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            // Portrait
-            Box(
-                modifier = Modifier
-                    .size(64.dp)
-                    .border(2.dp, FameColors.TrophyGold, CircleShape)
-                    .padding(2.dp)
-                    .clip(CircleShape)
-            ) {
-                Image(
-                    painter = painterResource(id = R.drawable.default_manager),
-                    contentDescription = "Manager",
-                    modifier = Modifier.fillMaxSize(),
-                    contentScale = ContentScale.Crop
-                )
-            }
-
+        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
+            ManagerPortrait(country)
             Spacer(modifier = Modifier.width(12.dp))
-
-            Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    text = "MANAGER",
-                    style = AFMTextStyles.textXXS,
-                    color = FameColors.GrowthGreen,
-                    fontWeight = FontWeight.Bold
-                )
-                Text(
-                    text = name.uppercase(),
-                    style = AFMTextStyles.textLG.copy(fontSize = 18.sp),
-                    color = Color.White
-                )
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Image(
-                        painter = painterResource(id = R.drawable.default_flag),
-                        contentDescription = country,
-                        modifier = Modifier.size(14.dp)
-                    )
-                    Spacer(modifier = Modifier.width(4.dp))
-                    Text(
-                        text = country,
-                        style = AFMTextStyles.textXXS,
-                        color = FameColors.MutedParchment
-                    )
-                }
-                
-                Spacer(modifier = Modifier.height(6.dp))
-                
-                XpProgressBar(current = xpCurrent, max = xpMax)
-            }
-
+            ManagerDetails(name, country, gameDate, xpCurrent, xpMax)
             Spacer(modifier = Modifier.width(12.dp))
-
             LevelBadge(level = level)
         }
-
         Spacer(modifier = Modifier.height(12.dp))
+        ResourceGrid(bankBalance, coins, reputation)
+    }
+}
 
-        // Resources Row
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-            ResourceWidget(
-                label = "BANK BALANCE",
-                value = bankBalance,
-                icon = { Text("💵", fontSize = 18.sp) },
-                modifier = Modifier.weight(1f)
-            )
-            ResourceWidget(
-                label = "COINS",
-                value = coins,
-                icon = { Text("🪙", fontSize = 18.sp) },
-                modifier = Modifier.weight(1f)
-            )
-            ResourceWidget(
-                label = "REPUTATION",
-                value = reputation.toString(),
-                icon = {
-                    Image(
-                        painter = painterResource(id = R.drawable.ic_star_gold),
-                        contentDescription = null,
-                        modifier = Modifier.size(20.dp)
-                    )
-                },
-                modifier = Modifier.weight(1f)
-            )
+@Composable
+private fun ManagerPortrait(country: String) {
+    // Note: country parameter kept for future use in portrait customization
+    Box(
+        modifier = Modifier
+            .size(64.dp)
+            .border(2.dp, FameColors.TrophyGold, CircleShape)
+            .padding(2.dp)
+            .clip(CircleShape)
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.default_manager),
+            contentDescription = "Manager",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+    }
+}
+
+@Composable
+private fun ManagerDetails(name: String, country: String, gameDate: String, xpCurrent: Int, xpMax: Int) {
+    Column(modifier = Modifier.weight(1f)) {
+        Text(text = "MANAGER", style = AFMTextStyles.textXXS, color = FameColors.GrowthGreen, fontWeight = FontWeight.Bold)
+        Text(text = name.uppercase(), style = AFMTextStyles.textLG.copy(fontSize = 18.sp), color = Color.White)
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Image(painter = painterResource(id = R.drawable.default_flag), contentDescription = country, modifier = Modifier.size(14.dp))
+            Spacer(modifier = Modifier.width(4.dp))
+            Text(text = country, style = AFMTextStyles.textXXS, color = FameColors.MutedParchment)
+            Text(text = gameDate, style = AFMTextStyles.textXXS, color = FameColors.TrophyGold, modifier = Modifier.padding(start = 8.dp))
         }
+        Spacer(modifier = Modifier.height(6.dp))
+        XpProgressBar(current = xpCurrent, max = xpMax)
+    }
+}
+
+@Composable
+private fun ResourceGrid(bankBalance: String, coins: String, reputation: Int) {
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        ResourceWidget("BANK BALANCE", bankBalance, { Text("💵", fontSize = 18.sp) }, Modifier.weight(1f))
+        ResourceWidget("COINS", coins, { Text("🪙", fontSize = 18.sp) }, Modifier.weight(1f))
+        ResourceWidget("REPUTATION", reputation.toString(), {
+            Image(painter = painterResource(id = R.drawable.ic_star_gold), contentDescription = null, modifier = Modifier.size(20.dp))
+        }, Modifier.weight(1f))
     }
 }
 
@@ -626,12 +588,12 @@ private fun MainNavItem(label: String, icon: ImageVector, selected: Boolean, onC
 
 @Composable
 fun WidgetContainer(
+    modifier: Modifier = Modifier,
     title: String,
     subtitle: String? = null,
     backgroundColor: Color = Color.Black.copy(alpha = 0.5f),
     onAction: (() -> Unit)? = null,
     actionText: String = "VIEW ALL",
-    modifier: Modifier = Modifier,
     content: @Composable (ColumnScope.() -> Unit)
 ) {
     Surface(

@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.fameafrica.afm.data.database.entities.*
 import com.fameafrica.afm.data.database.model.PlayerSummary
-import com.fameafrica.afm.data.model.PlayerFilter
+import com.fameafrica.afm.data.database.model.PlayerFilter
 import com.fameafrica.afm.data.repository.*
 import com.fameafrica.afm.domain.manager.GameManager
 import com.fameafrica.afm.domain.scouting.ScoutingIntelligenceService

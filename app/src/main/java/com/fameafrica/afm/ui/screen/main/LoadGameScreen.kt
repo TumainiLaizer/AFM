@@ -27,7 +27,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.fameafrica.afm.R
-import com.fameafrica.afm.data.model.CareerSaveModel
+import com.fameafrica.afm.data.database.model.CareerSaveModel
 import com.fameafrica.afm.ui.components.common.GlassPanel
 import com.fameafrica.afm.ui.components.common.TeamLogo
 import com.fameafrica.afm.ui.theme.AFMTextStyles

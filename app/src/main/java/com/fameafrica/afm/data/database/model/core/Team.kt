@@ -1,4 +1,4 @@
-package com.fameafrica.afm.domain.model.core
+package com.fameafrica.afm.data.database.model.core
 
 /**
  * Core Domain Model for a Football Team.

@@ -2,7 +2,7 @@ package com.fameafrica.afm.ui.screen.match.model
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.geometry.Offset
-import com.fameafrica.afm.domain.model.match.MatchVisualizerIntensity
+import com.fameafrica.afm.data.database.model.match.MatchVisualizerIntensity
 
 @Immutable
 data class MatchVisualizerUiState(

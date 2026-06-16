@@ -509,6 +509,13 @@ fun FameNavGraph(
         }
 
         composable(
+            route = Screen.SponsorNegotiation.route,
+            arguments = listOf(navArgument("sponsorId") { type = NavType.StringType })
+        ) {
+            SponsorshipNegotiationScreen(onBack = { navController.popBackStack() })
+        }
+
+        composable(
             route = Screen.AzamPesaPayment.route,
             arguments = listOf(navArgument("bundleId") { type = NavType.StringType })
         ) { backStackEntry ->

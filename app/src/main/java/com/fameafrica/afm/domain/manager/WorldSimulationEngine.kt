@@ -2,8 +2,12 @@ package com.fameafrica.afm.domain.manager
 
 import com.fameafrica.afm.data.repository.*
 import com.fameafrica.afm.data.database.entities.*
+import com.fameafrica.afm.data.database.model.GlobalClubRanking
+import com.fameafrica.afm.data.database.model.GlobalLeagueRanking
+import com.fameafrica.afm.data.database.model.GlobalManagerRanking
 import com.fameafrica.afm.utils.GameDateManager
 import com.fameafrica.afm.domain.model.SimulationEvent
+import com.fameafrica.afm.utils.LeagueRankings
 import com.fameafrica.afm.utils.calculators.LogisticsCalculator
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
@@ -1123,14 +1127,14 @@ class WorldSimulationEngine @Inject constructor(
                 // Use the centralized rankings and reputation from utils
                 val adjustedRank = com.fameafrica.afm.utils.LeagueRankings.getLeagueRank(country, league.level)
                 val finalRating = com.fameafrica.afm.utils.LeagueRankings.getLeagueReputation(country, league.level).toDouble() / 20.0
-                
-                com.fameafrica.afm.data.models.GlobalLeagueRanking(
+
+                GlobalLeagueRanking(
                     rank = adjustedRank,
                     leagueName = league.name,
                     country = country,
                     averageRating = finalRating,
                     totalMarketValue = league.prizeMoney.toLong() * 10,
-                    region = com.fameafrica.afm.utils.LeagueRankings.getCountryRegion(country),
+                    region = LeagueRankings.getCountryRegion(country),
                     logoPath = league.logo
                 )
             }.sortedBy { it.rank }
@@ -1146,7 +1150,7 @@ class WorldSimulationEngine @Inject constructor(
         if (rankingsRepository.shouldUpdateRankings("CLUB", 30)) {
             val topTeams = teamsRepository.getTopTeamsByElo(100).firstOrNull() ?: emptyList()
             val clubRankings = topTeams.mapIndexed { index, team ->
-                com.fameafrica.afm.data.models.GlobalClubRanking(
+                GlobalClubRanking(
                     rank = index + 1,
                     clubName = team.name,
                     league = team.league,
@@ -1165,7 +1169,7 @@ class WorldSimulationEngine @Inject constructor(
             val managerRankings = allManagers.filter { it.matchesManaged >= 50 }
                 .map { manager ->
                     val team = teamsRepository.getTeamById(manager.teamId ?: -1)
-                    com.fameafrica.afm.data.models.GlobalManagerRanking(
+                    GlobalManagerRanking(
                         rank = 0,
                         managerName = manager.name,
                         currentClub = team?.name,
@@ -1174,7 +1178,7 @@ class WorldSimulationEngine @Inject constructor(
                         reputation = manager.reputation
                     )
                 }
-                .sortedWith(compareByDescending<com.fameafrica.afm.data.models.GlobalManagerRanking> { it.trophiesWon }.thenByDescending { it.winPercentage })
+                .sortedWith(compareByDescending<GlobalManagerRanking> { it.trophiesWon }.thenByDescending { it.winPercentage })
                 .take(10)
                 .mapIndexed { index, ranking -> ranking.copy(rank = index + 1) }
 

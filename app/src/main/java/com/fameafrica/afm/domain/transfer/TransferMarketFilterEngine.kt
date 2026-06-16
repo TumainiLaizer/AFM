@@ -2,8 +2,8 @@ package com.fameafrica.afm.domain.transfer
 
 import com.fameafrica.afm.data.database.entities.ScoutAssignmentsEntity
 import com.fameafrica.afm.data.database.model.PlayerSummary
-import com.fameafrica.afm.data.model.PlayerFilter
-import com.fameafrica.afm.data.model.PlayerSortOption
+import com.fameafrica.afm.data.database.model.PlayerFilter
+import com.fameafrica.afm.data.database.model.PlayerSortOption
 import javax.inject.Inject
 import javax.inject.Singleton
 
