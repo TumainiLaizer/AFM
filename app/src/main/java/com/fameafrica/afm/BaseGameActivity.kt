@@ -2,7 +2,7 @@ package com.fameafrica.afm
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import com.fameafrica.afm.ui.util.ImmersiveModeManager
+import com.fameafrica.afm.utils.ImmersiveModeManager
 
 abstract class BaseGameActivity : ComponentActivity() {
 

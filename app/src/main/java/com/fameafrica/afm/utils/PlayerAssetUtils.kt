@@ -45,7 +45,7 @@ object PlayerAssetUtils {
         val fullPool = (pool + fallbackPool).distinct()
 
         if (fullPool.isEmpty()) {
-            return "file:///android_asset/player_faces/OIG2_1_1.jpg" // Ultra-fallback
+            return "file:///android_asset/player_faces/OIG2_1_1.webp" // Ultra-fallback
         }
 
         // Deterministic selection from the stable pool
@@ -58,11 +58,11 @@ object PlayerAssetUtils {
         for (i in 1..range1) {
             for (j in 1..range2) {
                 // Add the standard pattern which is the most reliable
-                list.add("file:///android_asset/player_faces/${prefix}_${i}_${j}.jpg")
+                list.add("file:///android_asset/player_faces/${prefix}_${i}_${j}.webp")
                 
                 // Only add _001 for specific high-density prefixes where they are known to exist
                 if (prefix.startsWith("OIG4") && i == 1) {
-                    list.add("file:///android_asset/player_faces/${prefix}_${i}_${j}_001.jpg")
+                    list.add("file:///android_asset/player_faces/${prefix}_${i}_${j}_001.webp")
                 }
             }
         }
@@ -132,6 +132,6 @@ object PlayerAssetUtils {
      */
     fun getRegionCardBackground(nationality: String): String {
         val region = NationalityUtils.getNationalityItem(nationality)?.region ?: FootballRegion.EAST_AFRICA
-        return "file:///android_asset/maps/${region.name.lowercase(Locale.ROOT)}.png"
+        return "file:///android_asset/maps/${region.name.lowercase(Locale.ROOT)}.webp"
     }
 }

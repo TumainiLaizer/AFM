@@ -35,8 +35,8 @@ import com.fameafrica.afm.data.database.model.match.MatchSpeed
 import com.fameafrica.afm.ui.components.common.*
 import com.fameafrica.afm.ui.screen.match.components.MatchVisualizerPitch
 import com.fameafrica.afm.ui.theme.*
-import com.fameafrica.afm.ui.util.ImmersiveModeManager
-import com.fameafrica.afm.ui.util.ImmersiveModeManager.immersiveRoot
+import com.fameafrica.afm.utils.ImmersiveModeManager
+import com.fameafrica.afm.utils.ImmersiveModeManager.immersiveRoot
 
 @Composable
 fun MatchScreen(

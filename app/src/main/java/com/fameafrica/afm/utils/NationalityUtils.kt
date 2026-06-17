@@ -218,25 +218,25 @@ object NationalityUtils {
 
     /**
      * Returns the asset URL for a nationality flag.
-     * Flags are expected to be in "assets/flags/" and named exactly as the country name (e.g., "Tanzania.png").
+     * Flags are expected to be in "assets/flags/" and named exactly as the country name (e.g., "Tanzania.webp").
      *
      * @param nationality The exact name of the country/nationality.
      * @return The formatted file URL for the asset.
      */
     fun getFlagUrl(nationality: String): String {
-        return "file:///android_asset/flags/$nationality.png"
+        return "file:///android_asset/flags/$nationality.webp"
     }
 
     /**
      * Returns the asset URL for a waving nationality flag.
-     * Flags are expected to be in "assets/flags_waving/" and named as 2-letter codes (e.g., "tz.png").
+     * Flags are expected to be in "assets/flags_waving/" and named as 2-letter codes (e.g., "tz.webp").
      *
      * @param nationality The exact name of the country/nationality.
      * @return The formatted file URL for the asset.
      */
     fun getWavingFlagUrl(nationality: String): String {
         val code = countryToCode[nationality] ?: "default"
-        return "file:///android_asset/flags_waving/$code.png"
+        return "file:///android_asset/flags_waving/$code.webp"
     }
 
     /**

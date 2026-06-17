@@ -22,10 +22,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil.compose.AsyncImage
 import com.fameafrica.afm.R
 import com.fameafrica.afm.domain.model.SimulationEvent
 import com.fameafrica.afm.ui.components.common.TeamLogo
 import com.fameafrica.afm.ui.theme.*
+import com.fameafrica.afm.utils.NationalityUtils
 
 @Composable
 fun DashboardManagerHeader(
@@ -79,11 +81,17 @@ private fun ManagerPortrait(country: String) {
 
 @Composable
 private fun ManagerDetails(name: String, country: String, gameDate: String, xpCurrent: Int, xpMax: Int) {
-    Column(modifier = Modifier.weight(1f)) {
+    Column(modifier = Modifier) {
         Text(text = "MANAGER", style = AFMTextStyles.textXXS, color = FameColors.GrowthGreen, fontWeight = FontWeight.Bold)
         Text(text = name.uppercase(), style = AFMTextStyles.textLG.copy(fontSize = 18.sp), color = Color.White)
         Row(verticalAlignment = Alignment.CenterVertically) {
-            Image(painter = painterResource(id = R.drawable.default_flag), contentDescription = country, modifier = Modifier.size(14.dp))
+            AsyncImage(
+                model = NationalityUtils.getFlagUrl(country),
+                contentDescription = country,
+                modifier = Modifier.size(14.dp),
+                placeholder = painterResource(id = R.drawable.default_flag),
+                error = painterResource(id = R.drawable.default_flag)
+            )
             Spacer(modifier = Modifier.width(4.dp))
             Text(text = country, style = AFMTextStyles.textXXS, color = FameColors.MutedParchment)
             Text(text = gameDate, style = AFMTextStyles.textXXS, color = FameColors.TrophyGold, modifier = Modifier.padding(start = 8.dp))

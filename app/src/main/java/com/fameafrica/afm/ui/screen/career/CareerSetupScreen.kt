@@ -58,8 +58,8 @@ import com.fameafrica.afm.ui.components.common.DualModeBackground
 import com.fameafrica.afm.ui.components.common.TeamLogo
 import com.fameafrica.afm.ui.theme.*
 import com.fameafrica.afm.ui.components.*
-import com.fameafrica.afm.ui.util.ImmersiveModeManager
-import com.fameafrica.afm.ui.util.ImmersiveModeManager.immersiveRoot
+import com.fameafrica.afm.utils.ImmersiveModeManager
+import com.fameafrica.afm.utils.ImmersiveModeManager.immersiveRoot
 import com.fameafrica.afm.utils.LeagueLogoUtils
 import com.fameafrica.afm.utils.NationalityUtils
 import com.github.mikephil.charting.charts.RadarChart

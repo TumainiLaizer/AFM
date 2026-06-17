@@ -19,7 +19,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.fameafrica.afm.ui.components.common.WorldNewsTicker
 import com.fameafrica.afm.ui.screen.events.SeasonEventOverlay
 import com.fameafrica.afm.ui.theme.*
-import com.fameafrica.afm.ui.util.ImmersiveModeManager.immersiveRoot
+import com.fameafrica.afm.utils.ImmersiveModeManager.immersiveRoot
 
 @Composable
 fun DashboardScreen(

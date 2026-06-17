@@ -25,7 +25,7 @@ import androidx.compose.ui.res.painterResource
 import com.fameafrica.afm.R
 import com.fameafrica.afm.domain.model.SimulationEvent
 import com.fameafrica.afm.ui.theme.*
-import com.fameafrica.afm.ui.util.ImmersiveModeManager
+import com.fameafrica.afm.utils.ImmersiveModeManager
 
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.geometry.Offset

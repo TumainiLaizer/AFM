@@ -460,7 +460,7 @@ fun NewsScreenInterviewBoardPreview() {
                         content = "In an exclusive interview, the Simba SC manager speaks about his team's preparations and his vision for the upcoming continental campaign.",
                         category = "INTERVIEW",
                         relatedManager = "J. Jeremiah",
-                        imageUrl = "file:///android_asset/manager_faces/avatar_1.webp",
+                        imageUrl = "coach_male_official.webp",
                         journalistName = "AFN News",
                         journalistLogo = null,
                         timestamp = "2023-10-27 12:00:00",

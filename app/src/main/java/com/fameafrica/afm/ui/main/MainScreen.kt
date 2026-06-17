@@ -29,8 +29,8 @@ import com.fameafrica.afm.ui.components.FameBottomStatusBar
 import com.fameafrica.afm.ui.navigation.FameNavGraph
 import com.fameafrica.afm.ui.navigation.Screen
 import com.fameafrica.afm.ui.navigation.SidebarDrawerContent
-import com.fameafrica.afm.ui.util.ImmersiveModeManager
-import com.fameafrica.afm.ui.util.ImmersiveModeManager.immersiveRoot
+import com.fameafrica.afm.utils.ImmersiveModeManager
+import com.fameafrica.afm.utils.ImmersiveModeManager.immersiveRoot
 import com.fameafrica.afm.ui.screen.dashboard.*
 import com.fameafrica.afm.ui.theme.*
 import kotlinx.coroutines.launch

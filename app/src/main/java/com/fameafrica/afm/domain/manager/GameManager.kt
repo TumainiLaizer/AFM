@@ -478,7 +478,10 @@ class GameManager @Inject constructor(
                         // Check for mandatory events and pause if necessary
                         if (events.any { it.shouldStop }) {
                             events.filter { it.shouldStop }.forEach { event ->
-                                inboxActionEngine.processEvent(event)
+                                val action = inboxActionEngine.processEvent(event)
+                                if (action != null) {
+                                    inboxActionEngine.addAction(action)
+                                }
                             }
                             stopSimulation = true
                         }

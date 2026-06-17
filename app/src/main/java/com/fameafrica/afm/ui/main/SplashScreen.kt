@@ -22,8 +22,8 @@ import com.fameafrica.afm.R
 import com.fameafrica.afm.ui.components.common.AfricanBackground
 import com.fameafrica.afm.ui.components.common.GlassPanel
 import com.fameafrica.afm.ui.theme.*
-import com.fameafrica.afm.ui.util.ImmersiveModeManager
-import com.fameafrica.afm.ui.util.ImmersiveModeManager.immersiveRoot
+import com.fameafrica.afm.utils.ImmersiveModeManager
+import com.fameafrica.afm.utils.ImmersiveModeManager.immersiveRoot
 import kotlinx.coroutines.delay
 
 @Composable

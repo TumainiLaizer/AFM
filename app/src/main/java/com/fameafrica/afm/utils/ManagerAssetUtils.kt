@@ -29,22 +29,22 @@ object ManagerAssetUtils {
         }
 
         val pool = mutableListOf<String>()
-        // Pattern 1: prefix_i_j.jpg
+        // Pattern 1: prefix_i_j.webp
         for (i in 1..r1) {
             for (j in 1..r2) {
-                pool.add("file:///android_asset/manager_faces/${prefix}_${i}_${j}.jpg")
+                pool.add("file:///android_asset/manager_faces/${prefix}_${i}_${j}.webp")
             }
         }
-        // Pattern 2: prefixX_Y_Z.jpg
+        // Pattern 2: prefixX_Y_Z.webp
         for (i in 1..r1) {
             for (j in 1..r2) {
-                pool.add("file:///android_asset/manager_faces/${prefix}${i}_1_${j}.jpg")
+                pool.add("file:///android_asset/manager_faces/${prefix}${i}_1_${j}.webp")
             }
         }
         
         val finalPool = pool.distinct()
 
-        if (finalPool.isEmpty()) return "file:///android_asset/manager_faces/avatar_1.webp"
+        if (finalPool.isEmpty()) return "file:///android_asset/manager_faces/coach_male_official.webp"
 
         val index = (managerId.hashCode() % finalPool.size).let { if (it < 0) it + finalPool.size else it }
         return finalPool[index]

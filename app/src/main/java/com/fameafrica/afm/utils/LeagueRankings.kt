@@ -12,67 +12,66 @@ object LeagueRankings {
      */
     val countryRanks: Map<String, Int> = linkedMapOf(
 
-        // ===== ELITE CAF LEAGUES =====
+        // ===== CAF TOP LEAGUES =====
         "Egypt" to 1,
         "Morocco" to 2,
         "South Africa" to 3,
         "Algeria" to 4,
         "Tanzania" to 5,
 
-        // ===== STRONG CONTINENTAL LEAGUES =====
+        // ===== CONTINENTAL CHALLENGERS =====
         "Tunisia" to 6,
         "Angola" to 7,
         "Congo DRC" to 8,
-        "Mali" to 9,
-        "Ivory Coast" to 10,
+        "Sudan" to 9,
+        "Libya" to 10,
 
-        // ===== HIGHLY COMPETITIVE LEAGUES =====
-        "Zambia" to 11,
-        "Zanzibar" to 12, // Level 1 is slightly lower than Tanzania L1 but higher than Tanzania L2 (which would be effective rank 15)
+        // ===== STRONG CAF PARTICIPANTS =====
+        "Guinea" to 11,
+        "Ivory Coast" to 12,
         "Nigeria" to 13,
-        "Sudan" to 14,
+        "Mali" to 14,
         "Cameroon" to 15,
-        "Senegal" to 16,
 
         // ===== ESTABLISHED LEAGUES =====
-        "Ghana" to 17,
-        "Libya" to 18,
-        "Uganda" to 19,
-        "Kenya" to 20,
-        "Congo Republic" to 21,
+        "Ghana" to 16,
+        "Zambia" to 17,
+        "Uganda" to 18,
+        "Kenya" to 19,
+        "Congo Republic" to 20,
 
         // ===== DEVELOPING LEAGUES =====
-        "Rwanda" to 22,
-        "Zimbabwe" to 23,
-        "Guinea" to 24,
-        "Mozambique" to 25,
-        "Botswana" to 26,
+        "Rwanda" to 21,
+        "Zimbabwe" to 22,
+        "Mozambique" to 23,
+        "Botswana" to 24,
+        "Burkina Faso" to 25,
 
-        "Burkina Faso" to 27,
-        "Mauritania" to 28,
+        "Mauritania" to 26,
+        "Benin" to 27,
+        "Togo" to 28,
         "Madagascar" to 29,
-        "Benin" to 30,
-        "Togo" to 31,
+        "Malawi" to 30,
 
-        "Malawi" to 32,
-        "Niger" to 33,
-        "Burundi" to 34,
-        "Namibia" to 35,
-        "Cape Verde" to 36,
+        "Niger" to 31,
+        "Burundi" to 32,
+        "Namibia" to 33,
+        "Cape Verde" to 34,
+        "Gambia" to 35,
 
+        "Mauritius" to 36,
         "Central African Republic" to 37,
-        "Gambia" to 38,
-        "Liberia" to 39,
-        "Sierra Leone" to 40,
-        "Mauritius" to 41,
+        "Liberia" to 38,
+        "Sierra Leone" to 39,
+        "South Sudan" to 40,
 
-        "South Sudan" to 42,
-        "Somalia" to 43,
-        "Lesotho" to 44,
+        "Zanzibar" to 41,
+        "Equatorial Guinea" to 42,
+        "Lesotho" to 43,
+        "Somalia" to 44,
         "Djibouti" to 45,
-        "Chad" to 46,
 
-        "Equatorial Guinea" to 47
+        "Chad" to 46
     )
 
     fun getLeagueRank(country: String, level: Int = 1): Int {
@@ -83,39 +82,80 @@ object LeagueRankings {
      * Returns effective rank based on country and league level.
      * Higher levels (lower quality) increase the rank value.
      */
+    /**
+     * Returns the effective rank after applying league level penalties.
+     *
+     * Level 1 = Top Division
+     * Level 2 = Second Division
+     * Level 3 = Third Division
+     * Level 4 = Regional
+     * Level 5 = Amateur
+     */
     fun getRank(country: String?, level: Int = 1): Int {
         val baseRank = countryRanks[country] ?: 50
-        // Every level down drops the effective rank by 10 positions
-        return baseRank + (level - 1) * 10
+
+        val levelPenalty = when (level) {
+            1 -> 0
+            2 -> 5
+            3 -> 12
+            4 -> 20
+            5 -> 29
+            else -> 25 + ((level - 4) * 5)
+        }
+
+        return baseRank + levelPenalty
     }
 
+    /**
+     * League quality multiplier used for:
+     * - Transfer values
+     * - Wage expectations
+     * - Match intensity
+     * - Youth development
+     */
     fun getQualityMultiplier(country: String?, level: Int = 1): Double {
         val rank = getRank(country, level)
+
         return when {
-            rank <= 3 -> 1.0    // Elite (Egypt, Morocco, SA)
-            rank <= 6 -> 0.9    // Top (Algeria, Tunisia, Tanzania)
-            rank <= 15 -> 0.82  // High (Nigeria, Ghana, etc.)
-            rank <= 25 -> 0.75  // Medium
-            rank <= 40 -> 0.65  // Emerging
-            else -> 0.55        // Lower
+            rank <= 5 -> 1.00      // Egypt, Morocco, South Africa, Algeria, Tanzania
+            rank <= 10 -> 0.95
+            rank <= 15 -> 0.90
+            rank <= 20 -> 0.85
+            rank <= 30 -> 0.80
+            rank <= 40 -> 0.72
+            rank <= 50 -> 0.65
+            else -> 0.55
         }
     }
 
     /**
-     * Converts rank into reputation score (0–100)
+     * Converts rank into league reputation (0–100).
+     *
+     * Reputation affects:
+     * - Sponsorships
+     * - Fan growth
+     * - Player attraction
+     * - Media attention
+     * - Continental seeding
      */
     fun getLeagueReputation(country: String, level: Int = 1): Int {
         val rank = getRank(country, level)
 
-        return when (rank) {
-            in 1..5 -> 92
-            in 6..10 -> 86
-            in 11..15 -> 80
-            in 16..20 -> 74
-            in 21..30 -> 66
-            in 31..40 -> 55
-            in 41..50 -> 45
-            else -> 30
+        return when {
+            rank == 1 -> 95
+            rank == 2 -> 94
+            rank == 3 -> 93
+            rank <= 5 -> 91
+            rank <= 10 -> 88
+            rank <= 15 -> 84
+            rank <= 20 -> 80
+            rank <= 25 -> 76
+            rank <= 30 -> 72
+            rank <= 35 -> 68
+            rank <= 40 -> 64
+            rank <= 45 -> 58
+            rank <= 50 -> 52
+            else -> 45
         }
     }
 

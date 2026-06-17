@@ -18,8 +18,8 @@ import com.fameafrica.afm.R
 import com.fameafrica.afm.ui.components.common.AfricanBackground
 import com.fameafrica.afm.ui.components.common.SidebarCard
 import com.fameafrica.afm.ui.theme.*
-import com.fameafrica.afm.ui.util.ImmersiveModeManager
-import com.fameafrica.afm.ui.util.ImmersiveModeManager.immersiveRoot
+import com.fameafrica.afm.utils.ImmersiveModeManager
+import com.fameafrica.afm.utils.ImmersiveModeManager.immersiveRoot
 
 @Composable
 fun MainMenuScreen(

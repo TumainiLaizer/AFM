@@ -206,7 +206,7 @@ class DashboardViewModel @Inject constructor(
     fun startAdvancement() {
         gameManager.processNextTurn()
         viewModelScope.launch {
-            kotlinx.coroutines.delay(3000)
+            kotlinx.coroutines.delay(500) // Reduced from 3000ms
             _uiState.update { it.copy(isAdvancing = false) }
         }
     }
@@ -241,6 +241,8 @@ class DashboardViewModel @Inject constructor(
                 if (immersiveEvents.isNotEmpty()) {
                     _pendingEvents.value = immersiveEvents
                     _uiState.update { it.copy(pendingImmersiveEvent = immersiveEvents.firstOrNull()) }
+                } else {
+                    _uiState.update { it.copy(pendingImmersiveEvent = null) }
                 }
             }
         }
