@@ -92,7 +92,7 @@ fun TransfersScreenInternal(
         FameBackground {
             Scaffold(
                 containerColor = Color.Transparent,
-                topBar = { UniversalIdentityBanner(uiState) }
+                topBar = { /* UniversalIdentityBanner removed */ }
             ) { padding ->
                 Column(
                     modifier = Modifier

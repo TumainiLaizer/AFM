@@ -16,6 +16,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.fameafrica.afm.domain.model.SimulationEvent
+import com.fameafrica.afm.ui.components.common.ProcessingOverlay
 import com.fameafrica.afm.ui.components.common.WorldNewsTicker
 import com.fameafrica.afm.ui.screen.events.SeasonEventOverlay
 import com.fameafrica.afm.ui.theme.*
@@ -174,15 +176,8 @@ fun DashboardContent(
             ) {
                 item {
                     DashboardManagerHeader(
-                        name = uiState.managerName,
-                        level = uiState.managerLevel,
-                        bankBalance = uiState.bankBalance,
-                        coins = uiState.premiumCurrency,
-                        reputation = uiState.reputationValue,
-                        xpCurrent = uiState.managerXp,
-                        xpMax = uiState.managerMaxXp,
-                        country = uiState.managerNationality,
-                        gameDate = uiState.gameDate
+                        uiState = uiState,
+                        modifier = modifier
                     )
                 }
 
@@ -237,31 +232,31 @@ fun DashboardContent(
                     
                     // --- SMOOTH SEASON FLOW NAVIGATION (Workflow Integration) ---
                     when (event) {
-                        is com.fameafrica.afm.domain.model.SimulationEvent.PreseasonStart -> {
+                        is SimulationEvent.PreseasonStart -> {
                             onNavigateToPreseason()
                         }
-                        is com.fameafrica.afm.domain.model.SimulationEvent.LeagueKickoff -> {
+                        is SimulationEvent.LeagueKickoff -> {
                             onNavigateToLeagueKickoff()
                         }
-                        is com.fameafrica.afm.domain.model.SimulationEvent.CupMilestone -> {
+                        is SimulationEvent.CupMilestone -> {
                             onNavigateToCup(event.tournamentName)
                         }
-                        is com.fameafrica.afm.domain.model.SimulationEvent.CAFGroupDraw -> {
+                        is SimulationEvent.CAFGroupDraw -> {
                             onNavigateToCup("CAF Champions League")
                         }
-                        is com.fameafrica.afm.domain.model.SimulationEvent.CAFKnockoutDraw -> {
+                        is SimulationEvent.CAFKnockoutDraw -> {
                             onNavigateToCup(event.tournament)
                         }
-                        is com.fameafrica.afm.domain.model.SimulationEvent.TransferWindowOpen -> {
+                        is SimulationEvent.TransferWindowOpen -> {
                             onNavigateToTransfers()
                         }
-                        is com.fameafrica.afm.domain.model.SimulationEvent.DeadlineDay -> {
+                        is SimulationEvent.DeadlineDay -> {
                             onNavigateToTransfers()
                         }
-                        is com.fameafrica.afm.domain.model.SimulationEvent.AwardsGala -> {
+                        is SimulationEvent.AwardsGala -> {
                             onNavigateToAwardsGala()
                         }
-                        is com.fameafrica.afm.domain.model.SimulationEvent.SeasonEnd -> {
+                        is SimulationEvent.SeasonEnd -> {
                             onNavigateToSeasonReview()
                         }
                         else -> { /* Stay on dashboard for other events */ }
@@ -271,7 +266,7 @@ fun DashboardContent(
         }
 
         if (uiState.isAdvancing) {
-            com.fameafrica.afm.ui.components.common.ProcessingOverlay()
+            ProcessingOverlay()
         }
     }
 }

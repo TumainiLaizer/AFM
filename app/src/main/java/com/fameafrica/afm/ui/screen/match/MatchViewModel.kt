@@ -192,7 +192,16 @@ data class MatchUiState(
     val visualizerState: MatchVisualizerUiState = MatchVisualizerUiState()
 )
 
-data class FixtureUiModel(val id: Int, val homeTeam: String, val awayTeam: String, val homeScore: Int, val awayScore: Int, val status: String, val minute: String = "")
+data class FixtureUiModel(
+    val id: Int,
+    val homeTeam: String,
+    val awayTeam: String,
+    val homeScore: Int,
+    val awayScore: Int,
+    val status: String,
+    val minute: Int = 0,
+    val round: Int = 1
+)
 data class StandingUiModel(val position: Int, val teamName: String, val played: Int, val won: Int = 0, val drawn: Int = 0, val lost: Int = 0, val points: Int, val goalDifference: Int)
 
 data class PlayerLineupUiModel(

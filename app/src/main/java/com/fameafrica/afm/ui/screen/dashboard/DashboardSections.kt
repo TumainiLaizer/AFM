@@ -5,14 +5,16 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+
 import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.automirrored.filled.*
 import androidx.compose.material3.*
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Brush
+
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
@@ -26,133 +28,99 @@ import coil.compose.AsyncImage
 import com.fameafrica.afm.R
 import com.fameafrica.afm.domain.model.SimulationEvent
 import com.fameafrica.afm.ui.components.common.TeamLogo
+import com.fameafrica.afm.ui.components.common.RatingCard
 import com.fameafrica.afm.ui.theme.*
 import com.fameafrica.afm.utils.NationalityUtils
 
 @Composable
 fun DashboardManagerHeader(
-    name: String,
-    level: Int,
-    bankBalance: String,
-    coins: String,
-    reputation: Int,
-    xpCurrent: Int,
-    xpMax: Int,
-    country: String,
-    gameDate: String,
+    uiState: DashboardUiState,
     modifier: Modifier = Modifier
 ) {
-    Column(
-        modifier = modifier
-            .fillMaxWidth()
-            .background(Brush.verticalGradient(listOf(Color.Black, Color.Transparent)))
-            .padding(12.dp)
-    ) {
-        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
-            ManagerPortrait(country)
-            Spacer(modifier = Modifier.width(12.dp))
-            ManagerDetails(name, country, gameDate, xpCurrent, xpMax)
-            Spacer(modifier = Modifier.width(12.dp))
-            LevelBadge(level = level)
-        }
-        Spacer(modifier = Modifier.height(12.dp))
-        ResourceGrid(bankBalance, coins, reputation)
-    }
-}
-
-@Composable
-private fun ManagerPortrait(country: String) {
-    // Note: country parameter kept for future use in portrait customization
-    Box(
-        modifier = Modifier
-            .size(64.dp)
-            .border(2.dp, FameColors.TrophyGold, CircleShape)
-            .padding(2.dp)
-            .clip(CircleShape)
-    ) {
-        Image(
-            painter = painterResource(id = R.drawable.default_manager),
-            contentDescription = "Manager",
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Crop
-        )
-    }
-}
-
-@Composable
-private fun ManagerDetails(name: String, country: String, gameDate: String, xpCurrent: Int, xpMax: Int) {
-    Column(modifier = Modifier) {
-        Text(text = "MANAGER", style = AFMTextStyles.textXXS, color = FameColors.GrowthGreen, fontWeight = FontWeight.Bold)
-        Text(text = name.uppercase(), style = AFMTextStyles.textLG.copy(fontSize = 18.sp), color = Color.White)
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            AsyncImage(
-                model = NationalityUtils.getFlagUrl(country),
-                contentDescription = country,
-                modifier = Modifier.size(14.dp),
-                placeholder = painterResource(id = R.drawable.default_flag),
-                error = painterResource(id = R.drawable.default_flag)
-            )
-            Spacer(modifier = Modifier.width(4.dp))
-            Text(text = country, style = AFMTextStyles.textXXS, color = FameColors.MutedParchment)
-            Text(text = gameDate, style = AFMTextStyles.textXXS, color = FameColors.TrophyGold, modifier = Modifier.padding(start = 8.dp))
-        }
-        Spacer(modifier = Modifier.height(6.dp))
-        XpProgressBar(current = xpCurrent, max = xpMax)
-    }
-}
-
-@Composable
-private fun ResourceGrid(bankBalance: String, coins: String, reputation: Int) {
-    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        ResourceWidget("BANK BALANCE", bankBalance, { Text("💵", fontSize = 18.sp) }, Modifier.weight(1f))
-        ResourceWidget("COINS", coins, { Text("🪙", fontSize = 18.sp) }, Modifier.weight(1f))
-        ResourceWidget("REPUTATION", reputation.toString(), {
-            Image(painter = painterResource(id = R.drawable.ic_star_gold), contentDescription = null, modifier = Modifier.size(20.dp))
-        }, Modifier.weight(1f))
-    }
-}
-
-@Composable
-private fun XpProgressBar(current: Int, max: Int) {
-    val progress = remember(current, max) { if (max > 0) current.toFloat() / max else 0f }
-    Row(verticalAlignment = Alignment.CenterVertically) {
-        Box(
-            modifier = Modifier
-                .weight(1f)
-                .height(4.dp)
-                .background(Color.Black.copy(alpha = 0.5f), RoundedCornerShape(2.dp))
-        ) {
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth(progress)
-                    .fillMaxHeight()
-                    .background(FameColors.GrowthGreen, RoundedCornerShape(2.dp))
-            )
-        }
-        Spacer(modifier = Modifier.width(8.dp))
-        Text(
-            text = "$current / $max XP",
-            style = AFMTextStyles.textXXS,
-            color = FameColors.MutedParchment,
-            fontSize = 7.sp
-        )
-    }
-}
-
-@Composable
-private fun LevelBadge(level: Int) {
     Surface(
-        color = Color.Transparent,
-        border = BorderStroke(1.dp, FameColors.TrophyGold),
-        shape = RoundedCornerShape(4.dp),
-        modifier = Modifier.size(40.dp)
+        color = Color.Black.copy(alpha = 0.8f),
+        modifier = modifier.fillMaxWidth()
     ) {
         Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
+            modifier = Modifier
+                .padding(horizontal = 16.dp, vertical = 10.dp)
         ) {
-            Text("LVL", fontSize = 8.sp, color = FameColors.MutedParchment, fontWeight = FontWeight.Bold)
-            Text(level.toString(), fontSize = 16.sp, color = Color.White, fontWeight = FontWeight.Black)
+            // Main Identity Row
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                // Manager Avatar
+                Box(
+                    modifier = Modifier
+                        .size(50.dp)
+                        .clip(CircleShape)
+                        .background(Color.White.copy(alpha = 0.1f))
+                        .border(1.5.dp, FameColors.TrophyGold.copy(alpha = 0.5f), CircleShape)
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.default_manager),
+                        contentDescription = "Manager",
+                        modifier = Modifier.fillMaxSize(),
+                        contentScale = ContentScale.Crop
+                    )
+                }
+
+                Spacer(modifier = Modifier.width(16.dp))
+
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = uiState.managerName.uppercase(),
+                        style = AFMTextStyles.textMD,
+                        color = Color.White,
+                        fontWeight = FontWeight.Black
+                    )
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        AsyncImage(
+                            model = NationalityUtils.getFlagUrl(uiState.managerNationality),
+                            contentDescription = uiState.managerNationality,
+                            modifier = Modifier.size(14.dp),
+                            placeholder = painterResource(id = R.drawable.default_flag)
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Text(text = uiState.managerNationality, style = AFMTextStyles.textXXS, color = FameColors.MutedParchment)
+                        Text(text = " • ", color = FameColors.MutedParchment)
+                        Text(text = uiState.season, style = AFMTextStyles.textXXS, color = FameColors.MutedParchment, fontWeight = FontWeight.Bold)
+                        Text(text = " • ", color = FameColors.MutedParchment)
+                        Text(text = uiState.gameDate, style = AFMTextStyles.textXXS, color = FameColors.TrophyGold, fontWeight = FontWeight.Bold)
+                        Spacer(modifier = Modifier.width(4.dp))
+                    }
+                }
+
+                // Level/Reputation
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
+                    // Level
+                    Column(horizontalAlignment = Alignment.End) {
+                        Text("LVL", style = AFMTextStyles.textXXS, color = FameColors.MutedParchment, fontSize = 6.sp)
+                        Text("${uiState.managerLevel}", style = AFMTextStyles.textXS, color = Color.White, fontWeight = FontWeight.Black)
+                    }
+
+                    // Reputation Card
+                    RatingCard(
+                        label = "REP",
+                        value = "${uiState.reputationValue}",
+                        rating = uiState.reputationValue,
+                        isReputation = true
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // Stats/Resources Bar
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                ResourceWidget("BANK", uiState.bankBalance, { Text("💵", fontSize = 12.sp) }, Modifier.weight(1f))
+                ResourceWidget("COINS", uiState.premiumCurrency, { Text("🪙", fontSize = 12.sp) }, Modifier.weight(1f))
+                ResourceWidget("XP", "${uiState.managerXp}/${uiState.managerMaxXp}", { Icon(Icons.AutoMirrored.Filled.TrendingUp, null, modifier = Modifier.size(12.dp), tint = FameColors.GrowthGreen) }, Modifier.weight(1f))
+            }
         }
     }
 }
@@ -524,12 +492,13 @@ fun DashboardDualNavigation(
                 .padding(vertical = 4.dp),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-            NavActionItem("INBOX", Icons.Default.Email, unreadMessages, onTabClick)
-            NavActionItem("TRANSFERS", Icons.Default.SwapHoriz, pendingTransfers, onTabClick)
             NavActionItem("SQUAD", Icons.Default.Groups, 0, onTabClick)
             NavActionItem("TACTICS", Icons.Default.GridOn, 0, onTabClick)
             NavActionItem("TRAINING", Icons.Default.FitnessCenter, 0, onTabClick)
+            NavActionItem("TRANSFERS", Icons.Default.SwapHoriz, pendingTransfers, onTabClick)
+            NavActionItem("INBOX", Icons.Default.Email, unreadMessages, onTabClick)
             NavActionItem("WORLD", Icons.Default.Public, 0, onTabClick)
+            NavActionItem("PRESEASON", Icons.Default.Event, 0, onTabClick)
         }
         
         HorizontalDivider(color = Color.White.copy(alpha = 0.1f))

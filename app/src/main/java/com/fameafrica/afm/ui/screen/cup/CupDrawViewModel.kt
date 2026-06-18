@@ -3,16 +3,33 @@ package com.fameafrica.afm.ui.screen.cup
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.fameafrica.afm.data.database.entities.*
-import com.fameafrica.afm.data.repository.*
+import com.fameafrica.afm.data.database.entities.CupBracketsEntity
+import com.fameafrica.afm.data.database.entities.CupGroupStandingsEntity
+import com.fameafrica.afm.data.database.entities.CupsEntity
+import com.fameafrica.afm.data.database.entities.FixturesResultsEntity
+import com.fameafrica.afm.data.database.entities.KnockoutMatchesEntity
+import com.fameafrica.afm.data.repository.CupBracketsRepository
+import com.fameafrica.afm.data.repository.CupGroupStandingsRepository
+import com.fameafrica.afm.data.repository.CupsRepository
+import com.fameafrica.afm.data.repository.FixturesRepository
+import com.fameafrica.afm.data.repository.FixturesResultsRepository
+import com.fameafrica.afm.data.repository.KnockoutMatchesRepository
+import com.fameafrica.afm.data.repository.MatchEventsRepository
+import com.fameafrica.afm.data.repository.PlayersRepository
+import com.fameafrica.afm.data.repository.TeamsRepository
+import com.fameafrica.afm.data.repository.TrophiesRepository
 import com.fameafrica.afm.domain.manager.GameManager
-import com.fameafrica.afm.ui.screen.league.FixtureUiModel
 import com.fameafrica.afm.ui.screen.league.TOTWPlayerUiModel
+import com.fameafrica.afm.ui.screen.match.FixtureUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.async
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import java.util.*
+import java.util.SortedMap
 import javax.inject.Inject
 
 data class CupStatsUiModel(
@@ -109,7 +126,7 @@ class CupDrawViewModel @Inject constructor(
     fun loadCupData(cupName: String) {
         val state = gameManager.gameState.value
         if (state is GameManager.GameState.Active) {
-            viewModelScope.launch {
+            viewModelScope.launch(kotlinx.coroutines.Dispatchers.IO) {
                 _uiState.update { it.copy(cupName = cupName, isLoading = true, errorMessage = null) }
                 refreshCupData(cupName, state.context)
             }
@@ -121,45 +138,45 @@ class CupDrawViewModel @Inject constructor(
     fun refreshData() {
         val state = gameManager.gameState.value
         if (state is GameManager.GameState.Active && _uiState.value.cupName.isNotEmpty()) {
-            viewModelScope.launch {
+            viewModelScope.launch(kotlinx.coroutines.Dispatchers.IO) {
                 refreshCupData(_uiState.value.cupName, state.context)
             }
         }
     }
 
-    private suspend fun refreshCupData(cupName: String, context: GameManager.GameContext) {
+    private suspend fun refreshCupData(cupName: String, context: GameManager.GameContext) = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
         _uiState.update { it.copy(isLoading = true, errorMessage = null, season = context.season) }
 
         try {
             val cup = cupsRepository.getCupByName(cupName)
             if (cup == null) {
                 _uiState.update { it.copy(isLoading = false, errorMessage = "Cup not found: $cupName") }
-                return
+                return@withContext
             }
 
             val seasonYear = context.season.split("/").first().toInt()
 
             // Load all data in parallel
-            val matchesDeferred = viewModelScope.async {
+            val matchesDeferred = async {
                 knockoutMatchesRepository.getMatchesByCupAndSeason(cupName, context.season).firstOrNull() ?: emptyList()
             }
-            val bracketsDeferred = viewModelScope.async {
+            val bracketsDeferred = async {
                 cupBracketsRepository.getBracketsByCupAndSeason(cupName, seasonYear).firstOrNull() ?: emptyList()
             }
-            val standingsDeferred = viewModelScope.async {
+            val standingsDeferred = async {
                 cupGroupStandingsRepository.getGroupStandings(
                     cupName,
-                    seasonYear = context.season.split("/").first().toInt(),
+                    seasonYear = seasonYear,
                     groupName = cupName.split(" - ").lastOrNull() ?: "Group A"
                 ).firstOrNull() ?: emptyList()
             }
-            val historyDeferred = viewModelScope.async {
+            val historyDeferred = async {
                 trophiesRepository.getTrophiesByCompetition(cupName).firstOrNull() ?: emptyList()
             }
-            val resultsDeferred = viewModelScope.async {
+            val resultsDeferred = async {
                 fixturesResultsRepository.getCupResults(cupName, context.season).firstOrNull() ?: emptyList()
             }
-            val fixturesDeferred = viewModelScope.async {
+            val fixturesDeferred = async {
                 fixturesRepository.getCupFixtures(cupName, context.season).firstOrNull() ?: emptyList()
             }
 
@@ -188,41 +205,48 @@ class CupDrawViewModel @Inject constructor(
                 brackets.groupBy { it.roundNumber }.toSortedMap()
             } else null
 
-            _uiState.update { state ->
-                state.copy(
-                    cup = cup,
-                    matches = matches,
-                    bracketsByRound = bracketsByRound,
-                    groupStandings = groupStandings,
-                    cupStats = cupStats,
-                    fixtures = fixtures.map { f ->
-                        FixtureUiModel(
-                            f.id, f.homeTeam, f.awayTeam,
-                            f.homeScore, f.awayScore,
-                            f.matchDate, f.position ?: 0,
-                            f.isCompleted
-                        )
-                    },
-                    teamOfTheWeek = totw,
-                    history = history.map { t ->
-                        CupHistoryUiModel(
-                            t.season,
-                            t.clubName,
-                            t.opponent ?: "N/A",
-                            t.iconPath,
-                            null
-                        )
-                    },
-                    isLoading = false,
-                    errorMessage = null
-                )
+            kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
+                _uiState.update { state ->
+                    state.copy(
+                        cup = cup,
+                        matches = matches,
+                        bracketsByRound = bracketsByRound,
+                        groupStandings = groupStandings,
+                        cupStats = cupStats,
+                        fixtures = fixtures.map { f ->
+                            FixtureUiModel(
+                                id = f.id,
+                                homeTeam = f.homeTeam,
+                                awayTeam = f.awayTeam,
+                                homeScore = f.homeScore ?: 0,
+                                awayScore = f.awayScore ?: 0,
+                                status = if (f.isCompleted) "FT" else "SCHEDULED",
+                                round = f.position ?: 1
+                            )
+                        },
+                        teamOfTheWeek = totw,
+                        history = history.map { t ->
+                            CupHistoryUiModel(
+                                t.season,
+                                t.clubName,
+                                t.opponent ?: "N/A",
+                                t.iconPath,
+                                null
+                            )
+                        },
+                        isLoading = false,
+                        errorMessage = null
+                    )
+                }
             }
 
             Log.d("AFM_CUP", "Loaded cup data for $cupName: ${matches.size} matches, ${brackets.size} brackets, ${standings.size} standings")
 
         } catch (e: Exception) {
             Log.e("AFM_CUP", "Failed to load cup data: ${e.message}", e)
-            _uiState.update { it.copy(isLoading = false, errorMessage = "Failed to load cup data: ${e.message}") }
+            kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
+                _uiState.update { it.copy(isLoading = false, errorMessage = "Failed to load cup data: ${e.message}") }
+            }
         }
     }
 

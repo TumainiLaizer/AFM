@@ -31,6 +31,7 @@ import com.fameafrica.afm.data.database.entities.CupBracketsEntity
 import com.fameafrica.afm.data.database.entities.CupGroupStandingsEntity
 import com.fameafrica.afm.ui.components.common.*
 import com.fameafrica.afm.ui.screen.league.*
+import com.fameafrica.afm.ui.screen.match.FixtureUiModel
 import com.fameafrica.afm.ui.theme.*
 import kotlinx.coroutines.launch
 import java.util.Locale
@@ -80,9 +81,9 @@ fun FixtureItem(fixture: FixtureUiModel) {
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.width(80.dp)
             ) {
-                if (fixture.isCompleted) {
+                if (fixture.status == "FT") {
                     Text(
-                        text = "${fixture.homeScore ?: 0} - ${fixture.awayScore ?: 0}",
+                        text = "${fixture.homeScore} - ${fixture.awayScore}",
                         style = AFMTextStyles.statValue,
                         color = FameColors.ChampionsGold,
                         fontWeight = FontWeight.Black
@@ -97,7 +98,7 @@ fun FixtureItem(fixture: FixtureUiModel) {
                     }
                 }
                 Text(
-                    text = fixture.date.substringAfter(" "),
+                    text = "RD ${fixture.round}",
                     style = AFM2026Typography.labelSmall,
                     color = FameColors.MutedParchment,
                     fontSize = 9.sp

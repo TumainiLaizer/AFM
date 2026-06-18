@@ -2,104 +2,15 @@ package com.fameafrica.afm.ui.screen.league
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.fameafrica.afm.data.database.entities.LeaguesEntity
 import com.fameafrica.afm.data.repository.*
 import com.fameafrica.afm.domain.manager.GameManager
+import com.fameafrica.afm.ui.screen.match.FixtureUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
-
-// ============ UI Models ============
-
-data class LeagueStandingUiModel(
-    val id: Int,
-    val position: Int,
-    val teamName: String,
-    val played: Int,
-    val wins: Int,
-    val draws: Int,
-    val losses: Int,
-    val gf: Int,
-    val ga: Int,
-    val goalDifference: Int,
-    val points: Int,
-    val form: String,
-    val logoPath: String? = null
-)
-
-data class TopScorerUiModel(
-    val position: Int,
-    val playerId: Int,
-    val playerName: String,
-    val teamName: String,
-    val goals: Int,
-    val appearances: Int,
-    val age: Int
-)
-
-data class TopAssisterUiModel(
-    val position: Int,
-    val playerId: Int,
-    val playerName: String,
-    val teamName: String,
-    val assists: Int,
-    val appearances: Int
-)
-
-data class TOTWPlayerUiModel(
-    val playerId: Int,
-    val playerName: String,
-    val teamName: String,
-    val position: String,
-    val matchRating: Double,
-    val nationality: String? = null,
-    val shirtNumber: Int = 0,
-    val goals: Int = 0,
-    val assists: Int = 0,
-    val cleanSheet: Boolean = false,
-    val motm: Boolean = false
-)
-
-data class FixtureUiModel(
-    val id: Int,
-    val homeTeam: String,
-    val awayTeam: String,
-    val homeScore: Int?,
-    val awayScore: Int?,
-    val date: String,
-    val round: Int,
-    val isCompleted: Boolean
-)
-
-data class LeagueStatsUiModel(
-    val totalMatches: Int = 0,
-    val totalGoals: Int = 0,
-    val avgGoals: Double = 0.0,
-    val homeWinPct: Double = 0.0,
-    val awayWinPct: Double = 0.0,
-    val drawPct: Double = 0.0
-)
-
-data class LeagueTableUiState(
-    val isLoading: Boolean = true,
-    val season: String = "2025/26",
-    val standings: List<LeagueStandingUiModel> = emptyList(),
-    val topScorers: List<TopScorerUiModel> = emptyList(),
-    val topAssisters: List<TopAssisterUiModel> = emptyList(),
-    val teamOfTheWeek: List<TOTWPlayerUiModel> = emptyList(),
-    val teamOfTheWeekRound: Int = 1,
-    val maxRounds: Int = 30,
-    val fixtures: List<FixtureUiModel> = emptyList(),
-    val leagueStats: LeagueStatsUiModel = LeagueStatsUiModel(),
-    val userTeamId: Int? = null,
-    val leagueName: String = "",
-    val leagueLogo: String? = null,
-    val availableLeagues: List<LeaguesEntity> = emptyList(),
-    val totwFormation: String = "4-3-3"
-)
-
-// ============ ViewModel ============
 
 @HiltViewModel
 class LeagueTableViewModel @Inject constructor(
@@ -130,8 +41,7 @@ class LeagueTableViewModel @Inject constructor(
     )
 
     init {
-        // Auto‑refresh when game advances
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             gameManager.gameState.collect { state ->
                 if (state is GameManager.GameState.Active && _uiState.value.leagueName.isNotEmpty()) {
                     refreshLeagueData(_uiState.value.leagueName, state.context)
@@ -143,27 +53,30 @@ class LeagueTableViewModel @Inject constructor(
     fun loadLeagueData(leagueName: String) {
         val currentState = gameManager.gameState.value
         if (currentState is GameManager.GameState.Active) {
-            viewModelScope.launch {
+            viewModelScope.launch(Dispatchers.IO) {
                 val allLeagues = leaguesRepository.getAllLeagues().firstOrNull() ?: emptyList()
                 val currentLeague = allLeagues.find { it.name.equals(leagueName, ignoreCase = true) }
                 
-                _uiState.update { it.copy(
-                    leagueName = currentLeague?.name ?: leagueName,
-                    leagueLogo = currentLeague?.logo,
-                    availableLeagues = allLeagues
-                ) }
+                withContext(Dispatchers.Main) {
+                    _uiState.update { it.copy(
+                        leagueName = currentLeague?.name ?: leagueName,
+                        leagueLogo = currentLeague?.logo,
+                        availableLeagues = allLeagues
+                    ) }
+                }
                 refreshLeagueData(currentLeague?.name ?: leagueName, currentState.context)
             }
         }
     }
 
-    private suspend fun refreshLeagueData(leagueName: String, context: GameManager.GameContext) {
-        _uiState.update { it.copy(isLoading = true) }
+    private suspend fun refreshLeagueData(leagueName: String, context: GameManager.GameContext) = withContext(Dispatchers.IO) {
+        withContext(Dispatchers.Main) {
+            _uiState.update { it.copy(isLoading = true) }
+        }
         try {
             val season = context.season
             val seasonYear = try { season.split("/").first().toInt() } catch (e: Exception) { 2025 }
 
-            // 1. Standings
             val standings = leagueStandingsRepository.getStandings(leagueName, seasonYear).firstOrNull() ?: emptyList()
             val standingModels = standings.map { standing ->
                 val form = fixturesResultsRepository.getTeamForm(standing.teamId).formString
@@ -185,7 +98,6 @@ class LeagueTableViewModel @Inject constructor(
                 )
             }
 
-            // 2. League Stats
             val repoStats = fixturesRepository.getLeagueStatistics(leagueName, context.season)
             val leagueStats = LeagueStatsUiModel(
                 totalMatches = repoStats.totalMatches,
@@ -196,18 +108,25 @@ class LeagueTableViewModel @Inject constructor(
                 drawPct = repoStats.drawPercentage
             )
 
-            // 3. Fixtures
             val fixtures = fixturesRepository.getLeagueFixtures(leagueName, season).firstOrNull() ?: emptyList()
             val fixtureModels = fixtures.map { f ->
-                FixtureUiModel(f.id, f.homeTeam, f.awayTeam, f.homeScore, f.awayScore, f.matchDate, f.position, f.isCompleted)
+                FixtureUiModel(
+                    id = f.id,
+                    homeTeam = f.homeTeam,
+                    awayTeam = f.awayTeam,
+                    homeScore = f.homeScore ?: 0,
+                    awayScore = f.awayScore ?: 0,
+                    status = if (f.isCompleted) "FT" else "SCHEDULED",
+                    round = f.position ?: 1
+                )
             }
-
+            
             val currentRound = fixturesRepository.getCurrentGameWeek(leagueName, season)
-            val maxRounds = fixtures.maxOfOrNull { it.position } ?: 30
+            val maxRounds = fixtures.maxOfOrNull { it.position ?: 0 } ?: 30
             val totwRound = if (currentRound > 1) currentRound - 1 else 1
 
-            _uiState.update {
-                it.copy(
+            withContext(Dispatchers.Main) {
+                _uiState.update { it.copy(
                     isLoading = false,
                     season = season,
                     standings = standingModels,
@@ -216,18 +135,20 @@ class LeagueTableViewModel @Inject constructor(
                     maxRounds = maxRounds,
                     teamOfTheWeekRound = totwRound,
                     userTeamId = context.teamId
-                )
+                ) }
             }
 
             loadPlayerStats(leagueName)
             loadTOTW(leagueName, totwRound, season)
 
-        } catch (_: Exception) {
-            _uiState.update { it.copy(isLoading = false) }
+        } catch (e: Exception) {
+             withContext(Dispatchers.Main) {
+                _uiState.update { it.copy(isLoading = false, errorMessage = "Error: ${e.message}") }
+            }
         }
     }
 
-    private suspend fun loadPlayerStats(leagueName: String) {
+    private suspend fun loadPlayerStats(leagueName: String) = withContext(Dispatchers.IO) {
         val leaguePlayers = playersRepository.getPlayersByLeague(leagueName).firstOrNull() ?: emptyList()
 
         val topScorers = leaguePlayers
@@ -246,34 +167,30 @@ class LeagueTableViewModel @Inject constructor(
                 TopAssisterUiModel(i + 1, p.id, p.name, p.teamName, p.assists, p.matches)
             }
 
-        _uiState.update { it.copy(topScorers = topScorers, topAssisters = topAssisters) }
+        withContext(Dispatchers.Main) {
+            _uiState.update { it.copy(topScorers = topScorers, topAssisters = topAssisters) }
+        }
     }
 
-    /**
-     * Advanced TOTW Generation using Match Events and Tactical Formation
-     * Ensures position‑appropriate selections (GK can't be ST) and uses the
-     * best possible formation based on available players.
-     */
-    suspend fun loadTOTW(leagueName: String, round: Int, season: String) {
-        _uiState.update { it.copy(teamOfTheWeekRound = round) }
+    suspend fun loadTOTW(leagueName: String, round: Int, season: String) = withContext(Dispatchers.IO) {
+        withContext(Dispatchers.Main) {
+            _uiState.update { it.copy(teamOfTheWeekRound = round) }
+        }
 
-        // Get all matches from this round
         val fixtures = fixturesRepository.getLeagueFixtures(leagueName, season).firstOrNull() ?: emptyList()
         val roundFixtures = fixtures.filter { it.position == round && it.isCompleted }
 
         if (roundFixtures.isEmpty()) {
-            _uiState.update { it.copy(teamOfTheWeek = emptyList()) }
-            return
+            withContext(Dispatchers.Main) { _uiState.update { it.copy(teamOfTheWeek = emptyList()) } }
+            return@withContext
         }
 
-        // Gather player performances from match events
         val performances = mutableMapOf<Int, PlayerWeeklyPerformance>()
 
         for (fixture in roundFixtures) {
             val events = matchEventsRepository.getEventsByMatch(fixture.id).firstOrNull() ?: continue
             val results = fixturesResultsRepository.getResultByFixtureId(fixture.id)
 
-            // Process each event to build performance data
             events.forEach { event ->
                 val playerId = event.playerId
                 if (playerId == 0) return@forEach
@@ -305,7 +222,6 @@ class LeagueTableViewModel @Inject constructor(
                 }
             }
 
-            // Check clean sheets
             results?.let { res ->
                 if (res.homeScore == 0) {
                     performances.values.find { it.teamName == res.homeTeam && it.position == "GK" }?.cleanSheet = true
@@ -314,7 +230,6 @@ class LeagueTableViewModel @Inject constructor(
                     performances.values.find { it.teamName == res.awayTeam && it.position == "GK" }?.cleanSheet = true
                 }
 
-                // MOTM (highest rated in match)
                 performances.values
                     .filter { it.teamName == res.homeTeam || it.teamName == res.awayTeam }
                     .maxByOrNull { it.rating }
@@ -323,29 +238,22 @@ class LeagueTableViewModel @Inject constructor(
         }
 
         if (performances.isEmpty()) {
-            _uiState.update { it.copy(teamOfTheWeek = emptyList()) }
-            return
+            withContext(Dispatchers.Main) { _uiState.update { it.copy(teamOfTheWeek = emptyList()) } }
+            return@withContext
         }
 
-        // Normalise ratings (0-10 scale)
         performances.values.forEach { perf ->
             perf.rating = perf.rating.coerceIn(0.0, 10.0)
         }
 
-        // Group by position category
         val goalkeepers = performances.values.filter { it.position == "GK" }.sortedByDescending { it.rating }
         val defenders = performances.values.filter { it.positionCategory == "DEFENDER" }.sortedByDescending { it.rating }
         val midfielders = performances.values.filter { it.positionCategory == "MIDFIELDER" }.sortedByDescending { it.rating }
         val forwards = performances.values.filter { it.positionCategory == "FORWARD" }.sortedByDescending { it.rating }
 
-        // Determine best formation based on available talent
         val bestFormation = determineBestFormation(defenders, midfielders, forwards)
-        _uiState.update { it.copy(totwFormation = bestFormation) }
-
-        // Select players based on formation requirements
         val selectedPlayers = selectPlayersForFormation(bestFormation, goalkeepers, defenders, midfielders, forwards)
 
-        // Convert to UI model
         val totwModels = selectedPlayers.map { player ->
             TOTWPlayerUiModel(
                 playerId = player.playerId,
@@ -353,7 +261,7 @@ class LeagueTableViewModel @Inject constructor(
                 teamName = player.teamName,
                 position = player.position,
                 matchRating = player.rating,
-                nationality = null, // Would need to fetch from player
+                nationality = null,
                 shirtNumber = 0,
                 goals = player.goals,
                 assists = player.assists,
@@ -362,12 +270,11 @@ class LeagueTableViewModel @Inject constructor(
             )
         }
 
-        _uiState.update { it.copy(teamOfTheWeek = totwModels) }
+        withContext(Dispatchers.Main) {
+            _uiState.update { it.copy(teamOfTheWeek = totwModels, totwFormation = bestFormation) }
+        }
     }
 
-    /**
-     * Determine the best formation based on available player strengths
-     */
     private fun determineBestFormation(
         defenders: List<PlayerWeeklyPerformance>,
         midfielders: List<PlayerWeeklyPerformance>,
@@ -382,13 +289,10 @@ class LeagueTableViewModel @Inject constructor(
             m >= 5 && f >= 1 -> "4-5-1"
             f >= 3 && m >= 3 -> "4-3-3"
             d >= 5 && m >= 3 && f >= 2 -> "5-3-2"
-            else -> "4-4-2" // Default
+            else -> "4-4-2"
         }
     }
 
-    /**
-     * Select players for a specific formation, ensuring position correctness
-     */
     private fun selectPlayersForFormation(
         formation: String,
         goalkeepers: List<PlayerWeeklyPerformance>,
@@ -399,7 +303,6 @@ class LeagueTableViewModel @Inject constructor(
         val selected = mutableListOf<PlayerWeeklyPerformance>()
         val usedPlayers = mutableSetOf<Int>()
 
-        // Formation requirements (position counts)
         val requirements = when (formation) {
             "4-3-3" -> mapOf("GK" to 1, "DEF" to 4, "MID" to 3, "FWD" to 3)
             "4-4-2" -> mapOf("GK" to 1, "DEF" to 4, "MID" to 4, "FWD" to 2)
@@ -409,13 +312,11 @@ class LeagueTableViewModel @Inject constructor(
             else -> mapOf("GK" to 1, "DEF" to 4, "MID" to 4, "FWD" to 2)
         }
 
-        // Select GK (1)
         goalkeepers.take(1).forEach { gk ->
             selected.add(gk)
             usedPlayers.add(gk.playerId)
         }
 
-        // Select DEF (based on requirements)
         defenders
             .filter { it.playerId !in usedPlayers }
             .take(requirements["DEF"] ?: 4)
@@ -424,7 +325,6 @@ class LeagueTableViewModel @Inject constructor(
                 usedPlayers.add(def.playerId)
             }
 
-        // If we need more defenders, take from midfielders (defensive mids)
         val neededDef = (requirements["DEF"] ?: 4) - selected.count { it.positionCategory == "DEFENDER" }
         if (neededDef > 0) {
             midfielders
@@ -436,7 +336,6 @@ class LeagueTableViewModel @Inject constructor(
                 }
         }
 
-        // Select MID (based on requirements)
         midfielders
             .filter { it.playerId !in usedPlayers }
             .take(requirements["MID"] ?: 4)
@@ -445,7 +344,6 @@ class LeagueTableViewModel @Inject constructor(
                 usedPlayers.add(mid.playerId)
             }
 
-        // Select FWD (based on requirements)
         forwards
             .filter { it.playerId !in usedPlayers }
             .take(requirements["FWD"] ?: 2)
@@ -457,7 +355,6 @@ class LeagueTableViewModel @Inject constructor(
         return selected
     }
 
-    // Extension property to get position category
     private val PlayerWeeklyPerformance.positionCategory: String
         get() = when (position) {
             "GK" -> "GOALKEEPER"

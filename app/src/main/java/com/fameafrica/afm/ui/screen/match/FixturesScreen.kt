@@ -66,17 +66,7 @@ fun MatchesTabScreenContent(
         StadiumBackground {
             Column(modifier = Modifier.fillMaxSize().statusBarsPadding()) {
                 
-                IdentityBanner(
-                    managerName = "Tumaini Joseph",
-                    role = "MANAGER",
-                    clubName = uiState.userTeamName,
-                    reputationValue = 75,
-                    level = 33,
-                    coins = "4,015",
-                    premiumCurrency = "2",
-                    onProfileClick = { /* Handle */ },
-                    onNotificationsClick = { /* Handle */ }
-                )
+                // IdentityBanner removed
 
                 Row(
                     modifier = Modifier

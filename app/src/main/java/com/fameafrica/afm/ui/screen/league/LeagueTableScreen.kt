@@ -19,7 +19,6 @@ import androidx.compose.material3.TabRowDefaults.tabIndicatorOffset
 import java.util.Locale
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -33,6 +32,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
 import com.fameafrica.afm.ui.components.common.TeamLogo
+import com.fameafrica.afm.ui.screen.match.FixtureUiModel
 import com.fameafrica.afm.ui.theme.*
 import com.fameafrica.afm.utils.LeagueLogoUtils
 import kotlinx.coroutines.launch
@@ -279,11 +279,11 @@ fun FixturesPage(uiState: LeagueTableUiState) {
                         modifier = Modifier.padding(horizontal = 12.dp)
                     ) {
                         Text(
-                            text = if (fixture.isCompleted) "${fixture.homeScore} - ${fixture.awayScore}" else "VS",
+                            text = if (fixture.status == "FT") "${fixture.homeScore} - ${fixture.awayScore}" else "VS",
                             modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp),
                             style = AFMTextStyles.textXXS,
                             fontWeight = FontWeight.Black,
-                            color = if (fixture.isCompleted) Color.White else FameColors.TrophyGold
+                            color = if (fixture.status == "FT") Color.White else FameColors.TrophyGold
                         )
                     }
                     
@@ -545,15 +545,15 @@ fun TOTWPlayerRow(player: TOTWPlayerUiModel) {
 fun LeagueTableScreenPreview() {
     AFM2026Theme {
         LeagueTableContent(
-            leagueName = "PREMIER LEAGUE",
+            leagueName = "TANZANIA PREMIER LEAGUE",
             uiState = LeagueTableUiState(
                 isLoading = false,
-                leagueName = "PREMIER LEAGUE",
+                leagueName = "TANZANIA PREMIER LEAGUE",
                 standings = listOf(
                     LeagueStandingUiModel(
                         id = 1,
                         position = 1,
-                        teamName = "Arsenal",
+                        teamName = "Al Ahly",
                         played = 10,
                         wins = 8,
                         draws = 1,
@@ -568,7 +568,7 @@ fun LeagueTableScreenPreview() {
                     LeagueStandingUiModel(
                         id = 2,
                         position = 2,
-                        teamName = "Man City",
+                        teamName = "Simba SC",
                         played = 10,
                         wins = 7,
                         draws = 2,
@@ -583,7 +583,7 @@ fun LeagueTableScreenPreview() {
                     LeagueStandingUiModel(
                         id = 3,
                         position = 3,
-                        teamName = "Liverpool",
+                        teamName = "TP Mazembe",
                         played = 10,
                         wins = 7,
                         draws = 1,
@@ -597,16 +597,16 @@ fun LeagueTableScreenPreview() {
                     )
                 ),
                 topScorers = listOf(
-                    TopScorerUiModel(1, 101, "Haaland", "Man City", 12, 10, 24),
-                    TopScorerUiModel(2, 102, "Salah", "Liverpool", 10, 10, 32)
+                    TopScorerUiModel(1, 101, "Mabrouk", "Al Ahly", 12, 10, 24),
+                    TopScorerUiModel(2, 102, "Chama", "Simba SC", 10, 10, 32)
                 ),
                 fixtures = listOf(
-                    FixtureUiModel(1, "Arsenal", "Man City", 2, 1, "2025-10-10", 1, true),
-                    FixtureUiModel(2, "Liverpool", "Chelsea", null, null, "2025-10-15", 1, false)
+                    FixtureUiModel(1, "Al Ahly", "Simba SC", 2, 1, "FT", 1),
+                    FixtureUiModel(2, "TP Mazembe", "Sundowns", 0, 0, "SCHEDULED", 1)
                 ),
                 teamOfTheWeek = listOf(
-                    TOTWPlayerUiModel(101, "Haaland", "Man City", "ST", 9.5, motm = true),
-                    TOTWPlayerUiModel(102, "Salah", "Liverpool", "RW", 8.8)
+                    TOTWPlayerUiModel(101, "Mabrouk", "Al Ahly", "ST", 9.5, null, 0, 1, 0, false, true),
+                    TOTWPlayerUiModel(102, "Chama", "Simba SC", "RW", 8.8, null, 0, 0, 1, false, false)
                 )
             ),
             onBack = {},

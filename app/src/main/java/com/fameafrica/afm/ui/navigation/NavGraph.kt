@@ -289,22 +289,22 @@ fun FameNavGraph(
         }
 
         composable(Screen.LeagueKickoff.route) {
-            LeagueKickoffScreen(onBack = { navController.popBackStack() })
+            LeagueKickoffScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.DeadlineDay.route) {
             DeadlineDayScreen(onBack = { 
-                navController.popBackStack()
+                if (navController.previousBackStackEntry != null) navController.popBackStack()
                 navController.navigate(Screen.Transfers.route)
             })
         }
 
         composable(Screen.SeasonReview.route) {
-            SeasonReviewScreen(onBack = { navController.popBackStack() })
+            SeasonReviewScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.AwardsGala.route) {
-            AwardsGalaScreen(onBack = { navController.popBackStack() })
+            AwardsGalaScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(
@@ -314,21 +314,21 @@ fun FameNavGraph(
             val playerId = backStackEntry.arguments?.getString("playerId")?.toIntOrNull() ?: 0
             PlayerDetailScreen(
                 playerId = playerId, 
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onNavigateToTransfer = { navController.navigate(Screen.Negotiation.route) }
             )
         }
 
         composable(Screen.Tactics.route) { TacticsScreen(
-            onBack = { navController.popBackStack() },
+            onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
             onNavigateToPlayerDetails = { id -> navController.navigate(Screen.PlayerDetail.withArgs(id.toString())) },
             viewModel = hiltViewModel()
         ) }
-        composable(Screen.Training.route) { TrainingScreen(onBack = { navController.popBackStack() }) }
+        composable(Screen.Training.route) { TrainingScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() }) }
         
         composable(Screen.Scout.route) { 
             ScoutScreen(
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onNavigateToPlayer = { id -> navController.navigate(Screen.PlayerDetail.withArgs(id.toString())) }
             )
         }
@@ -340,7 +340,7 @@ fun FameNavGraph(
             val id = backStackEntry.arguments?.getString("transferId")?.toIntOrNull() ?: 0
             NegotiationScreen(
                 transferId = id,
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onNavigateToPlayer = { pid -> navController.navigate(Screen.PlayerDetail.withArgs(pid.toString())) }
             )
         }
@@ -351,14 +351,14 @@ fun FameNavGraph(
         ) { backStackEntry ->
             val tab = backStackEntry.arguments?.getInt("tab") ?: 0
             FinancesScreen(
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onUpgradeInfrastructure = { navController.navigate(Screen.Infrastructure.route) },
                 initialTab = tab
             )
         }
 
         composable(Screen.Infrastructure.route) {
-            InfrastructureScreen(onBack = { navController.popBackStack() })
+            InfrastructureScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(
@@ -366,12 +366,12 @@ fun FameNavGraph(
             arguments = listOf(navArgument("leagueName") { type = NavType.StringType })
         ) { backStackEntry ->
             val name = backStackEntry.arguments?.getString("leagueName") ?: ""
-            LeagueTableScreen(leagueName = name, onBack = { navController.popBackStack() })
+            LeagueTableScreen(leagueName = name, onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.CupDraw.route) {
             CupDrawScreen(
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onCupClick = { name -> navController.navigate(Screen.CupDetail.withArgs(name)) }
             )
         }
@@ -381,27 +381,27 @@ fun FameNavGraph(
             arguments = listOf(navArgument("cupName") { type = NavType.StringType })
         ) { backStackEntry ->
             val name = backStackEntry.arguments?.getString("cupName") ?: ""
-            CupDetailScreen(cupName = name, onBack = { navController.popBackStack() })
+            CupDetailScreen(cupName = name, onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.CAFChampionsLeague.route) {
-            ContinentalCupScreen(cupName = "CAF Champions League", onBack = { navController.popBackStack() })
+            ContinentalCupScreen(cupName = "CAF Champions League", onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.CAFFederationCup.route) {
-            ContinentalCupScreen(cupName = "CAF Confederation Cup", onBack = { navController.popBackStack() })
+            ContinentalCupScreen(cupName = "CAF Confederation Cup", onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.DomesticCup.route) {
-            DomesticCupScreen(cupName = "CRDB Federation Cup", onBack = { navController.popBackStack() })
+            DomesticCupScreen(cupName = "CRDB Federation Cup", onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.WorldCup.route) {
-            ContinentalCupScreen(cupName = "World Cup", onBack = { navController.popBackStack() })
+            ContinentalCupScreen(cupName = "World Cup", onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.AFCON.route) {
-            ContinentalCupScreen(cupName = "AFCON", onBack = { navController.popBackStack() })
+            ContinentalCupScreen(cupName = "AFCON", onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(
@@ -411,14 +411,14 @@ fun FameNavGraph(
             val id = backStackEntry.arguments?.getString("matchId")?.toIntOrNull() ?: 0
             MatchScreen(
                 matchId = id,
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onNavigateToTactics = { navController.navigate(Screen.Tactics.route) }
             )
         }
 
         composable(Screen.Staff.route) { 
             StaffScreen(
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onHireStaff = { navController.navigate(Screen.Scout.route) },
                 onStaffClick = { id -> navController.navigate(Screen.StaffDetail.withArgs(id.toString())) }
             )
@@ -431,20 +431,20 @@ fun FameNavGraph(
             val id = backStackEntry.arguments?.getInt("staffId") ?: 0
             StaffDetailScreen(
                 staffId = id,
-                onBack = { navController.popBackStack() }
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() }
             )
         }
 
         composable(Screen.Board.route) { 
             BoardScreen(
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onNavigateToFFP = { navController.navigate(Screen.FFP.route) }
             ) 
         }
 
         composable(Screen.FFP.route) {
             com.fameafrica.afm.ui.screen.board.FFPDashboardScreen(
-                onBack = { navController.popBackStack() }
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() }
             )
         }
         
@@ -458,7 +458,7 @@ fun FameNavGraph(
         
         composable(Screen.News.route) {
             NewsScreen(
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onArticleClick = { id -> navController.navigate(Screen.NewsDetail.withArgs(id.toString())) }
             )
         }
@@ -468,23 +468,23 @@ fun FameNavGraph(
             arguments = listOf(navArgument("newsId") { type = NavType.IntType })
         ) { backStackEntry ->
             val id = backStackEntry.arguments?.getInt("newsId") ?: 0
-            NewsDetailScreen(newsId = id, onBack = { navController.popBackStack() })
+            NewsDetailScreen(newsId = id, onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.Media.route) {
             MediaScreen(
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onNewsClick = { id -> navController.navigate(Screen.NewsDetail.withArgs(id.toString())) }
             )
         }
 
-        composable(Screen.Settings.route) { SettingScreen(onBackClick = { navController.popBackStack() }) }
-        composable(Screen.Notifications.route) { NotificationsScreen(onBack = { navController.popBackStack() }) }
-        composable(Screen.History.route) { HistoryScreen(onBack = { navController.popBackStack() }) }
-        composable(Screen.Drama.route) { DramaScreen(onBack = { navController.popBackStack() }) }
+        composable(Screen.Settings.route) { SettingScreen(onBackClick = { if (navController.previousBackStackEntry != null) navController.popBackStack() }) }
+        composable(Screen.Notifications.route) { NotificationsScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() }) }
+        composable(Screen.History.route) { HistoryScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() }) }
+        composable(Screen.Drama.route) { DramaScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() }) }
         composable(Screen.National.route) { 
             NationalScreen(
-                onBack = { navController.popBackStack() },
+                onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
                 onTeamClick = { id -> }
             )
         }
@@ -497,22 +497,22 @@ fun FameNavGraph(
         ) { backStackEntry ->
             val teamId = backStackEntry.arguments?.getInt("teamId") ?: 0
             val teamName = backStackEntry.arguments?.getString("teamName") ?: ""
-            FansScreen(teamId = teamId, teamName = teamName, onBack = { navController.popBackStack() })
+            FansScreen(teamId = teamId, teamName = teamName, onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.Shop.route) {
-            ShopScreen(onBack = { navController.popBackStack() })
+            ShopScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(Screen.Sponsorships.route) {
-            SponsorshipNegotiationScreen(onBack = { navController.popBackStack() })
+            SponsorshipNegotiationScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(
             route = Screen.SponsorNegotiation.route,
             arguments = listOf(navArgument("sponsorId") { type = NavType.StringType })
         ) {
-            SponsorshipNegotiationScreen(onBack = { navController.popBackStack() })
+            SponsorshipNegotiationScreen(onBack = { if (navController.previousBackStackEntry != null) navController.popBackStack() })
         }
 
         composable(
@@ -523,8 +523,8 @@ fun FameNavGraph(
             val bundle = coinBundles.find { it.id == bundleId }!!
             AzamPesaPaymentScreen(
                 bundle = bundle,
-                onSuccess = { navController.popBackStack() },
-                onCancel = { navController.popBackStack() }
+                onSuccess = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
+                onCancel = { if (navController.previousBackStackEntry != null) navController.popBackStack() }
             )
         }
 
@@ -536,8 +536,8 @@ fun FameNavGraph(
             val bundle = coinBundles.find { it.id == bundleId }!!
             CardPaymentScreen(
                 bundle = bundle,
-                onSuccess = { navController.popBackStack() },
-                onCancel = { navController.popBackStack() }
+                onSuccess = { if (navController.previousBackStackEntry != null) navController.popBackStack() },
+                onCancel = { if (navController.previousBackStackEntry != null) navController.popBackStack() }
             )
         }
     }

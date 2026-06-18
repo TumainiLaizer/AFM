@@ -254,8 +254,9 @@ fun DealSummaryCard(deal: TransferOfferUiModel, context: CurrencyFormatter.Curre
     }
 }
 
+// Renamed this one to avoid conflict
 @Composable
-fun TransferPlayerTile(
+fun TransferPlayerTileCompact(
     player: TransferPlayerUiModel,
     currencyContext: CurrencyFormatter.CurrencyContext?,
     onScout: () -> Unit,
@@ -475,8 +476,8 @@ fun formatCurrency(amount: Long, context: CurrencyFormatter.CurrencyContext?): S
 
 fun getTransferRatingColor(rating: Int): Color {
     return when {
-        rating >= 80 -> FameColors.GrowthGreen
-        rating >= 70 -> FameColors.TrophyGold
+        rating >= 80 -> FameColors.ChampionsGold
+        rating >= 70 -> FameColors.NationalSilver
         rating >= 60 -> FameColors.AfroSunOrange
         else -> FameColors.AlertRed
     }
