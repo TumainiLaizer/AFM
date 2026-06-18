@@ -7,7 +7,7 @@
     "level": 1,
     "sponsor": "NBC",
     "prize_money": 230400,
-    "logo": "league_logos/tanzania_premier_league.png"
+    "logo": "league_logos/tanzania_premier_league.webp"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "level": 2,
     "sponsor": "NBC",
     "prize_money": 92160,
-    "logo": "league_logos/tanzania_championship_league.png"
+    "logo": "league_logos/tanzania_championship_league.webp"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "level": 3,
     "sponsor": "CRDB",
     "prize_money": 46080,
-    "logo": "league_logos/tanzania_first_league.png"
+    "logo": "league_logos/tanzania_first_league.webp"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "level": 4,
     "sponsor": "CRDB",
     "prize_money": 23040,
-    "logo": "league_logos/tanzania_regional_champions_league.png"
+    "logo": "league_logos/tanzania_regional_champions_league.webp"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "level": 1,
     "sponsor": "PBZ",
     "prize_money": 115200,
-    "logo": "league_logos/zanzibar_premier_league.png"
+    "logo": "league_logos/zanzibar_premier_league.webp"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "level": 2,
     "sponsor": "PBZ",
     "prize_money": 28800,
-    "logo": "league_logos/zanzibar_championship_league.png"
+    "logo": "league_logos/zanzibar_championship_league.webp"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "level": 5,
     "sponsor": "CRDB",
     "prize_money": 11520,
-    "logo": "league_logos/tanzania_regional_division_league_2.png"
+    "logo": "league_logos/tanzania_regional_division_league_2.webp"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "level": 1,
     "sponsor": "Vodafone",
     "prize_money": 480000,
-    "logo": "league_logos/egyptian_premier_league.png"
+    "logo": "league_logos/egyptian_premier_league.webp"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "level": 1,
     "sponsor": "Inwi",
     "prize_money": 572160,
-    "logo": "league_logos/morocco_botola_pro.png"
+    "logo": "league_logos/morocco_botola_pro.webp"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "level": 1,
     "sponsor": "Mobilis",
     "prize_money": 250000,
-    "logo": "league_logos/algeria_ligue_1.png"
+    "logo": "league_logos/algeria_ligue_1.webp"
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "level": 1,
     "sponsor": "ABSA",
     "prize_money": 770880,
-    "logo": "league_logos/south_african_psl.png"
+    "logo": "league_logos/south_african_psl.webp"
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "level": 1,
     "sponsor": "Halkbank",
     "prize_money": 288000,
-    "logo": "league_logos/tunisia_ligue_1.png"
+    "logo": "league_logos/tunisia_ligue_1.webp"
   },
   {
     "id": 13,
@@ -127,7 +127,7 @@
     "level": 1,
     "sponsor": "Vodacom",
     "prize_money": 150000,
-    "logo": "league_logos/congo_dr_super_league.png"
+    "logo": "league_logos/congo_dr_super_league.webp"
   },
   {
     "id": 14,
@@ -137,7 +137,7 @@
     "level": 1,
     "sponsor": "SportPesa",
     "prize_money": 96339,
-    "logo": "league_logos/kenyan_premier_league.png"
+    "logo": "league_logos/kenyan_premier_league.webp"
   },
   {
     "id": 15,
@@ -147,7 +147,7 @@
     "level": 1,
     "sponsor": "StarTimes",
     "prize_money": 50000,
-    "logo": "league_logos/uganda_premier_league.png"
+    "logo": "league_logos/uganda_premier_league.webp"
   },
   {
     "id": 16,
@@ -157,7 +157,7 @@
     "level": 1,
     "sponsor": "MTN",
     "prize_money": 90000,
-    "logo": "league_logos/sudani_premier_league.png"
+    "logo": "league_logos/sudani_premier_league.webp"
   },
   {
     "id": 17,
@@ -167,7 +167,7 @@
     "level": 1,
     "sponsor": "Unitel",
     "prize_money": 147976,
-    "logo": "league_logos/angola_girabola.png"
+    "logo": "league_logos/angola_girabola.webp"
   },
   {
     "id": 18,
@@ -177,7 +177,7 @@
     "level": 1,
     "sponsor": "Bet9ja",
     "prize_money": 182400,
-    "logo": "league_logos/nigerian_npfl.png"
+    "logo": "league_logos/nigerian_npfl.webp"
   },
   {
     "id": 19,
@@ -187,7 +187,7 @@
     "level": 1,
     "sponsor": "MTN",
     "prize_money": 120000,
-    "logo": "league_logos/ivory_coast_league_1.png"
+    "logo": "league_logos/ivory_coast_league_1.webp"
   },
   {
     "id": 20,
@@ -197,7 +197,7 @@
     "level": 1,
     "sponsor": "MTN",
     "prize_money": 10000,
-    "logo": "league_logos/south_sudan_premier_league.png"
+    "logo": "league_logos/south_sudan_premier_league.webp"
   },
   {
     "id": 21,
@@ -207,7 +207,7 @@
     "level": 1,
     "sponsor": "Orange",
     "prize_money": 140000,
-    "logo": "league_logos/senegal_premier_league.png"
+    "logo": "league_logos/senegal_premier_league.webp"
   },
   {
     "id": 22,
@@ -217,7 +217,7 @@
     "level": 1,
     "sponsor": "BTC",
     "prize_money": 52800,
-    "logo": "league_logos/botswana_premier_league.png"
+    "logo": "league_logos/botswana_premier_league.webp"
   },
   {
     "id": 23,
@@ -227,7 +227,7 @@
     "level": 1,
     "sponsor": "Primus",
     "prize_money": 70000,
-    "logo": "league_logos/rwanda_premier_league.png"
+    "logo": "league_logos/rwanda_premier_league.webp"
   },
   {
     "id": 24,
@@ -237,7 +237,7 @@
     "level": 1,
     "sponsor": "MTN",
     "prize_money": 152000,
-    "logo": "league_logos/cameroon_elite_one.png"
+    "logo": "league_logos/cameroon_elite_one.webp"
   },
   {
     "id": 25,
@@ -247,7 +247,7 @@
     "level": 1,
     "sponsor": "Mozal",
     "prize_money": 60000,
-    "logo": "league_logos/mozambique_mocambola.png"
+    "logo": "league_logos/mozambique_mocambola.webp"
   },
   {
     "id": 26,
@@ -257,7 +257,7 @@
     "level": 1,
     "sponsor": "Primus",
     "prize_money": 50000,
-    "logo": "league_logos/burundi_premier_league.png"
+    "logo": "league_logos/burundi_premier_league.webp"
   },
   {
     "id": 27,
@@ -267,7 +267,7 @@
     "level": 1,
     "sponsor": "TNM",
     "prize_money": 45000,
-    "logo": "league_logos/malawi_super_league.png"
+    "logo": "league_logos/malawi_super_league.webp"
   },
   {
     "id": 28,
@@ -277,7 +277,7 @@
     "level": 1,
     "sponsor": "MTN",
     "prize_money": 90000,
-    "logo": "league_logos/zambia_super_league.png"
+    "logo": "league_logos/zambia_super_league.webp"
   },
   {
     "id": 29,
@@ -287,7 +287,7 @@
     "level": 1,
     "sponsor": "Orange",
     "prize_money": 70000,
-    "logo": "league_logos/guinea_league_1_pro.png"
+    "logo": "league_logos/guinea_league_1_pro.webp"
   },
   {
     "id": 30,
@@ -297,7 +297,7 @@
     "level": 1,
     "sponsor": "Libyana",
     "prize_money": 85000,
-    "logo": "league_logos/libyan_premier_league.png"
+    "logo": "league_logos/libyan_premier_league.webp"
   },
   {
     "id": 31,
@@ -307,7 +307,7 @@
     "level": 1,
     "sponsor": "Orange",
     "prize_money": 75000,
-    "logo": "league_logos/malian_premi\u00e8re_division.png"
+    "logo": "league_logos/malian_premi\u00e8re_division.webp"
   },
   {
     "id": 32,
@@ -317,7 +317,7 @@
     "level": 1,
     "sponsor": "Delta",
     "prize_money": 70000,
-    "logo": "league_logos/zimbabwe_premier_soccer_league.png"
+    "logo": "league_logos/zimbabwe_premier_soccer_league.webp"
   },
   {
     "id": 33,
@@ -327,7 +327,7 @@
     "level": 1,
     "sponsor": "BetPawa",
     "prize_money": 150000,
-    "logo": "league_logos/ghana_premier_league.png"
+    "logo": "league_logos/ghana_premier_league.webp"
   },
   {
     "id": 34,
@@ -337,7 +337,7 @@
     "level": 1,
     "sponsor": "MTN",
     "prize_money": 80000,
-    "logo": "league_logos/congo_premier_league.png"
+    "logo": "league_logos/congo_premier_league.webp"
   },
   {
     "id": 35,
@@ -347,7 +347,7 @@
     "level": 1,
     "sponsor": "Ethio Telecom",
     "prize_money": 187200,
-    "logo": "league_logos/ethiopia_premier_league.png"
+    "logo": "league_logos/ethiopia_premier_league.webp"
   },
   {
     "id": 36,
@@ -357,7 +357,7 @@
     "level": 1,
     "sponsor": "Hormuud",
     "prize_money": 15000,
-    "logo": "league_logos/somali_first_division.png"
+    "logo": "league_logos/somali_first_division.webp"
   },
   {
     "id": 37,
@@ -367,7 +367,7 @@
     "level": 1,
     "sponsor": "Orange",
     "prize_money": 25000,
-    "logo": "league_logos/car_premier_league.png"
+    "logo": "league_logos/car_premier_league.webp"
   },
   {
     "id": 38,
@@ -377,7 +377,7 @@
     "level": 1,
     "sponsor": "MTN",
     "prize_money": 20000,
-    "logo": "league_logos/niger_super_league.png"
+    "logo": "league_logos/niger_super_league.webp"
   },
   {
     "id": 39,
@@ -387,7 +387,7 @@
     "level": 1,
     "sponsor": "Gambia Ports Authority",
     "prize_money": 25000,
-    "logo": "league_logos/gambia_gfa_premier_league.png"
+    "logo": "league_logos/gambia_gfa_premier_league.webp"
   },
   {
     "id": 40,
@@ -397,7 +397,7 @@
     "level": 1,
     "sponsor": "Orange",
     "prize_money": 20000,
-    "logo": "league_logos/burkinabe_premier_league.png"
+    "logo": "league_logos/burkinabe_premier_league.webp"
   },
   {
     "id": 41,
@@ -407,7 +407,7 @@
     "level": 1,
     "sponsor": "Lonestar",
     "prize_money": 15000,
-    "logo": "league_logos/liberia_first_division.png"
+    "logo": "league_logos/liberia_first_division.webp"
   },
   {
     "id": 42,
@@ -417,7 +417,7 @@
     "level": 1,
     "sponsor": "Africell",
     "prize_money": 15000,
-    "logo": "league_logos/sierra_leone_national_premier_league.png"
+    "logo": "league_logos/sierra_leone_national_premier_league.webp"
   },
   {
     "id": 43,
@@ -427,7 +427,7 @@
     "level": 1,
     "sponsor": "Moov",
     "prize_money": 15000,
-    "logo": "league_logos/togo_championnat_national.png"
+    "logo": "league_logos/togo_championnat_national.webp"
   },
   {
     "id": 44,
@@ -437,7 +437,7 @@
     "level": 1,
     "sponsor": "Orange",
     "prize_money": 20000,
-    "logo": "league_logos/madagascar_pro_league.png"
+    "logo": "league_logos/madagascar_pro_league.webp"
   },
   {
     "id": 45,
@@ -447,7 +447,7 @@
     "level": 1,
     "sponsor": "Mauritel",
     "prize_money": 20000,
-    "logo": "league_logos/mauritania_super_d1_league.png"
+    "logo": "league_logos/mauritania_super_d1_league.webp"
   },
   {
     "id": 46,
@@ -457,7 +457,7 @@
     "level": 1,
     "sponsor": "Orange",
     "prize_money": 15000,
-    "logo": "league_logos/mauritius_super_league.png"
+    "logo": "league_logos/mauritius_super_league.webp"
   },
   {
     "id": 47,
@@ -467,7 +467,7 @@
     "level": 1,
     "sponsor": "Moov",
     "prize_money": 15000,
-    "logo": "league_logos/benin_championnat_national.png"
+    "logo": "league_logos/benin_championnat_national.webp"
   },
   {
     "id": 48,
@@ -477,7 +477,7 @@
     "level": 1,
     "sponsor": "Tigo",
     "prize_money": 15000,
-    "logo": "league_logos/chad_premiere_division.png"
+    "logo": "league_logos/chad_premiere_division.webp"
   },
   {
     "id": 49,
@@ -487,7 +487,7 @@
     "level": 1,
     "sponsor": "MTC",
     "prize_money": 15000,
-    "logo": "league_logos/namibian_premier_league.png"
+    "logo": "league_logos/namibian_premier_league.webp"
   },
   {
     "id": 50,
@@ -497,7 +497,7 @@
     "level": 1,
     "sponsor": "Cabo Verde Telecom",
     "prize_money": 15000,
-    "logo": "league_logos/cape_verde_campionato_nacional.png"
+    "logo": "league_logos/cape_verde_campionato_nacional.webp"
   },
   {
     "id": 51,
@@ -507,7 +507,7 @@
     "level": 1,
     "sponsor": "Lesotho Post",
     "prize_money": 15000,
-    "logo": "league_logos/lesotho_premier_league.png"
+    "logo": "league_logos/lesotho_premier_league.webp"
   },
   {
     "id": 52,
@@ -517,7 +517,7 @@
     "level": 1,
     "sponsor": "Djibouti Telecom",
     "prize_money": 15000,
-    "logo": "league_logos/djibouti_division_1.png"
+    "logo": "league_logos/djibouti_division_1.webp"
   },
   {
     "id": 53,
@@ -527,6 +527,6 @@
     "level": 1,
     "sponsor": "GEPetrol",
     "prize_money": 15000,
-    "logo": "league_logos/equatorial_guinea_premier_league.png"
+    "logo": "league_logos/equatorial_guinea_premier_league.webp"
   }
 ]

@@ -195,7 +195,7 @@ fun PlayerLineupCard(
                 border = BorderStroke(1.dp, Color.White.copy(alpha = 0.2f))
             ) {
                 AsyncImage(
-                    model = player.photo ?: "file:///android_asset/players/default.png",
+                    model = player.photo ?: "file:///android_asset/players/default.webp",
                     contentDescription = player.name,
                     modifier = Modifier.fillMaxSize(),
                     contentScale = ContentScale.Crop

@@ -54,7 +54,7 @@ class SeasonPreviewNewsGenerator @Inject constructor(
                 timestamp = date,
                 category = "MAGAZINE",
                 journalistName = "AFM Sports AI",
-                journalistLogo = "assets/journalists/ai_logo.png",
+                journalistLogo = "assets/journalists/ai_logo.webp",
                 imageUrl = "assets/news/season_preview.webp"
             )
             newsRepository.insertNews(news)

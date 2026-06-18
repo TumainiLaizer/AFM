@@ -77,7 +77,7 @@ data class NationalitiesEntity(
         get() = nationality
 
     val flagUrl: String
-        get() = flagPath ?: "flags/default.png"
+        get() = flagPath ?: "flags/default.webp"
 
     val isCAFMember: Boolean
         get() = confederation == "CAF"

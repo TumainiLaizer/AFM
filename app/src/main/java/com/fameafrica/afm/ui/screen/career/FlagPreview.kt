@@ -42,7 +42,7 @@ fun FlagGrid(countries: List<String>) {
             ) {
                 AsyncImage(
                     model = ImageRequest.Builder(LocalContext.current)
-                        .data("file:///android_asset/flags/$country.png")
+                        .data("file:///android_asset/flags/$country.webp")
                         .build(),
                     contentDescription = country,
                     modifier = Modifier

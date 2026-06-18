@@ -25,7 +25,7 @@
     "prize_money": 20000,
     "stadium": "Benjamin Mkapa National Stadium",
     "attendance": null,
-    "logo": "community_shield_logo.png",
+    "logo": "community_shield_logo.webp",
     "tv_channel": "Azam Sports TV",
     "notes": "Community Shield fixture between league champion and runner-up."
   },
@@ -55,7 +55,7 @@
     "prize_money": 15000,
     "stadium": "Amaan Stadium",
     "attendance": null,
-    "logo": "community_shield_logo.png",
+    "logo": "community_shield_logo.webp",
     "tv_channel": "ZBC",
     "notes": "Community Shield fixture between league champion and runner-up."
   },
@@ -85,7 +85,7 @@
     "prize_money": 100000,
     "stadium": "Cairo International Stadium",
     "attendance": null,
-    "logo": "community_shield_logo.png",
+    "logo": "community_shield_logo.webp",
     "tv_channel": "ON Time Sports",
     "notes": "Community Shield fixture between league champion and runner-up."
   },
@@ -115,7 +115,7 @@
     "prize_money": 80000,
     "stadium": "Stade Mohamed V",
     "attendance": null,
-    "logo": "community_shield_logo.png",
+    "logo": "community_shield_logo.webp",
     "tv_channel": "Arryadia",
     "notes": "Community Shield fixture between league champion and runner-up."
   },
@@ -145,7 +145,7 @@
     "prize_money": 50000,
     "stadium": "Stade du 5 Juillet",
     "attendance": null,
-    "logo": "community_shield_logo.png",
+    "logo": "community_shield_logo.webp",
     "tv_channel": "Algeria TV",
     "notes": "Community Shield fixture between league champion and runner-up."
   },
@@ -175,7 +175,7 @@
     "prize_money": 120000,
     "stadium": "FNB Stadium",
     "attendance": null,
-    "logo": "community_shield_logo.png",
+    "logo": "community_shield_logo.webp",
     "tv_channel": "SuperSport",
     "notes": "Community Shield fixture between league champion and runner-up."
   },
@@ -205,7 +205,7 @@
     "prize_money": 60000,
     "stadium": "Stade Hammadi Agrebi",
     "attendance": null,
-    "logo": "community_shield_logo.png",
+    "logo": "community_shield_logo.webp",
     "tv_channel": "Tunisia Sports",
     "notes": "Community Shield fixture between league champion and runner-up."
   },
@@ -235,7 +235,7 @@
     "prize_money": 40000,
     "stadium": "Stade TP Mazembe",
     "attendance": null,
-    "logo": "community_shield_logo.png",
+    "logo": "community_shield_logo.webp",
     "tv_channel": "RTNC",
     "notes": "Community Shield fixture between league champion and runner-up."
   },
@@ -265,7 +265,7 @@
     "prize_money": 15000,
     "stadium": "Gor Mahia Stadium",
     "attendance": null,
-    "logo": "community_shield_logo.png",
+    "logo": "community_shield_logo.webp",
     "tv_channel": "KBC",
     "notes": "Community Shield fixture between league champion and runner-up."
   },
@@ -295,7 +295,7 @@
     "prize_money": 30000,
     "stadium": "Est\u00e1dio 11 de Novembro",
     "attendance": null,
-    "logo": "community_shield_logo.png",
+    "logo": "community_shield_logo.webp",
     "tv_channel": "TPA",
     "notes": "Community Shield fixture between league champion and runner-up."
   }

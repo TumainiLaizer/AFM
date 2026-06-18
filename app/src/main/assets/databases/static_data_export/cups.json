@@ -9,7 +9,7 @@
     "prize_money": 10300000,
     "teams_involved": 16,
     "rules": "Format: Preliminary Rounds \u2192 Group Stage \u2192 Knockout Phase. Teams: 16 clubs in group stage (winners from qualifiers). Qualification: League winners from each CAF-affiliated nation qualify.",
-    "logo": "cup_logos/caf_champions_league.png"
+    "logo": "cup_logos/caf_champions_league.webp"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "prize_money": 2500000,
     "teams_involved": 16,
     "rules": "Format: Preliminary Rounds \u2192 Playoff Round \u2192 Group Stage \u2192 Knockout Phase. Teams: Clubs that win domestic cups or finish high in leagues.",
-    "logo": "cup_logos/caf_confederation_cup.png"
+    "logo": "cup_logos/caf_confederation_cup.webp"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "prize_money": 80000,
     "teams_involved": 8,
     "rules": "Format: Single-Elimination (Knockout). Teams: 8 clubs. Top 4 teams from Tanzania Premier League and Top 4 Teams from Zanzibar Premier League",
-    "logo": "cup_logos/muungano_cup.png"
+    "logo": "cup_logos/muungano_cup.webp"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "prize_money": 80000,
     "teams_involved": 64,
     "rules": "Format: Single-Elimination (Knockout). Teams: 64 clubs. All Teams from Tanzania Premier League, Tanzania Championship League, Tanzania First League and Tanzania Regional Division League. Winner qualifies for CAF Confederations Cup.",
-    "logo": "cup_logos/crdb_cup.png"
+    "logo": "cup_logos/crdb_cup.webp"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "prize_money": 700132,
     "teams_involved": 59,
     "rules": "Preliminary rounds determine which teams enter the CAF Champions League Group Stage. Playoffs held before the group stage begins.",
-    "logo": "cup_logos/caf_champions_league.png"
+    "logo": "cup_logos/caf_champions_league.webp"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "prize_money": 400075,
     "teams_involved": 52,
     "rules": "Similar format to CAF CL Qualification. Includes teams that drop from CAF Champions League Playoff round.",
-    "logo": "cup_logos/caf_confederation_cup.png"
+    "logo": "cup_logos/caf_confederation_cup.webp"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "prize_money": 40000,
     "teams_involved": 32,
     "rules": "Format: Single-Elimination (Knockout). Teams: 32 clubs. Teams from Zanzibar Premier League and Zanzibar Championship League. Winner qualifies for CAF Confederations Cup.",
-    "logo": "cup_logos/pbz_cup.png"
+    "logo": "cup_logos/pbz_cup.webp"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "prize_money": 7131718,
     "teams_involved": 24,
     "rules": "The premier national team competition in Africa. 24 teams qualify through continental qualifiers. Held every 2 years.",
-    "logo": "cup_logos/afcon.png"
+    "logo": "cup_logos/afcon.webp"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "prize_money": 20000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout). Teams: 16 clubs. Teams from Tanzania Regional Division League 2.",
-    "logo": "cup_logos/fame_africa_cup.png"
+    "logo": "cup_logos/fame_africa_cup.webp"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "prize_money": 535028,
     "teams_involved": 48,
     "rules": "Determines African National teams qualifying for AFCON. Group-stage qualification with best teams progressing.",
-    "logo": "cup_logos/afcon_qualifiers.png"
+    "logo": "cup_logos/afcon_qualifiers.webp"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "prize_money": 101881695,
     "teams_involved": 32,
     "rules": "Winners of CAF Champions League qualify. Competes against UEFA, CONMEBOL, AFC, and CONCACAF champions.",
-    "logo": "cup_logos/fifa_club_world_cup.png"
+    "logo": "cup_logos/fifa_club_world_cup.webp"
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "prize_money": 913615183,
     "teams_involved": 32,
     "rules": "AFCON determines CAF qualifiers. Top teams from CAF qualify for the World Cup.",
-    "logo": "cup_logos/fifa_world_cup.png"
+    "logo": "cup_logos/fifa_world_cup.webp"
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
     "prize_money": 9556840,
     "teams_involved": 54,
     "rules": "",
-    "logo": "cup_logos/fifa_world_cup_qualification_caf.png"
+    "logo": "cup_logos/fifa_world_cup_qualification_caf.webp"
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "prize_money": 462427,
     "teams_involved": 2,
     "rules": "Winner of CAF Champions League plays against winner of CAF Confederation Cup.",
-    "logo": "cup_logos/caf_super_cup.png"
+    "logo": "cup_logos/caf_super_cup.webp"
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "prize_money": 80000,
     "teams_involved": 18,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/egyptian_fa_cup.png"
+    "logo": "cup_logos/egyptian_fa_cup.webp"
   },
   {
     "id": 16,
@@ -189,7 +189,7 @@
     "prize_money": 75000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/morocco_fa_cup.png"
+    "logo": "cup_logos/morocco_fa_cup.webp"
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "prize_money": 70000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/algerian_fa_cup.png"
+    "logo": "cup_logos/algerian_fa_cup.webp"
   },
   {
     "id": 18,
@@ -213,7 +213,7 @@
     "prize_money": 90000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/south_african_fa_cup.png"
+    "logo": "cup_logos/south_african_fa_cup.webp"
   },
   {
     "id": 19,
@@ -225,7 +225,7 @@
     "prize_money": 65000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/tunisian_fa_cup.png"
+    "logo": "cup_logos/tunisian_fa_cup.webp"
   },
   {
     "id": 20,
@@ -237,7 +237,7 @@
     "prize_money": 60000,
     "teams_involved": 25,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_du_congo_drc.png"
+    "logo": "cup_logos/coupe_du_congo_drc.webp"
   },
   {
     "id": 21,
@@ -249,7 +249,7 @@
     "prize_money": 40000,
     "teams_involved": 18,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/kenyan_fa_cup.png"
+    "logo": "cup_logos/kenyan_fa_cup.webp"
   },
   {
     "id": 22,
@@ -261,7 +261,7 @@
     "prize_money": 30000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/ugandan_fa_cup.png"
+    "logo": "cup_logos/ugandan_fa_cup.webp"
   },
   {
     "id": 23,
@@ -273,7 +273,7 @@
     "prize_money": 40000,
     "teams_involved": 25,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/sudani_fa_cup.png"
+    "logo": "cup_logos/sudani_fa_cup.webp"
   },
   {
     "id": 24,
@@ -285,7 +285,7 @@
     "prize_money": 30000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/angola_fa_cup.png"
+    "logo": "cup_logos/angola_fa_cup.webp"
   },
   {
     "id": 25,
@@ -297,7 +297,7 @@
     "prize_money": 35000,
     "teams_involved": 20,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/nigerian_fa_cup.png"
+    "logo": "cup_logos/nigerian_fa_cup.webp"
   },
   {
     "id": 26,
@@ -309,7 +309,7 @@
     "prize_money": 30000,
     "teams_involved": 18,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/cote_divoire_fa_cup.png"
+    "logo": "cup_logos/cote_divoire_fa_cup.webp"
   },
   {
     "id": 27,
@@ -321,7 +321,7 @@
     "prize_money": 20000,
     "teams_involved": 14,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/south_sudan_fa_cup.png"
+    "logo": "cup_logos/south_sudan_fa_cup.webp"
   },
   {
     "id": 28,
@@ -333,7 +333,7 @@
     "prize_money": 25000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_du_senegal.png"
+    "logo": "cup_logos/coupe_du_senegal.webp"
   },
   {
     "id": 29,
@@ -345,7 +345,7 @@
     "prize_money": 20000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/botswana_fa_cup.png"
+    "logo": "cup_logos/botswana_fa_cup.webp"
   },
   {
     "id": 30,
@@ -357,7 +357,7 @@
     "prize_money": 20000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/rwandan_fa_cup.png"
+    "logo": "cup_logos/rwandan_fa_cup.webp"
   },
   {
     "id": 31,
@@ -369,7 +369,7 @@
     "prize_money": 30000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/cameroon_fa_cup.png"
+    "logo": "cup_logos/cameroon_fa_cup.webp"
   },
   {
     "id": 32,
@@ -381,7 +381,7 @@
     "prize_money": 15000,
     "teams_involved": 14,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/mozambique_fa_cup.png"
+    "logo": "cup_logos/mozambique_fa_cup.webp"
   },
   {
     "id": 33,
@@ -393,7 +393,7 @@
     "prize_money": 15000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/burundi_fa_cup.png"
+    "logo": "cup_logos/burundi_fa_cup.webp"
   },
   {
     "id": 34,
@@ -405,7 +405,7 @@
     "prize_money": 10000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/malawi_super_cup.png"
+    "logo": "cup_logos/malawi_super_cup.webp"
   },
   {
     "id": 35,
@@ -417,7 +417,7 @@
     "prize_money": 20000,
     "teams_involved": 18,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/zambian_fa_cup.png"
+    "logo": "cup_logos/zambian_fa_cup.webp"
   },
   {
     "id": 36,
@@ -429,7 +429,7 @@
     "prize_money": 15000,
     "teams_involved": 14,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/copa_de_guinea.png"
+    "logo": "cup_logos/copa_de_guinea.webp"
   },
   {
     "id": 37,
@@ -441,7 +441,7 @@
     "prize_money": 12000,
     "teams_involved": 12,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/libyan_fa_cup.png"
+    "logo": "cup_logos/libyan_fa_cup.webp"
   },
   {
     "id": 38,
@@ -453,7 +453,7 @@
     "prize_money": 15000,
     "teams_involved": 14,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_du_mali.png"
+    "logo": "cup_logos/coupe_du_mali.webp"
   },
   {
     "id": 39,
@@ -465,7 +465,7 @@
     "prize_money": 20000,
     "teams_involved": 18,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/zimbabwean_fa_cup.png"
+    "logo": "cup_logos/zimbabwean_fa_cup.webp"
   },
   {
     "id": 40,
@@ -477,7 +477,7 @@
     "prize_money": 25000,
     "teams_involved": 18,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/ghana_fa_cup.png"
+    "logo": "cup_logos/ghana_fa_cup.webp"
   },
   {
     "id": 41,
@@ -489,7 +489,7 @@
     "prize_money": 15000,
     "teams_involved": 17,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_du_congo.png"
+    "logo": "cup_logos/coupe_du_congo.webp"
   },
   {
     "id": 42,
@@ -501,7 +501,7 @@
     "prize_money": 15000,
     "teams_involved": 20,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/ethiopian_fa_cup.png"
+    "logo": "cup_logos/ethiopian_fa_cup.webp"
   },
   {
     "id": 43,
@@ -513,7 +513,7 @@
     "prize_money": 10000,
     "teams_involved": 12,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/somali_fa_cup.png"
+    "logo": "cup_logos/somali_fa_cup.webp"
   },
   {
     "id": 44,
@@ -525,7 +525,7 @@
     "prize_money": 10000,
     "teams_involved": 13,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/car_fa_cup.png"
+    "logo": "cup_logos/car_fa_cup.webp"
   },
   {
     "id": 45,
@@ -537,7 +537,7 @@
     "prize_money": 12000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_du_niger.png"
+    "logo": "cup_logos/coupe_du_niger.webp"
   },
   {
     "id": 46,
@@ -549,7 +549,7 @@
     "prize_money": 12000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/gambian_fa_cup.png"
+    "logo": "cup_logos/gambian_fa_cup.webp"
   },
   {
     "id": 47,
@@ -561,7 +561,7 @@
     "prize_money": 12000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_du_burkina_faso.png"
+    "logo": "cup_logos/coupe_du_burkina_faso.webp"
   },
   {
     "id": 48,
@@ -573,7 +573,7 @@
     "prize_money": 10000,
     "teams_involved": 15,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/liberian_fa_cup.png"
+    "logo": "cup_logos/liberian_fa_cup.webp"
   },
   {
     "id": 49,
@@ -585,7 +585,7 @@
     "prize_money": 12000,
     "teams_involved": 18,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/sierra_leone_fa_cup.png"
+    "logo": "cup_logos/sierra_leone_fa_cup.webp"
   },
   {
     "id": 50,
@@ -597,7 +597,7 @@
     "prize_money": 10000,
     "teams_involved": 14,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_du_togo.png"
+    "logo": "cup_logos/coupe_du_togo.webp"
   },
   {
     "id": 51,
@@ -609,7 +609,7 @@
     "prize_money": 8000,
     "teams_involved": 12,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_de_madagascar.png"
+    "logo": "cup_logos/coupe_de_madagascar.webp"
   },
   {
     "id": 52,
@@ -621,7 +621,7 @@
     "prize_money": 8000,
     "teams_involved": 14,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_du_president_mauritania.png"
+    "logo": "cup_logos/coupe_du_president_mauritania.webp"
   },
   {
     "id": 53,
@@ -633,7 +633,7 @@
     "prize_money": 6000,
     "teams_involved": 10,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/mauritius_fa_cup.png"
+    "logo": "cup_logos/mauritius_fa_cup.webp"
   },
   {
     "id": 54,
@@ -645,7 +645,7 @@
     "prize_money": 8000,
     "teams_involved": 18,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_du_benin.png"
+    "logo": "cup_logos/coupe_du_benin.webp"
   },
   {
     "id": 55,
@@ -657,7 +657,7 @@
     "prize_money": 7000,
     "teams_involved": 14,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_du_tchad.png"
+    "logo": "cup_logos/coupe_du_tchad.webp"
   },
   {
     "id": 56,
@@ -669,7 +669,7 @@
     "prize_money": 8000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/nfa_cup.png"
+    "logo": "cup_logos/nfa_cup.webp"
   },
   {
     "id": 57,
@@ -681,7 +681,7 @@
     "prize_money": 8000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/swazi_fa_cup.png"
+    "logo": "cup_logos/swazi_fa_cup.webp"
   },
   {
     "id": 58,
@@ -693,7 +693,7 @@
     "prize_money": 6000,
     "teams_involved": 10,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/taca_de_cabo_verde.png"
+    "logo": "cup_logos/taca_de_cabo_verde.webp"
   },
   {
     "id": 59,
@@ -705,7 +705,7 @@
     "prize_money": 6000,
     "teams_involved": 16,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/lesotho_fa_cup.png"
+    "logo": "cup_logos/lesotho_fa_cup.webp"
   },
   {
     "id": 60,
@@ -717,7 +717,7 @@
     "prize_money": 5000,
     "teams_involved": 10,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/coupe_de_djibouti.png"
+    "logo": "cup_logos/coupe_de_djibouti.webp"
   },
   {
     "id": 61,
@@ -729,6 +729,6 @@
     "prize_money": 15000,
     "teams_involved": 24,
     "rules": "Format: Single-Elimination (Knockout)",
-    "logo": "cup_logos/copa_de_guinea_equatorial.png"
+    "logo": "cup_logos/copa_de_guinea_equatorial.webp"
   }
 ]

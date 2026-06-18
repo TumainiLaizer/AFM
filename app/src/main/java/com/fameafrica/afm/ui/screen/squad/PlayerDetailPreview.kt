@@ -73,7 +73,7 @@ private fun createMockPlayerDetailUiState(): PlayerDetailUiState {
         height = 185,
         position = "ST",
         nationality = "Nigeria",
-        nationalityFlag = "assets/flags/Nigeria.png",
+        nationalityFlag = "assets/flags/Nigeria.webp",
         shirtNumber = 9,
         preferredFoot = "Right",
         overallRating = 88,

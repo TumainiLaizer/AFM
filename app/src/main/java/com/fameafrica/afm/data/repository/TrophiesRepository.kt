@@ -83,7 +83,7 @@ class TrophiesRepository @Inject constructor(
             season = season,
             seasonYear = seasonYear,
             notes = "Won with $points points, GD: $goalDifference",
-            iconPath = "trophies/league_title.png",
+            iconPath = "trophies/league_title.webp",
             dateWon = getCurrentDate()
         )
 
@@ -136,7 +136,7 @@ class TrophiesRepository @Inject constructor(
             matchPlayed = matchScore,
             winType = winType,
             notes = "Cup victory",
-            iconPath = if (isContinental) "trophies/continental_cup.png" else "trophies/cup.png",
+            iconPath = if (isContinental) "trophies/continental_cup.webp" else "trophies/cup.webp",
             dateWon = getCurrentDate()
         )
 
@@ -211,7 +211,7 @@ class TrophiesRepository @Inject constructor(
             opponent = opponent,
             matchPlayed = matchScore,
             notes = "Super Cup victory",
-            iconPath = "trophies/super_cup.png",
+            iconPath = "trophies/super_cup.webp",
             dateWon = getCurrentDate()
         )
 
@@ -252,7 +252,7 @@ class TrophiesRepository @Inject constructor(
             seasonYear = seasonYear,
             seasonAwardId = seasonAwardId,
             notes = seasonAward.description ?: "Individual award",
-            iconPath = "trophies/award.png",
+            iconPath = "trophies/award.webp",
             dateWon = getCurrentDate()
         )
 

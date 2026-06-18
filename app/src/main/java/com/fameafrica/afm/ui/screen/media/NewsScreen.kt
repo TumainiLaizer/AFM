@@ -237,10 +237,10 @@ fun getNewsImageUrl(article: NewsEntity): String? {
     if (article.imageUrl != null && (article.imageUrl.contains("/") || article.imageUrl.contains(":"))) {
         val path = article.imageUrl
         return when {
-            path.startsWith("team_logo:") -> "file:///android_asset/team_logos/${path.substringAfter("team_logo:").lowercase().replace(" ", "_")}.png"
-            path.startsWith("league_logo:") -> "file:///android_asset/league_logos/${path.substringAfter("league_logo:").lowercase().replace(" ", "_")}.png"
-            path.startsWith("cup_logo:") -> "file:///android_asset/cup_logos/${path.substringAfter("cup_logo:").lowercase().replace(" ", "_")}.png"
-            path.startsWith("country_flag:") -> "file:///android_asset/flags/${path.substringAfter("country_flag:")}.png"
+            path.startsWith("team_logo:") -> "file:///android_asset/team_logos/${path.substringAfter("team_logo:").lowercase().replace(" ", "_")}.webp"
+            path.startsWith("league_logo:") -> "file:///android_asset/league_logos/${path.substringAfter("league_logo:").lowercase().replace(" ", "_")}.webp"
+            path.startsWith("cup_logo:") -> "file:///android_asset/cup_logos/${path.substringAfter("cup_logo:").lowercase().replace(" ", "_")}.webp"
+            path.startsWith("country_flag:") -> "file:///android_asset/flags/${path.substringAfter("country_flag:")}.webp"
             else -> article.imageUrl
         }
     }
@@ -248,15 +248,15 @@ fun getNewsImageUrl(article: NewsEntity): String? {
     // fallback mapping logic
     return when (article.category.uppercase()) {
         "MATCH" -> if (article.relatedTeam != null) {
-            "file:///android_asset/team_logos/${article.relatedTeam.lowercase().replace(" ", "_")}.png"
+            "file:///android_asset/team_logos/${article.relatedTeam.lowercase().replace(" ", "_")}.webp"
         } else "soccer_ball.webp"
         "TRANSFER" -> if (article.relatedPlayer != null) {
-            "file:///android_asset/player_faces/default_face.png"
+            "file:///android_asset/player_faces/default_face.webp"
         } else "player_superstar.webp"
         "INTERVIEW" -> if (article.relatedManager != null) {
-            "file:///android_asset/manager_faces/${article.relatedManager.lowercase().replace(" ", "_")}.png"
+            "file:///android_asset/manager_faces/${article.relatedManager.lowercase().replace(" ", "_")}.webp"
         } else "coach_male_north.webp"
-        "BOARD" -> "file:///android_asset/media_logos/fame_africa.png"
+        "BOARD" -> "file:///android_asset/media_logos/fame_africa.webp"
         else -> "default_club.webp"
     }
 }
@@ -418,7 +418,7 @@ fun NewsScreenTransferFilterPreview() {
                         content = "Reports from England suggest that Manchester City are preparing a massive bid for the Nigerian superstar. Personal terms are rumored to be agreed.",
                         category = "TRANSFER",
                         relatedPlayer = "Victor Osimhen",
-                        imageUrl = "file:///android_asset/player_faces/default_face.png",
+                        imageUrl = "file:///android_asset/player_faces/default_face.webp",
                         journalistName = "Transfer Guru",
                         journalistLogo = null,
                         timestamp = "2023-10-27 11:00:00",
@@ -471,7 +471,7 @@ fun NewsScreenInterviewBoardPreview() {
                         headline = "BOARD APPROVES STADIUM EXPANSION PLAN",
                         content = "The club board has officially signed off on the phase 2 expansion of the youth academy and training facilities.",
                         category = "BOARD",
-                        imageUrl = "file:///android_asset/media_logos/fame_africa.png",
+                        imageUrl = "file:///android_asset/media_logos/fame_africa.webp",
                         journalistName = "Club Official",
                         journalistLogo = null,
                         timestamp = "2023-10-27 07:00:00",

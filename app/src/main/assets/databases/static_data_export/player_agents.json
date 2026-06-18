@@ -16,7 +16,7 @@
     "total_deal_value": 8000000,
     "email": "eliud.william@gmail.com",
     "phone": "+255762596101",
-    "photo_url": "assets/agents/eliud.png",
+    "photo_url": "assets/agents/eliud.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -37,7 +37,7 @@
     "total_deal_value": 8000000,
     "email": "said.mwinyi@usa.com",
     "phone": "+255700001",
-    "photo_url": "assets/agents/mwinyi.png",
+    "photo_url": "assets/agents/mwinyi.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -58,7 +58,7 @@
     "total_deal_value": 6000000,
     "email": "sam.okoth@ntg.com",
     "phone": "+254700002",
-    "photo_url": "assets/agents/okoth.png",
+    "photo_url": "assets/agents/okoth.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -79,7 +79,7 @@
     "total_deal_value": 7000000,
     "email": "j.okello@kpm.com",
     "phone": "+256700003",
-    "photo_url": "assets/agents/okello.png",
+    "photo_url": "assets/agents/okello.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -100,7 +100,7 @@
     "total_deal_value": 4000000,
     "email": "j.ndaye@ksl.com",
     "phone": "+250700004",
-    "photo_url": "assets/agents/ndaye.png",
+    "photo_url": "assets/agents/ndaye.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -121,7 +121,7 @@
     "total_deal_value": 3000000,
     "email": "e.nkurunziza@be.com",
     "phone": "+257700005",
-    "photo_url": "assets/agents/nkurunziza.png",
+    "photo_url": "assets/agents/nkurunziza.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -142,7 +142,7 @@
     "total_deal_value": 9000000,
     "email": "d.tesema@aem.com",
     "phone": "+251700006",
-    "photo_url": "assets/agents/tesema.png",
+    "photo_url": "assets/agents/tesema.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -163,7 +163,7 @@
     "total_deal_value": 12000000,
     "email": "m.abdi@hsa.com",
     "phone": "+252700007",
-    "photo_url": "assets/agents/abdi.png",
+    "photo_url": "assets/agents/abdi.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -184,7 +184,7 @@
     "total_deal_value": 2000000,
     "email": "i.warsame@dpa.com",
     "phone": "+253700008",
-    "photo_url": "assets/agents/warsame.png",
+    "photo_url": "assets/agents/warsame.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -205,7 +205,7 @@
     "total_deal_value": 3500000,
     "email": "p.banda@lsh.com",
     "phone": "+265700009",
-    "photo_url": "assets/agents/banda.png",
+    "photo_url": "assets/agents/banda.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -226,7 +226,7 @@
     "total_deal_value": 8000000,
     "email": "t.chirwa@hsg.com",
     "phone": "+263700010",
-    "photo_url": "assets/agents/chirwa.png",
+    "photo_url": "assets/agents/chirwa.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -247,7 +247,7 @@
     "total_deal_value": 10000000,
     "email": "p.mwansa@zem.com",
     "phone": "+260700011",
-    "photo_url": "assets/agents/mwansa.png",
+    "photo_url": "assets/agents/mwansa.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -268,7 +268,7 @@
     "total_deal_value": 6000000,
     "email": "j.mucavele@mta.com",
     "phone": "+258700012",
-    "photo_url": "assets/agents/mucavele.png",
+    "photo_url": "assets/agents/mucavele.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -289,7 +289,7 @@
     "total_deal_value": 20000000,
     "email": "h.ali@nfa.com",
     "phone": "+201000013",
-    "photo_url": "assets/agents/hassan.png",
+    "photo_url": "assets/agents/hassan.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -310,7 +310,7 @@
     "total_deal_value": 18000000,
     "email": "y.haddad@apa.com",
     "phone": "+212700014",
-    "photo_url": "assets/agents/yacine.png",
+    "photo_url": "assets/agents/yacine.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -331,7 +331,7 @@
     "total_deal_value": 22000000,
     "email": "o.bensalem@meg.com",
     "phone": "+213700015",
-    "photo_url": "assets/agents/omar.png",
+    "photo_url": "assets/agents/omar.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -352,7 +352,7 @@
     "total_deal_value": 15000000,
     "email": "a.youssef@tea.com",
     "phone": "+216700016",
-    "photo_url": "assets/agents/ali.png",
+    "photo_url": "assets/agents/ali.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -373,7 +373,7 @@
     "total_deal_value": 8000000,
     "email": "m.khatib@lsm.com",
     "phone": "+218700017",
-    "photo_url": "assets/agents/khatib.png",
+    "photo_url": "assets/agents/khatib.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -394,7 +394,7 @@
     "total_deal_value": 6000000,
     "email": "a.ould@ns.com",
     "phone": "+222700018",
-    "photo_url": "assets/agents/ould.png",
+    "photo_url": "assets/agents/ould.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -415,7 +415,7 @@
     "total_deal_value": 4000000,
     "email": "a.idriss@nfg.com",
     "phone": "+235700019",
-    "photo_url": "assets/agents/idris.png",
+    "photo_url": "assets/agents/idris.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -436,7 +436,7 @@
     "total_deal_value": 9000000,
     "email": "m.senussi@spa.com",
     "phone": "+249700020",
-    "photo_url": "assets/agents/senussi.png",
+    "photo_url": "assets/agents/senussi.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -457,7 +457,7 @@
     "total_deal_value": 40000000,
     "email": "a.balogun@lea.com",
     "phone": "+234700021",
-    "photo_url": "assets/agents/ayo.png",
+    "photo_url": "assets/agents/ayo.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -478,7 +478,7 @@
     "total_deal_value": 30000000,
     "email": "e.gnahore@apa.com",
     "phone": "+225700022",
-    "photo_url": "assets/agents/gnahore.png",
+    "photo_url": "assets/agents/gnahore.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -499,7 +499,7 @@
     "total_deal_value": 38000000,
     "email": "m.diallo@dsc.com",
     "phone": "+221700023",
-    "photo_url": "assets/agents/diallo.png",
+    "photo_url": "assets/agents/diallo.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -520,7 +520,7 @@
     "total_deal_value": 10000000,
     "email": "a.bah@gtg.com",
     "phone": "+224700024",
-    "photo_url": "assets/agents/bah.png",
+    "photo_url": "assets/agents/bah.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -541,7 +541,7 @@
     "total_deal_value": 20000000,
     "email": "s.keita@be.com",
     "phone": "+223700025",
-    "photo_url": "assets/agents/keita.png",
+    "photo_url": "assets/agents/keita.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -562,7 +562,7 @@
     "total_deal_value": 17000000,
     "email": "k.badu@asg.com",
     "phone": "+233700026",
-    "photo_url": "assets/agents/badu.png",
+    "photo_url": "assets/agents/badu.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -583,7 +583,7 @@
     "total_deal_value": 8000000,
     "email": "a.sow@nsa.com",
     "phone": "+227700027",
-    "photo_url": "assets/agents/sow.png",
+    "photo_url": "assets/agents/sow.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -604,7 +604,7 @@
     "total_deal_value": 5000000,
     "email": "e.jallow@bfa.com",
     "phone": "+220700028",
-    "photo_url": "assets/agents/jallow.png",
+    "photo_url": "assets/agents/jallow.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -625,7 +625,7 @@
     "total_deal_value": 9000000,
     "email": "i.kabore@osm.com",
     "phone": "+226700029",
-    "photo_url": "assets/agents/kabore.png",
+    "photo_url": "assets/agents/kabore.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -646,7 +646,7 @@
     "total_deal_value": 7000000,
     "email": "s.doe@msg.com",
     "phone": "+231700030",
-    "photo_url": "assets/agents/doe.png",
+    "photo_url": "assets/agents/doe.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -667,7 +667,7 @@
     "total_deal_value": 8000000,
     "email": "a.kamara@fea.com",
     "phone": "+232700031",
-    "photo_url": "assets/agents/kamara.png",
+    "photo_url": "assets/agents/kamara.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -688,7 +688,7 @@
     "total_deal_value": 6000000,
     "email": "k.mensah@lta.com",
     "phone": "+228700032",
-    "photo_url": "assets/agents/mensah.png",
+    "photo_url": "assets/agents/mensah.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -709,7 +709,7 @@
     "total_deal_value": 7000000,
     "email": "j.kouassi@bsc.com",
     "phone": "+229700033",
-    "photo_url": "assets/agents/kouassi.png",
+    "photo_url": "assets/agents/kouassi.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -730,7 +730,7 @@
     "total_deal_value": 12000000,
     "email": "p.teixeira@cve.com",
     "phone": "+238700034",
-    "photo_url": "assets/agents/teixeira.png",
+    "photo_url": "assets/agents/teixeira.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -751,7 +751,7 @@
     "total_deal_value": 18000000,
     "email": "j.mukendi@kea.com",
     "phone": "+243700035",
-    "photo_url": "assets/agents/mukendi.png",
+    "photo_url": "assets/agents/mukendi.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -772,7 +772,7 @@
     "total_deal_value": 9000000,
     "email": "p.okombi@bsg.com",
     "phone": "+242700036",
-    "photo_url": "assets/agents/okombi.png",
+    "photo_url": "assets/agents/okombi.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -793,7 +793,7 @@
     "total_deal_value": 14000000,
     "email": "d.ngoma@yth.com",
     "phone": "+237700037",
-    "photo_url": "assets/agents/ngoma.png",
+    "photo_url": "assets/agents/ngoma.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -814,7 +814,7 @@
     "total_deal_value": 10000000,
     "email": "c.obiang@msa.com",
     "phone": "+240700038",
-    "photo_url": "assets/agents/obiang.png",
+    "photo_url": "assets/agents/obiang.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -835,7 +835,7 @@
     "total_deal_value": 3000000,
     "email": "j.bokassa@bfg.com",
     "phone": "+236700039",
-    "photo_url": "assets/agents/bokassa.png",
+    "photo_url": "assets/agents/bokassa.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -856,7 +856,7 @@
     "total_deal_value": 15000000,
     "email": "t.mokoena@mpg.com",
     "phone": "+27700040",
-    "photo_url": "assets/agents/mokoena.png",
+    "photo_url": "assets/agents/mokoena.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -877,7 +877,7 @@
     "total_deal_value": 5000000,
     "email": "b.dlamini@msm.com",
     "phone": "+268700041",
-    "photo_url": "assets/agents/dlamini.png",
+    "photo_url": "assets/agents/dlamini.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -898,7 +898,7 @@
     "total_deal_value": 8000000,
     "email": "l.phiri@gta.com",
     "phone": "+267700042",
-    "photo_url": "assets/agents/phiri.png",
+    "photo_url": "assets/agents/phiri.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -919,7 +919,7 @@
     "total_deal_value": 13000000,
     "email": "m.cardoso@leg.com",
     "phone": "+244700043",
-    "photo_url": "assets/agents/cardoso.png",
+    "photo_url": "assets/agents/cardoso.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -940,7 +940,7 @@
     "total_deal_value": 9000000,
     "email": "p.shilongo@wsa.com",
     "phone": "+264700044",
-    "photo_url": "assets/agents/shilongo.png",
+    "photo_url": "assets/agents/shilongo.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -961,7 +961,7 @@
     "total_deal_value": 7000000,
     "email": "j.rakoto@ath.com",
     "phone": "+261700045",
-    "photo_url": "assets/agents/rakoto.png",
+    "photo_url": "assets/agents/rakoto.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -982,7 +982,7 @@
     "total_deal_value": 11000000,
     "email": "r.naidoo@mes.com",
     "phone": "+230700046",
-    "photo_url": "assets/agents/naidoo.png",
+    "photo_url": "assets/agents/naidoo.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },
@@ -1003,7 +1003,7 @@
     "total_deal_value": 5000000,
     "email": "t.letsie@mfa.com",
     "phone": "+266700047",
-    "photo_url": "assets/agents/letsie.png",
+    "photo_url": "assets/agents/letsie.webp",
     "created_at": "2026-04-09 09:20:59",
     "updated_at": "2026-04-09 09:20:59"
   },

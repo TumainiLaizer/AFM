@@ -245,7 +245,7 @@ class SponsorsRepository @Inject constructor(
     private suspend fun createFameAfricaSponsor(): SponsorsEntity {
         val sponsor = SponsorsEntity(
             name = "FAME Africa™",
-            logo = "sponsor/logos/fame_africa.png",
+            logo = "sponsor/logos/fame_africa.webp",
             sponsorType = SponsorType.PLACEHOLDER.value,
             sponsorshipValue = 100_000_000,
             contractDuration = 5,

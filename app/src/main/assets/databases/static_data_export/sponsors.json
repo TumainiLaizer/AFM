@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "NBC",
-    "logo": "sponsors_logos/nbc.png",
+    "logo": "sponsors_logos/nbc.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 50000000,
     "contract_duration": 5,
@@ -24,7 +24,7 @@
   {
     "id": 2,
     "name": "CRDB",
-    "logo": "sponsors_logos/crdb.png",
+    "logo": "sponsors_logos/crdb.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 40000000,
     "contract_duration": 4,
@@ -46,7 +46,7 @@
   {
     "id": 3,
     "name": "PBZ Bank",
-    "logo": "sponsors_logos/pbz_bank.png",
+    "logo": "sponsors_logos/pbz_bank.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 30000000,
     "contract_duration": 3,
@@ -68,7 +68,7 @@
   {
     "id": 4,
     "name": "Vodafone",
-    "logo": "sponsors_logos/vodafone.png",
+    "logo": "sponsors_logos/vodafone.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 80000000,
     "contract_duration": 5,
@@ -90,7 +90,7 @@
   {
     "id": 5,
     "name": "Inwi",
-    "logo": "sponsors_logos/inwi.png",
+    "logo": "sponsors_logos/inwi.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 75000000,
     "contract_duration": 5,
@@ -112,7 +112,7 @@
   {
     "id": 6,
     "name": "Mobilis",
-    "logo": "sponsors_logos/mobilis.png",
+    "logo": "sponsors_logos/mobilis.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 60000000,
     "contract_duration": 4,
@@ -134,7 +134,7 @@
   {
     "id": 7,
     "name": "ABSA",
-    "logo": "sponsors_logos/absa.png",
+    "logo": "sponsors_logos/absa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 90000000,
     "contract_duration": 5,
@@ -156,7 +156,7 @@
   {
     "id": 8,
     "name": "Halkbank",
-    "logo": "sponsors_logos/halkbank.png",
+    "logo": "sponsors_logos/halkbank.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 55000000,
     "contract_duration": 4,
@@ -178,7 +178,7 @@
   {
     "id": 9,
     "name": "Vodacom",
-    "logo": "sponsors_logos/vodacom.png",
+    "logo": "sponsors_logos/vodacom.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 70000000,
     "contract_duration": 5,
@@ -200,7 +200,7 @@
   {
     "id": 10,
     "name": "SportPesa",
-    "logo": "sponsors_logos/sportpesa.png",
+    "logo": "sponsors_logos/sportpesa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 45000000,
     "contract_duration": 4,
@@ -222,7 +222,7 @@
   {
     "id": 11,
     "name": "StarTimes",
-    "logo": "sponsors_logos/startimes.png",
+    "logo": "sponsors_logos/startimes.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 35000000,
     "contract_duration": 4,
@@ -244,7 +244,7 @@
   {
     "id": 12,
     "name": "MTN",
-    "logo": "sponsors_logos/mtn.png",
+    "logo": "sponsors_logos/mtn.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 65000000,
     "contract_duration": 5,
@@ -266,7 +266,7 @@
   {
     "id": 13,
     "name": "Unitel",
-    "logo": "sponsors_logos/unitel.png",
+    "logo": "sponsors_logos/unitel.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 50000000,
     "contract_duration": 4,
@@ -288,7 +288,7 @@
   {
     "id": 14,
     "name": "Bet9ja",
-    "logo": "sponsors_logos/bet9ja.png",
+    "logo": "sponsors_logos/bet9ja.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 55000000,
     "contract_duration": 4,
@@ -310,7 +310,7 @@
   {
     "id": 15,
     "name": "Orange",
-    "logo": "sponsors_logos/orange.png",
+    "logo": "sponsors_logos/orange.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 60000000,
     "contract_duration": 5,
@@ -332,7 +332,7 @@
   {
     "id": 16,
     "name": "BTC",
-    "logo": "sponsors_logos/btc.png",
+    "logo": "sponsors_logos/btc.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 30000000,
     "contract_duration": 3,
@@ -354,7 +354,7 @@
   {
     "id": 17,
     "name": "Primus",
-    "logo": "sponsors_logos/primus.png",
+    "logo": "sponsors_logos/primus.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 35000000,
     "contract_duration": 4,
@@ -376,7 +376,7 @@
   {
     "id": 18,
     "name": "Mozal",
-    "logo": "sponsors_logos/mozal.png",
+    "logo": "sponsors_logos/mozal.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 25000000,
     "contract_duration": 3,
@@ -398,7 +398,7 @@
   {
     "id": 19,
     "name": "TNM",
-    "logo": "sponsors_logos/tnm.png",
+    "logo": "sponsors_logos/tnm.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 20000000,
     "contract_duration": 3,
@@ -420,7 +420,7 @@
   {
     "id": 20,
     "name": "Delta",
-    "logo": "sponsors_logos/delta.png",
+    "logo": "sponsors_logos/delta.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 28000000,
     "contract_duration": 3,
@@ -442,7 +442,7 @@
   {
     "id": 21,
     "name": "BetPawa",
-    "logo": "sponsors_logos/betpawa.png",
+    "logo": "sponsors_logos/betpawa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 40000000,
     "contract_duration": 4,
@@ -464,7 +464,7 @@
   {
     "id": 22,
     "name": "Ethio Telecom",
-    "logo": "sponsors_logos/ethio_telecom.png",
+    "logo": "sponsors_logos/ethio_telecom.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 35000000,
     "contract_duration": 4,
@@ -486,7 +486,7 @@
   {
     "id": 23,
     "name": "Hormuud",
-    "logo": "sponsors_logos/hormuud.png",
+    "logo": "sponsors_logos/hormuud.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 15000000,
     "contract_duration": 3,
@@ -508,7 +508,7 @@
   {
     "id": 24,
     "name": "Gambia Ports Authority",
-    "logo": "sponsors_logos/gambia_ports_authority.png",
+    "logo": "sponsors_logos/gambia_ports_authority.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 12000000,
     "contract_duration": 3,
@@ -530,7 +530,7 @@
   {
     "id": 25,
     "name": "Lonestar",
-    "logo": "sponsors_logos/lonestar.png",
+    "logo": "sponsors_logos/lonestar.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 10000000,
     "contract_duration": 2,
@@ -552,7 +552,7 @@
   {
     "id": 26,
     "name": "Africell",
-    "logo": "sponsors_logos/africell.png",
+    "logo": "sponsors_logos/africell.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 15000000,
     "contract_duration": 3,
@@ -574,7 +574,7 @@
   {
     "id": 27,
     "name": "Moov",
-    "logo": "sponsors_logos/moov.png",
+    "logo": "sponsors_logos/moov.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 12000000,
     "contract_duration": 3,
@@ -596,7 +596,7 @@
   {
     "id": 28,
     "name": "Mauritel",
-    "logo": "sponsors_logos/mauritel.png",
+    "logo": "sponsors_logos/mauritel.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 10000000,
     "contract_duration": 2,
@@ -618,7 +618,7 @@
   {
     "id": 29,
     "name": "Tigo",
-    "logo": "sponsors_logos/tigo.png",
+    "logo": "sponsors_logos/tigo.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 10000000,
     "contract_duration": 2,
@@ -640,7 +640,7 @@
   {
     "id": 30,
     "name": "MTC",
-    "logo": "sponsors_logos/mtc.png",
+    "logo": "sponsors_logos/mtc.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 10000000,
     "contract_duration": 2,
@@ -662,7 +662,7 @@
   {
     "id": 31,
     "name": "Cabo Verde Telecom",
-    "logo": "sponsors_logos/cabo_verde_telecom.png",
+    "logo": "sponsors_logos/cabo_verde_telecom.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 8000000,
     "contract_duration": 2,
@@ -684,7 +684,7 @@
   {
     "id": 32,
     "name": "Lesotho Post",
-    "logo": "sponsors_logos/lesotho_post.png",
+    "logo": "sponsors_logos/lesotho_post.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 8000000,
     "contract_duration": 2,
@@ -706,7 +706,7 @@
   {
     "id": 33,
     "name": "Djibouti Telecom",
-    "logo": "sponsors_logos/djibouti_telecom.png",
+    "logo": "sponsors_logos/djibouti_telecom.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 8000000,
     "contract_duration": 2,
@@ -728,7 +728,7 @@
   {
     "id": 34,
     "name": "GEPetrol",
-    "logo": "sponsors_logos/gepetrol.png",
+    "logo": "sponsors_logos/gepetrol.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 12000000,
     "contract_duration": 3,
@@ -750,7 +750,7 @@
   {
     "id": 35,
     "name": "CAF",
-    "logo": "sponsors_logos/caf.png",
+    "logo": "sponsors_logos/caf.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 200000000,
     "contract_duration": 5,
@@ -772,7 +772,7 @@
   {
     "id": 36,
     "name": "Total Energies",
-    "logo": "sponsors_logos/total_energies.png",
+    "logo": "sponsors_logos/total_energies.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 150000000,
     "contract_duration": 5,
@@ -794,7 +794,7 @@
   {
     "id": 37,
     "name": "The Coca-Cola Company",
-    "logo": "sponsors_logos/the_coca_cola_company.png",
+    "logo": "sponsors_logos/the_coca_cola_company.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 300000000,
     "contract_duration": 5,
@@ -816,7 +816,7 @@
   {
     "id": 38,
     "name": "VISA",
-    "logo": "sponsors_logos/visa.png",
+    "logo": "sponsors_logos/visa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 250000000,
     "contract_duration": 5,
@@ -838,7 +838,7 @@
   {
     "id": 39,
     "name": "Azam Media",
-    "logo": "sponsors_logos/azam_media.png",
+    "logo": "sponsors_logos/azam_media.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 40000000,
     "contract_duration": 4,
@@ -860,7 +860,7 @@
   {
     "id": 40,
     "name": "FAME Africa\u2122",
-    "logo": "sponsors_logos/fame_africa.png",
+    "logo": "sponsors_logos/fame_africa.webp",
     "sponsor_type": "PLACEHOLDER",
     "sponsorship_value": 100000000,
     "contract_duration": 5,
@@ -882,7 +882,7 @@
   {
     "id": 41,
     "name": "Egyptian FA",
-    "logo": "sponsors_logos/egyptian_fa.png",
+    "logo": "sponsors_logos/egyptian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 40000000,
     "contract_duration": 4,
@@ -904,7 +904,7 @@
   {
     "id": 42,
     "name": "Moroccan FA",
-    "logo": "sponsors_logos/moroccan_fa.png",
+    "logo": "sponsors_logos/moroccan_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 35000000,
     "contract_duration": 4,
@@ -926,7 +926,7 @@
   {
     "id": 43,
     "name": "Algerian FA",
-    "logo": "sponsors_logos/algerian_fa.png",
+    "logo": "sponsors_logos/algerian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 30000000,
     "contract_duration": 3,
@@ -948,7 +948,7 @@
   {
     "id": 44,
     "name": "South African FA",
-    "logo": "sponsors_logos/south_african_fa.png",
+    "logo": "sponsors_logos/south_african_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 45000000,
     "contract_duration": 4,
@@ -970,7 +970,7 @@
   {
     "id": 45,
     "name": "Tunisian FA",
-    "logo": "sponsors_logos/tunisian_fa.png",
+    "logo": "sponsors_logos/tunisian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 28000000,
     "contract_duration": 3,
@@ -992,7 +992,7 @@
   {
     "id": 46,
     "name": "Congolese FA DRC",
-    "logo": "sponsors_logos/congolese_fa_drc.png",
+    "logo": "sponsors_logos/congolese_fa_drc.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 25000000,
     "contract_duration": 3,
@@ -1014,7 +1014,7 @@
   {
     "id": 47,
     "name": "Kenyan FA",
-    "logo": "sponsors_logos/kenyan_fa.png",
+    "logo": "sponsors_logos/kenyan_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 20000000,
     "contract_duration": 3,
@@ -1036,7 +1036,7 @@
   {
     "id": 48,
     "name": "Ugandan FA",
-    "logo": "sponsors_logos/ugandan_fa.png",
+    "logo": "sponsors_logos/ugandan_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 15000000,
     "contract_duration": 2,
@@ -1058,7 +1058,7 @@
   {
     "id": 49,
     "name": "Sudani FA",
-    "logo": "sponsors_logos/sudani_fa.png",
+    "logo": "sponsors_logos/sudani_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 20000000,
     "contract_duration": 3,
@@ -1080,7 +1080,7 @@
   {
     "id": 50,
     "name": "Angolan FA",
-    "logo": "sponsors_logos/angolan_fa.png",
+    "logo": "sponsors_logos/angolan_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 15000000,
     "contract_duration": 2,
@@ -1102,7 +1102,7 @@
   {
     "id": 51,
     "name": "Nigerian FA",
-    "logo": "sponsors_logos/nigerian_fa.png",
+    "logo": "sponsors_logos/nigerian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 20000000,
     "contract_duration": 3,
@@ -1124,7 +1124,7 @@
   {
     "id": 52,
     "name": "Ivorian FA",
-    "logo": "sponsors_logos/ivorian_fa.png",
+    "logo": "sponsors_logos/ivorian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 15000000,
     "contract_duration": 2,
@@ -1146,7 +1146,7 @@
   {
     "id": 53,
     "name": "South Sudan FA",
-    "logo": "sponsors_logos/south_sudan_fa.png",
+    "logo": "sponsors_logos/south_sudan_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 10000000,
     "contract_duration": 2,
@@ -1168,7 +1168,7 @@
   {
     "id": 54,
     "name": "Senegalese FA",
-    "logo": "sponsors_logos/senegalese_fa.png",
+    "logo": "sponsors_logos/senegalese_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 15000000,
     "contract_duration": 2,
@@ -1190,7 +1190,7 @@
   {
     "id": 55,
     "name": "Botswana FA",
-    "logo": "sponsors_logos/botswana_fa.png",
+    "logo": "sponsors_logos/botswana_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 10000000,
     "contract_duration": 2,
@@ -1212,7 +1212,7 @@
   {
     "id": 56,
     "name": "Rwandan FA",
-    "logo": "sponsors_logos/rwandan_fa.png",
+    "logo": "sponsors_logos/rwandan_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 10000000,
     "contract_duration": 2,
@@ -1234,7 +1234,7 @@
   {
     "id": 57,
     "name": "Cameroonian FA",
-    "logo": "sponsors_logos/cameroonian_fa.png",
+    "logo": "sponsors_logos/cameroonian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 15000000,
     "contract_duration": 2,
@@ -1256,7 +1256,7 @@
   {
     "id": 58,
     "name": "Mozambican FA",
-    "logo": "sponsors_logos/mozambican_fa.png",
+    "logo": "sponsors_logos/mozambican_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 8000000,
     "contract_duration": 2,
@@ -1278,7 +1278,7 @@
   {
     "id": 59,
     "name": "Burundian FA",
-    "logo": "sponsors_logos/burundian_fa.png",
+    "logo": "sponsors_logos/burundian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 8000000,
     "contract_duration": 2,
@@ -1300,7 +1300,7 @@
   {
     "id": 60,
     "name": "Malawi FA",
-    "logo": "sponsors_logos/malawi_fa.png",
+    "logo": "sponsors_logos/malawi_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 6000000,
     "contract_duration": 1,
@@ -1322,7 +1322,7 @@
   {
     "id": 61,
     "name": "Zambian FA",
-    "logo": "sponsors_logos/zambian_fa.png",
+    "logo": "sponsors_logos/zambian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 10000000,
     "contract_duration": 2,
@@ -1344,7 +1344,7 @@
   {
     "id": 62,
     "name": "Guinean FA",
-    "logo": "sponsors_logos/guinean_fa.png",
+    "logo": "sponsors_logos/guinean_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 8000000,
     "contract_duration": 2,
@@ -1366,7 +1366,7 @@
   {
     "id": 63,
     "name": "Libyan FA",
-    "logo": "sponsors_logos/libyan_fa.png",
+    "logo": "sponsors_logos/libyan_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 7000000,
     "contract_duration": 1,
@@ -1388,7 +1388,7 @@
   {
     "id": 64,
     "name": "Malian FA",
-    "logo": "sponsors_logos/malian_fa.png",
+    "logo": "sponsors_logos/malian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 8000000,
     "contract_duration": 2,
@@ -1410,7 +1410,7 @@
   {
     "id": 65,
     "name": "Zimbabwean FA",
-    "logo": "sponsors_logos/zimbabwean_fa.png",
+    "logo": "sponsors_logos/zimbabwean_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 10000000,
     "contract_duration": 2,
@@ -1432,7 +1432,7 @@
   {
     "id": 66,
     "name": "Ghanaian FA",
-    "logo": "sponsors_logos/ghanaian_fa.png",
+    "logo": "sponsors_logos/ghanaian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 15000000,
     "contract_duration": 2,
@@ -1454,7 +1454,7 @@
   {
     "id": 67,
     "name": "Congolese FA",
-    "logo": "sponsors_logos/congolese_fa.png",
+    "logo": "sponsors_logos/congolese_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 8000000,
     "contract_duration": 2,
@@ -1476,7 +1476,7 @@
   {
     "id": 68,
     "name": "Ethiopian FA",
-    "logo": "sponsors_logos/ethiopian_fa.png",
+    "logo": "sponsors_logos/ethiopian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 8000000,
     "contract_duration": 2,
@@ -1498,7 +1498,7 @@
   {
     "id": 69,
     "name": "Somali FA",
-    "logo": "sponsors_logos/somali_fa.png",
+    "logo": "sponsors_logos/somali_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 5000000,
     "contract_duration": 1,
@@ -1520,7 +1520,7 @@
   {
     "id": 70,
     "name": "CAR FA",
-    "logo": "sponsors_logos/car_fa.png",
+    "logo": "sponsors_logos/car_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 5000000,
     "contract_duration": 1,
@@ -1542,7 +1542,7 @@
   {
     "id": 71,
     "name": "Nigerien FA",
-    "logo": "sponsors_logos/nigerien_fa.png",
+    "logo": "sponsors_logos/nigerien_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 6000000,
     "contract_duration": 1,
@@ -1564,7 +1564,7 @@
   {
     "id": 72,
     "name": "Gambian FA",
-    "logo": "sponsors_logos/gambian_fa.png",
+    "logo": "sponsors_logos/gambian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 6000000,
     "contract_duration": 1,
@@ -1586,7 +1586,7 @@
   {
     "id": 73,
     "name": "Burkinabe FA",
-    "logo": "sponsors_logos/burkinabe_fa.png",
+    "logo": "sponsors_logos/burkinabe_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 6000000,
     "contract_duration": 1,
@@ -1608,7 +1608,7 @@
   {
     "id": 74,
     "name": "Liberian FA",
-    "logo": "sponsors_logos/liberian_fa.png",
+    "logo": "sponsors_logos/liberian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 5000000,
     "contract_duration": 1,
@@ -1630,7 +1630,7 @@
   {
     "id": 75,
     "name": "Sierra Leone FA",
-    "logo": "sponsors_logos/sierra_leone_fa.png",
+    "logo": "sponsors_logos/sierra_leone_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 6000000,
     "contract_duration": 1,
@@ -1652,7 +1652,7 @@
   {
     "id": 76,
     "name": "Togolese FA",
-    "logo": "sponsors_logos/togolese_fa.png",
+    "logo": "sponsors_logos/togolese_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 5000000,
     "contract_duration": 1,
@@ -1674,7 +1674,7 @@
   {
     "id": 77,
     "name": "Malagasy FA",
-    "logo": "sponsors_logos/malagasy_fa.png",
+    "logo": "sponsors_logos/malagasy_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 4000000,
     "contract_duration": 1,
@@ -1696,7 +1696,7 @@
   {
     "id": 78,
     "name": "Mauritanian FA",
-    "logo": "sponsors_logos/mauritanian_fa.png",
+    "logo": "sponsors_logos/mauritanian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 4000000,
     "contract_duration": 1,
@@ -1718,7 +1718,7 @@
   {
     "id": 79,
     "name": "Mauritian FA",
-    "logo": "sponsors_logos/mauritian_fa.png",
+    "logo": "sponsors_logos/mauritian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 3000000,
     "contract_duration": 1,
@@ -1740,7 +1740,7 @@
   {
     "id": 80,
     "name": "Beninese FA",
-    "logo": "sponsors_logos/beninese_fa.png",
+    "logo": "sponsors_logos/beninese_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 4000000,
     "contract_duration": 1,
@@ -1762,7 +1762,7 @@
   {
     "id": 81,
     "name": "Chadian FA",
-    "logo": "sponsors_logos/chadian_fa.png",
+    "logo": "sponsors_logos/chadian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 3500000,
     "contract_duration": 1,
@@ -1784,7 +1784,7 @@
   {
     "id": 82,
     "name": "Namibian FA",
-    "logo": "sponsors_logos/namibian_fa.png",
+    "logo": "sponsors_logos/namibian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 4000000,
     "contract_duration": 1,
@@ -1806,7 +1806,7 @@
   {
     "id": 83,
     "name": "Swazi FA",
-    "logo": "sponsors_logos/swazi_fa.png",
+    "logo": "sponsors_logos/swazi_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 4000000,
     "contract_duration": 1,
@@ -1828,7 +1828,7 @@
   {
     "id": 84,
     "name": "Cape Verdean FA",
-    "logo": "sponsors_logos/cape_verdean_fa.png",
+    "logo": "sponsors_logos/cape_verdean_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 3000000,
     "contract_duration": 1,
@@ -1850,7 +1850,7 @@
   {
     "id": 85,
     "name": "Basotho FA",
-    "logo": "sponsors_logos/basotho_fa.png",
+    "logo": "sponsors_logos/basotho_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 3000000,
     "contract_duration": 1,
@@ -1872,7 +1872,7 @@
   {
     "id": 86,
     "name": "Djiboutian FA",
-    "logo": "sponsors_logos/djiboutian_fa.png",
+    "logo": "sponsors_logos/djiboutian_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 2500000,
     "contract_duration": 1,
@@ -1894,7 +1894,7 @@
   {
     "id": 87,
     "name": "Equatoguinean FA",
-    "logo": "sponsors_logos/equatoguinean_fa.png",
+    "logo": "sponsors_logos/equatoguinean_fa.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 8000000,
     "contract_duration": 2,
@@ -1916,7 +1916,7 @@
   {
     "id": 88,
     "name": "Haier",
-    "logo": "sponsors_logos/haier.png",
+    "logo": "sponsors_logos/haier.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 150000,
     "contract_duration": 2,
@@ -1938,7 +1938,7 @@
   {
     "id": 89,
     "name": "MO Extra",
-    "logo": "sponsors_logos/mo_extra.png",
+    "logo": "sponsors_logos/mo_extra.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 175040,
     "contract_duration": 3,
@@ -1960,7 +1960,7 @@
   {
     "id": 90,
     "name": "Betway",
-    "logo": "sponsors_logos/betway.png",
+    "logo": "sponsors_logos/betway.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 120000,
     "contract_duration": 2,
@@ -1982,7 +1982,7 @@
   {
     "id": 91,
     "name": "JayRutty",
-    "logo": "sponsors_logos/jayrutty.png",
+    "logo": "sponsors_logos/jayrutty.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 80000,
     "contract_duration": 2,
@@ -2004,7 +2004,7 @@
   {
     "id": 92,
     "name": "Azam Group",
-    "logo": "sponsors_logos/azam_group.png",
+    "logo": "sponsors_logos/azam_group.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 204213,
     "contract_duration": 3,
@@ -2026,7 +2026,7 @@
   {
     "id": 93,
     "name": "Singida Fountain Water",
-    "logo": "sponsors_logos/singida_fountain_water.png",
+    "logo": "sponsors_logos/singida_fountain_water.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 136142,
     "contract_duration": 3,
@@ -2048,7 +2048,7 @@
   {
     "id": 94,
     "name": "Kagera Sugar Ltd",
-    "logo": "sponsors_logos/kagera_sugar_ltd.png",
+    "logo": "sponsors_logos/kagera_sugar_ltd.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 35656,
     "contract_duration": 3,
@@ -2070,7 +2070,7 @@
   {
     "id": 95,
     "name": "Dodoma Cement",
-    "logo": "sponsors_logos/dodoma_cement.png",
+    "logo": "sponsors_logos/dodoma_cement.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 32414,
     "contract_duration": 3,
@@ -2092,7 +2092,7 @@
   {
     "id": 96,
     "name": "Mashujaa Energy",
-    "logo": "sponsors_logos/mashujaa_energy.png",
+    "logo": "sponsors_logos/mashujaa_energy.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 30794,
     "contract_duration": 3,
@@ -2114,7 +2114,7 @@
   {
     "id": 97,
     "name": "JKT Tanzania Army",
-    "logo": "sponsors_logos/jkt_tanzania_army.png",
+    "logo": "sponsors_logos/jkt_tanzania_army.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 29173,
     "contract_duration": 3,
@@ -2136,7 +2136,7 @@
   {
     "id": 98,
     "name": "Tabora Gold Mining",
-    "logo": "sponsors_logos/tabora_gold_mining.png",
+    "logo": "sponsors_logos/tabora_gold_mining.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 27552,
     "contract_duration": 3,
@@ -2158,7 +2158,7 @@
   {
     "id": 99,
     "name": "Kinondoni Municipal Council",
-    "logo": "sponsors_logos/kinondoni_municipal_council.png",
+    "logo": "sponsors_logos/kinondoni_municipal_council.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 25931,
     "contract_duration": 3,
@@ -2180,7 +2180,7 @@
   {
     "id": 100,
     "name": "Fountain Gate Academy",
-    "logo": "sponsors_logos/fountain_gate_academy.png",
+    "logo": "sponsors_logos/fountain_gate_academy.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 24311,
     "contract_duration": 3,
@@ -2202,7 +2202,7 @@
   {
     "id": 101,
     "name": "Coastal Union Shipping",
-    "logo": "sponsors_logos/coastal_union_shipping.png",
+    "logo": "sponsors_logos/coastal_union_shipping.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 22690,
     "contract_duration": 3,
@@ -2224,7 +2224,7 @@
   {
     "id": 102,
     "name": "Namungo Construction",
-    "logo": "sponsors_logos/namungo_construction.png",
+    "logo": "sponsors_logos/namungo_construction.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 21069,
     "contract_duration": 3,
@@ -2246,7 +2246,7 @@
   {
     "id": 103,
     "name": "Pamba Textile Industries",
-    "logo": "sponsors_logos/pamba_textile_industries.png",
+    "logo": "sponsors_logos/pamba_textile_industries.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 19448,
     "contract_duration": 3,
@@ -2268,7 +2268,7 @@
   {
     "id": 104,
     "name": "Tanzania Prisons Service",
-    "logo": "sponsors_logos/tanzania_prisons_service.png",
+    "logo": "sponsors_logos/tanzania_prisons_service.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 17828,
     "contract_duration": 3,
@@ -2290,7 +2290,7 @@
   {
     "id": 105,
     "name": "KenGold Mining",
-    "logo": "sponsors_logos/kengold_mining.png",
+    "logo": "sponsors_logos/kengold_mining.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 16207,
     "contract_duration": 3,
@@ -2312,7 +2312,7 @@
   {
     "id": 106,
     "name": "TANESCO",
-    "logo": "sponsors_logos/tanesco.png",
+    "logo": "sponsors_logos/tanesco.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 32414,
     "contract_duration": 3,
@@ -2334,7 +2334,7 @@
   {
     "id": 107,
     "name": "Tanzania Revenue Authority",
-    "logo": "sponsors_logos/tanzania_revenue_authority.png",
+    "logo": "sponsors_logos/tanzania_revenue_authority.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 32414,
     "contract_duration": 3,
@@ -2356,7 +2356,7 @@
   {
     "id": 108,
     "name": "Yas",
-    "logo": "sponsors_logos/yas.png",
+    "logo": "sponsors_logos/yas.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 32414,
     "contract_duration": 3,
@@ -2378,7 +2378,7 @@
   {
     "id": 109,
     "name": "Zantel",
-    "logo": "sponsors_logos/zantel.png",
+    "logo": "sponsors_logos/zantel.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 32414,
     "contract_duration": 3,
@@ -2400,7 +2400,7 @@
   {
     "id": 110,
     "name": "Halotel",
-    "logo": "sponsors_logos/halotel.png",
+    "logo": "sponsors_logos/halotel.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 3241,
     "contract_duration": 3,
@@ -2422,7 +2422,7 @@
   {
     "id": 111,
     "name": "Posta",
-    "logo": "sponsors_logos/posta.png",
+    "logo": "sponsors_logos/posta.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 3241,
     "contract_duration": 3,
@@ -2444,7 +2444,7 @@
   {
     "id": 112,
     "name": "PSI",
-    "logo": "sponsors_logos/psi.png",
+    "logo": "sponsors_logos/psi.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 3241,
     "contract_duration": 3,
@@ -2466,7 +2466,7 @@
   {
     "id": 113,
     "name": "Tanzania Ports Authority",
-    "logo": "sponsors_logos/tanzania_ports_authority.png",
+    "logo": "sponsors_logos/tanzania_ports_authority.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 3241,
     "contract_duration": 3,
@@ -2488,7 +2488,7 @@
   {
     "id": 114,
     "name": "Tronic",
-    "logo": "sponsors_logos/tronic.png",
+    "logo": "sponsors_logos/tronic.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 3241,
     "contract_duration": 3,
@@ -2510,7 +2510,7 @@
   {
     "id": 115,
     "name": "GSM",
-    "logo": "sponsors_logos/gsm.png",
+    "logo": "sponsors_logos/gsm.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 32414,
     "contract_duration": 3,
@@ -2532,7 +2532,7 @@
   {
     "id": 116,
     "name": "Presentation Sports",
-    "logo": "sponsors_logos/presentation_sports.png",
+    "logo": "sponsors_logos/presentation_sports.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 16207,
     "contract_duration": 3,
@@ -2554,7 +2554,7 @@
   {
     "id": 117,
     "name": "Cleopatra Group",
-    "logo": "sponsors_logos/cleopatra_group.png",
+    "logo": "sponsors_logos/cleopatra_group.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 16207,
     "contract_duration": 3,
@@ -2576,7 +2576,7 @@
   {
     "id": 118,
     "name": "B19 Group LTD",
-    "logo": "sponsors_logos/b19_group_ltd.png",
+    "logo": "sponsors_logos/b19_group_ltd.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 16207,
     "contract_duration": 3,
@@ -2598,7 +2598,7 @@
   {
     "id": 119,
     "name": "King Mapung'o",
-    "logo": "sponsors_logos/king_mapungo.png",
+    "logo": "sponsors_logos/king_mapungo.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 16207,
     "contract_duration": 3,
@@ -2620,7 +2620,7 @@
   {
     "id": 120,
     "name": "Senior Hope Foundation",
-    "logo": "sponsors_logos/senior_hope_foundation.png",
+    "logo": "sponsors_logos/senior_hope_foundation.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 16207,
     "contract_duration": 3,
@@ -2642,7 +2642,7 @@
   {
     "id": 121,
     "name": "Kajuna Investment",
-    "logo": "sponsors_logos/kajuna_investment.png",
+    "logo": "sponsors_logos/kajuna_investment.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 16207,
     "contract_duration": 3,
@@ -2664,7 +2664,7 @@
   {
     "id": 122,
     "name": "WU Foundation",
-    "logo": "sponsors_logos/wu_foundation.png",
+    "logo": "sponsors_logos/wu_foundation.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 32414,
     "contract_duration": 3,
@@ -2686,7 +2686,7 @@
   {
     "id": 123,
     "name": "Simiyu Veterans Foundation",
-    "logo": "sponsors_logos/simiyu_veterans_foundation.png",
+    "logo": "sponsors_logos/simiyu_veterans_foundation.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 16207,
     "contract_duration": 3,
@@ -2708,7 +2708,7 @@
   {
     "id": 124,
     "name": "NBC Bank",
-    "logo": "sponsors_logos/nbc_bank.png",
+    "logo": "sponsors_logos/nbc_bank.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 162074,
     "contract_duration": 5,
@@ -2730,7 +2730,7 @@
   {
     "id": 125,
     "name": "NMB Bank",
-    "logo": "sponsors_logos/nmb_bank.png",
+    "logo": "sponsors_logos/nmb_bank.webp",
     "sponsor_type": "TITLE_SPONSOR",
     "sponsorship_value": 40519,
     "contract_duration": 5,
@@ -2752,7 +2752,7 @@
   {
     "id": 126,
     "name": "Azam TV",
-    "logo": "sponsors_logos/azam_tv.png",
+    "logo": "sponsors_logos/azam_tv.webp",
     "sponsor_type": "BROADCAST_PARTNER",
     "sponsorship_value": 97244,
     "contract_duration": 4,
@@ -2774,7 +2774,7 @@
   {
     "id": 127,
     "name": "Visit Tanzania",
-    "logo": "sponsors_logos/visit_tanzania.png",
+    "logo": "sponsors_logos/visit_tanzania.webp",
     "sponsor_type": "TOURISM_PARTNER",
     "sponsorship_value": 81037,
     "contract_duration": 3,
@@ -2796,7 +2796,7 @@
   {
     "id": 128,
     "name": "TBL",
-    "logo": "sponsors_logos/tbl.png",
+    "logo": "sponsors_logos/tbl.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 64829,
     "contract_duration": 3,
@@ -2818,7 +2818,7 @@
   {
     "id": 129,
     "name": "Air Tanzania",
-    "logo": "sponsors_logos/air_tanzania.png",
+    "logo": "sponsors_logos/air_tanzania.webp",
     "sponsor_type": "TOURISM_PARTNER",
     "sponsorship_value": 32414,
     "contract_duration": 3,
@@ -2840,7 +2840,7 @@
   {
     "id": 130,
     "name": "Gaming Board of Tanzania",
-    "logo": "sponsors_logos/gaming_board_of_tanzania.png",
+    "logo": "sponsors_logos/gaming_board_of_tanzania.webp",
     "sponsor_type": "CLUB_SPONSOR",
     "sponsorship_value": 3241,
     "contract_duration": 3,
@@ -2862,7 +2862,7 @@
   {
     "id": 131,
     "name": "National Housing Corporation",
-    "logo": "sponsors_logos/national_housing_corporation.png",
+    "logo": "sponsors_logos/national_housing_corporation.webp",
     "sponsor_type": "REAL_ESTATE_PARTNER",
     "sponsorship_value": 3241,
     "contract_duration": 3,
@@ -2884,7 +2884,7 @@
   {
     "id": 132,
     "name": "National Insurance Corporation",
-    "logo": "sponsors_logos/national_insurance_corporation.png",
+    "logo": "sponsors_logos/national_insurance_corporation.webp",
     "sponsor_type": "INSURANCE_PARTNER",
     "sponsorship_value": 3241,
     "contract_duration": 3,
@@ -2906,7 +2906,7 @@
   {
     "id": 133,
     "name": "Tanzania National Parks",
-    "logo": "sponsors_logos/tanzania_national_parks.png",
+    "logo": "sponsors_logos/tanzania_national_parks.webp",
     "sponsor_type": "TOURISM_PARTNER",
     "sponsorship_value": 3241,
     "contract_duration": 3,
@@ -2928,7 +2928,7 @@
   {
     "id": 134,
     "name": "TTCL",
-    "logo": "sponsors_logos/ttcl.png",
+    "logo": "sponsors_logos/ttcl.webp",
     "sponsor_type": "TELECOM_PARTNER",
     "sponsorship_value": 3241,
     "contract_duration": 3,
@@ -2950,7 +2950,7 @@
   {
     "id": 135,
     "name": "Tanzania Tourist Board",
-    "logo": "sponsors_logos/tanzania_tourist_board.png",
+    "logo": "sponsors_logos/tanzania_tourist_board.webp",
     "sponsor_type": "TOURISM_PARTNER",
     "sponsorship_value": 3241,
     "contract_duration": 3,

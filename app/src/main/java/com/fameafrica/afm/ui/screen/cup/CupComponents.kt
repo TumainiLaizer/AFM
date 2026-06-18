@@ -271,7 +271,7 @@ fun StatPlayerRow(rank: Int, name: String, team: String, value: String, label: S
 @Composable
 fun NationalityFlag(nationality: String, modifier: Modifier = Modifier) {
     AsyncImage(
-        model = "file:///android_asset/flags/$nationality.png",
+        model = "file:///android_asset/flags/$nationality.webp",
         contentDescription = nationality,
         modifier = modifier
             .clip(RoundedCornerShape(2.dp))

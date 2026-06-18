@@ -4,7 +4,7 @@
     "name": "Omary Katanga",
     "media_company": "Azam Media",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\azam_media.png",
+    "logo": "assets\\visuals\\media\\azam_media.webp",
     "personality": "Neutral"
   },
   {
@@ -12,7 +12,7 @@
     "name": "ZBC News",
     "media_company": "ZBC",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\zbc_logo.png",
+    "logo": "assets\\visuals\\media\\zbc_logo.webp",
     "personality": "Neutral"
   },
   {
@@ -20,7 +20,7 @@
     "name": "TBC Michezo",
     "media_company": "TBC",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\tbc_logo.png",
+    "logo": "assets\\visuals\\media\\tbc_logo.webp",
     "personality": "Neutral"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Mpenja TV",
     "media_company": "Mpenja TV",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\mpenjatv_logo.png",
+    "logo": "assets\\visuals\\media\\mpenjatv_logo.webp",
     "personality": "Neutral"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Global Sports",
     "media_company": "Global TV",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\global_tv.png",
+    "logo": "assets\\visuals\\media\\global_tv.webp",
     "personality": "Neutral"
   },
   {
@@ -44,7 +44,7 @@
     "name": "ITV Michezo",
     "media_company": "ITV",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\itv.png",
+    "logo": "assets\\visuals\\media\\itv.webp",
     "personality": "Neutral"
   },
   {
@@ -52,7 +52,7 @@
     "name": "Shaffih Dauda",
     "media_company": "Clouds TV",
     "expertise": "Transfer",
-    "logo": "assets\\visuals\\media\\clouds_logo.png",
+    "logo": "assets\\visuals\\media\\clouds_logo.webp",
     "personality": "Critical"
   },
   {
@@ -60,7 +60,7 @@
     "name": "Millard Ayo",
     "media_company": "Milard Ayo TV",
     "expertise": "General",
-    "logo": "assets\\visuals\\media\\millard_logo.png",
+    "logo": "assets\\visuals\\media\\millard_logo.webp",
     "personality": "Friendly"
   },
   {
@@ -68,7 +68,7 @@
     "name": "Crown Sports",
     "media_company": "Crown Media",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\crown_logo.png",
+    "logo": "assets\\visuals\\media\\crown_logo.webp",
     "personality": "Neutral"
   },
   {
@@ -76,7 +76,7 @@
     "name": "Maulid Kitenge",
     "media_company": "Wasafi TV",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\wasafi_sports.png",
+    "logo": "assets\\visuals\\media\\wasafi_sports.webp",
     "personality": "Friendly"
   },
   {
@@ -84,7 +84,7 @@
     "name": "Mwanaspoti",
     "media_company": "Mwanaspoti",
     "expertise": "General",
-    "logo": "assets\\visuals\\media\\mwanaspoti_logo.png",
+    "logo": "assets\\visuals\\media\\mwanaspoti_logo.webp",
     "personality": "Neutral"
   },
   {
@@ -92,7 +92,7 @@
     "name": "KipengaXtra",
     "media_company": "Kipenga Extra",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\kipenga_extra.png",
+    "logo": "assets\\visuals\\media\\kipenga_extra.webp",
     "personality": "Neutral"
   },
   {
@@ -100,7 +100,7 @@
     "name": "StarTimes",
     "media_company": "StarTimes TV",
     "expertise": "General",
-    "logo": "assets\\visuals\\media\\startv_logo.png",
+    "logo": "assets\\visuals\\media\\startv_logo.webp",
     "personality": "Neutral"
   },
   {
@@ -108,7 +108,7 @@
     "name": "Nipashe",
     "media_company": "Nipashe",
     "expertise": "General",
-    "logo": "assets\\visuals\\media\\nipashe.png",
+    "logo": "assets\\visuals\\media\\nipashe.webp",
     "personality": "Neutral"
   },
   {
@@ -116,7 +116,7 @@
     "name": "TV3",
     "media_company": "TV3 Media",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\tv3_logo.png",
+    "logo": "assets\\visuals\\media\\tv3_logo.webp",
     "personality": "Neutral"
   },
   {
@@ -124,7 +124,7 @@
     "name": "Edu Sports",
     "media_company": "EduSportsTZ",
     "expertise": "Gossip",
-    "logo": "assets\\visuals\\media\\edusports_logo.png",
+    "logo": "assets\\visuals\\media\\edusports_logo.webp",
     "personality": "Aggressive"
   },
   {
@@ -132,7 +132,7 @@
     "name": "Saleh Jembe",
     "media_company": "Saleh Sports",
     "expertise": "Transfer",
-    "logo": "assets\\visuals\\media\\salehjembe_logo.png",
+    "logo": "assets\\visuals\\media\\salehjembe_logo.webp",
     "personality": "Critical"
   },
   {
@@ -140,7 +140,7 @@
     "name": "EATV Sports",
     "media_company": "EATV",
     "expertise": "General",
-    "logo": "assets\\visuals\\media\\eatv_logo.png",
+    "logo": "assets\\visuals\\media\\eatv_logo.webp",
     "personality": "Neutral"
   },
   {
@@ -148,7 +148,7 @@
     "name": "Udaku Michezo",
     "media_company": "Udaku",
     "expertise": "Gossip",
-    "logo": "assets\\visuals\\media\\udaku_logo.png",
+    "logo": "assets\\visuals\\media\\udaku_logo.webp",
     "personality": "Biased"
   },
   {
@@ -156,7 +156,7 @@
     "name": "SpotiLeo",
     "media_company": "SpotiLeo",
     "expertise": "Match Reporting",
-    "logo": "assets\\visuals\\media\\spotileo_logo.png",
+    "logo": "assets\\visuals\\media\\spotileo_logo.webp",
     "personality": "Neutral"
   },
   {
@@ -164,7 +164,7 @@
     "name": "MwanaHabari",
     "media_company": "MwanaHabari Digital",
     "expertise": "General",
-    "logo": "assets\\visuals\\media\\mwanahabari_digital.png",
+    "logo": "assets\\visuals\\media\\mwanahabari_digital.webp",
     "personality": "Neutral"
   },
   {
@@ -172,7 +172,7 @@
     "name": "Championi",
     "media_company": "Championi",
     "expertise": "Honours",
-    "logo": "assets\\visuals\\media\\championi.png",
+    "logo": "assets\\visuals\\media\\championi.webp",
     "personality": "Neutral"
   },
   {
@@ -180,7 +180,7 @@
     "name": "Azam Sports",
     "media_company": "Azam Media",
     "expertise": "Match Reporting",
-    "logo": "media/azam_media.png",
+    "logo": "media/azam_media.webp",
     "personality": "Neutral"
   },
   {
@@ -196,7 +196,7 @@
     "name": "Micky Jnr",
     "media_company": "Micky Jnr",
     "expertise": "General",
-    "logo": "media/micky_jnr.png",
+    "logo": "media/micky_jnr.webp",
     "personality": "Friendly"
   },
   {
@@ -204,7 +204,7 @@
     "name": "TFF Radio",
     "media_company": "TFF",
     "expertise": "Football Authority",
-    "logo": "media/tff.png",
+    "logo": "media/tff.webp",
     "personality": "Neutral"
   },
   {
@@ -212,7 +212,7 @@
     "name": "Fame Africa",
     "media_company": "FAME Africa\u2122",
     "expertise": "Developer",
-    "logo": "media/fame_africa.png",
+    "logo": "media/fame_africa.webp",
     "personality": "Friendly"
   }
 ]

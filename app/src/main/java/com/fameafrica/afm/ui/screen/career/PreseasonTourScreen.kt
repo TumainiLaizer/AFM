@@ -473,7 +473,7 @@ fun TourFlagPoint(
     val flagPainter: Painter = if (isInspectionMode) {
         val bitmap = remember(countryName) {
             try {
-                context.assets.open("flags/$countryName.png").use { 
+                context.assets.open("flags/$countryName.webp").use { 
                     BitmapFactory.decodeStream(it)
                 }?.asImageBitmap()
             } catch (e: Exception) {
