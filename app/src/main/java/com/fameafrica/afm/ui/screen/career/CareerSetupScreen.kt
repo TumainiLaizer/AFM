@@ -842,13 +842,13 @@ fun AvatarSelectionStep(
             // Pattern 1: prefix_i_j.jpg
             for (i in 1..r1) {
                 for (j in 1..r2) {
-                    list.add("file:///android_asset/manager_faces/${prefix}_${i}_${j}.jpg")
+                    list.add("file:///android_asset/manager_faces/${prefix}_${i}_${j}.webp")
                 }
             }
             // Pattern 2: prefixX_Y_Z.jpg
             for (i in 1..r1) {
                 for (j in 1..r2) {
-                    list.add("file:///android_asset/manager_faces/${prefix}${i}_1_${j}.jpg")
+                    list.add("file:///android_asset/manager_faces/${prefix}${i}_1_${j}.webp")
                 }
             }
             list.distinct()
@@ -2597,7 +2597,7 @@ fun AgentCardPreview() {
         commissionRate = 0.05f,
         connections = listOf("Tanzania", "Kenya"),
         nationality = "Tanzania",
-        nationalityFlag = "file:///android_asset/flags/Tanzania.png"
+        nationalityFlag = "file:///android_asset/flags/Tanzania.webp"
     )
     
     AFM2026Theme {

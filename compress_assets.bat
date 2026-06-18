@@ -11,7 +11,7 @@ if not exist %MAGICK_PATH% (
 
 :: 1. Convert PNG, JPG, JPEG to WebP recursively in assets if .webp doesn't exist
 echo Converting images to WebP in assets (recursive, skip existing)...
-for /r "app\src\main\assets" %%f in (*.png *.jpg *.jpeg) do (
+for /r "app\src\main\assets" %%f in (*.webp *.jpg *.jpeg) do (
     if not exist "%%~dpnf.webp" (
         echo Converting: %%f
         %MAGICK_PATH% "%%f" -quality 80 "%%~dpnf.webp"

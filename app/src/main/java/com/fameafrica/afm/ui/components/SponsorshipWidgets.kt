@@ -99,7 +99,7 @@ fun SponsorshipOfferCard(
                     shape = RoundedCornerShape(4.dp)
                 ) {
                     AsyncImage(
-                        model = logoUrl ?: "file:///android_asset/sponsors_logos/fame_africa.png",
+                        model = logoUrl ?: "file:///android_asset/sponsors_logos/fame_africa",
                         contentDescription = sponsorName,
                         modifier = Modifier.padding(4.dp)
                     )
