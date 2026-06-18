@@ -259,12 +259,12 @@ class GameManager @Inject constructor(
             
             initializationJob = gameScope.launch {
                 try {
-                    withTimeout(60000) {
+                    withTimeout(180000) { // Increased to 3 minutes
                         initializeGameInternal(careerId)
                     }
                 } catch (e: TimeoutCancellationException) {
                     Log.e("AFM_CORE", "Initialization TIMEOUT for career $careerId")
-                    _initializationState.value = InitializationState.Failed("Initialization timed out. Please retry.", true)
+                    _initializationState.value = InitializationState.Failed("Initialization timed out after 3 minutes. Please retry.", true)
                 } catch (e: Exception) {
                     if (e is CancellationException) throw e
                     Log.e("AFM_CORE", "Initialization FATAL ERROR for career $careerId", e)
