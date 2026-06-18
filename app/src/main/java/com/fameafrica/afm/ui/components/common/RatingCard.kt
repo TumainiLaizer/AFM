@@ -1,6 +1,6 @@
 package com.fameafrica.afm.ui.components.common
 
-import androidx.compose.foundation.BorderStroke
+
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -36,17 +36,16 @@ fun RatingCard(
     }
 
     Surface(
-        color = Color.Black.copy(alpha = 0.6f),
+        color = color,
         shape = RoundedCornerShape(4.dp),
-        border = BorderStroke(1.dp, color),
         modifier = modifier
     ) {
         Column(
             modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(labelText, style = AFMTextStyles.textXXS, color = color, fontSize = 6.sp, fontWeight = FontWeight.Bold)
-            Text(value, style = AFMTextStyles.textXS, color = Color.White, fontWeight = FontWeight.Black)
+            Text(labelText, style = AFMTextStyles.textXXS, color = Color.Black, fontSize = 6.sp, fontWeight = FontWeight.Bold)
+            Text(value, style = AFMTextStyles.textXS, color = Color.Black, fontWeight = FontWeight.Black)
         }
     }
 }
